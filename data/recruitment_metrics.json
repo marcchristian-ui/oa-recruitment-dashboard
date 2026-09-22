@@ -1,0 +1,617 @@
+{
+    "_generated": "2026-09-22",
+    "_source": "snapshots/2026-01.json..2026-09.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714, 1579 match records) as of 2026-09-22",
+    "_methodology": "MONOTONIC FUNNEL (rank roll-up). Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted / On-going Contract / Hired=5, Started=6, Failed=0 (drop-off, ignored for ranking). A candidate's max rank = the highest rank across ALL of their match records (a candidate on multiple jobs has multiple records). Event date per record: Initial Interview -> interview_at else updated_at; Client Endorsement -> submitted_at else updated_at; Client Interview -> interview_at else submitted_at else updated_at; Job Offer -> offer_at else updated_at; Offer Accepted / On-going Contract / Hired -> hired_at else offer_at else updated_at; Started -> updated_at. A candidate with a rank-R event in month M is credited in month M at every rank 1..R (roll-up): anyone counted at rank R+1 in month M must have passed the earlier stages. This guarantees Interviews[M] >= Endorsed[M] >= ClientPass[M] >= Offers[M] >= Hires[M] >= Starts[M] for every month by construction. ytdTotals are UNIQUE candidates per rank across Jan 1 - 2026-09-22, NOT the sum of the monthly rows - the roll-up intentionally counts a candidate in multiple months, so summing rows would double-count.",
+    "_schema": {
+        "monthly[]": "Per-month funnel counts (interviews/endorsed/clientPass/offers/hires/starts), conversion percentages, TTF stats + buckets, and requisition flow (openingBacklog/newOpens/filled/lost/paused/stillOpen).",
+        "ytdTotals": "Unique candidates reaching each rank across the full period.",
+        "overallConversion": "YTD conversion percentages computed from ytdTotals.",
+        "kpiSnapshot": "KPI vs target keyed by metric, each {actual, target, status, note?}. Status: green = at/above target, yellow = within 10 pts below, red = more than 10 pts below, gray = no actual or no numeric target.",
+        "positionTypes[]": "New Logo / Ramp / Backfill roles filled, avg & median TTF, currently-open counts. Funnel conversion fields are null - not derivable per type (see dataGaps).",
+        "agingBuckets": "Currently-open HEADCOUNT by days open (d0_30/d31_45/d46_60/d61_90/gt90), from the current month's snapshot aging.jobs. agingBucketsRoles carries the same split by role count.",
+        "oldestOpen[]": "Top 10 oldest currently-open roles, oldest first by days open.",
+        "insights": "Derived narrative: best/weakest month, TTF trend, longest-TTF position type, biggest bottleneck vs target, recommended action.",
+        "dataGaps[]": "Known holes in the underlying data."
+    },
+    "_dataQuality": {
+        "totalMatchesFromAPI": 1579,
+        "uniqueMatchesLoaded": 1579,
+        "uniqueCandidatesWithRankedEvents": 1507,
+        "droppedRank0Records": 0,
+        "constraintFailuresPerMonth": [],
+        "monthsAllMonotonic": true
+    },
+    "period": {
+        "start": "2026-01-01",
+        "end": "2026-09-22"
+    },
+    "targets": {
+        "interviewToEndorse": 70,
+        "endorseToHire": 50,
+        "interviewToHire": 33,
+        "offerToStart": 90,
+        "retention90d": {
+            "specialist": 90,
+            "volume": 85
+        },
+        "regularization": 87,
+        "ttf30dPct": null,
+        "ttf60dPct": null
+    },
+    "monthly": [
+        {
+            "month": "2026-01",
+            "label": "Jan 2026",
+            "interviews": 212,
+            "endorsed": 78,
+            "clientPass": 50,
+            "offers": 24,
+            "hires": 24,
+            "starts": 23,
+            "intToEnd": 36.8,
+            "endToClientPass": 64.1,
+            "endToHire": 30.8,
+            "intToHire": 11.3,
+            "offerToStart": 95.8,
+            "rolesFilled": 9,
+            "avgTtf": 45,
+            "medianTtf": 41,
+            "ttfSampleSize": 7,
+            "ttfBuckets": {
+                "le30": 2,
+                "d31_60": 3,
+                "d61_90": 2,
+                "gt90": 0
+            },
+            "openingBacklog": 17,
+            "newOpens": 36,
+            "filled": 9,
+            "lost": 1,
+            "paused": 1,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 0,
+            "monthlyTarget": 12
+        },
+        {
+            "month": "2026-02",
+            "label": "Feb 2026",
+            "interviews": 155,
+            "endorsed": 78,
+            "clientPass": 43,
+            "offers": 22,
+            "hires": 20,
+            "starts": 19,
+            "intToEnd": 50.3,
+            "endToClientPass": 55.1,
+            "endToHire": 25.6,
+            "intToHire": 12.9,
+            "offerToStart": 86.4,
+            "rolesFilled": 30,
+            "avgTtf": 44.6,
+            "medianTtf": 43.0,
+            "ttfSampleSize": 14,
+            "ttfBuckets": {
+                "le30": 5,
+                "d31_60": 7,
+                "d61_90": 1,
+                "gt90": 1
+            },
+            "openingBacklog": 42,
+            "newOpens": 17,
+            "filled": 30,
+            "lost": 5,
+            "paused": 7,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 0,
+            "monthlyTarget": 29
+        },
+        {
+            "month": "2026-03",
+            "label": "Mar 2026",
+            "interviews": 199,
+            "endorsed": 105,
+            "clientPass": 67,
+            "offers": 34,
+            "hires": 34,
+            "starts": 33,
+            "intToEnd": 52.8,
+            "endToClientPass": 63.8,
+            "endToHire": 32.4,
+            "intToHire": 17.1,
+            "offerToStart": 97.1,
+            "rolesFilled": 11,
+            "avgTtf": 44.8,
+            "medianTtf": 56,
+            "ttfSampleSize": 11,
+            "ttfBuckets": {
+                "le30": 4,
+                "d31_60": 5,
+                "d61_90": 2,
+                "gt90": 0
+            },
+            "openingBacklog": 17,
+            "newOpens": 16,
+            "filled": 11,
+            "lost": 1,
+            "paused": 6,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 0,
+            "monthlyTarget": 12
+        },
+        {
+            "month": "2026-04",
+            "label": "Apr 2026",
+            "interviews": 125,
+            "endorsed": 65,
+            "clientPass": 35,
+            "offers": 11,
+            "hires": 10,
+            "starts": 10,
+            "intToEnd": 52.0,
+            "endToClientPass": 53.8,
+            "endToHire": 15.4,
+            "intToHire": 8.0,
+            "offerToStart": 90.9,
+            "rolesFilled": 12,
+            "avgTtf": 46.2,
+            "medianTtf": 41,
+            "ttfSampleSize": 11,
+            "ttfBuckets": {
+                "le30": 4,
+                "d31_60": 5,
+                "d61_90": 1,
+                "gt90": 1
+            },
+            "openingBacklog": 15,
+            "newOpens": 21,
+            "filled": 12,
+            "lost": 8,
+            "paused": 0,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 15,
+            "monthlyTarget": 11
+        },
+        {
+            "month": "2026-05",
+            "label": "May 2026",
+            "interviews": 216,
+            "endorsed": 115,
+            "clientPass": 87,
+            "offers": 46,
+            "hires": 42,
+            "starts": 39,
+            "intToEnd": 53.2,
+            "endToClientPass": 75.7,
+            "endToHire": 36.5,
+            "intToHire": 19.4,
+            "offerToStart": 84.8,
+            "rolesFilled": 12,
+            "avgTtf": 37.9,
+            "medianTtf": 32.0,
+            "ttfSampleSize": 10,
+            "ttfBuckets": {
+                "le30": 4,
+                "d31_60": 5,
+                "d61_90": 0,
+                "gt90": 1
+            },
+            "openingBacklog": 15,
+            "newOpens": 9,
+            "filled": 12,
+            "lost": 0,
+            "paused": 3,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 9,
+            "monthlyTarget": 11
+        },
+        {
+            "month": "2026-06",
+            "label": "Jun 2026",
+            "interviews": 181,
+            "endorsed": 101,
+            "clientPass": 86,
+            "offers": 50,
+            "hires": 49,
+            "starts": 43,
+            "intToEnd": 55.8,
+            "endToClientPass": 85.1,
+            "endToHire": 48.5,
+            "intToHire": 27.1,
+            "offerToStart": 86.0,
+            "rolesFilled": 17,
+            "avgTtf": 27.1,
+            "medianTtf": 18.5,
+            "ttfSampleSize": 8,
+            "ttfBuckets": {
+                "le30": 5,
+                "d31_60": 2,
+                "d61_90": 1,
+                "gt90": 0
+            },
+            "openingBacklog": 9,
+            "newOpens": 26,
+            "filled": 17,
+            "lost": 1,
+            "paused": 7,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 10,
+            "monthlyTarget": 7
+        },
+        {
+            "month": "2026-07",
+            "label": "Jul 2026",
+            "interviews": 164,
+            "endorsed": 84,
+            "clientPass": 62,
+            "offers": 33,
+            "hires": 32,
+            "starts": 29,
+            "intToEnd": 51.2,
+            "endToClientPass": 73.8,
+            "endToHire": 38.1,
+            "intToHire": 19.5,
+            "offerToStart": 87.9,
+            "rolesFilled": 19,
+            "avgTtf": 22.6,
+            "medianTtf": 21.5,
+            "ttfSampleSize": 8,
+            "ttfBuckets": {
+                "le30": 7,
+                "d31_60": 1,
+                "d61_90": 0,
+                "gt90": 0
+            },
+            "openingBacklog": 10,
+            "newOpens": 28,
+            "filled": 19,
+            "lost": 0,
+            "paused": 2,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 17,
+            "monthlyTarget": 7
+        },
+        {
+            "month": "2026-08",
+            "label": "Aug 2026",
+            "interviews": 151,
+            "endorsed": 79,
+            "clientPass": 52,
+            "offers": 15,
+            "hires": 14,
+            "starts": 12,
+            "intToEnd": 52.3,
+            "endToClientPass": 65.8,
+            "endToHire": 17.7,
+            "intToHire": 9.3,
+            "offerToStart": 80.0,
+            "rolesFilled": 14,
+            "avgTtf": 40.2,
+            "medianTtf": 40,
+            "ttfSampleSize": 11,
+            "ttfBuckets": {
+                "le30": 3,
+                "d31_60": 6,
+                "d61_90": 2,
+                "gt90": 0
+            },
+            "openingBacklog": 17,
+            "newOpens": 11,
+            "filled": 14,
+            "lost": 1,
+            "paused": 4,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 9,
+            "monthlyTarget": 12
+        },
+        {
+            "month": "2026-09",
+            "label": "Sep 2026",
+            "interviews": 129,
+            "endorsed": 61,
+            "clientPass": 50,
+            "offers": 18,
+            "hires": 15,
+            "starts": 7,
+            "intToEnd": 47.3,
+            "endToClientPass": 82.0,
+            "endToHire": 24.6,
+            "intToHire": 11.6,
+            "offerToStart": 38.9,
+            "rolesFilled": 6,
+            "avgTtf": null,
+            "medianTtf": null,
+            "ttfSampleSize": 0,
+            "ttfBuckets": {
+                "le30": 0,
+                "d31_60": 0,
+                "d61_90": 0,
+                "gt90": 0
+            },
+            "openingBacklog": 9,
+            "newOpens": 12,
+            "filled": 6,
+            "lost": 0,
+            "paused": 2,
+            "stillOpen": 0,
+            "totalOpenAtSnapshot": 10,
+            "monthlyTarget": 5
+        }
+    ],
+    "ytdTotals": {
+        "interviews": 1507,
+        "endorsed": 762,
+        "clientPass": 524,
+        "offers": 251,
+        "hires": 239,
+        "starts": 214
+    },
+    "ytdRoles": {
+        "filled": 130,
+        "lost": 17,
+        "paused": 32,
+        "newOpens": 176,
+        "currentlyOpen": 10
+    },
+    "overallConversion": {
+        "interviewToEndorse": 50.6,
+        "endorseToClientPass": 68.8,
+        "clientPassToOffer": 47.9,
+        "endorseToHire": 31.4,
+        "interviewToHire": 15.9,
+        "offerToStart": 85.3
+    },
+    "ttfYtd": {
+        "avgTtf": 39.5,
+        "medianTtf": 35.5,
+        "sampleSize": 80,
+        "buckets": {
+            "le30": 34,
+            "d31_60": 34,
+            "d61_90": 9,
+            "gt90": 3
+        },
+        "pctLe30": 42.5,
+        "pctLe60": 85.0,
+        "note": "Across Jan-Sep 2026 snapshots; months with TTF data: 2026-01, 2026-02, 2026-03, 2026-04, 2026-05, 2026-06, 2026-07, 2026-08."
+    },
+    "kpiSnapshot": {
+        "intToEnd": {
+            "actual": 50.6,
+            "target": 70,
+            "status": "red"
+        },
+        "endToClientPass": {
+            "actual": 68.8,
+            "target": null,
+            "status": "gray",
+            "note": "No target defined"
+        },
+        "endToHire": {
+            "actual": 31.4,
+            "target": 50,
+            "status": "red"
+        },
+        "intToHire": {
+            "actual": 15.9,
+            "target": 33,
+            "status": "red"
+        },
+        "offerToStart": {
+            "actual": 85.3,
+            "target": 90,
+            "status": "yellow"
+        },
+        "avgTtf": {
+            "actual": 39.5,
+            "target": null,
+            "status": "gray",
+            "note": "No numeric target . n=80"
+        },
+        "pctFilled30d": {
+            "actual": 42.5,
+            "target": null,
+            "status": "gray",
+            "note": "Informational . n=80"
+        },
+        "pctFilled60d": {
+            "actual": 85.0,
+            "target": null,
+            "status": "gray",
+            "note": "Informational . n=80"
+        },
+        "retention90d": {
+            "actual": null,
+            "target": 90,
+            "status": "gray",
+            "note": "Not tracked in Manatal . 90% specialist / 85% volume"
+        },
+        "regularization": {
+            "actual": null,
+            "target": 87,
+            "status": "gray",
+            "note": "Not tracked in Manatal"
+        }
+    },
+    "positionTypes": [
+        {
+            "type": "New Logo",
+            "label": "New Logo",
+            "rolesFilled": 43,
+            "avgTtf": 54.8,
+            "medianTtf": 47.5,
+            "ttfSampleSize": 24,
+            "currentlyOpenRoles": 3,
+            "currentlyOpenHc": 3,
+            "intToEnd": null,
+            "endToClientPass": null,
+            "endToHire": null,
+            "intToHire": null,
+            "offerToStart": null
+        },
+        {
+            "type": "Ramp",
+            "label": "Ramp",
+            "rolesFilled": 69,
+            "avgTtf": 31.6,
+            "medianTtf": 26.0,
+            "ttfSampleSize": 40,
+            "currentlyOpenRoles": 3,
+            "currentlyOpenHc": 5,
+            "intToEnd": null,
+            "endToClientPass": null,
+            "endToHire": null,
+            "intToHire": null,
+            "offerToStart": null
+        },
+        {
+            "type": "Backfill",
+            "label": "Backfill",
+            "rolesFilled": 18,
+            "avgTtf": 36.2,
+            "medianTtf": 29.5,
+            "ttfSampleSize": 16,
+            "currentlyOpenRoles": 1,
+            "currentlyOpenHc": 2,
+            "intToEnd": null,
+            "endToClientPass": null,
+            "endToHire": null,
+            "intToHire": null,
+            "offerToStart": null
+        }
+    ],
+    "agingBuckets": {
+        "d0_30": 7,
+        "d31_45": 1,
+        "d46_60": 1,
+        "d61_90": 1,
+        "gt90": 0
+    },
+    "agingBucketsRoles": {
+        "d0_30": 4,
+        "d31_45": 1,
+        "d46_60": 1,
+        "d61_90": 1,
+        "gt90": 0
+    },
+    "aging": {
+        "asOf": "2026-09",
+        "totalOpenRoles": 7,
+        "totalOpenHc": 10,
+        "rolesOver30": 3,
+        "rolesOver60": 1,
+        "avgDaysByType": {
+            "newLogo": 45,
+            "ramp": 22,
+            "backfill": 8
+        }
+    },
+    "oldestOpen": [
+        {
+            "client": "AUDIT DATA",
+            "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+            "type": "New Logo",
+            "opened": "2026-07-15",
+            "days": 69,
+            "headcount": 1
+        },
+        {
+            "client": "THRIVIAE",
+            "role": "SALES DEVELOPMENT REPRESENTATIVE",
+            "type": "New Logo",
+            "opened": "2026-08-06",
+            "days": 47,
+            "headcount": 1
+        },
+        {
+            "client": "SolCo (Solution Consultants ICT)",
+            "role": "IT SUPPORT ENGINEER",
+            "type": "Ramp",
+            "opened": "2026-08-19",
+            "days": 34,
+            "headcount": 1
+        },
+        {
+            "client": "DEMAND BRIDGE",
+            "role": "INTEGRATION SPECIALIST",
+            "type": "New Logo",
+            "opened": "2026-09-01",
+            "days": 21,
+            "headcount": 1
+        },
+        {
+            "client": "MIRION (NUCMED)",
+            "role": "BILLING ANALYST",
+            "type": "Ramp",
+            "opened": "2026-09-01",
+            "days": 21,
+            "headcount": 3
+        },
+        {
+            "client": "ZEPP",
+            "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
+            "type": "Ramp",
+            "opened": "2026-09-09",
+            "days": 13,
+            "headcount": 1
+        },
+        {
+            "client": "ADAUGEO",
+            "role": "PRE-BILLING SPECIALIST",
+            "type": "Backfill",
+            "opened": "2026-09-14",
+            "days": 8,
+            "headcount": 2
+        }
+    ],
+    "insights": {
+        "bestMonth": {
+            "month": "Jun 2026",
+            "reason": "49 hires / 43 starts on 181 interviews (27.1% Interview->Hire) - the strongest month of the year.",
+            "hires": 49
+        },
+        "weakestMonth": {
+            "month": "Apr 2026",
+            "reason": "only 10 hires on 125 interviews (8.0% Interview->Hire). Sep 2026 is excluded as it is still in progress.",
+            "hires": 10
+        },
+        "ttfTrend": "Falling - avg TTF moved -12.0 days from 2026-03-2026-05 (43.1d) to 2026-06-2026-08 (31.1d). TTF data spans 2026-01, 2026-02, 2026-03, 2026-04, 2026-05, 2026-06, 2026-07, 2026-08.",
+        "pctFilled30dOverall": 42.5,
+        "pctFilled60dOverall": 85.0,
+        "longestTtfPositionType": "New Logo - 54.8d average time-to-fill (n=24), vs Ramp at 31.6d. New Logo roles take materially longer to close.",
+        "carryOverRisk": "3 of 7 currently-open roles (3 of 10 headcount) have been open more than 30 days; 1 past 60 days. Oldest is AUDIT DATA - SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open at 69d.",
+        "biggestBottleneck": "Interview -> Endorse at 50.6% vs a 70% target - 19.4 points short, the widest gap of any tracked conversion. This is where the largest volume loss occurs.",
+        "recommendedAction": "Attack Interview -> Endorse first - it is 19.4 points below its 70% target and gates everything downstream. Calibrate role scorecards with the client before interviewing and tighten source-to-interview qualification so interview slots are not spent on candidates who will not clear the next gate; closing this gap to target would materially lift hire volume at constant interview load. Secondarily, New Logo roles average 54.8d to fill vs Ramp at 31.6d: front-load intake and sourcing on those requisitions, which also drives the 69d-old carry-over backlog.",
+        "rolesOver30": 3,
+        "rolesOver60": 1,
+        "_detail": {
+            "bestMonthKey": "2026-06",
+            "weakestMonthKey": "2026-04",
+            "ttfTrendDirection": "down",
+            "ttfDeltaDays": -12.0,
+            "monthsWithTtf": [
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+            ],
+            "bottleneck": {
+                "stage": "Interview -> Endorse",
+                "actual": 50.6,
+                "target": 70,
+                "gapPoints": 19.4
+            }
+        }
+    },
+    "dataGaps": [
+        "90-day retention is not tracked in Manatal - reported as null.",
+        "Regularization rate is not tracked in Manatal - reported as null.",
+        "September 2026 closed-won roles are all at Offer Accepted with no start date yet, so September contributes no timeToFill values.",
+        "Manatal's Open API exposes only each match's CURRENT stage, not stage history. A candidate who was endorsed and then moved to Failed collapses to rank 0 and is dropped unless they hold another match at rank >= 2 on some job. Earlier-stage counts are therefore a floor, not an exact count.",
+        "Per-position-type funnel (Interview->Hire split by New Logo / Ramp / Backfill) is not available: Manatal match records are not tagged with position type, which lives only in the snapshots.",
+        "September 2026 is a partial month (through 2026-09-22) and should not be compared like-for-like with closed months."
+    ]
+}

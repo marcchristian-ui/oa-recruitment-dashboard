@@ -1,0 +1,365 @@
+{
+  "totalOpen": 15,
+  "startOfMonth": 15,
+  "startOfMonthRoles": 13,
+  "additionalInMonth": 21,
+  "additionalInMonthRoles": 19,
+  "monthlyTarget": 11,
+  "pipeline": {
+    "open": 15,
+    "forJobOffer": 1,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 12,
+    "paused": 0
+  },
+  "pausedRoles": [],
+  "closedLostRoles": [
+    {
+      "client": "THATCHER TECHNOLOGY GROUP",
+      "role": "FULLSTACK DEVELOPER",
+      "headcount": 2,
+      "lostDate": "2026-04-15",
+      "reason": "Other",
+      "type": "Ramp"
+    },
+    {
+      "client": "NAJLA LAW FIRM",
+      "role": "DIGITAL MARKETING SPECIALIST (SEO & SOCIAL MEDIA)",
+      "headcount": 1,
+      "lostDate": "2026-04-15",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "TLC SOLUTIONS",
+      "role": "PROCUREMENT SPECIALIST",
+      "headcount": 1,
+      "lostDate": "2026-04-15",
+      "reason": "Other",
+      "type": "Ramp"
+    },
+    {
+      "client": "ZEPP",
+      "role": "TECHNICAL SUPPORT",
+      "headcount": 2,
+      "lostDate": "2026-04-15",
+      "reason": "Other",
+      "type": "Ramp"
+    },
+    {
+      "client": "PERCEPTICS",
+      "role": "MARKETING COORDINATOR",
+      "headcount": 1,
+      "lostDate": "2026-04-15",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "CREATIVE DENTAL PARTNERS",
+      "role": "DENTAL ACCOUNT RECEIVABLE",
+      "headcount": 1,
+      "lostDate": "2026-04-15",
+      "reason": "Other",
+      "type": "Backfill"
+    }
+  ],
+  "closedWon": [
+    {
+      "client": "LEATHWAITE",
+      "role": "TECHNICAL SALESFORCE ADMINISTRATOR",
+      "headcount": 1,
+      "openedDate": "2026-02-12",
+      "offerDate": "2026-04-10",
+      "startDate": "2026-05-26",
+      "timeToHire": 57,
+      "timeToFill": 103,
+      "stage": "Offer Accepted",
+      "type": "New Logo"
+    },
+    {
+      "client": "EARLY PR",
+      "role": "PR ACCOUNT MANAGER",
+      "headcount": 1,
+      "openedDate": "2026-02-18",
+      "offerDate": "2026-04-15",
+      "startDate": "2026-05-18",
+      "timeToHire": 56,
+      "timeToFill": 89,
+      "stage": "Offer Accepted",
+      "type": "New Logo"
+    },
+    {
+      "client": "CREATIVE DENTAL PARTNERS",
+      "role": "DENTAL BILLING AND INSURANCE VERIFICATION",
+      "headcount": 1,
+      "openedDate": "2026-02-24",
+      "offerDate": "2026-04-15",
+      "startDate": "",
+      "timeToHire": 50,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Backfill"
+    },
+    {
+      "client": "MOON",
+      "role": "PART-TIME SALES REPRESENTATIVE",
+      "headcount": 1,
+      "openedDate": "2026-03-02",
+      "offerDate": "2026-04-15",
+      "startDate": "2026-04-27",
+      "timeToHire": 44,
+      "timeToFill": 56,
+      "stage": "Offer Accepted",
+      "type": "New Logo"
+    },
+    {
+      "client": "AVARI EVENTS",
+      "role": "GRAPHIC DESIGNER",
+      "headcount": 1,
+      "openedDate": "2026-03-05",
+      "offerDate": "2026-04-15",
+      "startDate": "2026-04-29",
+      "timeToHire": 41,
+      "timeToFill": 55,
+      "stage": "Offer Accepted",
+      "type": "Backfill"
+    },
+    {
+      "client": "SOLUTION CONSULTANTS ICT (SolCo)",
+      "role": "IT SUPPORT ENGINEER",
+      "headcount": 1,
+      "openedDate": "2026-03-25",
+      "offerDate": "2026-04-20",
+      "startDate": "2026-05-05",
+      "timeToHire": 26,
+      "timeToFill": 41,
+      "stage": "Offer Accepted",
+      "type": "Ramp"
+    },
+    {
+      "client": "KOITA",
+      "role": "ACCOUNTANT",
+      "headcount": 1,
+      "openedDate": "2026-04-06",
+      "offerDate": "2026-04-25",
+      "startDate": "2026-04-29",
+      "timeToHire": 19,
+      "timeToFill": 23,
+      "stage": "Offer Accepted",
+      "type": "New Logo"
+    },
+    {
+      "client": "AVARI EVENTS",
+      "role": "PROJECT COORDINATOR",
+      "headcount": 1,
+      "openedDate": "2026-04-07",
+      "offerDate": "2026-04-15",
+      "startDate": "2026-05-04",
+      "timeToHire": 8,
+      "timeToFill": 27,
+      "stage": "Offer Accepted",
+      "type": "Backfill"
+    },
+    {
+      "client": "LEATHWAITE",
+      "role": "TECHNICAL SALESFORCE ADMINISTRATOR",
+      "headcount": 1,
+      "openedDate": "2026-04-08",
+      "offerDate": "2026-04-25",
+      "startDate": "2026-05-26",
+      "timeToHire": 17,
+      "timeToFill": 48,
+      "stage": "Offer Accepted",
+      "type": "Ramp"
+    },
+    {
+      "client": "AMERICAN COUNTERTOPS & FLOORING",
+      "role": "QUANTITY SURVEYOR",
+      "headcount": 1,
+      "openedDate": "2026-04-13",
+      "offerDate": "2026-04-30",
+      "startDate": "2026-05-18",
+      "timeToHire": 17,
+      "timeToFill": 35,
+      "stage": "Offer Accepted",
+      "type": "New Logo"
+    },
+    {
+      "client": "MIRION TECHNOLOGIES",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "openedDate": "2026-04-14",
+      "offerDate": "2026-04-25",
+      "startDate": "2026-04-20",
+      "timeToHire": 11,
+      "timeToFill": 6,
+      "stage": "Offer Accepted",
+      "type": "Backfill"
+    },
+    {
+      "client": "CREATIVE DENTAL PARTNERS",
+      "role": "DENTAL ACCOUNT RECEIVABLE",
+      "headcount": 1,
+      "openedDate": "2026-04-16",
+      "offerDate": "2026-04-27",
+      "startDate": "2026-05-11",
+      "timeToHire": 11,
+      "timeToFill": 25,
+      "stage": "Offer Accepted",
+      "type": "Backfill"
+    }
+  ],
+  "inOfferRoles": [
+    {
+      "client": "LEATHWAITE",
+      "role": "DATA ANALYST (TALENT & CRM INSIGHTS)",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "Offer Extended",
+      "type": "Ramp"
+    }
+  ],
+  "ongoingContractRoles": [],
+  "somCarryOver": [
+    {
+      "client": "IR CHIROPRACTIC",
+      "role": "VIRTUAL ASSISTANT - BUSINESS DEVELOPMENT REPRESENTATIVE",
+      "headcount": 2,
+      "opened": "2026-01-12",
+      "days": 79,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "LEATHWAITE",
+      "role": "TECHNICAL SALESFORCE ADMINISTRATOR",
+      "headcount": 1,
+      "opened": "2026-02-12",
+      "days": 48,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "LEATHWAITE",
+      "role": "DATA ANALYST (TALENT & CRM INSIGHTS)",
+      "headcount": 1,
+      "opened": "2026-02-12",
+      "days": 48,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "EARLY PR",
+      "role": "PART-TIME ADMINISTRATIVE ASSISTANT",
+      "headcount": 1,
+      "opened": "2026-02-18",
+      "days": 42,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "EARLY PR",
+      "role": "PR ACCOUNT MANAGER",
+      "headcount": 1,
+      "opened": "2026-02-18",
+      "days": 42,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "CREATIVE DENTAL PARTNERS",
+      "role": "DENTAL BILLING AND INSURANCE VERIFICATION",
+      "headcount": 1,
+      "opened": "2026-02-24",
+      "days": 36,
+      "type": "Backfill",
+      "status": "active"
+    },
+    {
+      "client": "MOON",
+      "role": "PART-TIME SALES REPRESENTATIVE",
+      "headcount": 1,
+      "opened": "2026-03-02",
+      "days": 30,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "AVARI EVENTS",
+      "role": "GRAPHIC DESIGNER",
+      "headcount": 1,
+      "opened": "2026-03-05",
+      "days": 27,
+      "type": "Backfill",
+      "status": "active"
+    },
+    {
+      "client": "THATCHER TECHNOLOGY GROUP",
+      "role": "FULLSTACK DEVELOPER",
+      "headcount": 2,
+      "opened": "2026-03-12",
+      "days": 20,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "NAJLA LAW FIRM",
+      "role": "DIGITAL MARKETING SPECIALIST (SEO & SOCIAL MEDIA)",
+      "headcount": 1,
+      "opened": "2026-03-25",
+      "days": 7,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "SOLUTION CONSULTANTS ICT (SolCo)",
+      "role": "IT SUPPORT ENGINEER",
+      "headcount": 1,
+      "opened": "2026-03-25",
+      "days": 7,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "THATCHER TECHNOLOGY GROUP",
+      "role": "SQL DEVELOPER",
+      "headcount": 1,
+      "opened": "2026-03-25",
+      "days": 7,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "C3 INGENUITY",
+      "role": "AI AUTOMATION ENGINEER",
+      "headcount": 1,
+      "opened": "2026-03-26",
+      "days": 6,
+      "type": "New Logo",
+      "status": "active"
+    }
+  ],
+  "business": {
+    "newLogoCount": 0,
+    "rampCount": 0,
+    "backfillCount": 0,
+    "newLogoJobs": [],
+    "rampJobs": [],
+    "backfillJobs": []
+  },
+  "aging": {
+    "avgNewLogo": 35,
+    "avgRamp": 25,
+    "avgBackfill": 32,
+    "fresh": 2,
+    "normal": 3,
+    "aging": 5,
+    "critical": 5,
+    "jobs": []
+  },
+  "avgTimeToHire": 27,
+  "avgTimeToFill": 0,
+  "activeRequisitions": 0,
+  "activeRequisitionsRoles": 0
+}

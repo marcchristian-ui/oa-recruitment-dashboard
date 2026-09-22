@@ -1,0 +1,96 @@
+{
+  "totalOpen": 9,
+  "startOfMonth": 15,
+  "startOfMonthRoles": 14,
+  "additionalInMonth": 9,
+  "additionalInMonthRoles": 8,
+  "monthlyTarget": 11,
+  "pipeline": {
+    "open": 9,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 12,
+    "paused": 3
+  },
+  "pausedRoles": [
+    {"client": "EARLY PR", "role": "PART-TIME ADMINISTRATIVE ASSISTANT", "headcount": 1, "pausedDate": "2026-05-11", "reason": "Other", "type": "Ramp"},
+    {"client": "ORGANIKA", "role": "CUSTOMER EXPERIENCE ASSISTANT", "headcount": 1, "pausedDate": "2026-05-20", "reason": "Client initiated", "type": "Backfill"},
+    {"client": "DR. YELTON", "role": "PART-TIME SEO MARKETING SPECIALIST", "headcount": 1, "pausedDate": "2026-05-25", "reason": "Other", "type": "Ramp"}
+  ],
+  "closedLostRoles": [],
+  "closedWon": [
+    {"client": "IR CHIROPRACTIC", "role": "VIRTUAL ASSISTANT - BUSINESS DEVELOPMENT REPRESENTATIVE", "headcount": 2, "openedDate": "2026-01-12", "offerDate": "2026-05-06", "startDate": "2026-05-13", "timeToHire": 114, "timeToFill": 121, "stage": "Started", "type": "New Logo"},
+    {"client": "C3 INGENUITY", "role": "AI AUTOMATION ENGINEER", "headcount": 1, "openedDate": "2026-03-26", "offerDate": "2026-05-05", "startDate": "2026-05-12", "timeToHire": 40, "timeToFill": 47, "stage": "Started", "type": "New Logo"},
+    {"client": "INDUSTRIAL DEVICE INVESTMENTS", "role": "EXECUTIVE ASSISTANT", "headcount": 1, "openedDate": "2026-04-01", "offerDate": "2026-05-14", "startDate": "2026-05-21", "timeToHire": 43, "timeToFill": 50, "stage": "Started", "type": "New Logo"},
+    {"client": "ZEPP", "role": "TECHNICAL SUPPORT", "headcount": 1, "openedDate": "2026-04-30", "offerDate": "2026-05-08", "startDate": "2026-05-15", "timeToHire": 8, "timeToFill": 15, "stage": "Started", "type": "Ramp"},
+    {"client": "ZEPP", "role": "TECHNICAL SUPPORT", "headcount": 1, "openedDate": "2026-04-30", "offerDate": "2026-05-25", "startDate": "2026-06-01", "timeToHire": 25, "timeToFill": 32, "stage": "Started", "type": "Ramp"},
+    {"client": "ORGANIKA", "role": "CUSTOMER EXPERIENCE ASSISTANT", "headcount": 1, "openedDate": "2026-04-17", "offerDate": "2026-05-13", "startDate": "2026-05-20", "timeToHire": 26, "timeToFill": 33, "stage": "Started", "type": "Backfill"},
+    {"client": "MIRION", "role": "SENIOR CUSTOMER SERVICE REPRESENTATIVE", "headcount": 1, "openedDate": "2026-04-24", "offerDate": "2026-05-05", "startDate": "2026-05-12", "timeToHire": 11, "timeToFill": 18, "stage": "Started", "type": "Backfill"},
+    {"client": "AVARI EVENTS", "role": "GRAPHIC DESIGNER", "headcount": 1, "openedDate": "2026-05-04", "offerDate": "2026-05-29", "startDate": "2026-06-05", "timeToHire": 25, "timeToFill": 32, "stage": "Started", "type": "Backfill"},
+    {"client": "BLUE FEATHER DESIGNS", "role": "DESIGN SUPPORT SPECIALIST (CAD)", "headcount": 1, "openedDate": "2026-05-15", "offerDate": "2026-05-30", "startDate": "2026-06-06", "timeToHire": 15, "timeToFill": 22, "stage": "Started", "type": "Backfill"},
+    {"client": "YEEZY", "role": "JUNIOR CUSTOMER SERVICE REPRESENTATIVE", "headcount": 2, "openedDate": "2026-05-20", "offerDate": "2026-05-22", "startDate": "2026-05-29", "timeToHire": 2, "timeToFill": 9, "stage": "Started", "type": "Ramp"}
+  ],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [],
+  "somCarryOver": [
+    {"client": "IR CHIROPRACTIC", "role": "VIRTUAL ASSISTANT - BUSINESS DEVELOPMENT REPRESENTATIVE", "headcount": 2, "opened": "2026-01-12", "days": 114, "type": "New Logo", "status": "won"},
+    {"client": "EARLY PR", "role": "PART-TIME ADMINISTRATIVE ASSISTANT", "headcount": 1, "opened": "2026-02-18", "days": 102, "type": "Ramp", "status": "on_hold"},
+    {"client": "THATCHER TECHNOLOGY GROUP", "role": "SQL DEVELOPER - DBA", "headcount": 1, "opened": "2026-03-25", "days": 67, "type": "Ramp", "status": "active"},
+    {"client": "C3 INGENUITY", "role": "AI AUTOMATION ENGINEER", "headcount": 1, "opened": "2026-03-26", "days": 40, "type": "New Logo", "status": "won"},
+    {"client": "INDUSTRIAL DEVICE INVESTMENTS", "role": "EXECUTIVE ASSISTANT", "headcount": 1, "opened": "2026-04-01", "days": 43, "type": "New Logo", "status": "won"},
+    {"client": "ORGANIKA", "role": "CUSTOMER EXPERIENCE ASSISTANT", "headcount": 1, "opened": "2026-04-17", "days": 26, "type": "Backfill", "status": "won"},
+    {"client": "ORGANIKA", "role": "CUSTOMER EXPERIENCE ASSISTANT", "headcount": 1, "opened": "2026-04-17", "days": 45, "type": "Backfill", "status": "on_hold"},
+    {"client": "GAVBIZ LTD", "role": "PART-TIME E-COMMERCE SPECIALIST", "headcount": 1, "opened": "2026-04-22", "days": 39, "type": "New Logo", "status": "active"},
+    {"client": "MIRION", "role": "SENIOR CUSTOMER SERVICE REPRESENTATIVE", "headcount": 1, "opened": "2026-04-24", "days": 11, "type": "Backfill", "status": "won"},
+    {"client": "DR. YELTON", "role": "PART-TIME SEO MARKETING SPECIALIST", "headcount": 1, "opened": "2026-04-24", "days": 37, "type": "Ramp", "status": "on_hold"},
+    {"client": "OPTIMA ENERGY", "role": "FULLSTACK SOFTWARE DEVELOPER", "headcount": 1, "opened": "2026-04-28", "days": 33, "type": "Backfill", "status": "active"},
+    {"client": "ZEPP", "role": "TECHNICAL SUPPORT", "headcount": 1, "opened": "2026-04-30", "days": 8, "type": "Ramp", "status": "won"},
+    {"client": "ZEPP", "role": "TECHNICAL SUPPORT", "headcount": 1, "opened": "2026-04-30", "days": 25, "type": "Ramp", "status": "won"},
+    {"client": "CUBEX UK LTD.", "role": "COMMERCIAL MANAGER / SR. QUANTITY SURVERYOR", "headcount": 1, "opened": "2026-04-30", "days": 31, "type": "New Logo", "status": "active"}
+  ],
+  "business": {
+    "newLogoCount": 2,
+    "rampCount": 3,
+    "backfillCount": 4,
+    "newLogoJobs": [
+      {"role": "PART-TIME E-COMMERCE SPECIALIST", "client": "GAVBIZ LTD", "type": "New Logo", "opened": "2026-04-22", "days": 39, "headcount": 1},
+      {"role": "COMMERCIAL MANAGER / SR. QUANTITY SURVERYOR", "client": "CUBEX UK LTD.", "type": "New Logo", "opened": "2026-04-30", "days": 31, "headcount": 1}
+    ],
+    "rampJobs": [
+      {"role": "SQL DEVELOPER - DBA", "client": "THATCHER TECHNOLOGY GROUP", "type": "Ramp", "opened": "2026-03-25", "days": 67, "headcount": 1},
+      {"role": "3RD LINE ENGINEER", "client": "SOLCO", "type": "Ramp", "opened": "2026-05-08", "days": 23, "headcount": 1},
+      {"role": "Technical Documentation Specialist", "client": "GULF COAST INFRARED", "type": "Ramp", "opened": "2026-05-13", "days": 18, "headcount": 1}
+    ],
+    "backfillJobs": [
+      {"role": "FULLSTACK SOFTWARE DEVELOPER", "client": "OPTIMA ENERGY", "type": "Backfill", "opened": "2026-04-28", "days": 33, "headcount": 1},
+      {"role": "BUSINESS DEVELOPMENT REPRESENTATIVE", "client": "IR CHIROPRACTIC", "type": "Backfill", "opened": "2026-05-20", "days": 11, "headcount": 1},
+      {"role": "SALES ADMIN ASSISTANT", "client": "ORGANIKA", "type": "Backfill", "opened": "2026-05-28", "days": 3, "headcount": 1},
+      {"role": "PART-TIME CSR & HR ADMIN SUPPORT", "client": "WHALE SWIM", "type": "Backfill", "opened": "2026-05-30", "days": 1, "headcount": 1}
+    ]
+  },
+  "aging": {
+    "avgNewLogo": 35,
+    "avgRamp": 36,
+    "avgBackfill": 12,
+    "fresh": 3,
+    "normal": 2,
+    "aging": 3,
+    "critical": 1,
+    "jobs": [
+      {"role": "SQL DEVELOPER - DBA", "client": "THATCHER TECHNOLOGY GROUP", "type": "Ramp", "opened": "2026-03-25", "days": 67, "headcount": 1},
+      {"role": "PART-TIME E-COMMERCE SPECIALIST", "client": "GAVBIZ LTD", "type": "New Logo", "opened": "2026-04-22", "days": 39, "headcount": 1},
+      {"role": "FULLSTACK SOFTWARE DEVELOPER", "client": "OPTIMA ENERGY", "type": "Backfill", "opened": "2026-04-28", "days": 33, "headcount": 1},
+      {"role": "COMMERCIAL MANAGER / SR. QUANTITY SURVERYOR", "client": "CUBEX UK LTD.", "type": "New Logo", "opened": "2026-04-30", "days": 31, "headcount": 1},
+      {"role": "3RD LINE ENGINEER", "client": "SOLCO", "type": "Ramp", "opened": "2026-05-08", "days": 23, "headcount": 1},
+      {"role": "Technical Documentation Specialist", "client": "GULF COAST INFRARED", "type": "Ramp", "opened": "2026-05-13", "days": 18, "headcount": 1},
+      {"role": "BUSINESS DEVELOPMENT REPRESENTATIVE", "client": "IR CHIROPRACTIC", "type": "Backfill", "opened": "2026-05-20", "days": 11, "headcount": 1},
+      {"role": "SALES ADMIN ASSISTANT", "client": "ORGANIKA", "type": "Backfill", "opened": "2026-05-28", "days": 3, "headcount": 1},
+      {"role": "PART-TIME CSR & HR ADMIN SUPPORT", "client": "WHALE SWIM", "type": "Backfill", "opened": "2026-05-30", "days": 1, "headcount": 1}
+    ]
+  },
+  "avgTimeToHire": 31,
+  "avgTimeToFill": 38,
+  "activeRequisitions": 9,
+  "activeRequisitionsRoles": 9
+}

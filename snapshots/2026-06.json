@@ -1,0 +1,85 @@
+{
+  "totalOpen": 10,
+  "startOfMonth": 9,
+  "startOfMonthRoles": 9,
+  "additionalInMonth": 26,
+  "additionalInMonthRoles": 9,
+  "monthlyTarget": 7,
+  "pipeline": {
+    "open": 10,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 17,
+    "paused": 7
+  },
+  "pausedRoles": [
+    {"client": "CUBEX UK LTD.", "role": "COMMERCIAL MANAGER / SR. QUANTITY SURVERYOR", "headcount": 1, "pausedDate": "2026-06-03", "reason": "Client initiated", "type": "New Logo"},
+    {"client": "OPTIMA ENERGY", "role": "FULLSTACK SOFTWARE DEVELOPER", "headcount": 1, "pausedDate": "2026-06-05", "reason": "Client initiated", "type": "Backfill"},
+    {"client": "WHALE SWIM", "role": "PART-TIME CSR & HR ADMIN SUPPORT", "headcount": 1, "pausedDate": "2026-06-10", "reason": "Client initiated", "type": "Backfill"},
+    {"client": "IR CHIROPRACTIC", "role": "BUSINESS DEVELOPMENT REPRESENTATIVE", "headcount": 1, "pausedDate": "2026-06-15", "reason": "Client initiated", "type": "Backfill"},
+    {"client": "THATCHER TECHNOLOGY GROUP", "role": "SQL DEVELOPER - DBA", "headcount": 1, "pausedDate": "2026-06-16", "reason": "Client initiated", "type": "Ramp"},
+    {"client": "ORGANIKA", "role": "GRAPHIC DESIGNER", "headcount": 1, "pausedDate": "2026-06-16", "reason": "Client Unresponsive", "type": "Backfill"},
+    {"client": "LEATHWAITE", "role": "DATA ENTRY SPECIALIST (DATA ANALYST)", "headcount": 1, "pausedDate": "2026-06-16", "reason": "Client Unresponsive", "type": "Ramp"}
+  ],
+  "closedLostRoles": [
+    {"client": "GULF COAST INFRARED", "role": "Technical Operations & Production Coordinator", "headcount": 1, "lostDate": "2026-06-04", "reason": "Other", "type": "Ramp"}
+  ],
+  "closedWon": [
+    {"client": "GAVBIZ LTD", "role": "PART-TIME E-COMMERCE SPECIALIST", "headcount": 1, "openedDate": "2026-04-22", "offerDate": "2026-06-09", "startDate": "2026-06-22", "timeToHire": 48, "timeToFill": 61, "stage": "Started", "type": "New Logo"},
+    {"client": "SolCo (Solution Consultants ICT)", "role": "IT SUPPORT ENGINEER / 3RD LINE ENGINEER", "headcount": 1, "openedDate": "2026-05-08", "offerDate": "2026-06-10", "startDate": "2026-06-22", "timeToHire": 33, "timeToFill": 45, "stage": "Started", "type": "Ramp"},
+    {"client": "ORGANIKA", "role": "SALES ADMIN ASSISTANT", "headcount": 1, "openedDate": "2026-05-28", "offerDate": "2026-06-22", "startDate": "2026-06-29", "timeToHire": 25, "timeToFill": 32, "stage": "Started", "type": "Backfill"},
+    {"client": "SolCo (Solution Consultants ICT)", "role": "IT SERVICE COORDINATOR", "headcount": 1, "openedDate": "2026-06-08", "offerDate": "2026-06-23", "startDate": "2026-06-30", "timeToHire": 15, "timeToFill": 22, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "JUNIOR CSR", "headcount": 9, "openedDate": "2026-06-15", "offerDate": "2026-06-25", "startDate": "2026-06-30", "timeToHire": 10, "timeToFill": 15, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "SENIOR CSR", "headcount": 2, "openedDate": "2026-06-15", "offerDate": "2026-06-25", "startDate": "2026-06-30", "timeToHire": 10, "timeToFill": 15, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "TECHNICAL TEAM LEAD", "headcount": 1, "openedDate": "2026-06-15", "offerDate": "2026-06-20", "startDate": "2026-06-27", "timeToHire": 5, "timeToFill": 12, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "QA SPECIALIST", "headcount": 1, "openedDate": "2026-06-15", "offerDate": "2026-06-25", "startDate": "2026-06-30", "timeToHire": 10, "timeToFill": 15, "stage": "Started", "type": "Ramp"}
+  ],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [],
+  "somCarryOver": [
+    {"client": "THATCHER TECHNOLOGY GROUP", "role": "SQL DEVELOPER - DBA", "headcount": 1, "opened": "2026-03-25", "days": 97, "type": "Ramp", "status": "on_hold"},
+    {"client": "GAVBIZ LTD", "role": "PART-TIME E-COMMERCE SPECIALIST", "headcount": 1, "opened": "2026-04-22", "days": 48, "type": "New Logo", "status": "won"},
+    {"client": "OPTIMA ENERGY", "role": "FULLSTACK SOFTWARE DEVELOPER", "headcount": 1, "opened": "2026-04-28", "days": 63, "type": "Backfill", "status": "on_hold"},
+    {"client": "CUBEX UK LTD.", "role": "COMMERCIAL MANAGER / SR. QUANTITY SURVERYOR", "headcount": 1, "opened": "2026-04-30", "days": 61, "type": "New Logo", "status": "on_hold"},
+    {"client": "SolCo (Solution Consultants ICT)", "role": "IT SUPPORT ENGINEER / 3RD LINE ENGINEER", "headcount": 1, "opened": "2026-05-08", "days": 33, "type": "Ramp", "status": "won"},
+    {"client": "GULF COAST INFRARED", "role": "Technical Operations & Production Coordinator", "headcount": 1, "opened": "2026-05-13", "days": 22, "type": "Ramp", "status": "lost"},
+    {"client": "IR CHIROPRACTIC", "role": "BUSINESS DEVELOPMENT REPRESENTATIVE", "headcount": 1, "opened": "2026-05-20", "days": 41, "type": "Backfill", "status": "on_hold"},
+    {"client": "ORGANIKA", "role": "SALES ADMIN ASSISTANT", "headcount": 1, "opened": "2026-05-28", "days": 25, "type": "Backfill", "status": "won"},
+    {"client": "WHALE SWIM", "role": "PART-TIME CSR & HR ADMIN SUPPORT", "headcount": 1, "opened": "2026-05-30", "days": 31, "type": "Backfill", "status": "on_hold"}
+  ],
+  "business": {
+    "newLogoCount": 1,
+    "rampCount": 8,
+    "backfillCount": 1,
+    "newLogoJobs": [
+      {"role": "CONTENT WRITER & DIGITAL PRODUCER", "client": "AUTO ACTION", "type": "New Logo", "opened": "2026-06-29", "days": 1, "headcount": 1}
+    ],
+    "rampJobs": [
+      {"role": "JUNIOR CSR", "client": "YEEZY", "type": "Ramp", "opened": "2026-06-15", "days": 15, "headcount": 6},
+      {"role": "SENIOR CSR", "client": "YEEZY", "type": "Ramp", "opened": "2026-06-15", "days": 15, "headcount": 2}
+    ],
+    "backfillJobs": [
+      {"role": "JUNIOR ACCOUNTANT", "client": "ORGANIKA", "type": "Backfill", "opened": "2026-06-26", "days": 4, "headcount": 1}
+    ]
+  },
+  "aging": {
+    "avgNewLogo": 1,
+    "avgRamp": 15,
+    "avgBackfill": 4,
+    "fresh": 2,
+    "normal": 8,
+    "aging": 0,
+    "critical": 0,
+    "jobs": [
+      {"role": "JUNIOR CSR", "client": "YEEZY", "type": "Ramp", "opened": "2026-06-15", "days": 15, "headcount": 6},
+      {"role": "SENIOR CSR", "client": "YEEZY", "type": "Ramp", "opened": "2026-06-15", "days": 15, "headcount": 2},
+      {"role": "JUNIOR ACCOUNTANT", "client": "ORGANIKA", "type": "Backfill", "opened": "2026-06-26", "days": 4, "headcount": 1},
+      {"role": "CONTENT WRITER & DIGITAL PRODUCER", "client": "AUTO ACTION", "type": "New Logo", "opened": "2026-06-29", "days": 1, "headcount": 1}
+    ]
+  },
+  "avgTimeToHire": 20,
+  "avgTimeToFill": 27,
+  "activeRequisitions": 10,
+  "activeRequisitionsRoles": 4
+}

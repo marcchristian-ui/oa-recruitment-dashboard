@@ -1,0 +1,352 @@
+{
+  "totalOpen": 10,
+  "startOfMonth": 9,
+  "startOfMonthRoles": 7,
+  "additionalInMonth": 12,
+  "additionalInMonthRoles": 7,
+  "monthlyTarget": 5,
+  "pipeline": {
+    "open": 10,
+    "forJobOffer": 1,
+    "ongoingContract": 1,
+    "offerAccepted": 7,
+    "started": 0,
+    "paused": 2
+  },
+  "pausedRoles": [
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "COLLECTIONS SPECIALIST",
+      "headcount": 2,
+      "pausedDate": "2026-09-01",
+      "reason": "Client paused hiring",
+      "type": "Ramp"
+    }
+  ],
+  "closedLostRoles": [],
+  "closedWon": [
+    {
+      "client": "PROPLATE",
+      "role": "MARKETING SUPPORT",
+      "headcount": 1,
+      "openedDate": "2026-08-24",
+      "offerDate": "2026-09-10",
+      "startDate": "",
+      "timeToHire": 17,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp"
+    },
+    {
+      "client": "PAYKONCEPT",
+      "role": "EXECUTIVE ASSISTANT & SALES SUPPORT",
+      "headcount": 1,
+      "openedDate": "2026-09-01",
+      "offerDate": "2026-09-12",
+      "startDate": "",
+      "timeToHire": 11,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "New Logo"
+    },
+    {
+      "client": "AUDIT DATA",
+      "role": "TECH LEAD",
+      "headcount": 1,
+      "openedDate": "2026-07-15",
+      "offerDate": "2026-09-17",
+      "startDate": "",
+      "timeToHire": 64,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "New Logo",
+      "candidate": "Mark Angelo T. Suguitan"
+    },
+    {
+      "client": "ZEPP",
+      "role": "TECHNICAL SUPPORT",
+      "headcount": 1,
+      "openedDate": "2026-09-09",
+      "offerDate": "2026-09-16",
+      "startDate": "",
+      "timeToHire": 7,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Margie Santiago"
+    },
+    {
+      "client": "ZEPP",
+      "role": "TECHNICAL SUPPORT",
+      "headcount": 1,
+      "openedDate": "2026-09-09",
+      "offerDate": "2026-09-21",
+      "startDate": "",
+      "timeToHire": 12,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Janica Nina Alvarez"
+    },
+    {
+      "client": "AUDIT DATA",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)",
+      "headcount": 1,
+      "openedDate": "2026-07-15",
+      "offerDate": "2026-09-21",
+      "startDate": "",
+      "timeToHire": 68,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "New Logo",
+      "candidate": "RUEL B. SUCGANG"
+    },
+    {
+      "client": "A BRIGHTHOUSE COMPUTER CENTER",
+      "role": "IT HELPDESK ENGINEER",
+      "headcount": 1,
+      "openedDate": "2026-09-08",
+      "offerDate": "2026-09-21",
+      "startDate": "",
+      "timeToHire": 13,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "New Logo",
+      "candidate": "TRISHA PARONG"
+    }
+  ],
+  "inOfferRoles": [
+    {
+      "client": "ADAUGEO",
+      "role": "LAB PATIENT ACCOUNT CSR",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "For Job Offer",
+      "type": "Backfill",
+      "candidate": "Ruscel Joy Sta. Ana Dizon"
+    }
+  ],
+  "ongoingContractRoles": [
+    {
+      "client": "BLUESKY",
+      "role": "INVENTORY ANALYST",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "JESSICA RABANG"
+    }
+  ],
+  "somCarryOver": [
+    {
+      "client": "AUDIT DATA",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+      "headcount": 1,
+      "opened": "2026-07-15",
+      "days": 69,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "AUDIT DATA",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
+      "headcount": 1,
+      "opened": "2026-07-15",
+      "days": 69,
+      "type": "New Logo",
+      "status": "won"
+    },
+    {
+      "client": "AUDIT DATA",
+      "role": "TECH LEAD",
+      "headcount": 1,
+      "opened": "2026-07-15",
+      "days": 69,
+      "type": "New Logo",
+      "status": "won"
+    },
+    {
+      "client": "BLUESKY",
+      "role": "INVENTORY ANALYST",
+      "headcount": 1,
+      "opened": "2026-08-04",
+      "days": 49,
+      "type": "Ramp",
+      "status": "won"
+    },
+    {
+      "client": "THRIVIAE",
+      "role": "SALES DEVELOPMENT REPRESENTATIVE",
+      "headcount": 1,
+      "opened": "2026-08-06",
+      "days": 47,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "COLLECTIONS SPECIALIST",
+      "headcount": 2,
+      "opened": "2026-08-12",
+      "days": 41,
+      "type": "Ramp",
+      "status": "on_hold"
+    },
+    {
+      "client": "SolCo (Solution Consultants ICT)",
+      "role": "IT SUPPORT ENGINEER",
+      "headcount": 1,
+      "opened": "2026-08-19",
+      "days": 34,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "PROPLATE",
+      "role": "MARKETING SUPPORT",
+      "headcount": 1,
+      "opened": "2026-08-24",
+      "days": 29,
+      "type": "Ramp",
+      "status": "won"
+    }
+  ],
+  "business": {
+    "newLogoCount": 3,
+    "rampCount": 3,
+    "backfillCount": 1,
+    "newLogoJobs": [
+      {
+        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+        "client": "AUDIT DATA",
+        "type": "New Logo",
+        "opened": "2026-07-15",
+        "days": 69,
+        "headcount": 1
+      },
+      {
+        "role": "SALES DEVELOPMENT REPRESENTATIVE",
+        "client": "THRIVIAE",
+        "type": "New Logo",
+        "opened": "2026-08-06",
+        "days": 47,
+        "headcount": 1
+      },
+      {
+        "role": "INTEGRATION SPECIALIST",
+        "client": "DEMAND BRIDGE",
+        "type": "New Logo",
+        "opened": "2026-09-01",
+        "days": 21,
+        "headcount": 1
+      }
+    ],
+    "rampJobs": [
+      {
+        "role": "IT SUPPORT ENGINEER",
+        "client": "SolCo (Solution Consultants ICT)",
+        "type": "Ramp",
+        "opened": "2026-08-19",
+        "days": 34,
+        "headcount": 1
+      },
+      {
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-09-01",
+        "days": 21,
+        "headcount": 3
+      },
+      {
+        "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
+        "client": "ZEPP",
+        "type": "Ramp",
+        "opened": "2026-09-09",
+        "days": 13,
+        "headcount": 1
+      }
+    ],
+    "backfillJobs": [
+      {
+        "role": "PRE-BILLING SPECIALIST",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-14",
+        "days": 8,
+        "headcount": 2
+      }
+    ]
+  },
+  "aging": {
+    "avgNewLogo": 45,
+    "avgRamp": 22,
+    "avgBackfill": 8,
+    "fresh": 3,
+    "normal": 4,
+    "aging": 1,
+    "critical": 2,
+    "jobs": [
+      {
+        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+        "client": "AUDIT DATA",
+        "type": "New Logo",
+        "opened": "2026-07-15",
+        "days": 69,
+        "headcount": 1
+      },
+      {
+        "role": "SALES DEVELOPMENT REPRESENTATIVE",
+        "client": "THRIVIAE",
+        "type": "New Logo",
+        "opened": "2026-08-06",
+        "days": 47,
+        "headcount": 1
+      },
+      {
+        "role": "IT SUPPORT ENGINEER",
+        "client": "SolCo (Solution Consultants ICT)",
+        "type": "Ramp",
+        "opened": "2026-08-19",
+        "days": 34,
+        "headcount": 1
+      },
+      {
+        "role": "INTEGRATION SPECIALIST",
+        "client": "DEMAND BRIDGE",
+        "type": "New Logo",
+        "opened": "2026-09-01",
+        "days": 21,
+        "headcount": 1
+      },
+      {
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-09-01",
+        "days": 21,
+        "headcount": 3
+      },
+      {
+        "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
+        "client": "ZEPP",
+        "type": "Ramp",
+        "opened": "2026-09-09",
+        "days": 13,
+        "headcount": 1
+      },
+      {
+        "role": "PRE-BILLING SPECIALIST",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-14",
+        "days": 8,
+        "headcount": 2
+      }
+    ]
+  },
+  "avgTimeToHire": 27,
+  "avgTimeToFill": 0,
+  "activeRequisitions": 12,
+  "activeRequisitionsRoles": 7
+}

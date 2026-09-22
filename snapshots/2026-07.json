@@ -1,0 +1,92 @@
+{
+  "totalOpen": 17,
+  "startOfMonth": 10,
+  "startOfMonthRoles": 4,
+  "additionalInMonth": 28,
+  "additionalInMonthRoles": 19,
+  "monthlyTarget": 7,
+  "pipeline": {
+    "open": 17,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 4,
+    "started": 15,
+    "paused": 2
+  },
+  "pausedRoles": [
+    {"client": "ORGANIKA", "role": "JUNIOR ACCOUNTANT", "headcount": 1, "pausedDate": "2026-07-01", "reason": "Client initiated", "type": "Backfill"},
+    {"client": "AUTO ACTION", "role": "CONTENT WRITER & DIGITAL PRODUCER", "headcount": 1, "pausedDate": "2026-07-15", "reason": "Client initiated", "type": "New Logo"}
+  ],
+  "closedLostRoles": [],
+  "closedWon": [
+    {"client": "YEEZY", "role": "JUNIOR CSR", "headcount": 6, "openedDate": "2026-06-15", "offerDate": "2026-07-01", "startDate": "2026-07-08", "timeToHire": 16, "timeToFill": 23, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "SENIOR CSR", "headcount": 2, "openedDate": "2026-06-15", "offerDate": "2026-07-01", "startDate": "2026-07-08", "timeToHire": 16, "timeToFill": 23, "stage": "Started", "type": "Ramp", "candidates": ["Dinalyn Alcantara", "Sheryll Tiongco"]},
+    {"client": "YEEZY", "role": "JUNIOR CSR (additional)", "headcount": 4, "openedDate": "2026-06-15", "offerDate": "2026-07-14", "startDate": "2026-07-21", "timeToHire": 29, "timeToFill": 36, "stage": "Started", "type": "Ramp"},
+    {"client": "MIRION", "role": "BILLING ANALYST", "headcount": 1, "openedDate": "2026-07-01", "offerDate": "2026-07-14", "startDate": "2026-07-20", "timeToHire": 13, "timeToFill": 19, "stage": "Started", "type": "Ramp"},
+    {"client": "ADAUGEO", "role": "AZURE CLOUD ENGINEER", "headcount": 1, "openedDate": "2026-07-01", "offerDate": "2026-07-15", "startDate": "2026-08-06", "timeToHire": 14, "timeToFill": null, "stage": "Offer Accepted", "type": "Backfill"},
+    {"client": "CREATIVE DENTAL PARTNER", "role": "DENTAL ACCOUNT RECEIVABLE", "headcount": 1, "openedDate": "2026-07-06", "offerDate": "2026-07-27", "startDate": "2026-08-03", "timeToHire": 21, "timeToFill": 28, "stage": "Started", "type": "Ramp"},
+    {"client": "IAULA", "role": "ADMIN VIRTUAL ASSISTANT (PROJECT BASED)", "headcount": 1, "openedDate": "2026-07-20", "offerDate": "2026-08-01", "startDate": "2026-08-03", "timeToHire": 12, "timeToFill": 14, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "JUNIOR CSR (Jul 28 batch)", "headcount": 2, "openedDate": "2026-07-28", "offerDate": "2026-07-30", "startDate": "2026-08-17", "timeToHire": 2, "timeToFill": 20, "stage": "Offer Accepted", "type": "Ramp"},
+    {"client": "YEEZY", "role": "JUNIOR CSR (Jul 30 batch)", "headcount": 1, "openedDate": "2026-07-30", "offerDate": "2026-08-03", "startDate": "2026-08-17", "timeToHire": 4, "timeToFill": 18, "stage": "Offer Accepted", "type": "Ramp"}
+  ],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [],
+  "somCarryOver": [
+    {"client": "YEEZY", "role": "JUNIOR CSR", "headcount": 6, "opened": "2026-06-15", "days": 49, "type": "Ramp", "status": "won"},
+    {"client": "YEEZY", "role": "SENIOR CSR", "headcount": 2, "opened": "2026-06-15", "days": 49, "type": "Ramp", "status": "won"},
+    {"client": "ORGANIKA", "role": "JUNIOR ACCOUNTANT", "headcount": 1, "opened": "2026-06-24", "days": 40, "type": "Backfill", "status": "on_hold"},
+    {"client": "AUTO ACTION", "role": "CONTENT WRITER & DIGITAL PRODUCER", "headcount": 1, "opened": "2026-06-29", "days": 35, "type": "New Logo", "status": "on_hold"}
+  ],
+  "business": {
+    "newLogoCount": 9,
+    "rampCount": 5,
+    "backfillCount": 3,
+    "newLogoJobs": [
+      {"role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 2},
+      {"role": "TECH LEAD", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "PRODUCT OWNER", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "GENERAL QA ENGINEER", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 2},
+      {"role": "AGILE PROJECT LEAD", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "DATA ARCHITECT", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "JUNIOR IT HELPDESK", "client": "A BRIGHTHOUSE COMPUTER CENTER", "type": "New Logo", "opened": "2026-07-28", "days": 6, "headcount": 1}
+    ],
+    "rampJobs": [
+      {"role": "BILLING ANALYST", "client": "MIRION", "type": "Ramp", "opened": "2026-07-01", "days": 33, "headcount": 1},
+      {"role": "BUREAU ANALYST", "client": "OPTIMA ENERGY", "type": "Ramp", "opened": "2026-07-27", "days": 7, "headcount": 1},
+      {"role": "TECHNICAL SUPPORT", "client": "ZEPP", "type": "Ramp", "opened": "2026-07-29", "days": 5, "headcount": 3}
+    ],
+    "backfillJobs": [
+      {"role": "DESIGN SUPPORT SPECIALIST (CAD)", "client": "BLUE FEATHER DESIGN", "type": "Backfill", "opened": "2026-07-01", "days": 33, "headcount": 1},
+      {"role": "LAB PATIENT ACCOUNT CSR", "client": "ADAUGEO", "type": "Backfill", "opened": "2026-07-20", "days": 14, "headcount": 1},
+      {"role": "CUSTOMER EXPERIENCE ASSISTANT", "client": "ORGANIKA", "type": "Backfill", "opened": "2026-07-24", "days": 10, "headcount": 1}
+    ]
+  },
+  "aging": {
+    "avgNewLogo": 17,
+    "avgRamp": 15,
+    "avgBackfill": 19,
+    "fresh": 7,
+    "normal": 8,
+    "aging": 2,
+    "critical": 0,
+    "jobs": [
+      {"role": "BILLING ANALYST", "client": "MIRION", "type": "Ramp", "opened": "2026-07-01", "days": 33, "headcount": 1},
+      {"role": "DESIGN SUPPORT SPECIALIST (CAD)", "client": "BLUE FEATHER DESIGN", "type": "Backfill", "opened": "2026-07-01", "days": 33, "headcount": 1},
+      {"role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 2},
+      {"role": "TECH LEAD", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "PRODUCT OWNER", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "GENERAL QA ENGINEER", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 2},
+      {"role": "AGILE PROJECT LEAD", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "DATA ARCHITECT", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 19, "headcount": 1},
+      {"role": "LAB PATIENT ACCOUNT CSR", "client": "ADAUGEO", "type": "Backfill", "opened": "2026-07-20", "days": 14, "headcount": 1},
+      {"role": "CUSTOMER EXPERIENCE ASSISTANT", "client": "ORGANIKA", "type": "Backfill", "opened": "2026-07-24", "days": 10, "headcount": 1},
+      {"role": "BUREAU ANALYST", "client": "OPTIMA ENERGY", "type": "Ramp", "opened": "2026-07-27", "days": 7, "headcount": 1},
+      {"role": "JUNIOR IT HELPDESK", "client": "A BRIGHTHOUSE COMPUTER CENTER", "type": "New Logo", "opened": "2026-07-28", "days": 6, "headcount": 1},
+      {"role": "TECHNICAL SUPPORT", "client": "ZEPP", "type": "Ramp", "opened": "2026-07-29", "days": 5, "headcount": 3}
+    ]
+  },
+  "avgTimeToHire": 14,
+  "avgTimeToFill": 24,
+  "activeRequisitions": 17,
+  "activeRequisitionsRoles": 13
+}

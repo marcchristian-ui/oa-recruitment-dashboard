@@ -1,0 +1,92 @@
+{
+  "totalOpen": 9,
+  "startOfMonth": 17,
+  "startOfMonthRoles": 13,
+  "additionalInMonth": 11,
+  "additionalInMonthRoles": 8,
+  "monthlyTarget": 12,
+  "pipeline": {
+    "open": 9,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 7,
+    "started": 7,
+    "paused": 4
+  },
+  "pausedRoles": [
+    {"client": "ZEPP", "role": "TECHNICAL SUPPORT", "headcount": 3, "pausedDate": "2026-08-17", "reason": "Client finalizing internal discussions on the 3 agent positions (per Michael)", "type": "Ramp"},
+    {"client": "OPTIMA ENERGY", "role": "BUREAU ANALYST", "headcount": 1, "pausedDate": "2026-09-01", "reason": "Client paused hiring", "type": "Ramp"}
+  ],
+  "closedLostRoles": [
+    {"client": "BLUE FEATHER DESIGN", "role": "DESIGN SUPPORT SPECIALIST (CAD)", "headcount": 1, "lostDate": "2026-08-17", "reason": "Client decided not to continue due to medical concern; will reach out when ready", "type": "Backfill"}
+  ],
+  "closedWon": [
+    {"client": "MIRION", "role": "BILLING ANALYST", "headcount": 1, "openedDate": "2026-07-01", "offerDate": "2026-08-01", "startDate": "2026-08-06", "timeToHire": 31, "timeToFill": 36, "stage": "Started", "type": "Ramp"},
+    {"client": "AUDIT DATA", "role": "PRODUCT OWNER", "headcount": 1, "openedDate": "2026-07-15", "offerDate": "2026-08-05", "startDate": "2026-08-24", "timeToHire": 21, "timeToFill": 40, "stage": "Started", "type": "New Logo"},
+    {"client": "AUDIT DATA", "role": "DATA ARCHITECT", "headcount": 1, "openedDate": "2026-07-15", "offerDate": "2026-08-05", "startDate": "2026-09-01", "timeToHire": 21, "timeToFill": 48, "stage": "Started", "type": "New Logo"},
+    {"client": "AUDIT DATA", "role": "GENERAL QA ENGINEER", "headcount": 2, "openedDate": "2026-07-15", "offerDate": "2026-08-24", "startDate": "2026-09-21", "timeToHire": 40, "timeToFill": 68, "stage": "Offer Accepted", "type": "New Logo"},
+    {"client": "AUDIT DATA", "role": "AGILE PROJECT LEAD", "headcount": 1, "openedDate": "2026-07-15", "offerDate": "2026-08-20", "startDate": "2026-09-01", "timeToHire": 36, "timeToFill": 48, "stage": "Offer Accepted", "type": "New Logo"},
+    {"client": "ADAUGEO", "role": "LAB PATIENT ACCOUNT CSR", "headcount": 1, "openedDate": "2026-07-20", "offerDate": "2026-08-24", "startDate": "2026-09-01", "timeToHire": 35, "timeToFill": 43, "stage": "Offer Accepted", "type": "Backfill"},
+    {"client": "ORGANIKA", "role": "SALES SUPPORT COORDINATOR", "headcount": 1, "openedDate": "2026-07-24", "offerDate": "2026-08-17", "startDate": "2026-08-19", "timeToHire": 24, "timeToFill": 26, "stage": "Offer Accepted", "type": "Backfill"},
+    {"client": "DEMAND BRIDGE", "role": "CHILI TEMPLATE DESIGNER", "headcount": 1, "openedDate": "2026-08-06", "offerDate": "2026-08-24", "startDate": "2026-09-14", "timeToHire": 18, "timeToFill": 39, "stage": "Offer Accepted", "type": "New Logo"},
+    {"client": "A BRIGHTHOUSE COMPUTER CENTER", "role": "IT HELPDESK ENGINEER", "headcount": 1, "openedDate": "2026-07-28", "offerDate": "2026-08-25", "startDate": "2026-10-12", "timeToHire": 28, "timeToFill": 76, "stage": "Offer Accepted", "type": "New Logo"},
+    {"client": "YEEZY", "role": "JUNIOR CSR", "headcount": 3, "openedDate": "2026-08-06", "offerDate": "2026-08-17", "startDate": "2026-08-18", "timeToHire": 11, "timeToFill": 12, "stage": "Started", "type": "Ramp"},
+    {"client": "MIRION", "role": "CS ADMIN", "headcount": 1, "openedDate": "2026-08-12", "offerDate": "2026-08-17", "startDate": "2026-08-18", "timeToHire": 5, "timeToFill": 6, "stage": "Started", "type": "Ramp"}
+  ],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [],
+  "somCarryOver": [
+    {"client": "BLUE FEATHER DESIGN", "role": "DESIGN SUPPORT SPECIALIST (CAD)", "headcount": 1, "opened": "2026-07-01", "days": 62, "type": "Backfill", "status": "lost"},
+    {"client": "MIRION", "role": "BILLING ANALYST", "headcount": 1, "opened": "2026-07-01", "days": 62, "type": "Ramp", "status": "won"},
+    {"client": "AUDIT DATA", "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)", "headcount": 2, "opened": "2026-07-15", "days": 48, "type": "New Logo", "status": "active"},
+    {"client": "AUDIT DATA", "role": "TECH LEAD", "headcount": 1, "opened": "2026-07-15", "days": 48, "type": "New Logo", "status": "active"},
+    {"client": "AUDIT DATA", "role": "PRODUCT OWNER", "headcount": 1, "opened": "2026-07-15", "days": 48, "type": "New Logo", "status": "won"},
+    {"client": "AUDIT DATA", "role": "GENERAL QA ENGINEER", "headcount": 2, "opened": "2026-07-15", "days": 48, "type": "New Logo", "status": "won"},
+    {"client": "AUDIT DATA", "role": "AGILE PROJECT LEAD", "headcount": 1, "opened": "2026-07-15", "days": 48, "type": "New Logo", "status": "won"},
+    {"client": "AUDIT DATA", "role": "DATA ARCHITECT", "headcount": 1, "opened": "2026-07-15", "days": 48, "type": "New Logo", "status": "won"},
+    {"client": "ADAUGEO", "role": "LAB PATIENT ACCOUNT CSR", "headcount": 1, "opened": "2026-07-20", "days": 43, "type": "Backfill", "status": "won"},
+    {"client": "ORGANIKA", "role": "SALES SUPPORT COORDINATOR", "headcount": 1, "opened": "2026-07-24", "days": 39, "type": "Backfill", "status": "won"},
+    {"client": "OPTIMA ENERGY", "role": "BUREAU ANALYST", "headcount": 1, "opened": "2026-07-27", "days": 36, "type": "Ramp", "status": "on_hold"},
+    {"client": "A BRIGHTHOUSE COMPUTER CENTER", "role": "JUNIOR IT HELPDESK", "headcount": 1, "opened": "2026-07-28", "days": 35, "type": "New Logo", "status": "won"},
+    {"client": "ZEPP", "role": "TECHNICAL SUPPORT", "headcount": 3, "opened": "2026-07-29", "days": 34, "type": "Ramp", "status": "on_hold"}
+  ],
+  "business": {
+    "newLogoCount": 4,
+    "rampCount": 5,
+    "backfillCount": 0,
+    "newLogoJobs": [
+      {"role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 48, "headcount": 2},
+      {"role": "TECH LEAD", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 48, "headcount": 1},
+      {"role": "SALES DEVELOPMENT REPRESENTATIVE", "client": "THRIVIAE", "type": "New Logo", "opened": "2026-08-06", "days": 26, "headcount": 1}
+    ],
+    "rampJobs": [
+      {"role": "INVENTORY ANALYST", "client": "BLUESKY", "type": "Ramp", "opened": "2026-08-04", "days": 28, "headcount": 1},
+      {"role": "COLLECTIONS SPECIALIST", "client": "MIRION (NUCMED)", "type": "Ramp", "opened": "2026-08-12", "days": 20, "headcount": 2},
+      {"role": "IT SUPPORT ENGINEER", "client": "SolCo (Solution Consultants ICT)", "type": "Ramp", "opened": "2026-08-19", "days": 13, "headcount": 1},
+      {"role": "MARKETING SUPPORT", "client": "PROPLATE", "type": "Ramp", "opened": "2026-08-24", "days": 8, "headcount": 1}
+    ],
+    "backfillJobs": []
+  },
+  "aging": {
+    "avgNewLogo": 43,
+    "avgRamp": 18,
+    "avgBackfill": 0,
+    "fresh": 2,
+    "normal": 4,
+    "aging": 0,
+    "critical": 3,
+    "jobs": [
+      {"role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 48, "headcount": 2},
+      {"role": "TECH LEAD", "client": "AUDIT DATA", "type": "New Logo", "opened": "2026-07-15", "days": 48, "headcount": 1},
+      {"role": "INVENTORY ANALYST", "client": "BLUESKY", "type": "Ramp", "opened": "2026-08-04", "days": 28, "headcount": 1},
+      {"role": "SALES DEVELOPMENT REPRESENTATIVE", "client": "THRIVIAE", "type": "New Logo", "opened": "2026-08-06", "days": 26, "headcount": 1},
+      {"role": "COLLECTIONS SPECIALIST", "client": "MIRION (NUCMED)", "type": "Ramp", "opened": "2026-08-12", "days": 20, "headcount": 2},
+      {"role": "IT SUPPORT ENGINEER", "client": "SolCo (Solution Consultants ICT)", "type": "Ramp", "opened": "2026-08-19", "days": 13, "headcount": 1},
+      {"role": "MARKETING SUPPORT", "client": "PROPLATE", "type": "Ramp", "opened": "2026-08-24", "days": 8, "headcount": 1}
+    ]
+  },
+  "avgTimeToHire": 22,
+  "avgTimeToFill": 25,
+  "activeRequisitions": 9,
+  "activeRequisitionsRoles": 7
+}

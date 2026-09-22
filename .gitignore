@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.cache/
+
+# Local tunnel/runtime artifacts — do NOT commit
+scripts/cloudflared.exe
+scripts/logs/
+*.exe
+*.log
+*.log.err
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code local settings (paths/hooks specific to this workstation)
+.claude/

@@ -1,0 +1,133 @@
+{
+  "totalOpen": 0,
+  "startOfMonth": 17,
+  "startOfMonthRoles": 16,
+  "additionalInMonth": 36,
+  "additionalInMonthRoles": 18,
+  "monthlyTarget": 12,
+  "pipeline": {
+    "open": 0,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 9,
+    "paused": 1
+  },
+  "pausedRoles": [
+    {
+      "client": "VALSOFT",
+      "role": "AI DEVELOPER",
+      "headcount": 1,
+      "pausedDate": "2026-01-05",
+      "reason": "Unspecified",
+      "type": "New Logo"
+    }
+  ],
+  "closedLostRoles": [
+    {
+      "client": "—",
+      "role": "(manual adjustment to match tracker total)",
+      "headcount": 1,
+      "lostDate": "2026-01-31",
+      "reason": "Manual adjustment",
+      "type": "Organic"
+    }
+  ],
+  "closedWon": [
+    {
+      "client": "MIRION TECHNOLOGIES",
+      "role": "COLLECTIONS SPECIALIST",
+      "headcount": 1,
+      "startDate": "2026-02-05",
+      "stage": "Started",
+      "type": "Backfill",
+      "openedDate": "2026-01-14",
+      "timeToFill": 22,
+      "timeToHire": 22
+    },
+    {
+      "client": "NAJLA LAW FIRM",
+      "role": "LEGAL ASSISTANT",
+      "headcount": 1,
+      "startDate": "2026-01-23",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2025-11-14",
+      "timeToFill": 70,
+      "timeToHire": 70
+    },
+    {
+      "client": "PROPLATE",
+      "role": "MARKETING SUPPORT",
+      "headcount": 1,
+      "startDate": "2026-02-23",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2025-12-09",
+      "timeToFill": 76,
+      "timeToHire": 76
+    },
+    {
+      "client": "THE BOTANIST",
+      "role": "PART-TIME VIRTUAL ASSISTANT",
+      "headcount": 1,
+      "startDate": "2026-01-26",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2025-12-16",
+      "timeToFill": 41,
+      "timeToHire": 41
+    },
+    {
+      "client": "ORGANIKA",
+      "role": "SALES ADMIN ASSISTANT",
+      "headcount": 1,
+      "startDate": "2026-02-04",
+      "stage": "Started",
+      "type": "Backfill",
+      "openedDate": "2025-12-22",
+      "timeToFill": 44,
+      "timeToHire": 44
+    },
+    {
+      "client": "THATCHER TECHNOLOGY GROUP",
+      "role": "SQL DEVELOPER",
+      "headcount": 1,
+      "startDate": "2026-01-19",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2025-12-22",
+      "timeToFill": 28,
+      "timeToHire": 28
+    },
+    {
+      "client": "IAULA.EDU",
+      "role": "VIRTUAL ASSISTANT",
+      "headcount": 3,
+      "startDate": "2026-02-17",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-01-14",
+      "timeToFill": 34,
+      "timeToHire": 34
+    }
+  ],
+  "business": {
+    "newLogoCount": 0,
+    "rampCount": 0,
+    "backfillCount": 0,
+    "newLogoJobs": [],
+    "rampJobs": [],
+    "backfillJobs": []
+  },
+  "aging": {
+    "avgNewLogo": 42,
+    "avgRamp": 32,
+    "avgBackfill": 28,
+    "fresh": 0,
+    "normal": 3,
+    "aging": 8,
+    "critical": 6,
+    "jobs": []
+  }
+}

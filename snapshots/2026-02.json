@@ -1,0 +1,282 @@
+{
+  "totalOpen": 0,
+  "startOfMonth": 42,
+  "startOfMonthRoles": 25,
+  "additionalInMonth": 17,
+  "additionalInMonthRoles": 16,
+  "monthlyTarget": 29,
+  "pipeline": {
+    "open": 0,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 30,
+    "paused": 7
+  },
+  "pausedRoles": [
+    {
+      "client": "TLC SOLUTIONS",
+      "role": "CLIENT CARE COORDINATOR",
+      "headcount": 1,
+      "pausedDate": "2026-02-15",
+      "reason": "Other",
+      "type": "Ramp"
+    },
+    {
+      "client": "SAVE ON BRANSON",
+      "role": "DATA SPECIALIST (PART-TIME)",
+      "headcount": 1,
+      "pausedDate": "2026-02-12",
+      "reason": "Other",
+      "type": "Backfill"
+    },
+    {
+      "client": "FISCUS BILLING INC.",
+      "role": "MEDICAL BILLING DATA ENTRY SPECIALIST",
+      "headcount": 1,
+      "pausedDate": "2026-02-15",
+      "reason": "Unspecified",
+      "type": "Ramp"
+    },
+    {
+      "client": "SOLEIRE",
+      "role": "PART-TIME AUTOCAD OPERATOR",
+      "headcount": 1,
+      "pausedDate": "2026-02-15",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "WEBARC",
+      "role": "SALES DEVELOPMENT REPRESENTATIVE (IT)",
+      "headcount": 1,
+      "pausedDate": "2026-02-12",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "WEBARC",
+      "role": "SENIOR SALES DEVELOPMENT REPRESENTATIVE (IT)",
+      "headcount": 1,
+      "pausedDate": "2026-02-12",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "DEFINED MARKETING",
+      "role": "WORDPRESS DEVELOPER",
+      "headcount": 1,
+      "pausedDate": "2026-02-15",
+      "reason": "Other",
+      "type": "New Logo"
+    }
+  ],
+  "closedLostRoles": [
+    {
+      "client": "P&D PAINTING CT INC.",
+      "role": "DIGITAL MARKETING SPECIALIST",
+      "headcount": 1,
+      "lostDate": "2026-02-15",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "P&D PAINTING CT INC.",
+      "role": "ESTIMATOR",
+      "headcount": 1,
+      "lostDate": "2026-02-15",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "P&D PAINTING CT INC.",
+      "role": "SALES REPRESENTATIVE",
+      "headcount": 2,
+      "lostDate": "2026-02-05",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "THATCHER TECHNOLOGY GROUP",
+      "role": "SENIOR SOFTWARE DEVELOPER",
+      "headcount": 1,
+      "lostDate": "2026-02-15",
+      "reason": "Unspecified",
+      "type": "Ramp"
+    }
+  ],
+  "closedWon": [
+    {
+      "client": "MIRION TECHNOLOGIES",
+      "role": "BILLING ANALYST",
+      "headcount": 2,
+      "startDate": "2026-03-09",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2025-12-11",
+      "timeToFill": 88,
+      "timeToHire": 88
+    },
+    {
+      "client": "MIRION TECHNOLOGIES",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "startDate": "2026-02-11",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2025-12-17",
+      "timeToFill": 56,
+      "timeToHire": 56
+    },
+    {
+      "client": "BOOKOUTLET.SE",
+      "role": "CUSTOMER SERVICE REPRESENTATIVE",
+      "headcount": 1,
+      "startDate": "2026-03-05",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-02-04",
+      "timeToFill": 29,
+      "timeToHire": 29
+    },
+    {
+      "client": "CREATIVE DENTAL PARTNERS",
+      "role": "DENTAL BILLING AND INSURANCE VERIFICATION SPECIALIST",
+      "headcount": 1,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "Backfill",
+      "openedDate": "2025-11-20",
+      "timeToFill": 103,
+      "timeToHire": 103
+    },
+    {
+      "client": "YEEZY",
+      "role": "FRAUD SPECIALIST",
+      "headcount": 2,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-01-19",
+      "timeToFill": 43,
+      "timeToHire": 43
+    },
+    {
+      "client": "OPTIMA ENERGY",
+      "role": "FULLSTACK SOFTWARE DEVELOPER",
+      "headcount": 1,
+      "startDate": "2026-03-09",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-02-18",
+      "timeToFill": 19,
+      "timeToHire": 19
+    },
+    {
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS LLC",
+      "role": "IT SUPPORT TECHNICIAN",
+      "headcount": 1,
+      "startDate": "2026-02-16",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-01-26",
+      "timeToFill": 21,
+      "timeToHire": 21
+    },
+    {
+      "client": "YEEZY",
+      "role": "JUNIOR CUSTOMER SERVICE REPRESENTATIVE",
+      "headcount": 11,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-01-19",
+      "timeToFill": 43,
+      "timeToHire": 43
+    },
+    {
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS LLC",
+      "role": ".NET  FULLSTACK DEVELOPER",
+      "headcount": 1,
+      "startDate": "2026-03-09",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-02-12",
+      "timeToFill": 25,
+      "timeToHire": 25
+    },
+    {
+      "client": "YEEZY",
+      "role": "QA/TRAINER",
+      "headcount": 1,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-01-19",
+      "timeToFill": 43,
+      "timeToHire": 43
+    },
+    {
+      "client": "YEEZY",
+      "role": "SENIOR CUSTOMER SERVICE REPRESENTATIVE",
+      "headcount": 2,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-02-02",
+      "timeToFill": 29,
+      "timeToHire": 29
+    },
+    {
+      "client": "YEEZY",
+      "role": "SENIOR CUSTOMER SERVICE REPRESENTATIVE",
+      "headcount": 4,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-01-19",
+      "timeToFill": 43,
+      "timeToHire": 43
+    },
+    {
+      "client": "BLUE SKY",
+      "role": "SURFACE DESIGNER",
+      "headcount": 1,
+      "startDate": "2026-03-09",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-01-28",
+      "timeToFill": 40,
+      "timeToHire": 40
+    },
+    {
+      "client": "YEEZY",
+      "role": "FRAUD SPECIALIST",
+      "headcount": 1,
+      "startDate": "2026-03-03",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-01-19",
+      "timeToFill": 43,
+      "timeToHire": 43
+    }
+  ],
+  "business": {
+    "newLogoCount": 0,
+    "rampCount": 0,
+    "backfillCount": 0,
+    "newLogoJobs": [],
+    "rampJobs": [],
+    "backfillJobs": []
+  },
+  "aging": {
+    "avgNewLogo": 40,
+    "avgRamp": 30,
+    "avgBackfill": 26,
+    "fresh": 5,
+    "normal": 15,
+    "aging": 15,
+    "critical": 7,
+    "jobs": []
+  }
+}

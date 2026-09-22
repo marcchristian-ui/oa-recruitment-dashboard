@@ -1,0 +1,217 @@
+{
+  "totalOpen": 0,
+  "startOfMonth": 17,
+  "startOfMonthRoles": 16,
+  "additionalInMonth": 16,
+  "additionalInMonthRoles": 15,
+  "monthlyTarget": 12,
+  "pipeline": {
+    "open": 0,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 11,
+    "paused": 3
+  },
+  "pausedRoles": [
+    {
+      "client": "AMERICAN DATA",
+      "role": "CLINICAL SUPPORT SPECIALIST",
+      "headcount": 1,
+      "pausedDate": "2026-03-25",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS LLC",
+      "role": "CLINIC  PATIENT ACCOUNT CSR",
+      "headcount": 1,
+      "pausedDate": "2026-03-30",
+      "reason": "Other",
+      "type": "Backfill"
+    },
+    {
+      "client": "MOON",
+      "role": "DIGITAL MARKETING SPECIALIST (PART-TIME)",
+      "headcount": 1,
+      "pausedDate": "2026-03-24",
+      "reason": "Client initiated",
+      "type": "New Logo"
+    },
+    {
+      "client": "TERA SOFTWARE GROUP",
+      "role": "FINANCIAL CONTROLLER",
+      "headcount": 1,
+      "pausedDate": "2026-03-27",
+      "reason": "Other",
+      "type": "New Logo"
+    },
+    {
+      "client": "EARLY PR",
+      "role": "SOCIAL MEDIA MANAGER",
+      "headcount": 1,
+      "pausedDate": "2026-03-25",
+      "reason": "Unspecified",
+      "type": "Ramp"
+    },
+    {
+      "client": "IAULA.EDU",
+      "role": "VIRTUAL ASSISTANT",
+      "headcount": 1,
+      "pausedDate": "2026-03-25",
+      "reason": "Other",
+      "type": "Ramp"
+    }
+  ],
+  "closedLostRoles": [
+    {
+      "client": "DEMANDBRIDGE",
+      "role": "SENIOR SITE RELIABILITY ENGINEER",
+      "headcount": 1,
+      "lostDate": "2026-03-11",
+      "reason": "Other",
+      "type": "Ramp"
+    }
+  ],
+  "closedWon": [
+    {
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS LLC",
+      "role": "AZURE ENGINEER",
+      "headcount": 1,
+      "startDate": "2026-03-23",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-01-26",
+      "timeToFill": 56,
+      "timeToHire": 56
+    },
+    {
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS LLC",
+      "role": "CLINIC  PATIENT ACCOUNT CSR",
+      "headcount": 1,
+      "startDate": "2026-03-30",
+      "stage": "Started",
+      "type": "Backfill",
+      "openedDate": "2026-03-03",
+      "timeToFill": 27,
+      "timeToHire": 27
+    },
+    {
+      "client": "ORGANIKA",
+      "role": "CUSTOMER EXPERIENCE ASSISTANT",
+      "headcount": 1,
+      "startDate": "2026-03-16",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2025-12-29",
+      "timeToFill": 77,
+      "timeToHire": 77
+    },
+    {
+      "client": "YEEZY",
+      "role": "FRAUD SPECIALIST",
+      "headcount": 1,
+      "startDate": "2026-03-24",
+      "stage": "Started",
+      "type": "Backfill",
+      "openedDate": "2026-01-19",
+      "timeToFill": 64,
+      "timeToHire": 64
+    },
+    {
+      "client": "IAULA.EDU",
+      "role": "IT SUPPORT",
+      "headcount": 1,
+      "startDate": "2026-03-17",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-02-18",
+      "timeToFill": 27,
+      "timeToHire": 27
+    },
+    {
+      "client": "YEEZY",
+      "role": "OPERATIONS SUPERVISOR",
+      "headcount": 1,
+      "startDate": "2026-03-17",
+      "stage": "Started",
+      "type": "New Logo",
+      "openedDate": "2026-01-19",
+      "timeToFill": 57,
+      "timeToHire": 57
+    },
+    {
+      "client": "TLC SOLUTIONS",
+      "role": "PROCUREMENT SPECIALIST",
+      "headcount": 1,
+      "startDate": "2026-03-23",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-01-23",
+      "timeToFill": 59,
+      "timeToHire": 59
+    },
+    {
+      "client": "THATCHER TECHNOLOGY GROUP",
+      "role": "SENIOR QA SOFTWARE ENGINEER",
+      "headcount": 1,
+      "startDate": "2026-03-16",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-02-26",
+      "timeToFill": 18,
+      "timeToHire": 18
+    },
+    {
+      "client": "TLC SOLUTIONS",
+      "role": "SOLUTIONS SPECIALIST",
+      "headcount": 1,
+      "startDate": "2026-04-14",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-03-06",
+      "timeToFill": 39,
+      "timeToHire": 39
+    },
+    {
+      "client": "IAULA.EDU",
+      "role": "VIRTUAL ASSISTANT",
+      "headcount": 1,
+      "startDate": "2026-03-31",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-02-03",
+      "timeToFill": 56,
+      "timeToHire": 56
+    },
+    {
+      "client": "IAULA.EDU",
+      "role": "VIRTUAL ASSISTANT",
+      "headcount": 1,
+      "startDate": "2026-03-31",
+      "stage": "Started",
+      "type": "Ramp",
+      "openedDate": "2026-03-18",
+      "timeToFill": 13,
+      "timeToHire": 13
+    }
+  ],
+  "business": {
+    "newLogoCount": 0,
+    "rampCount": 0,
+    "backfillCount": 0,
+    "newLogoJobs": [],
+    "rampJobs": [],
+    "backfillJobs": []
+  },
+  "aging": {
+    "avgNewLogo": 45,
+    "avgRamp": 35,
+    "avgBackfill": 30,
+    "fresh": 2,
+    "normal": 3,
+    "aging": 7,
+    "critical": 5,
+    "jobs": []
+  }
+}

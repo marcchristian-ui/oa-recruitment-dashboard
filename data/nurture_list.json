@@ -1,0 +1,11 @@
+{
+  "_generated": "2026-09-22",
+  "_source": "https://docs.google.com/spreadsheets/d/18a_f9hO4RszZbJnJlhhvK5KIkkT-u3LWrk0fmaikJnI/edit?gid=1908017171",
+  "total": 45,
+  "stages": [
+    {"key":"consent","label":"Consent Requested","advanced":19,"advancedLabel":"Consent Confirmed","dropOff":26,"dropOffLabel":"No Response","inProgress":0},
+    {"key":"engage","label":"Engagement","advanced":18,"advancedLabel":"Engaged (Yes)","dropOff":13,"dropOffLabel":"Not Interested","inProgress":13,"inProgressLabel":"Pending Response"},
+    {"key":"interview","label":"Interview","advanced":16,"advancedLabel":"Interview Passed","dropOff":2,"dropOffLabel":"Interview Failed","inProgress":0},
+    {"key":"nurture","label":"Placement","advanced":16,"advancedLabel":"Placed / Nurtured","dropOff":0,"inProgress":0}
+  ]
+}
