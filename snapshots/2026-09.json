@@ -8,8 +8,8 @@
   "pipeline": {
     "open": 9,
     "forJobOffer": 1,
-    "ongoingContract": 2,
-    "offerAccepted": 7,
+    "ongoingContract": 1,
+    "offerAccepted": 8,
     "started": 0,
     "paused": 2
   },
@@ -115,6 +115,19 @@
       "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "TRISHA PARONG"
+    },
+    {
+      "client": "BLUESKY",
+      "role": "INVENTORY ANALYST",
+      "headcount": 1,
+      "openedDate": "2026-08-04",
+      "offerDate": "2026-09-22",
+      "startDate": "2026-10-01",
+      "timeToHire": 49,
+      "timeToFill": 58,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "JESSICA RABANG"
     }
   ],
   "inOfferRoles": [
@@ -129,15 +142,6 @@
     }
   ],
   "ongoingContractRoles": [
-    {
-      "client": "BLUESKY",
-      "role": "INVENTORY ANALYST",
-      "headcount": 1,
-      "startDate": "",
-      "stage": "Ongoing Contract",
-      "type": "Ramp",
-      "candidate": "JESSICA RABANG"
-    },
     {
       "client": "ADAUGEO",
       "role": "LAB PATIENT ACCOUNT CSR",
