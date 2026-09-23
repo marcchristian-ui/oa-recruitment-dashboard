@@ -1,0 +1,951 @@
+{
+  "_generated": "2026-09-23",
+  "_source": "OA manual tracker (Google Sheet 1N-HEbYWdO5HLnYUieUQ5a2BRirkWRRabDFFG8xGhHrM gid=1166082054) - full sheet",
+  "_note": "Explicit per-candidate recruiter attribution from OA's tracker. Overrides match.owner when candidate_id appears here. Ellie owner_ids (225662, 89009) are not named recruiters - bucketed as Other.",
+  "recruiter_owner_ids": {
+    "Alan": 99045,
+    "Louie": 105855,
+    "Iyah": 1242516,
+    "Joberth": 237798,
+    "Mark": 306203,
+    "Khamz": 93938
+  },
+  "ellie_owner_id": 225662,
+  "ellie_owner_ids": [
+    89009,
+    225662
+  ],
+  "overrides": {
+    "129541330": {
+      "recruiter": "Louie",
+      "candidate_name": "Rachel Rivero Espinosa",
+      "client": "ORGANIKA",
+      "position": "AR Collections Administrator",
+      "source_row": 185
+    },
+    "133462058": {
+      "recruiter": "Alan",
+      "candidate_name": "Leo Estorninos Macacando",
+      "client": "AMERICAN COUNTERTOPS AND FLOORS INC.",
+      "position": "Draftsman",
+      "source_row": 187
+    },
+    "130474756": {
+      "recruiter": "Alan",
+      "candidate_name": "Emiliano Tolentino Sibug",
+      "client": "TLC Solutions",
+      "position": "Solutions Specialist",
+      "source_row": 194
+    },
+    "130851080": {
+      "recruiter": "Alan",
+      "candidate_name": "Anjo Butlay Antipas",
+      "client": "TLC Solutions",
+      "position": "Solutions Specialist",
+      "source_row": 195
+    },
+    "133943708": {
+      "recruiter": "Khamz",
+      "candidate_name": "Rena Cuervo Lastica",
+      "client": "Mirion",
+      "position": "Collections Specialist",
+      "source_row": 198
+    },
+    "132456275": {
+      "recruiter": "Alan",
+      "candidate_name": "Joshua Himor Diaz",
+      "client": "TLC Solutions",
+      "position": "Solutions Specialist",
+      "source_row": 199
+    },
+    "132575298": {
+      "recruiter": "Alan",
+      "candidate_name": "Neptune Bestil Mission",
+      "client": "Thatcher Technology Group",
+      "position": "SQL Developer",
+      "source_row": 200
+    },
+    "130154890": {
+      "recruiter": "Jenn",
+      "candidate_name": "Vincent Rey Amor Bernardo",
+      "client": "Najla Law Firm",
+      "position": "Legal Assistant",
+      "source_row": 201
+    },
+    "140873262": {
+      "recruiter": "Ellie",
+      "candidate_name": "Eden Nicole Paneda De Guzman",
+      "client": "OA",
+      "position": "Part-time Reports Analyst",
+      "source_row": 203
+    },
+    "132759993": {
+      "recruiter": "Khamz",
+      "candidate_name": "Jonalyn  Cabajog Dino",
+      "client": "The Botanist",
+      "position": "Part TIme Virtual Assistant",
+      "source_row": 213
+    },
+    "118552757": {
+      "recruiter": "Joberth",
+      "candidate_name": "Gretchen Silva  Eusebio",
+      "client": "ORGANIKA",
+      "position": "Sales Admin Assistant",
+      "source_row": 223
+    },
+    "132605669": {
+      "recruiter": "Alan",
+      "candidate_name": "Richard Rigo Tecson",
+      "client": "TLC Solutions",
+      "position": "Solutions Specialist",
+      "source_row": 224
+    },
+    "135910201": {
+      "recruiter": "Joberth",
+      "candidate_name": "Althea Jan Olpindo Acebes",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "Virtual Assistant",
+      "source_row": 225
+    },
+    "135911676": {
+      "recruiter": "Mark",
+      "candidate_name": "Rachalle Ann De Leon Tagudin",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "Virtual Assistant",
+      "source_row": 226
+    },
+    "134981529": {
+      "recruiter": "Joberth",
+      "candidate_name": "Franchesca Gonda Adao",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "Virtual Assistant",
+      "source_row": 227
+    },
+    "123099455": {
+      "recruiter": "Mark",
+      "candidate_name": "Knia Gianine Isip Pablo",
+      "client": "Proplate",
+      "position": "Marketing Support",
+      "source_row": 235
+    },
+    "138511951": {
+      "recruiter": "Khamz",
+      "candidate_name": "Roben Jiz De Ortega Fabella",
+      "client": "MIRION",
+      "position": "Billing Analyst",
+      "source_row": 238
+    },
+    "136359314": {
+      "recruiter": "Louie",
+      "candidate_name": "John Michael Mila Uy",
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS",
+      "position": "IT Support Technician",
+      "source_row": 239
+    },
+    "138128762": {
+      "recruiter": "Mark",
+      "candidate_name": "Juan Miguel Catuncan Infante",
+      "client": "YEEZY",
+      "position": "QA Analyst/Trainer",
+      "source_row": 243
+    },
+    "138139328": {
+      "recruiter": "Mark",
+      "candidate_name": "Leo Sarabia Luna",
+      "client": "YEEZY",
+      "position": "Sr. CSR",
+      "source_row": 244
+    },
+    "137044382": {
+      "recruiter": "Mark",
+      "candidate_name": "Rochelle Gallano Jamo",
+      "client": "Creative Dental Partners",
+      "position": "Billing and Insurance Verification Specialist",
+      "source_row": 245
+    },
+    "135938352": {
+      "recruiter": "Louie",
+      "candidate_name": "Massimo Junior  Belarmino Manalo",
+      "client": "YEEZY",
+      "position": "Fraud Specialist",
+      "source_row": 246
+    },
+    "78215078": {
+      "recruiter": "Louie",
+      "candidate_name": "John Mari Andrade Bonifacio",
+      "client": "YEEZY",
+      "position": "Sr. CSR",
+      "source_row": 247
+    },
+    "142368211": {
+      "recruiter": "Mark",
+      "candidate_name": "Brian Michael Hortelano Austria",
+      "client": "YEEZY",
+      "position": "Sr. CSR",
+      "source_row": 248
+    },
+    "131681986": {
+      "recruiter": "Alan",
+      "candidate_name": "Romel Picadizo Ramos",
+      "client": "YEEZY",
+      "position": "Sr. CSR",
+      "source_row": 249
+    },
+    "138143324": {
+      "recruiter": "Khamz",
+      "candidate_name": "Lemuel Felix  Montañano Alumaga",
+      "client": "YEEZY",
+      "position": "Sr. CSR",
+      "source_row": 250
+    },
+    "140871276": {
+      "recruiter": "Khamz",
+      "candidate_name": "Julie Sumarinas Salinas",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 251
+    },
+    "137058888": {
+      "recruiter": "Mark",
+      "candidate_name": "Edmar Murillo Rosero",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 252
+    },
+    "138185782": {
+      "recruiter": "Khamz",
+      "candidate_name": "Jay-r Espino Diano",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 253
+    },
+    "138183733": {
+      "recruiter": "Mark",
+      "candidate_name": "Relyn Gile Estopare",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 254
+    },
+    "138295392": {
+      "recruiter": "Mark",
+      "candidate_name": "Abner Bascos Padilla",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 255
+    },
+    "139439413": {
+      "recruiter": "Joberth",
+      "candidate_name": "Wenndel Velarde Dela Cruz",
+      "client": "Book Outlet",
+      "position": "Customer Service Representative",
+      "source_row": 256
+    },
+    "138867210": {
+      "recruiter": "Khamz",
+      "candidate_name": "Beverly Martin Arellano",
+      "client": "Mirion",
+      "position": "Billing Analyst",
+      "source_row": 257
+    },
+    "23760582": {
+      "recruiter": "Jenn",
+      "candidate_name": "Daryl Suan Rosalejos",
+      "client": "Mirion",
+      "position": "Billing Analyst",
+      "source_row": 258
+    },
+    "137676029": {
+      "recruiter": "Mark",
+      "candidate_name": "Kristine Quito Galang",
+      "client": "BLUE SKY",
+      "position": "Surface Designer",
+      "source_row": 261
+    },
+    "137058890": {
+      "recruiter": "Khamz",
+      "candidate_name": "Sagisag Alcantara Amit",
+      "client": "YEEZY",
+      "position": "Sr. CSR",
+      "source_row": 262
+    },
+    "142362047": {
+      "recruiter": "Joberth",
+      "candidate_name": "Jade Medrano Guianan",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 263
+    },
+    "136646138": {
+      "recruiter": "Joberth",
+      "candidate_name": "Marietta  Ogabar Ramos",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 264
+    },
+    "142363799": {
+      "recruiter": "Joberth",
+      "candidate_name": "Catherine Celamor Cabrera",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 265
+    },
+    "140874074": {
+      "recruiter": "Alan",
+      "candidate_name": "Jhon Chris Ramirez De Leon",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 266
+    },
+    "140314477": {
+      "recruiter": "Joberth",
+      "candidate_name": "Marlo Cortez Lanzuela",
+      "client": "YEEZY",
+      "position": "Fraud Specialist",
+      "source_row": 267
+    },
+    "142362019": {
+      "recruiter": "Joberth",
+      "candidate_name": "Harold Torres Lanuza",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 268
+    },
+    "139418502": {
+      "recruiter": "Louie",
+      "candidate_name": "Jeremy Nemesio Ramiro  Areola",
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS",
+      "position": ".NET Full Stack Developer",
+      "source_row": 269
+    },
+    "139489884": {
+      "recruiter": "Louie",
+      "candidate_name": "Eugene John Maturan Arellano",
+      "client": "OPTIMA ENERGY",
+      "position": "Full Stack Software Developer",
+      "source_row": 270
+    },
+    "64668695": {
+      "recruiter": "Mark",
+      "candidate_name": "Sunny Ranola Calinawan",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "IT Support",
+      "source_row": 271
+    },
+    "137050744": {
+      "recruiter": "Alan",
+      "candidate_name": "Sylvester Dragon Casas",
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS",
+      "position": "Azure Cloud Engineer",
+      "source_row": 285
+    },
+    "140440913": {
+      "recruiter": "Alan",
+      "candidate_name": "Dominic Alipio Parafina",
+      "client": "Thatcher Technology Group",
+      "position": "Senior QA Software Engineer",
+      "source_row": 286
+    },
+    "135991881": {
+      "recruiter": "Louie",
+      "candidate_name": "Roland Mariano Estrella",
+      "client": "TLC Solutions",
+      "position": "Procurement Specialist",
+      "source_row": 287
+    },
+    "134973054": {
+      "recruiter": "Joberth",
+      "candidate_name": "Rosanno Balanquit Nadela Jr.",
+      "client": "ORGANIKA",
+      "position": "Customer Experience Assistant",
+      "source_row": 288
+    },
+    "138837265": {
+      "recruiter": "Joberth",
+      "candidate_name": "Ronalyn Clarin Fresno",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "Virtual Assistant",
+      "source_row": 289
+    },
+    "140919770": {
+      "recruiter": "Jenn",
+      "candidate_name": "Brian Patrick Luping Roxas",
+      "client": "YEEZY",
+      "position": "Operations Supervisor",
+      "source_row": 290
+    },
+    "141381628": {
+      "recruiter": "Mark",
+      "candidate_name": "Mary Sharmane Colo Delos Reyes",
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS",
+      "position": "Clinic Patient Account CSR",
+      "source_row": 291
+    },
+    "139957226": {
+      "recruiter": "Joberth",
+      "candidate_name": "Albert Cadizal Joco",
+      "client": "YEEZY",
+      "position": "Fraud Specialist",
+      "source_row": 292
+    },
+    "140577873": {
+      "recruiter": "Joberth",
+      "candidate_name": "Jhane Laurghare  Bustaliño Astillo",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "Virtual Assistant",
+      "source_row": 293
+    },
+    "141307624": {
+      "recruiter": "Alan",
+      "candidate_name": "Dante Villanueva Ballesteros Jr",
+      "client": "TLC Solutions",
+      "position": "Solutions Specialist",
+      "source_row": 294
+    },
+    "142057195": {
+      "recruiter": "Joberth",
+      "candidate_name": "Andrea May Pedrosa Geronimo",
+      "client": "EARLY PR",
+      "position": "PR Account Manager",
+      "source_row": 304
+    },
+    "139220704": {
+      "recruiter": "Louie",
+      "candidate_name": "Jessica Robacho Salangsang",
+      "client": "LEATHWAITE",
+      "position": "Technical Salesforce Administrator",
+      "source_row": 305
+    },
+    "145755409": {
+      "recruiter": "Ellie",
+      "candidate_name": "Juliet Fabrigas Lanzaderas",
+      "client": "MIRION",
+      "position": "Billing Analyst",
+      "source_row": 306
+    },
+    "139290863": {
+      "recruiter": "Louie",
+      "candidate_name": "Melecio Analupa Iraola Jr.",
+      "client": "LEATHWAITE",
+      "position": "Technical Salesforce Administrator",
+      "source_row": 307
+    },
+    "116847919": {
+      "recruiter": "Khamz",
+      "candidate_name": "Angella Jane Mondoy Moteta",
+      "client": "AVARI EVENTS",
+      "position": "Project Coordinator",
+      "source_row": 308
+    },
+    "138818463": {
+      "recruiter": "Khamz",
+      "candidate_name": "Mary Therese - Lim",
+      "client": "AVARI EVENTS",
+      "position": "Graphic Designer",
+      "source_row": 309
+    },
+    "140428736": {
+      "recruiter": "Khamz",
+      "candidate_name": "Lexter Jay Gamboa Baraquio",
+      "client": "MOON",
+      "position": "Part Time Sales Representative",
+      "source_row": 310
+    },
+    "145164733": {
+      "recruiter": "Louie",
+      "candidate_name": "Judith Santander Cantor",
+      "client": "SolCo",
+      "position": "IT Support Engineer",
+      "source_row": 311
+    },
+    "147505444": {
+      "recruiter": "Iyah",
+      "candidate_name": "Diana Rinon Gandia",
+      "client": "KOITA",
+      "position": "Accountant",
+      "source_row": 312
+    },
+    "127879999": {
+      "recruiter": "Mark",
+      "candidate_name": "Miguel Ong Mendoza",
+      "client": "Creative Dental Partners",
+      "position": "Dental Account Receivable",
+      "source_row": 313
+    },
+    "146607895": {
+      "recruiter": "Iyah",
+      "candidate_name": "Clarenz Abrigo Palomar",
+      "client": "ORGANIKA",
+      "position": "Customer Experience Assistant",
+      "source_row": 319
+    },
+    "145988974": {
+      "recruiter": "Mark",
+      "candidate_name": "Ian Fitzgerald Tica Palmes",
+      "client": "AMERICAN COUNTERTOPS AND FLOORS INC.",
+      "position": "Quantity Surveyor",
+      "source_row": 320
+    },
+    "147857215": {
+      "recruiter": "Khamz",
+      "candidate_name": "Ma. Rosalyn Natividad Guerra",
+      "client": "MIRION",
+      "position": "Sr. CSR",
+      "source_row": 321
+    },
+    "146168472": {
+      "recruiter": "Louie",
+      "candidate_name": "Lucky John Flotildes Faderon",
+      "client": "C3 INGENUITY",
+      "position": "AI Automation Engineer",
+      "source_row": 322
+    },
+    "64483724": {
+      "recruiter": "Iyah",
+      "candidate_name": "Janneth Fuerte Reyes",
+      "client": "IR Chiropractic",
+      "position": "Business Development Representative",
+      "source_row": 323
+    },
+    "145852820": {
+      "recruiter": "Iyah",
+      "candidate_name": "Trizza Cerbito Cababada",
+      "client": "IR Chiropractic",
+      "position": "Business Development Representative",
+      "source_row": 324
+    },
+    "138841968": {
+      "recruiter": "Louie",
+      "candidate_name": "Gilbert Amata Be",
+      "client": "ZEPP",
+      "position": "Technical Support",
+      "source_row": 325
+    },
+    "145724407": {
+      "recruiter": "Joberth",
+      "candidate_name": "Wela Pauyo Meñas",
+      "client": "INDUSTRIAL DEVICE INVESTMENTS",
+      "position": "Executive Assistant",
+      "source_row": 326
+    },
+    "142374090": {
+      "recruiter": "Khamz",
+      "candidate_name": "Earl Jester Cuaresma De Vera",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 334
+    },
+    "105130059": {
+      "recruiter": "Khamz",
+      "candidate_name": "Jerico Ariem Villanueva",
+      "client": "YEEZY",
+      "position": "Jr. CSR",
+      "source_row": 335
+    },
+    "149388264": {
+      "recruiter": "Louie",
+      "candidate_name": "Merasol Dumagsa  Tesoro",
+      "client": "ZEPP",
+      "position": "Technical Support",
+      "source_row": 336
+    },
+    "149921596": {
+      "recruiter": "Iyah",
+      "candidate_name": "Emerald Barsanilla  Baduria",
+      "client": "ORGANIKA",
+      "position": "Customer Experience Assistant",
+      "source_row": 337
+    },
+    "149718984": {
+      "recruiter": "Joberth",
+      "candidate_name": "Lawrence Jemuel Quizon Costura",
+      "client": "BLUE FEATHER DESIGNS",
+      "position": "Design Support Specialist",
+      "source_row": 338
+    },
+    "149141905": {
+      "recruiter": "Khamz",
+      "candidate_name": "Rose Lyn Ballovar Parasdas",
+      "client": "GAVBIZ LTD.",
+      "position": "Part-Time Ecommerce Sales Specialist",
+      "source_row": 352
+    },
+    "152155837": {
+      "recruiter": "Louie",
+      "candidate_name": "Julius  Mendez  Pensotes",
+      "client": "SOLCO",
+      "position": "IT Support Engineer",
+      "source_row": 354
+    },
+    "145164514": {
+      "recruiter": "Louie",
+      "candidate_name": "Mike Lester Yuma Ishmael",
+      "client": "SOLCO",
+      "position": "IT Services Coordinator",
+      "source_row": 381
+    },
+    "154860588": {
+      "recruiter": "Khamz",
+      "candidate_name": "Marylea Jarabejo Chua",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 382
+    },
+    "154436763": {
+      "recruiter": "Joberth",
+      "candidate_name": "Joana Miller De Vera  Salazar",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 383
+    },
+    "154441833": {
+      "recruiter": "Iyah",
+      "candidate_name": "Rona  Camena Nabu-am",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 384
+    },
+    "154860655": {
+      "recruiter": "Khamz",
+      "candidate_name": "Jennifer  Ferrer Sorillo",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 385
+    },
+    "154863523": {
+      "recruiter": "Mark",
+      "candidate_name": "Angelique Tuale Arcinas",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 386
+    },
+    "151150328": {
+      "recruiter": "Iyah",
+      "candidate_name": "Roanne Sael Datiles",
+      "client": "ORGANIKA",
+      "position": "Sales Support Coordinator",
+      "source_row": 387
+    },
+    "155043468": {
+      "recruiter": "Mark",
+      "candidate_name": "Raiza  Moncano Macabodbod",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 388
+    },
+    "153619612": {
+      "recruiter": "Iyah",
+      "candidate_name": "Glenn Emmanuel Florendo Filio",
+      "client": "YEEZY",
+      "position": "E-Commerce Team Lead",
+      "source_row": 389
+    },
+    "154096935": {
+      "recruiter": "Iyah",
+      "candidate_name": "Abel Mateo  Ojeda Azures",
+      "client": "YEEZY",
+      "position": "Senior Customer Service Representative",
+      "source_row": 390
+    },
+    "155654019": {
+      "recruiter": "Iyah",
+      "candidate_name": "Jaime Jr Asis Granada",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 391
+    },
+    "155871230": {
+      "recruiter": "Mark",
+      "candidate_name": "Shiela Mae Regualos Bautista",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 392
+    },
+    "155046188": {
+      "recruiter": "Alan",
+      "candidate_name": "Sheryll Recile Tiongco",
+      "client": "YEEZY",
+      "position": "Senior Customer Service Representative",
+      "source_row": 393
+    },
+    "155484458": {
+      "recruiter": "Alan",
+      "candidate_name": "Dinalyn Joy Oliva Alcantara",
+      "client": "YEEZY",
+      "position": "Senior Customer Service Representative",
+      "source_row": 394
+    },
+    "155030728": {
+      "recruiter": "Mark",
+      "candidate_name": "Daniel Grea Chida Dilla",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 395
+    },
+    "155872888": {
+      "recruiter": "Louie",
+      "candidate_name": "Lougen Puerte Lampera",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 397
+    },
+    "155866560": {
+      "recruiter": "Louie",
+      "candidate_name": "Johanna Marie Autiangco Dizon",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 398
+    },
+    "155871349": {
+      "recruiter": "Iyah",
+      "candidate_name": "Mary Kate Buniel  Sales",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 399
+    },
+    "155872818": {
+      "recruiter": "Khamz",
+      "candidate_name": "Krisanta  Principio Dolores",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 400
+    },
+    "155554841": {
+      "recruiter": "Iyah",
+      "candidate_name": "Francis Wilbert Mateo Acosta",
+      "client": "YEEZY",
+      "position": "QA Specialist",
+      "source_row": 401
+    },
+    "112290208": {
+      "recruiter": "Joberth",
+      "candidate_name": "Justine Samantha Laurencio Domanguera",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 402
+    },
+    "156828093": {
+      "recruiter": "Khamz",
+      "candidate_name": "Paul Christian Gozon Bacolod",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 403
+    },
+    "156893559": {
+      "recruiter": "Khamz",
+      "candidate_name": "Gian Historillo Soleta",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 404
+    },
+    "156893547": {
+      "recruiter": "Khamz",
+      "candidate_name": "Joven  Lagrimas Galope",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 405
+    },
+    "157034447": {
+      "recruiter": "Khamz",
+      "candidate_name": "Audrey Nicole Baladad Ayala",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 406
+    },
+    "115994333": {
+      "recruiter": "Joberth",
+      "candidate_name": "Mary Joy Tordesillas Mengote",
+      "client": "MIRION",
+      "position": "Billing Analyst",
+      "source_row": 407
+    },
+    "157248731": {
+      "recruiter": "Alan",
+      "candidate_name": "Benedict Nigos Climaco",
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS",
+      "position": "Azure Cloud Engineer",
+      "source_row": 408
+    },
+    "157579080": {
+      "recruiter": "Iyah",
+      "candidate_name": "Alexander  Florentino Calayo",
+      "client": "Creative Dental Partners",
+      "position": "Dental Account Receivable",
+      "source_row": 409
+    },
+    "158581088": {
+      "recruiter": "Mark",
+      "candidate_name": "Jennevive Ymas Teloza",
+      "client": "INTERNATIONAL AMERICAN UNIVERSITY (IAULA)",
+      "position": "Virtual Assistant",
+      "source_row": 410
+    },
+    "159485393": {
+      "recruiter": "Khamz",
+      "candidate_name": "Deniella Marie Ruiz Colmo",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 411
+    },
+    "159485367": {
+      "recruiter": "Joberth",
+      "candidate_name": "Julienne  De Leon Arnaez",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 412
+    },
+    "159401918": {
+      "recruiter": "Khamz",
+      "candidate_name": "Emmalyn Pangilinan Gonzales",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 413
+    },
+    "159391794": {
+      "recruiter": "Joberth",
+      "candidate_name": "Laura Mae Omaña Manano",
+      "client": "MIRION",
+      "position": "Billing Analyst",
+      "source_row": 414
+    },
+    "158158732": {
+      "recruiter": "Khamz",
+      "candidate_name": "Marco Jacinto Dalinoc",
+      "client": "AUDIT DATA",
+      "position": "Product Owner",
+      "source_row": 415
+    },
+    "160835694": {
+      "recruiter": "Khamz",
+      "candidate_name": "Catherine Mateo Parico",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 417
+    },
+    "161438838": {
+      "recruiter": "Khamz",
+      "candidate_name": "Robert Juan  De Leon",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 418
+    },
+    "161607482": {
+      "recruiter": "Ellie",
+      "candidate_name": "Gilbert  Pastor De Regla",
+      "client": "MIRION",
+      "position": "CS ADMIN",
+      "source_row": 419
+    },
+    "161584175": {
+      "recruiter": "Khamz",
+      "candidate_name": "Janisah Macarambon Macabada",
+      "client": "YEEZY",
+      "position": "Junior Customer Service Representative",
+      "source_row": 420
+    },
+    "159359845": {
+      "recruiter": "Iyah",
+      "candidate_name": "Matthew Audrey Pedrera Alcozer",
+      "client": "ORGANIKA",
+      "position": "Sales Admin Coordinator",
+      "source_row": 421
+    },
+    "161457355": {
+      "recruiter": "Mark",
+      "candidate_name": "Dandaved Narciso Cañadido",
+      "client": "DEMANDBRIDGE",
+      "position": "CHILI Template Builder",
+      "source_row": 422
+    },
+    "162027073": {
+      "recruiter": "Alan",
+      "candidate_name": "Cyd Angela Cambaya Balington",
+      "client": "BrightHouse Computer Center",
+      "position": "IT Helpdesk Engineer",
+      "source_row": 424
+    },
+    "160588773": {
+      "recruiter": "Louie",
+      "candidate_name": "Roi Isaac De Guzman Biñas",
+      "client": "AUDIT DATA",
+      "position": "General QA Engineer",
+      "source_row": 425
+    },
+    "158538759": {
+      "recruiter": "Iyah",
+      "candidate_name": "Carl Jason Gaceta  Rullan",
+      "client": "AUDIT DATA",
+      "position": "Agile Project Lead",
+      "source_row": 426
+    },
+    "160143596": {
+      "recruiter": "Louie",
+      "candidate_name": "Edric John De Leon Cervantes",
+      "client": "AUDIT DATA",
+      "position": "General QA Engineer",
+      "source_row": 427
+    },
+    "163978853": {
+      "recruiter": "Khamz",
+      "candidate_name": "Katrina May Torres Edillon",
+      "client": "PAYKONCEPT",
+      "position": "Executive Assistant Sales Support",
+      "source_row": 428
+    },
+    "163142861": {
+      "recruiter": "Khamz",
+      "candidate_name": "Divine Salvador Rojo",
+      "client": "PROPLATE",
+      "position": "Marketing Support",
+      "source_row": 429
+    },
+    "165863735": {
+      "recruiter": "Alan",
+      "candidate_name": "Mark Angelo Targa Suguitan",
+      "client": "AUDIT DATA",
+      "position": "Technical Lead",
+      "source_row": 430
+    },
+    "90903447": {
+      "recruiter": "Louie",
+      "candidate_name": "Margie Pancho Santiago",
+      "client": "ZEPP",
+      "position": "Technical Support",
+      "source_row": 431
+    },
+    "165447501": {
+      "recruiter": "Louie",
+      "candidate_name": "Janica Niña Bartolome Alvarez",
+      "client": "ZEPP",
+      "position": "Technical Support",
+      "source_row": 432
+    },
+    "163291923": {
+      "recruiter": "Alan",
+      "candidate_name": "Ruel Balleras Sucgang",
+      "client": "AUDIT DATA",
+      "position": "Sr. Fullstack .NET Developer",
+      "source_row": 433
+    },
+    "165236499": {
+      "recruiter": "Alan",
+      "candidate_name": "Trisha Fermin Parong",
+      "client": "BrightHouse Computer Center",
+      "position": "IT Helpdesk Engineer",
+      "source_row": 434
+    },
+    "165689140": {
+      "recruiter": "Ellie",
+      "candidate_name": "Ruscel Joy Sta. Ana Dizon",
+      "client": "ADAUGEO HEALTHCARE SOLUTIONS",
+      "position": "Lab Patient Account CSR",
+      "source_row": 437
+    },
+    "164193562": {
+      "recruiter": "Iyah",
+      "candidate_name": "Jessica Manuel Rabang",
+      "client": "BLUE SKY",
+      "position": "Inventory Analyst",
+      "source_row": 438
+    }
+  }
+}
