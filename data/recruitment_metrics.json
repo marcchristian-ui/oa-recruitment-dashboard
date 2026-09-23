@@ -326,23 +326,23 @@
    "endToHire": 25.0,
    "intToHire": 11.7,
    "offerToStart": 37.5,
-   "rolesFilled": 7,
-   "avgTtf": 36,
-   "medianTtf": 30,
-   "ttfSampleSize": 6,
+   "rolesFilled": 8,
+   "avgTtf": 39,
+   "medianTtf": 34,
+   "ttfSampleSize": 7,
    "ttfBuckets": {
     "le30": 3,
-    "d31_60": 2,
+    "d31_60": 3,
     "d61_90": 1,
     "gt90": 0
    },
    "openingBacklog": 9,
    "newOpens": 12,
-   "filled": 7,
+   "filled": 8,
    "lost": 0,
    "paused": 1,
-   "stillOpen": 10,
-   "totalOpenAtSnapshot": 9,
+   "stillOpen": 8,
+   "totalOpenAtSnapshot": 8,
    "monthlyTarget": 5
   }
  ],
@@ -355,11 +355,11 @@
   "starts": 127
  },
  "ytdRoles": {
-  "filled": 89,
+  "filled": 90,
   "lost": 14,
   "paused": 29,
   "newOpens": 176,
-  "currentlyOpen": 9
+  "currentlyOpen": 8
  },
  "overallConversion": {
   "interviewToEndorse": 49.8,
@@ -370,17 +370,17 @@
   "offerToStart": 83.0
  },
  "ttfYtd": {
-  "avgTtf": 39.3,
-  "medianTtf": 34.5,
-  "sampleSize": 86,
+  "avgTtf": 39.5,
+  "medianTtf": 35,
+  "sampleSize": 87,
   "buckets": {
    "le30": 37,
-   "d31_60": 36,
+   "d31_60": 37,
    "d61_90": 10,
    "gt90": 3
   },
-  "pctLe30": 43.0,
-  "pctLe60": 84.9,
+  "pctLe30": 42.5,
+  "pctLe60": 85.1,
   "note": "Across Jan-Sep 2026 snapshots; months with TTF data: 2026-01, 2026-02, 2026-03, 2026-04, 2026-05, 2026-06, 2026-07, 2026-08, 2026-09"
  },
  "kpiSnapshot": {
@@ -411,22 +411,22 @@
    "status": "yellow"
   },
   "avgTtf": {
-   "actual": 39.3,
+   "actual": 39.5,
    "target": null,
    "status": "gray",
-   "note": "No numeric target . n=86"
+   "note": "No numeric target . n=87"
   },
   "pctFilled30d": {
-   "actual": 43.0,
+   "actual": 42.5,
    "target": null,
    "status": "gray",
-   "note": "Informational . n=86"
+   "note": "Informational . n=87"
   },
   "pctFilled60d": {
-   "actual": 84.9,
+   "actual": 85.1,
    "target": null,
    "status": "gray",
-   "note": "Informational . n=86"
+   "note": "Informational . n=87"
   },
   "retention90d": {
    "actual": null,
@@ -447,10 +447,10 @@
    "label": "New Logo",
    "rolesFilled": 28,
    "avgTtf": 54.0,
-   "medianTtf": 47.0,
+   "medianTtf": 47,
    "ttfSampleSize": 27,
-   "currentlyOpenRoles": 3,
-   "currentlyOpenHc": 3,
+   "currentlyOpenRoles": 2,
+   "currentlyOpenHc": 2,
    "intToEnd": 55.1,
    "endToClientPass": 63.6,
    "endToHire": 11.9,
@@ -468,10 +468,10 @@
   {
    "type": "Ramp",
    "label": "Ramp",
-   "rolesFilled": 43,
-   "avgTtf": 31.1,
-   "medianTtf": 25.0,
-   "ttfSampleSize": 43,
+   "rolesFilled": 44,
+   "avgTtf": 31.7,
+   "medianTtf": 26.0,
+   "ttfSampleSize": 44,
    "currentlyOpenRoles": 3,
    "currentlyOpenHc": 4,
    "intToEnd": 49.7,
@@ -515,26 +515,26 @@
  "agingBuckets": {
   "d0_30": 6,
   "d31_45": 1,
-  "d46_60": 1,
+  "d46_60": 0,
   "d61_90": 1,
   "gt90": 0
  },
  "agingBucketsRoles": {
   "d0_30": 4,
   "d31_45": 1,
-  "d46_60": 1,
+  "d46_60": 0,
   "d61_90": 1,
   "gt90": 0
  },
  "aging": {
   "asOf": "2026-09",
-  "totalOpenRoles": 7,
-  "totalOpenHc": 9,
-  "rolesOver30": 3,
+  "totalOpenRoles": 6,
+  "totalOpenHc": 8,
+  "rolesOver30": 2,
   "rolesOver60": 1,
   "avgDaysByType": {
    "newLogo": 46,
-   "ramp": 23,
+   "ramp": 24,
    "backfill": 9
   }
  },
@@ -545,14 +545,6 @@
    "type": "New Logo",
    "opened": "2026-07-15",
    "days": 70,
-   "headcount": 1
-  },
-  {
-   "client": "THRIVIAE",
-   "role": "SALES DEVELOPMENT REPRESENTATIVE",
-   "type": "New Logo",
-   "opened": "2026-08-06",
-   "days": 48,
    "headcount": 1
   },
   {
@@ -607,20 +599,20 @@
    "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). Sep 2026 is excluded as it is still mid-month.",
    "hires": 11
   },
-  "ttfTrend": "Falling - avg TTF moved -4 days from 2026-04-2026-06 (37d) to 2026-07-2026-09 (33d)",
-  "pctFilled30dOverall": 43.0,
-  "pctFilled60dOverall": 84.9,
-  "longestTtfPositionType": "New Logo - 54.0d average time-to-fill (n=27), vs Ramp at 31.1d. New Logo roles take materially longer to close.",
-  "carryOverRisk": "3 of 7 currently-open roles (3 of 9 headcount) have been open more than 30 days; 1 past 60 days.",
+  "ttfTrend": "Falling - avg TTF moved -3 days from 2026-04-2026-06 (37d) to 2026-07-2026-09 (34d)",
+  "pctFilled30dOverall": 42.5,
+  "pctFilled60dOverall": 85.1,
+  "longestTtfPositionType": "New Logo - 54.0d average time-to-fill (n=27), vs Backfill at 36.2d. New Logo roles take materially longer to close.",
+  "carryOverRisk": "2 of 6 currently-open roles (2 of 8 headcount) have been open more than 30 days; 1 past 60 days.",
   "biggestBottleneck": "Endorse -> Hire at 24.3% vs a 50% target - 25.7 points short, the widest gap of any tracked conversion.",
   "recommendedAction": "Attack Endorse -> Hire first - it is 25.7 points below its 50% target and gates every downstream stage.",
-  "rolesOver30": 3,
+  "rolesOver30": 2,
   "rolesOver60": 1,
   "_detail": {
    "bestMonthKey": "2026-07",
    "weakestMonthKey": "2026-01",
    "ttfTrendDirection": "down",
-   "ttfDeltaDays": -4,
+   "ttfDeltaDays": -3,
    "monthsWithTtf": [
     "2026-01",
     "2026-02",
@@ -644,7 +636,7 @@
   "90-day retention is not tracked in Manatal - kpiSnapshot.retention90d.actual is null.",
   "Regularization rate is not tracked in Manatal - kpiSnapshot.regularization.actual is null.",
   "Manatal's Open API exposes only each match's CURRENT stage, so a candidate endorsed and then failed on a job collapses to rank 0 on that job; they still count if another of their matches holds rank >= 2.",
-  "Sep 2026 has TTF data for 6 of 7 closed-won roles; RUEL SUCGANG (Audit Data Sr Fullstack) has no start date yet and is excluded from TTF.",
+  "Sep 2026 has TTF data for 7 of 8 closed-won roles; 1 role(s) have no start date yet and are excluded from TTF.",
   "YTD totals are unique-candidate counts and deliberately do not equal the sum of the monthly columns.",
   "Position type is derived from Manatal custom_fields.justification. NEW LOGO and NEW REQUIREMENT both map to 'New Logo'; RAMP->Ramp; BACKFILL->Backfill. 17 candidates whose jobs' justification is none of these are Unclassified and excluded from positionTypes[] conversions.",
   "Loaded 1583 match records; after excluding OA-internal, EVERGREEN, POOLING and EXCLUDE_HASHES jobs, 1245 matches across 1207 unique candidates remain."
