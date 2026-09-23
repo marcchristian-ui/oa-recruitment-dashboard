@@ -7,8 +7,8 @@
   "monthlyTarget": 5,
   "pipeline": {
     "open": 9,
-    "forJobOffer": 1,
-    "ongoingContract": 1,
+    "forJobOffer": 0,
+    "ongoingContract": 2,
     "offerAccepted": 8,
     "started": 0,
     "paused": 2
@@ -121,27 +121,26 @@
       "role": "INVENTORY ANALYST",
       "headcount": 1,
       "openedDate": "2026-08-04",
-      "offerDate": "2026-09-22",
+      "offerDate": "2026-09-15",
       "startDate": "2026-10-01",
-      "timeToHire": 49,
+      "timeToHire": 42,
       "timeToFill": 58,
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "JESSICA RABANG"
     }
   ],
-  "inOfferRoles": [
+  "inOfferRoles": [],
+  "ongoingContractRoles": [
     {
       "client": "MIRION (NUCMED)",
       "role": "BILLING ANALYST",
       "headcount": 1,
       "startDate": "",
-      "stage": "For Job Offer",
+      "stage": "Ongoing Contract",
       "type": "Ramp",
       "candidate": "CHESKA MAE CARONAN"
-    }
-  ],
-  "ongoingContractRoles": [
+    },
     {
       "client": "ADAUGEO",
       "role": "LAB PATIENT ACCOUNT CSR",
@@ -360,7 +359,7 @@
       }
     ]
   },
-  "avgTimeToHire": 27,
+  "avgTimeToHire": 29,
   "avgTimeToFill": 0,
   "activeRequisitions": 9,
   "activeRequisitionsRoles": 7
