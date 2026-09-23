@@ -1,37 +1,35 @@
 {
   "_generated": "2026-09-23",
-  "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt.",
+  "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
       "client": "AUDIT DATA",
-      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)",
-      "hc": 2,
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) (1 of 2 HC still open)",
+      "hc": 1,
       "opened": "2026-07-15",
       "days": 70,
       "type": "New Logo",
-      "initialInterview": [{"name": "Eric Garcia", "movedAt": "2026-08-20"}],
-      "clientEndorsement": [],
-      "clientInterview": [{"name": "HAZELL DORIA", "movedAt": "2026-09-21"}],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": [{"name": "RUEL B. SUCGANG", "movedAt": "2026-09-21"}]
-    },
-    {
-      "client": "THRIVIAE",
-      "role": "SALES DEVELOPMENT REPRESENTATIVE",
-      "hc": 1,
-      "opened": "2026-08-06",
-      "days": 48,
-      "type": "New Logo",
       "initialInterview": [
-        {"name": "Samuel Catton", "movedAt": "2026-09-21"},
-        {"name": "Abraham Soreso", "movedAt": "2026-09-18"}
+        {
+          "name": "Eric Garcia",
+          "movedAt": "2026-08-20"
+        }
       ],
       "clientEndorsement": [],
-      "clientInterview": [{"name": "MANUEL AMADEO", "movedAt": "2026-09-17"}],
+      "clientInterview": [
+        {
+          "name": "HAZELL DORIA",
+          "movedAt": "2026-09-21"
+        }
+      ],
       "jobOffer": [],
       "ongoingContract": [],
-      "offerAccepted": []
+      "offerAccepted": [
+        {
+          "name": "RUEL B. SUCGANG",
+          "movedAt": "2026-09-21"
+        }
+      ]
     },
     {
       "client": "SolCo (Solution Consultants ICT)",
@@ -41,14 +39,34 @@
       "days": 35,
       "type": "Ramp",
       "initialInterview": [
-        {"name": "SHIENA MAE SAGURAN", "movedAt": "2026-09-15"},
-        {"name": "Christy Canay", "movedAt": "2026-09-14"},
-        {"name": "JHUNLERY PASTURAN", "movedAt": "2026-09-09"},
-        {"name": "Coejoy", "movedAt": "2026-09-01"},
-        {"name": "John Jayson Pradilla", "movedAt": "2026-08-28"}
+        {
+          "name": "SHIENA MAE SAGURAN",
+          "movedAt": "2026-09-15"
+        },
+        {
+          "name": "Christy Canay",
+          "movedAt": "2026-09-14"
+        },
+        {
+          "name": "JHUNLERY PASTURAN",
+          "movedAt": "2026-09-09"
+        },
+        {
+          "name": "Coejoy",
+          "movedAt": "2026-09-01"
+        },
+        {
+          "name": "John Jayson Pradilla",
+          "movedAt": "2026-08-28"
+        }
       ],
       "clientEndorsement": [],
-      "clientInterview": [{"name": "Maria Cristina Potayre", "movedAt": "2026-09-10"}],
+      "clientInterview": [
+        {
+          "name": "Maria Cristina Potayre",
+          "movedAt": "2026-09-10"
+        }
+      ],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []
@@ -75,13 +93,32 @@
       "days": 22,
       "type": "Ramp",
       "initialInterview": [
-        {"name": "Sophia Valeree", "movedAt": "2026-09-23"},
-        {"name": "KRISTELLE G. CIDRO", "movedAt": "2026-09-23"},
-        {"name": "EDILYN PAGANPAN", "movedAt": "2026-09-23"}
+        {
+          "name": "Sophia Valeree",
+          "movedAt": "2026-09-23"
+        },
+        {
+          "name": "KRISTELLE G. CIDRO",
+          "movedAt": "2026-09-23"
+        },
+        {
+          "name": "EDILYN PAGANPAN",
+          "movedAt": "2026-09-23"
+        }
       ],
-      "clientEndorsement": [{"name": "ALVIN CARIDO", "movedAt": "2026-09-23"}],
+      "clientEndorsement": [
+        {
+          "name": "ALVIN CARIDO",
+          "movedAt": "2026-09-23"
+        }
+      ],
       "clientInterview": [],
-      "jobOffer": [{"name": "CHESKA MAE CARONAN", "movedAt": "2026-09-22"}],
+      "jobOffer": [
+        {
+          "name": "CHESKA MAE CARONAN",
+          "movedAt": "2026-09-22"
+        }
+      ],
       "ongoingContract": [],
       "offerAccepted": []
     },
@@ -93,21 +130,58 @@
       "days": 14,
       "type": "Ramp",
       "initialInterview": [
-        {"name": "Botalon, Jaslyn N", "movedAt": "2026-09-21"},
-        {"name": "John Ryan Espinola", "movedAt": "2026-09-15"},
-        {"name": "Meryll Belle Garcia", "movedAt": "2026-08-10"},
-        {"name": "JOAN GENABE", "movedAt": "2026-08-10"},
-        {"name": "GERARD PRECIOSO", "movedAt": "2026-08-10"},
-        {"name": "Elden Baga-an", "movedAt": "2026-08-10"},
-        {"name": "Marilyn Dolliague", "movedAt": "2026-08-04"}
+        {
+          "name": "Botalon, Jaslyn N",
+          "movedAt": "2026-09-21"
+        },
+        {
+          "name": "John Ryan Espinola",
+          "movedAt": "2026-09-15"
+        },
+        {
+          "name": "Meryll Belle Garcia",
+          "movedAt": "2026-08-10"
+        },
+        {
+          "name": "JOAN GENABE",
+          "movedAt": "2026-08-10"
+        },
+        {
+          "name": "GERARD PRECIOSO",
+          "movedAt": "2026-08-10"
+        },
+        {
+          "name": "Elden Baga-an",
+          "movedAt": "2026-08-10"
+        },
+        {
+          "name": "Marilyn Dolliague",
+          "movedAt": "2026-08-04"
+        }
       ],
-      "clientEndorsement": [{"name": "Jully Rose G. Martinez", "movedAt": "2026-09-22"}],
-      "clientInterview": [{"name": "MA. Rica ANGELES", "movedAt": "2026-09-10"}],
+      "clientEndorsement": [
+        {
+          "name": "Jully Rose G. Martinez",
+          "movedAt": "2026-09-22"
+        }
+      ],
+      "clientInterview": [
+        {
+          "name": "MA. Rica ANGELES",
+          "movedAt": "2026-09-10"
+        }
+      ],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": [
-        {"name": "Janica Nina Alvarez", "movedAt": "2026-09-21"},
-        {"name": "Margie Santiago", "movedAt": "2026-09-16"}
+        {
+          "name": "Janica Nina Alvarez",
+          "movedAt": "2026-09-21"
+        },
+        {
+          "name": "Margie Santiago",
+          "movedAt": "2026-09-16"
+        }
       ]
     },
     {
@@ -118,16 +192,37 @@
       "days": 9,
       "type": "Backfill",
       "initialInterview": [
-        {"name": "Ronie P. Pilapil", "movedAt": "2026-09-21"},
-        {"name": "OLIVER MONDANO", "movedAt": "2026-09-18"},
-        {"name": "JONALYN CINTO", "movedAt": "2026-09-18"},
-        {"name": "Anamaria Santos", "movedAt": "2026-09-18"}
+        {
+          "name": "Ronie P. Pilapil",
+          "movedAt": "2026-09-21"
+        },
+        {
+          "name": "OLIVER MONDANO",
+          "movedAt": "2026-09-18"
+        },
+        {
+          "name": "JONALYN CINTO",
+          "movedAt": "2026-09-18"
+        },
+        {
+          "name": "Anamaria Santos",
+          "movedAt": "2026-09-18"
+        }
       ],
       "clientEndorsement": [],
       "clientInterview": [
-        {"name": "JAMES KITH S. MACALUA", "movedAt": "2026-09-22"},
-        {"name": "JOYCE JAMISOLA TAN", "movedAt": "2026-09-22"},
-        {"name": "Aldrin John Racho", "movedAt": "2026-09-22"}
+        {
+          "name": "JAMES KITH S. MACALUA",
+          "movedAt": "2026-09-22"
+        },
+        {
+          "name": "JOYCE JAMISOLA TAN",
+          "movedAt": "2026-09-22"
+        },
+        {
+          "name": "Aldrin John Racho",
+          "movedAt": "2026-09-22"
+        }
       ],
       "jobOffer": [],
       "ongoingContract": [],

@@ -1,14 +1,14 @@
 {
-  "totalOpen": 9,
+  "totalOpen": 8,
   "startOfMonth": 9,
   "startOfMonthRoles": 7,
   "additionalInMonth": 12,
   "additionalInMonthRoles": 7,
   "monthlyTarget": 5,
   "pipeline": {
-    "open": 9,
-    "forJobOffer": 0,
-    "ongoingContract": 2,
+    "open": 8,
+    "forJobOffer": 2,
+    "ongoingContract": 1,
     "offerAccepted": 8,
     "started": 0,
     "paused": 2
@@ -130,18 +130,29 @@
       "candidate": "JESSICA RABANG"
     }
   ],
-  "inOfferRoles": [],
-  "ongoingContractRoles": [
+  "inOfferRoles": [
     {
       "client": "MIRION (NUCMED)",
       "role": "BILLING ANALYST",
       "headcount": 1,
       "openedDate": "2026-09-01",
       "startDate": "",
-      "stage": "Ongoing Contract",
+      "stage": "For Job Offer",
       "type": "Ramp",
       "candidate": "CHESKA MAE CARONAN"
     },
+    {
+      "client": "THRIVIAE",
+      "role": "SALES DEVELOPMENT REPRESENTATIVE",
+      "headcount": 1,
+      "openedDate": "2026-08-06",
+      "startDate": "",
+      "stage": "For Job Offer",
+      "type": "New Logo",
+      "candidate": "MANUEL AMADEO"
+    }
+  ],
+  "ongoingContractRoles": [
     {
       "client": "ADAUGEO",
       "role": "LAB PATIENT ACCOUNT CSR",
@@ -197,7 +208,7 @@
       "opened": "2026-08-06",
       "days": 48,
       "type": "New Logo",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "MIRION (NUCMED)",
@@ -228,7 +239,7 @@
     }
   ],
   "business": {
-    "newLogoCount": 3,
+    "newLogoCount": 2,
     "rampCount": 3,
     "backfillCount": 1,
     "newLogoJobs": [
@@ -238,14 +249,6 @@
         "type": "New Logo",
         "opened": "2026-07-15",
         "days": 70,
-        "headcount": 1
-      },
-      {
-        "role": "SALES DEVELOPMENT REPRESENTATIVE",
-        "client": "THRIVIAE",
-        "type": "New Logo",
-        "opened": "2026-08-06",
-        "days": 48,
         "headcount": 1
       },
       {
@@ -301,7 +304,7 @@
     "fresh": 3,
     "normal": 3,
     "aging": 1,
-    "critical": 2,
+    "critical": 1,
     "jobs": [
       {
         "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
@@ -309,14 +312,6 @@
         "type": "New Logo",
         "opened": "2026-07-15",
         "days": 70,
-        "headcount": 1
-      },
-      {
-        "role": "SALES DEVELOPMENT REPRESENTATIVE",
-        "client": "THRIVIAE",
-        "type": "New Logo",
-        "opened": "2026-08-06",
-        "days": 48,
         "headcount": 1
       },
       {
@@ -363,6 +358,6 @@
   },
   "avgTimeToHire": 29,
   "avgTimeToFill": 0,
-  "activeRequisitions": 9,
-  "activeRequisitionsRoles": 7
+  "activeRequisitions": 8,
+  "activeRequisitionsRoles": 8
 }
