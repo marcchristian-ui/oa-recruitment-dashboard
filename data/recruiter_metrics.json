@@ -1,7 +1,7 @@
 {
  "_generated": "2026-09-23",
  "_source": "Manatal matches Jan 1 - 2026-09-23 (matches_2026_v4.json), attributed at the CANDIDATE level: candidate_id in data/recruiter_override.json -> tracker recruiter; otherwise most-recent match.owner mapped via RECRUITER_MAP (unknown owners -> Other). OA internal orgs (599280, 1619851), EVERGREEN org 1560151, POOLING positions, and 10 EXCLUDE_HASHES dropped.",
- "_methodology": "Rank-rollup per (recruiter, candidate). Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing=5, Started=6. A rank-K match emits events at ranks 1..K, dated per stage (rank5 uses hired_at). Per (recruiter, month, rank), unique candidates are counted after rollup - guaranteeing Int >= End >= CP >= Off >= Hire >= Start. Attribution is CANDIDATE-LEVEL (not per match): a candidate's entire funnel activity is credited to a single recruiter, so the same candidate never appears under two recruiters. YTD totals are unique-candidate counts at each rank (never a sum of monthly buckets).",
+ "_methodology": "Rank-rollup per (recruiter, candidate). Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing=5, Started=6. A rank-K match emits events at ranks 1..K, dated per stage: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance, misbucketing late-month accepteds - rank6 updated_at. Each falls back to updated_at when null. Per (recruiter, month, rank), unique candidates are counted after rollup - guaranteeing Int >= End >= CP >= Off >= Hire >= Start. Attribution is CANDIDATE-LEVEL (not per match): a candidate's entire funnel activity is credited to a single recruiter, so the same candidate never appears under two recruiters. YTD totals are unique-candidate counts at each rank (never a sum of monthly buckets).",
  "_dataQuality": {
   "totalMatchesFromAPI": 1577,
   "matchesAfterExclusions": 1239,
@@ -41,11 +41,11 @@
   },
   "priorHiresYTD": {
    "Alan": 18,
-   "Louie": 21,
+   "Louie": 22,
    "Iyah": 15,
-   "Joberth": 22,
+   "Joberth": 25,
    "Mark": 20,
-   "Khamz": 35,
+   "Khamz": 37,
    "Other": 9
   },
   "newHiresYTD": {
@@ -312,12 +312,12 @@
      "endorsed": 10,
      "clientPass": 8,
      "offers": 3,
-     "hires": 2,
+     "hires": 3,
      "starts": 1,
      "intToEnd": 71.4,
      "endToClientPass": 80.0,
-     "endToHire": 20.0,
-     "intToHire": 14.3,
+     "endToHire": 30.0,
+     "intToHire": 21.4,
      "offerToStart": 33.3
     },
     {
@@ -560,12 +560,12 @@
      "endorsed": 10,
      "clientPass": 8,
      "offers": 7,
-     "hires": 2,
+     "hires": 6,
      "starts": 0,
      "intToEnd": 66.7,
      "endToClientPass": 80.0,
-     "endToHire": 20.0,
-     "intToHire": 13.3,
+     "endToHire": 60.0,
+     "intToHire": 40.0,
      "offerToStart": 0.0
     },
     {
@@ -680,12 +680,12 @@
      "endorsed": 13,
      "clientPass": 10,
      "offers": 5,
-     "hires": 3,
+     "hires": 4,
      "starts": 3,
      "intToEnd": 32.5,
      "endToClientPass": 76.9,
-     "endToHire": 23.1,
-     "intToHire": 7.5,
+     "endToHire": 30.8,
+     "intToHire": 10.0,
      "offerToStart": 60.0
     },
     {
@@ -725,12 +725,12 @@
      "endorsed": 8,
      "clientPass": 6,
      "offers": 6,
-     "hires": 5,
+     "hires": 6,
      "starts": 4,
      "intToEnd": 40.0,
      "endToClientPass": 75.0,
-     "endToHire": 62.5,
-     "intToHire": 25.0,
+     "endToHire": 75.0,
+     "intToHire": 30.0,
      "offerToStart": 66.7
     },
     {
@@ -740,12 +740,12 @@
      "endorsed": 10,
      "clientPass": 8,
      "offers": 5,
-     "hires": 4,
+     "hires": 5,
      "starts": 2,
      "intToEnd": 66.7,
      "endToClientPass": 80.0,
-     "endToHire": 40.0,
-     "intToHire": 26.7,
+     "endToHire": 50.0,
+     "intToHire": 33.3,
      "offerToStart": 40.0
     },
     {
@@ -755,28 +755,28 @@
      "endorsed": 15,
      "clientPass": 13,
      "offers": 6,
-     "hires": 5,
+     "hires": 6,
      "starts": 3,
      "intToEnd": 36.6,
      "endToClientPass": 86.7,
-     "endToHire": 33.3,
-     "intToHire": 12.2,
+     "endToHire": 40.0,
+     "intToHire": 14.6,
      "offerToStart": 50.0
     },
     {
      "month": "2026-08",
      "label": "Aug 2026",
-     "interviews": 20,
-     "endorsed": 10,
-     "clientPass": 8,
-     "offers": 4,
-     "hires": 4,
+     "interviews": 19,
+     "endorsed": 9,
+     "clientPass": 7,
+     "offers": 3,
+     "hires": 3,
      "starts": 1,
-     "intToEnd": 50.0,
-     "endToClientPass": 80.0,
-     "endToHire": 40.0,
-     "intToHire": 20.0,
-     "offerToStart": 25.0
+     "intToEnd": 47.4,
+     "endToClientPass": 77.8,
+     "endToHire": 33.3,
+     "intToHire": 15.8,
+     "offerToStart": 33.3
     },
     {
      "month": "2026-09",
@@ -920,12 +920,12 @@
      "endorsed": 11,
      "clientPass": 6,
      "offers": 2,
-     "hires": 1,
+     "hires": 2,
      "starts": 0,
      "intToEnd": 45.8,
      "endToClientPass": 54.5,
-     "endToHire": 9.1,
-     "intToHire": 4.2,
+     "endToHire": 18.2,
+     "intToHire": 8.3,
      "offerToStart": 0.0
     },
     {
@@ -1100,28 +1100,28 @@
      "endorsed": 18,
      "clientPass": 14,
      "offers": 6,
-     "hires": 5,
+     "hires": 6,
      "starts": 0,
      "intToEnd": 39.1,
      "endToClientPass": 77.8,
-     "endToHire": 27.8,
-     "intToHire": 10.9,
+     "endToHire": 33.3,
+     "intToHire": 13.0,
      "offerToStart": 0.0
     },
     {
      "month": "2026-07",
      "label": "Jul 2026",
-     "interviews": 29,
-     "endorsed": 19,
-     "clientPass": 16,
-     "offers": 12,
-     "hires": 12,
+     "interviews": 28,
+     "endorsed": 18,
+     "clientPass": 15,
+     "offers": 11,
+     "hires": 11,
      "starts": 8,
-     "intToEnd": 65.5,
-     "endToClientPass": 84.2,
-     "endToHire": 63.2,
-     "intToHire": 41.4,
-     "offerToStart": 66.7
+     "intToEnd": 64.3,
+     "endToClientPass": 83.3,
+     "endToHire": 61.1,
+     "intToHire": 39.3,
+     "offerToStart": 72.7
     },
     {
      "month": "2026-08",
@@ -1349,5 +1349,6 @@
   "OA internal hires (org_ids 599280 + 1619851), EVERGREEN, POOLING, and 10 EXCLUDE_HASHES are filtered out (matches recruitment_metrics.json).",
   "Ellie owner_ids (225662, 89009) and Marc/me (816616) route to Other via non-membership in RECRUITER_MAP; underlying Manatal ownership on those matches is unchanged."
  ],
- "_note_override": "Per-candidate tracker override applied to ALL funnel stages (not just hires) to guarantee monotonicity per recruiter/month. Tracker-listed candidates get 100% of their funnel activity credited to the tracker recruiter; non-tracker candidates use match.owner (most-recent, candidate-level)."
+ "_note_override": "Per-candidate tracker override applied to ALL funnel stages (not just hires) to guarantee monotonicity per recruiter/month. Tracker-listed candidates get 100% of their funnel activity credited to the tracker recruiter; non-tracker candidates use match.owner (most-recent, candidate-level).",
+ "_note_rank5_fix": "2026-09-23: rank-5 (Hire) events now dated by offer_at first, hired_at as fallback (was hired_at first). Manatal's hired_at fires when a candidate is moved to the Started stage and can drift 1-3 days after offer acceptance, misbucketing late-month accepteds into the following month. Impact: Iyah Jun +4, Mark Jun +1; rank-6 (Started) dating unchanged."
 }
