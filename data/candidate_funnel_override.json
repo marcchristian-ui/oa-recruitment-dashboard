@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-09-22",
+  "_generated": "2026-09-23",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)",
       "hc": 2,
       "opened": "2026-07-15",
-      "days": 69,
+      "days": 70,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -15,12 +15,7 @@
           "movedAt": "2026-08-20"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "Dennis C. Laping",
-          "movedAt": "2026-09-22"
-        }
-      ],
+      "clientEndorsement": [],
       "clientInterview": [
         {
           "name": "HAZELL DORIA",
@@ -41,7 +36,7 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "hc": 1,
       "opened": "2026-08-06",
-      "days": 47,
+      "days": 48,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -69,7 +64,7 @@
       "role": "IT SUPPORT ENGINEER",
       "hc": 1,
       "opened": "2026-08-19",
-      "days": 34,
+      "days": 35,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -117,7 +112,7 @@
       "role": "INTEGRATION SPECIALIST",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 21,
+      "days": 22,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -128,12 +123,16 @@
     },
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST",
-      "hc": 3,
+      "role": "BILLING ANALYST (2 of 3 HC still open)",
+      "hc": 2,
       "opened": "2026-09-01",
-      "days": 21,
+      "days": 22,
       "type": "Ramp",
       "initialInterview": [
+        {
+          "name": "SHALLEE CLAIRE JOHNSON",
+          "movedAt": "2026-09-23"
+        },
         {
           "name": "Ella Mia Bonto",
           "movedAt": "2026-09-22"
@@ -163,14 +162,19 @@
           "movedAt": "2026-09-21"
         }
       ],
-      "clientEndorsement": [],
-      "clientInterview": [
+      "clientEndorsement": [
         {
-          "name": "CHESKA MAE CARONAN",
-          "movedAt": "2026-09-16"
+          "name": "ALVIN CARIDO",
+          "movedAt": "2026-09-23"
         }
       ],
-      "jobOffer": [],
+      "clientInterview": [],
+      "jobOffer": [
+        {
+          "name": "CHESKA MAE CARONAN",
+          "movedAt": "2026-09-22"
+        }
+      ],
       "ongoingContract": [],
       "offerAccepted": []
     },
@@ -179,7 +183,7 @@
       "role": "TECHNICAL SUPPORT (1 of 3 HC still open)",
       "hc": 1,
       "opened": "2026-09-09",
-      "days": 13,
+      "days": 14,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -241,7 +245,7 @@
       "role": "PRE-BILLING SPECIALIST",
       "hc": 2,
       "opened": "2026-09-14",
-      "days": 8,
+      "days": 9,
       "type": "Backfill",
       "initialInterview": [
         {

@@ -1,14 +1,14 @@
 {
-  "totalOpen": 10,
+  "totalOpen": 9,
   "startOfMonth": 9,
   "startOfMonthRoles": 7,
   "additionalInMonth": 12,
   "additionalInMonthRoles": 7,
   "monthlyTarget": 5,
   "pipeline": {
-    "open": 10,
+    "open": 9,
     "forJobOffer": 1,
-    "ongoingContract": 1,
+    "ongoingContract": 2,
     "offerAccepted": 7,
     "started": 0,
     "paused": 2
@@ -31,11 +31,12 @@
       "headcount": 1,
       "openedDate": "2026-08-24",
       "offerDate": "2026-09-10",
-      "startDate": "",
+      "startDate": "2026-09-28",
       "timeToHire": 17,
-      "timeToFill": null,
+      "timeToFill": 35,
       "stage": "Offer Accepted",
-      "type": "Ramp"
+      "type": "Ramp",
+      "candidate": "DIVINE ROJO"
     },
     {
       "client": "PAYKONCEPT",
@@ -43,11 +44,12 @@
       "headcount": 1,
       "openedDate": "2026-09-01",
       "offerDate": "2026-09-12",
-      "startDate": "",
+      "startDate": "2026-09-28",
       "timeToHire": 11,
-      "timeToFill": null,
+      "timeToFill": 27,
       "stage": "Offer Accepted",
-      "type": "New Logo"
+      "type": "New Logo",
+      "candidate": "Katrina May T. Edillon"
     },
     {
       "client": "AUDIT DATA",
@@ -55,9 +57,9 @@
       "headcount": 1,
       "openedDate": "2026-07-15",
       "offerDate": "2026-09-17",
-      "startDate": "",
+      "startDate": "2026-10-05",
       "timeToHire": 64,
-      "timeToFill": null,
+      "timeToFill": 82,
       "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "Mark Angelo T. Suguitan"
@@ -68,9 +70,9 @@
       "headcount": 1,
       "openedDate": "2026-09-09",
       "offerDate": "2026-09-16",
-      "startDate": "",
+      "startDate": "2026-09-28",
       "timeToHire": 7,
-      "timeToFill": null,
+      "timeToFill": 19,
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Margie Santiago"
@@ -81,9 +83,9 @@
       "headcount": 1,
       "openedDate": "2026-09-09",
       "offerDate": "2026-09-21",
-      "startDate": "",
+      "startDate": "2026-09-28",
       "timeToHire": 12,
-      "timeToFill": null,
+      "timeToFill": 19,
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Janica Nina Alvarez"
@@ -107,9 +109,9 @@
       "headcount": 1,
       "openedDate": "2026-09-08",
       "offerDate": "2026-09-21",
-      "startDate": "",
+      "startDate": "2026-10-12",
       "timeToHire": 13,
-      "timeToFill": null,
+      "timeToFill": 34,
       "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "TRISHA PARONG"
@@ -117,13 +119,13 @@
   ],
   "inOfferRoles": [
     {
-      "client": "ADAUGEO",
-      "role": "LAB PATIENT ACCOUNT CSR",
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
       "headcount": 1,
       "startDate": "",
       "stage": "For Job Offer",
-      "type": "Backfill",
-      "candidate": "Ruscel Joy Sta. Ana Dizon"
+      "type": "Ramp",
+      "candidate": "CHESKA MAE CARONAN"
     }
   ],
   "ongoingContractRoles": [
@@ -135,6 +137,15 @@
       "stage": "Ongoing Contract",
       "type": "Ramp",
       "candidate": "JESSICA RABANG"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "LAB PATIENT ACCOUNT CSR",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Backfill",
+      "candidate": "Ruscel Joy Sta. Ana Dizon"
     }
   ],
   "somCarryOver": [
@@ -143,7 +154,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 69,
+      "days": 70,
       "type": "New Logo",
       "status": "active"
     },
@@ -152,7 +163,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 69,
+      "days": 70,
       "type": "New Logo",
       "status": "won"
     },
@@ -161,7 +172,7 @@
       "role": "TECH LEAD",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 69,
+      "days": 70,
       "type": "New Logo",
       "status": "won"
     },
@@ -170,7 +181,7 @@
       "role": "INVENTORY ANALYST",
       "headcount": 1,
       "opened": "2026-08-04",
-      "days": 49,
+      "days": 50,
       "type": "Ramp",
       "status": "won"
     },
@@ -179,7 +190,7 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "headcount": 1,
       "opened": "2026-08-06",
-      "days": 47,
+      "days": 48,
       "type": "New Logo",
       "status": "active"
     },
@@ -188,7 +199,7 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "opened": "2026-08-12",
-      "days": 41,
+      "days": 42,
       "type": "Ramp",
       "status": "on_hold"
     },
@@ -197,7 +208,7 @@
       "role": "IT SUPPORT ENGINEER",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 34,
+      "days": 35,
       "type": "Ramp",
       "status": "active"
     },
@@ -206,7 +217,7 @@
       "role": "MARKETING SUPPORT",
       "headcount": 1,
       "opened": "2026-08-24",
-      "days": 29,
+      "days": 30,
       "type": "Ramp",
       "status": "won"
     }
@@ -221,7 +232,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 69,
+        "days": 70,
         "headcount": 1
       },
       {
@@ -229,7 +240,7 @@
         "client": "THRIVIAE",
         "type": "New Logo",
         "opened": "2026-08-06",
-        "days": 47,
+        "days": 48,
         "headcount": 1
       },
       {
@@ -237,7 +248,7 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 21,
+        "days": 22,
         "headcount": 1
       }
     ],
@@ -247,23 +258,23 @@
         "client": "SolCo (Solution Consultants ICT)",
         "type": "Ramp",
         "opened": "2026-08-19",
-        "days": 34,
+        "days": 35,
         "headcount": 1
       },
       {
-        "role": "BILLING ANALYST",
+        "role": "BILLING ANALYST — 2 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 21,
-        "headcount": 3
+        "days": 22,
+        "headcount": 2
       },
       {
         "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
         "client": "ZEPP",
         "type": "Ramp",
         "opened": "2026-09-09",
-        "days": 13,
+        "days": 14,
         "headcount": 1
       }
     ],
@@ -273,17 +284,17 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 8,
+        "days": 9,
         "headcount": 2
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 45,
-    "avgRamp": 22,
-    "avgBackfill": 8,
+    "avgNewLogo": 46,
+    "avgRamp": 23,
+    "avgBackfill": 9,
     "fresh": 3,
-    "normal": 4,
+    "normal": 3,
     "aging": 1,
     "critical": 2,
     "jobs": [
@@ -292,7 +303,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 69,
+        "days": 70,
         "headcount": 1
       },
       {
@@ -300,7 +311,7 @@
         "client": "THRIVIAE",
         "type": "New Logo",
         "opened": "2026-08-06",
-        "days": 47,
+        "days": 48,
         "headcount": 1
       },
       {
@@ -308,7 +319,7 @@
         "client": "SolCo (Solution Consultants ICT)",
         "type": "Ramp",
         "opened": "2026-08-19",
-        "days": 34,
+        "days": 35,
         "headcount": 1
       },
       {
@@ -316,23 +327,23 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 21,
+        "days": 22,
         "headcount": 1
       },
       {
-        "role": "BILLING ANALYST",
+        "role": "BILLING ANALYST — 2 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 21,
-        "headcount": 3
+        "days": 22,
+        "headcount": 2
       },
       {
         "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
         "client": "ZEPP",
         "type": "Ramp",
         "opened": "2026-09-09",
-        "days": 13,
+        "days": 14,
         "headcount": 1
       },
       {
@@ -340,13 +351,13 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 8,
+        "days": 9,
         "headcount": 2
       }
     ]
   },
   "avgTimeToHire": 27,
   "avgTimeToFill": 0,
-  "activeRequisitions": 12,
+  "activeRequisitions": 9,
   "activeRequisitionsRoles": 7
 }
