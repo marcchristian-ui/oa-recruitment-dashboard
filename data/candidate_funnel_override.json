@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-09-23",
+  "_generated": "2026-09-24",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) (1 of 2 HC still open)",
       "hc": 1,
       "opened": "2026-07-15",
-      "days": 70,
+      "days": 71,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -36,7 +36,7 @@
       "role": "IT SUPPORT ENGINEER",
       "hc": 1,
       "opened": "2026-08-19",
-      "days": 35,
+      "days": 36,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -76,7 +76,7 @@
       "role": "INTEGRATION SPECIALIST",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 22,
+      "days": 23,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -90,44 +90,68 @@
       "role": "BILLING ANALYST (2 of 3 HC still open)",
       "hc": 2,
       "opened": "2026-09-01",
-      "days": 22,
+      "days": 23,
       "type": "Ramp",
       "initialInterview": [
         {
-          "name": "Sophia Valeree",
-          "movedAt": "2026-09-23"
+          "name": "ARMIE MONZON",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "JOHN VINCENT DONAYRE",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "JULIUS PRINCE R. DE LA TORRE",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "KRISTINE ROSE COLAS BALMAÑA",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "Judea Luna",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "BEN ANCHETA",
+          "movedAt": "2026-09-24"
         },
         {
           "name": "KRISTELLE G. CIDRO",
           "movedAt": "2026-09-23"
-        },
-        {
-          "name": "EDILYN PAGANPAN",
-          "movedAt": "2026-09-23"
         }
       ],
       "clientEndorsement": [
+        {
+          "name": "Cesar E.Tambasen Jr",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "JEFRY CRUZ",
+          "movedAt": "2026-09-24"
+        },
         {
           "name": "ALVIN CARIDO",
           "movedAt": "2026-09-23"
         }
       ],
       "clientInterview": [],
-      "jobOffer": [
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": [
         {
           "name": "CHESKA MAE CARONAN",
           "movedAt": "2026-09-22"
         }
-      ],
-      "ongoingContract": [],
-      "offerAccepted": []
+      ]
     },
     {
       "client": "ZEPP",
       "role": "TECHNICAL SUPPORT (1 of 3 HC still open)",
       "hc": 1,
       "opened": "2026-09-09",
-      "days": 14,
+      "days": 15,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -189,27 +213,23 @@
       "role": "PRE-BILLING SPECIALIST",
       "hc": 2,
       "opened": "2026-09-14",
-      "days": 9,
+      "days": 10,
       "type": "Backfill",
-      "initialInterview": [
+      "initialInterview": [],
+      "clientEndorsement": [
         {
-          "name": "Ronie P. Pilapil",
-          "movedAt": "2026-09-21"
-        },
-        {
-          "name": "OLIVER MONDANO",
-          "movedAt": "2026-09-18"
-        },
-        {
-          "name": "JONALYN CINTO",
-          "movedAt": "2026-09-18"
+          "name": "Edmarie Alcazar",
+          "movedAt": "2026-09-24"
         },
         {
           "name": "Anamaria Santos",
-          "movedAt": "2026-09-18"
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "JONALYN CINTO",
+          "movedAt": "2026-09-23"
         }
       ],
-      "clientEndorsement": [],
       "clientInterview": [
         {
           "name": "JAMES KITH S. MACALUA",

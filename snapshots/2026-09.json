@@ -7,9 +7,9 @@
   "monthlyTarget": 5,
   "pipeline": {
     "open": 8,
-    "forJobOffer": 2,
+    "forJobOffer": 0,
     "ongoingContract": 1,
-    "offerAccepted": 8,
+    "offerAccepted": 10,
     "started": 0,
     "paused": 2
   },
@@ -128,16 +128,17 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "JESSICA RABANG"
-    }
-  ],
-  "inOfferRoles": [
+    },
     {
       "client": "MIRION (NUCMED)",
       "role": "BILLING ANALYST",
       "headcount": 1,
       "openedDate": "2026-09-01",
+      "offerDate": "2026-09-22",
       "startDate": "",
-      "stage": "For Job Offer",
+      "timeToHire": 21,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "CHESKA MAE CARONAN"
     },
@@ -146,12 +147,16 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "headcount": 1,
       "openedDate": "2026-08-06",
+      "offerDate": "2026-09-23",
       "startDate": "",
-      "stage": "For Job Offer",
+      "timeToHire": 48,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "MANUEL AMADEO"
     }
   ],
+  "inOfferRoles": [],
   "ongoingContractRoles": [
     {
       "client": "ADAUGEO",
@@ -170,7 +175,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 70,
+      "days": 71,
       "type": "New Logo",
       "status": "active"
     },
@@ -179,7 +184,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 70,
+      "days": 71,
       "type": "New Logo",
       "status": "won"
     },
@@ -188,7 +193,7 @@
       "role": "TECH LEAD",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 70,
+      "days": 71,
       "type": "New Logo",
       "status": "won"
     },
@@ -197,7 +202,7 @@
       "role": "INVENTORY ANALYST",
       "headcount": 1,
       "opened": "2026-08-04",
-      "days": 50,
+      "days": 51,
       "type": "Ramp",
       "status": "won"
     },
@@ -206,7 +211,7 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "headcount": 1,
       "opened": "2026-08-06",
-      "days": 48,
+      "days": 49,
       "type": "New Logo",
       "status": "won"
     },
@@ -215,7 +220,7 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "opened": "2026-08-12",
-      "days": 42,
+      "days": 43,
       "type": "Ramp",
       "status": "on_hold"
     },
@@ -224,7 +229,7 @@
       "role": "IT SUPPORT ENGINEER",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 35,
+      "days": 36,
       "type": "Ramp",
       "status": "active"
     },
@@ -233,22 +238,22 @@
       "role": "MARKETING SUPPORT",
       "headcount": 1,
       "opened": "2026-08-24",
-      "days": 30,
+      "days": 31,
       "type": "Ramp",
       "status": "won"
     }
   ],
   "business": {
     "newLogoCount": 2,
-    "rampCount": 3,
-    "backfillCount": 1,
+    "rampCount": 4,
+    "backfillCount": 2,
     "newLogoJobs": [
       {
         "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 70,
+        "days": 71,
         "headcount": 1
       },
       {
@@ -256,7 +261,7 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 22,
+        "days": 23,
         "headcount": 1
       }
     ],
@@ -266,7 +271,7 @@
         "client": "SolCo (Solution Consultants ICT)",
         "type": "Ramp",
         "opened": "2026-08-19",
-        "days": 35,
+        "days": 36,
         "headcount": 1
       },
       {
@@ -274,7 +279,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 22,
+        "days": 23,
         "headcount": 2
       },
       {
@@ -282,7 +287,7 @@
         "client": "ZEPP",
         "type": "Ramp",
         "opened": "2026-09-09",
-        "days": 14,
+        "days": 15,
         "headcount": 1
       }
     ],
@@ -292,17 +297,17 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 9,
+        "days": 10,
         "headcount": 2
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 46,
-    "avgRamp": 23,
-    "avgBackfill": 9,
-    "fresh": 3,
-    "normal": 3,
+    "avgNewLogo": 47,
+    "avgRamp": 24,
+    "avgBackfill": 10,
+    "fresh": 2,
+    "normal": 4,
     "aging": 1,
     "critical": 1,
     "jobs": [
@@ -311,7 +316,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 70,
+        "days": 71,
         "headcount": 1
       },
       {
@@ -319,7 +324,7 @@
         "client": "SolCo (Solution Consultants ICT)",
         "type": "Ramp",
         "opened": "2026-08-19",
-        "days": 35,
+        "days": 36,
         "headcount": 1
       },
       {
@@ -327,7 +332,7 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 22,
+        "days": 23,
         "headcount": 1
       },
       {
@@ -335,7 +340,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 22,
+        "days": 23,
         "headcount": 2
       },
       {
@@ -343,7 +348,7 @@
         "client": "ZEPP",
         "type": "Ramp",
         "opened": "2026-09-09",
-        "days": 14,
+        "days": 15,
         "headcount": 1
       },
       {
@@ -351,12 +356,12 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 9,
+        "days": 10,
         "headcount": 2
       }
     ]
   },
-  "avgTimeToHire": 29,
+  "avgTimeToHire": 30,
   "avgTimeToFill": 0,
   "activeRequisitions": 8,
   "activeRequisitionsRoles": 8
