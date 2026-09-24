@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-09-24",
+  "_generated": "2026-09-25",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) (1 of 2 HC still open)",
       "hc": 1,
       "opened": "2026-07-15",
-      "days": 71,
+      "days": 72,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -36,7 +36,7 @@
       "role": "IT SUPPORT ENGINEER",
       "hc": 1,
       "opened": "2026-08-19",
-      "days": 36,
+      "days": 37,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -76,7 +76,7 @@
       "role": "INTEGRATION SPECIALIST",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 23,
+      "days": 24,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -90,7 +90,7 @@
       "role": "BILLING ANALYST (2 of 3 HC still open)",
       "hc": 2,
       "opened": "2026-09-01",
-      "days": 23,
+      "days": 24,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -151,7 +151,7 @@
       "role": "TECHNICAL SUPPORT (1 of 3 HC still open)",
       "hc": 1,
       "opened": "2026-09-09",
-      "days": 15,
+      "days": 16,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -213,7 +213,7 @@
       "role": "PRE-BILLING SPECIALIST",
       "hc": 2,
       "opened": "2026-09-14",
-      "days": 10,
+      "days": 11,
       "type": "Backfill",
       "initialInterview": [],
       "clientEndorsement": [

@@ -175,7 +175,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 71,
+      "days": 72,
       "type": "New Logo",
       "status": "active"
     },
@@ -184,7 +184,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 71,
+      "days": 72,
       "type": "New Logo",
       "status": "won"
     },
@@ -193,7 +193,7 @@
       "role": "TECH LEAD",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 71,
+      "days": 72,
       "type": "New Logo",
       "status": "won"
     },
@@ -202,7 +202,7 @@
       "role": "INVENTORY ANALYST",
       "headcount": 1,
       "opened": "2026-08-04",
-      "days": 51,
+      "days": 52,
       "type": "Ramp",
       "status": "won"
     },
@@ -211,7 +211,7 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "headcount": 1,
       "opened": "2026-08-06",
-      "days": 49,
+      "days": 50,
       "type": "New Logo",
       "status": "won"
     },
@@ -220,7 +220,7 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "opened": "2026-08-12",
-      "days": 43,
+      "days": 44,
       "type": "Ramp",
       "status": "on_hold"
     },
@@ -229,7 +229,7 @@
       "role": "IT SUPPORT ENGINEER",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 36,
+      "days": 37,
       "type": "Ramp",
       "status": "active"
     },
@@ -238,7 +238,7 @@
       "role": "MARKETING SUPPORT",
       "headcount": 1,
       "opened": "2026-08-24",
-      "days": 31,
+      "days": 32,
       "type": "Ramp",
       "status": "won"
     }
@@ -253,7 +253,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 71,
+        "days": 72,
         "headcount": 1
       },
       {
@@ -261,7 +261,7 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 23,
+        "days": 24,
         "headcount": 1
       }
     ],
@@ -271,7 +271,7 @@
         "client": "SolCo (Solution Consultants ICT)",
         "type": "Ramp",
         "opened": "2026-08-19",
-        "days": 36,
+        "days": 37,
         "headcount": 1
       },
       {
@@ -279,7 +279,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 23,
+        "days": 24,
         "headcount": 2
       },
       {
@@ -287,7 +287,7 @@
         "client": "ZEPP",
         "type": "Ramp",
         "opened": "2026-09-09",
-        "days": 15,
+        "days": 16,
         "headcount": 1
       }
     ],
@@ -297,15 +297,15 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 10,
+        "days": 11,
         "headcount": 2
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 47,
-    "avgRamp": 24,
-    "avgBackfill": 10,
+    "avgNewLogo": 48,
+    "avgRamp": 25,
+    "avgBackfill": 11,
     "fresh": 2,
     "normal": 4,
     "aging": 1,
@@ -316,7 +316,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 71,
+        "days": 72,
         "headcount": 1
       },
       {
@@ -324,7 +324,7 @@
         "client": "SolCo (Solution Consultants ICT)",
         "type": "Ramp",
         "opened": "2026-08-19",
-        "days": 36,
+        "days": 37,
         "headcount": 1
       },
       {
@@ -332,7 +332,7 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 23,
+        "days": 24,
         "headcount": 1
       },
       {
@@ -340,7 +340,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 23,
+        "days": 24,
         "headcount": 2
       },
       {
@@ -348,7 +348,7 @@
         "client": "ZEPP",
         "type": "Ramp",
         "opened": "2026-09-09",
-        "days": 15,
+        "days": 16,
         "headcount": 1
       },
       {
@@ -356,7 +356,7 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 10,
+        "days": 11,
         "headcount": 2
       }
     ]
