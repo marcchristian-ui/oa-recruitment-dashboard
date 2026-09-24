@@ -699,7 +699,7 @@ function drawRecruitmentMetrics(){
     if(v === null || v === undefined) return "—";
     return v + (suffix||"");
   }
-  function kpiCard(label, k, suffix){
+  function kpiCard(label, k, suffix, frac){
     if(!k) k = {actual:null,target:null,status:"gray"};
     var actual = fmtVal(k.actual, suffix||"");
     var target = k.target !== null && k.target !== undefined ? "Target " + k.target + (suffix||"") : "No target";
@@ -710,18 +710,28 @@ function drawRecruitmentMetrics(){
     } else if (k.note) {
       variance = k.note;
     }
+    // Prefer explicit numerator/denominator carried on the KPI; fall back to caller-provided fraction.
+    var n = (k.numerator   !== undefined && k.numerator   !== null) ? k.numerator   : (frac ? frac.n : null);
+    var d = (k.denominator !== undefined && k.denominator !== null) ? k.denominator : (frac ? frac.d : null);
+    var fracLine = "";
+    if(n !== null && d !== null && d !== undefined){
+      fracLine = '<div style="font-size:10px;color:#718096;margin-top:2px;font-weight:600;">'+n+' of '+d+'</div>';
+    }
     return '<div class="kcard" style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;">'
       + '<div style="font-size:10px;font-weight:700;color:#718096;text-transform:uppercase;letter-spacing:.6px;">'+label+'</div>'
       + '<div style="font-size:22px;font-weight:800;color:#2d3748;line-height:1.1;margin-top:4px;">'+actual+' '+statusDot(k.status)+'</div>'
+      + fracLine
       + '<div style="font-size:10px;color:#a0aec0;margin-top:3px;">'+target+' &middot; '+variance+'</div>'
       + '</div>';
   }
+  // YTD totals let us show the raw fraction under each conversion percentage.
+  var Y = M.ytdTotals || {};
   document.getElementById("rmKpiGrid").innerHTML =
-    kpiCard("Interview &rarr; Endorse",    kpi.intToEnd,       "%") +
-    kpiCard("Endorse &rarr; Client Pass",  kpi.endToClientPass,"%") +
-    kpiCard("Endorse &rarr; Hire",         kpi.endToHire,      "%") +
-    kpiCard("Interview &rarr; Hire",       kpi.intToHire,      "%") +
-    kpiCard("Offer &rarr; Start",          kpi.offerToStart,   "%") +
+    kpiCard("Interview &rarr; Endorse",    kpi.intToEnd,       "%", {n:Y.endorsed,   d:Y.interviews}) +
+    kpiCard("Endorse &rarr; Client Pass",  kpi.endToClientPass,"%", {n:Y.clientPass, d:Y.endorsed})   +
+    kpiCard("Endorse &rarr; Hire",         kpi.endToHire,      "%", {n:Y.hires,      d:Y.endorsed})   +
+    kpiCard("Interview &rarr; Hire",       kpi.intToHire,      "%", {n:Y.hires,      d:Y.interviews}) +
+    kpiCard("Offer &rarr; Start",          kpi.offerToStart,   "%", {n:Y.starts,     d:Y.offers})     +
     kpiCard("Avg Time-to-Fill",            kpi.avgTtf,         "d") +
     kpiCard("% Filled &le; 30 days",       kpi.pctFilled30d,   "%") +
     kpiCard("% Filled &le; 60 days",       kpi.pctFilled60d,   "%") +
