@@ -1172,10 +1172,12 @@ function drawSomAdditional(){
 
   var somWon = stages.som.forJobOffer + stages.som.ongoingContract + stages.som.offerAccepted + stages.som.started;
   var addlWon = stages.addl.forJobOffer + stages.addl.ongoingContract + stages.addl.offerAccepted + stages.addl.started;
-  var somRate = somEligible > 0 ? Math.round(somWon / somEligible * 100) : 0;
   var addlRate = addl > 0 ? Math.round(addlWon / addl * 100) : 0;
-  var somRateColor = somRate >= 70 ? "#38a169" : (somRate >= 50 ? "#dd6b20" : "#e53e3e");
+  // Fill rate is expressed against TARGET (capped at 100% once target is met);
+  // over-achievement stays visible via "N% of target" in the subtitle.
   var somTargetPct = somTargetAdj > 0 ? Math.round(somWon / somTargetAdj * 100) : 0;
+  var somRate = Math.min(100, somTargetPct);
+  var somRateColor = somRate >= 100 ? "#38a169" : (somRate >= 70 ? "#dd6b20" : "#e53e3e");
 
   // Headline blocks
   var subDetail = somWon+' of '+somEligible+' eligible HC ('+som+' SoM &minus; '+(somPausedHc+somLostHc)+' paused/lost) · Target 70% ('+somTargetAdj+' hires) · '+somTargetPct+'% of target';
@@ -1752,11 +1754,11 @@ function drawOverview(){
   }
   function _hc(r){return r.headcount||1;}
   var somWonHc=0, addlWonHc=0;
-  cw.forEach(function(r){ if(_isAddl(r)) addlWonHc+=_hc(r); else somWonHc+=_hc(r); });
-  // inOffer / ongoingContract entries don't carry openedDate; conservatively bucket them as SoM
-  // (they nearly always originate from SoM in practice — user can override if needed).
-  ioRolesArr.forEach(function(r){ somWonHc+=_hc(r); });
-  ocRolesArr.forEach(function(r){ somWonHc+=_hc(r); });
+  // Every win-path entry (closedWon, inOfferRoles, ongoingContractRoles) carries openedDate
+  // in the current snapshot schema — route each to SoM vs Additional via _isAddl(openedDate).
+  cw.forEach(function(r){        if(_isAddl(r)) addlWonHc+=_hc(r); else somWonHc+=_hc(r); });
+  ioRolesArr.forEach(function(r){if(_isAddl(r)) addlWonHc+=_hc(r); else somWonHc+=_hc(r); });
+  ocRolesArr.forEach(function(r){if(_isAddl(r)) addlWonHc+=_hc(r); else somWonHc+=_hc(r); });
 
   var som=DATA.startOfMonth||0;
   var addl=DATA.additionalInMonth||0;
@@ -1771,13 +1773,17 @@ function drawOverview(){
   var somEligible=Math.max(0, som - somPausedHc - somLostHc);
   var somTargetAdj=Math.ceil(somEligible*0.70);
 
-  var somRate=somEligible>0?Math.round(somWonHc/somEligible*100):0;
-  var somColor=somRate>=70?"gr":(somRate>=50?"or":"rd");
+  // Fill rate is expressed against TARGET, not against eligible HC. Meeting the 70% target
+  // (e.g. 5 wins on 7 eligible) reads 100%; every win beyond that shows in the subtitle
+  // as "N% of target" so over-achievement stays visible.
+  var somTargetPct=somTargetAdj>0?Math.round(somWonHc/somTargetAdj*100):0;
+  var somRate=Math.min(100, somTargetPct);
+  var somColor=somRate>=100?"gr":(somRate>=70?"or":"rd");
   var addlProgress=addl>0?Math.round(addlWonHc/addl*100):0;
 
   document.getElementById("fillKpi").innerHTML=
     kc(somColor,"SoM Fill Rate (Target 70%)",somRate+"%",
-       somWonHc+" of "+somEligible+" eligible HC ("+som+" SoM − "+(somPausedHc+somLostHc)+" paused/lost) · target "+somTargetAdj+" hires")+
+       somWonHc+" of "+somEligible+" eligible HC ("+som+" SoM − "+(somPausedHc+somLostHc)+" paused/lost) · target "+somTargetAdj+" hires · "+somTargetPct+"% of target")+
     kc("bl","SoM Wins ("+moLabel()+")",somWonHc,
        "Hires from Start-of-Month requisitions only")+
     kc("or","Additional Wins ("+moLabel()+")",addlWonHc,
