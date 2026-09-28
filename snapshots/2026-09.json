@@ -1,15 +1,15 @@
 {
-  "totalOpen": 8,
+  "totalOpen": 5,
   "startOfMonth": 9,
   "startOfMonthRoles": 7,
   "additionalInMonth": 12,
   "additionalInMonthRoles": 7,
   "monthlyTarget": 5,
   "pipeline": {
-    "open": 8,
-    "forJobOffer": 0,
-    "ongoingContract": 1,
-    "offerAccepted": 10,
+    "open": 5,
+    "forJobOffer": 1,
+    "ongoingContract": 2,
+    "offerAccepted": 11,
     "started": 0,
     "paused": 2
   },
@@ -154,9 +154,33 @@
       "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "MANUEL AMADEO"
+    },
+    {
+      "client": "ZEPP",
+      "role": "TECHNICAL SUPPORT",
+      "headcount": 1,
+      "openedDate": "2026-09-09",
+      "offerDate": "2026-09-25",
+      "startDate": "",
+      "timeToHire": 16,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Jodelle Agsalud"
     }
   ],
-  "inOfferRoles": [],
+  "inOfferRoles": [
+    {
+      "client": "SolCo (Solution Consultants ICT)",
+      "role": "IT SUPPORT ENGINEER",
+      "headcount": 1,
+      "openedDate": "2026-08-19",
+      "startDate": "",
+      "stage": "For Job Offer",
+      "type": "Ramp",
+      "candidate": "Maria Cristina Potayre"
+    }
+  ],
   "ongoingContractRoles": [
     {
       "client": "ADAUGEO",
@@ -167,6 +191,16 @@
       "stage": "Ongoing Contract",
       "type": "Backfill",
       "candidate": "Ruscel Joy Sta. Ana Dizon"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "PRE-BILLING SPECIALIST",
+      "headcount": 1,
+      "openedDate": "2026-09-14",
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Backfill",
+      "candidate": "JAMES KITH S. MACALUA"
     }
   ],
   "somCarryOver": [
@@ -175,7 +209,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 72,
+      "days": 75,
       "type": "New Logo",
       "status": "active"
     },
@@ -184,7 +218,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 72,
+      "days": 75,
       "type": "New Logo",
       "status": "won"
     },
@@ -193,7 +227,7 @@
       "role": "TECH LEAD",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 72,
+      "days": 75,
       "type": "New Logo",
       "status": "won"
     },
@@ -202,7 +236,7 @@
       "role": "INVENTORY ANALYST",
       "headcount": 1,
       "opened": "2026-08-04",
-      "days": 52,
+      "days": 55,
       "type": "Ramp",
       "status": "won"
     },
@@ -211,7 +245,7 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "headcount": 1,
       "opened": "2026-08-06",
-      "days": 50,
+      "days": 53,
       "type": "New Logo",
       "status": "won"
     },
@@ -220,7 +254,7 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "opened": "2026-08-12",
-      "days": 44,
+      "days": 47,
       "type": "Ramp",
       "status": "on_hold"
     },
@@ -229,31 +263,31 @@
       "role": "IT SUPPORT ENGINEER",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 37,
+      "days": 40,
       "type": "Ramp",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "PROPLATE",
       "role": "MARKETING SUPPORT",
       "headcount": 1,
       "opened": "2026-08-24",
-      "days": 32,
+      "days": 35,
       "type": "Ramp",
       "status": "won"
     }
   ],
   "business": {
     "newLogoCount": 2,
-    "rampCount": 4,
-    "backfillCount": 2,
+    "rampCount": 2,
+    "backfillCount": 1,
     "newLogoJobs": [
       {
         "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 72,
+        "days": 75,
         "headcount": 1
       },
       {
@@ -261,54 +295,38 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 24,
+        "days": 27,
         "headcount": 1
       }
     ],
     "rampJobs": [
       {
-        "role": "IT SUPPORT ENGINEER",
-        "client": "SolCo (Solution Consultants ICT)",
-        "type": "Ramp",
-        "opened": "2026-08-19",
-        "days": 37,
-        "headcount": 1
-      },
-      {
         "role": "BILLING ANALYST — 2 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 24,
+        "days": 27,
         "headcount": 2
-      },
-      {
-        "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
-        "client": "ZEPP",
-        "type": "Ramp",
-        "opened": "2026-09-09",
-        "days": 16,
-        "headcount": 1
       }
     ],
     "backfillJobs": [
       {
-        "role": "PRE-BILLING SPECIALIST",
+        "role": "PRE-BILLING SPECIALIST — 1 of 2 HC still open",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 11,
-        "headcount": 2
+        "days": 14,
+        "headcount": 1
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 48,
-    "avgRamp": 25,
-    "avgBackfill": 11,
-    "fresh": 2,
-    "normal": 4,
-    "aging": 1,
+    "avgNewLogo": 51,
+    "avgRamp": 27,
+    "avgBackfill": 14,
+    "fresh": 1,
+    "normal": 3,
+    "aging": 0,
     "critical": 1,
     "jobs": [
       {
@@ -316,15 +334,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 72,
-        "headcount": 1
-      },
-      {
-        "role": "IT SUPPORT ENGINEER",
-        "client": "SolCo (Solution Consultants ICT)",
-        "type": "Ramp",
-        "opened": "2026-08-19",
-        "days": 37,
+        "days": 75,
         "headcount": 1
       },
       {
@@ -332,7 +342,7 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 24,
+        "days": 27,
         "headcount": 1
       },
       {
@@ -340,29 +350,21 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 24,
+        "days": 27,
         "headcount": 2
       },
       {
-        "role": "TECHNICAL SUPPORT — 1 of 3 HC still open",
-        "client": "ZEPP",
-        "type": "Ramp",
-        "opened": "2026-09-09",
-        "days": 16,
-        "headcount": 1
-      },
-      {
-        "role": "PRE-BILLING SPECIALIST",
+        "role": "PRE-BILLING SPECIALIST — 1 of 2 HC still open",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 11,
-        "headcount": 2
+        "days": 14,
+        "headcount": 1
       }
     ]
   },
-  "avgTimeToHire": 30,
+  "avgTimeToHire": 29,
   "avgTimeToFill": 0,
-  "activeRequisitions": 8,
-  "activeRequisitionsRoles": 6
+  "activeRequisitions": 5,
+  "activeRequisitionsRoles": 4
 }
