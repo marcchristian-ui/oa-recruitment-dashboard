@@ -9,8 +9,8 @@
     "open": 17,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 4,
-    "started": 15,
+    "offerAccepted": 0,
+    "started": 19,
     "paused": 2
   },
   "pausedRoles": [
@@ -23,11 +23,11 @@
     {"client": "YEEZY", "role": "SENIOR CSR", "headcount": 2, "openedDate": "2026-06-15", "offerDate": "2026-07-01", "startDate": "2026-07-08", "timeToHire": 16, "timeToFill": 23, "stage": "Started", "type": "Ramp", "candidates": ["Dinalyn Alcantara", "Sheryll Tiongco"]},
     {"client": "YEEZY", "role": "JUNIOR CSR (additional)", "headcount": 4, "openedDate": "2026-06-15", "offerDate": "2026-07-14", "startDate": "2026-07-21", "timeToHire": 29, "timeToFill": 36, "stage": "Started", "type": "Ramp"},
     {"client": "MIRION", "role": "BILLING ANALYST", "headcount": 1, "openedDate": "2026-07-01", "offerDate": "2026-07-14", "startDate": "2026-07-20", "timeToHire": 13, "timeToFill": 19, "stage": "Started", "type": "Ramp"},
-    {"client": "ADAUGEO", "role": "AZURE CLOUD ENGINEER", "headcount": 1, "openedDate": "2026-07-01", "offerDate": "2026-07-15", "startDate": "2026-08-06", "timeToHire": 14, "timeToFill": null, "stage": "Offer Accepted", "type": "Backfill"},
+    {"client": "ADAUGEO", "role": "AZURE CLOUD ENGINEER", "headcount": 1, "openedDate": "2026-07-01", "offerDate": "2026-07-15", "startDate": "2026-08-06", "timeToHire": 14, "timeToFill": 36, "stage": "Started", "type": "Backfill"},
     {"client": "CREATIVE DENTAL PARTNER", "role": "DENTAL ACCOUNT RECEIVABLE", "headcount": 1, "openedDate": "2026-07-06", "offerDate": "2026-07-27", "startDate": "2026-08-03", "timeToHire": 21, "timeToFill": 28, "stage": "Started", "type": "Ramp"},
     {"client": "IAULA", "role": "ADMIN VIRTUAL ASSISTANT (PROJECT BASED)", "headcount": 1, "openedDate": "2026-07-20", "offerDate": "2026-08-01", "startDate": "2026-08-03", "timeToHire": 12, "timeToFill": 14, "stage": "Started", "type": "Ramp"},
-    {"client": "YEEZY", "role": "JUNIOR CSR (Jul 28 batch)", "headcount": 2, "openedDate": "2026-07-28", "offerDate": "2026-07-30", "startDate": "2026-08-17", "timeToHire": 2, "timeToFill": 20, "stage": "Offer Accepted", "type": "Ramp"},
-    {"client": "YEEZY", "role": "JUNIOR CSR (Jul 30 batch)", "headcount": 1, "openedDate": "2026-07-30", "offerDate": "2026-08-03", "startDate": "2026-08-17", "timeToHire": 4, "timeToFill": 18, "stage": "Offer Accepted", "type": "Ramp"}
+    {"client": "YEEZY", "role": "JUNIOR CSR (Jul 28 batch)", "headcount": 2, "openedDate": "2026-07-28", "offerDate": "2026-07-30", "startDate": "2026-08-17", "timeToHire": 2, "timeToFill": 20, "stage": "Started", "type": "Ramp"},
+    {"client": "YEEZY", "role": "JUNIOR CSR (Jul 30 batch)", "headcount": 1, "openedDate": "2026-07-30", "offerDate": "2026-08-03", "startDate": "2026-08-17", "timeToHire": 4, "timeToFill": 18, "stage": "Started", "type": "Ramp"}
   ],
   "inOfferRoles": [],
   "ongoingContractRoles": [],
