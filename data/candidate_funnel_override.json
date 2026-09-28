@@ -11,6 +11,14 @@
       "type": "New Logo",
       "initialInterview": [
         {
+          "name": "ROBERTH DANIEL S. RUBIO",
+          "movedAt": "2026-09-28"
+        },
+        {
+          "name": "Shaun Patrick A. Alonzo",
+          "movedAt": "2026-09-28"
+        },
+        {
           "name": "Eric Garcia",
           "movedAt": "2026-08-20"
         }
@@ -126,6 +134,33 @@
     },
     {
       "client": "ADAUGEO",
+      "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
+      "hc": 1,
+      "opened": "2026-09-11",
+      "days": 17,
+      "type": "Backfill",
+      "initialInterview": [
+        {
+          "name": "ROSALYN MANILAG",
+          "movedAt": "2026-09-18"
+        },
+        {
+          "name": "Ronie Pilapil",
+          "movedAt": "2026-09-15"
+        },
+        {
+          "name": "Maria Theresa Galvos",
+          "movedAt": "2026-09-11"
+        }
+      ],
+      "clientEndorsement": [],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
+    },
+    {
+      "client": "ADAUGEO",
       "role": "PRE-BILLING SPECIALIST (1 of 2 HC still open)",
       "hc": 1,
       "opened": "2026-09-14",
@@ -154,6 +189,102 @@
           "movedAt": "2026-09-25"
         }
       ],
+      "offerAccepted": []
+    },
+    {
+      "client": "GAVBIZ LTD",
+      "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+      "hc": 1,
+      "opened": "2026-09-23",
+      "days": 5,
+      "type": "Ramp",
+      "initialInterview": [
+        {
+          "name": "Ella Mora Artap",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "MELCHOR PAGULAYAN",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "Joan Elvi Lapatha",
+          "movedAt": "2026-09-23"
+        }
+      ],
+      "clientEndorsement": [
+        {
+          "name": "Kristian Mark Antonio",
+          "movedAt": "2026-09-24"
+        },
+        {
+          "name": "ANGELO JOHN A. BRITON",
+          "movedAt": "2026-09-24"
+        }
+      ],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
+    },
+    {
+      "client": "BLUESKY",
+      "role": "PROOFREADER",
+      "hc": 1,
+      "opened": "2026-09-23",
+      "days": 5,
+      "type": "Ramp",
+      "initialInterview": [
+        {
+          "name": "Rogen Montimor Belo",
+          "movedAt": "2026-09-25"
+        }
+      ],
+      "clientEndorsement": [
+        {
+          "name": "LEIGH JENESSEN A. SAN DIEGO",
+          "movedAt": "2026-09-25"
+        },
+        {
+          "name": "ELLEN JOYCE SORIANO",
+          "movedAt": "2026-09-25"
+        },
+        {
+          "name": "Alexandra D. Robel",
+          "movedAt": "2026-09-25"
+        }
+      ],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
+    },
+    {
+      "client": "C3 INGENUITY",
+      "role": "HUBSPOT CRM COORDINATOR",
+      "hc": 1,
+      "opened": "2026-09-24",
+      "days": 4,
+      "type": "Ramp",
+      "initialInterview": [
+        {
+          "name": "KENAH ZAMORA",
+          "movedAt": "2026-09-27"
+        },
+        {
+          "name": "Racquel Joy Guiyab",
+          "movedAt": "2026-09-25"
+        }
+      ],
+      "clientEndorsement": [
+        {
+          "name": "Ronnel Pagayunan",
+          "movedAt": "2026-09-28"
+        }
+      ],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
       "offerAccepted": []
     }
   ]

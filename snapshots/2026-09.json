@@ -9,8 +9,8 @@
     "open": 9,
     "forJobOffer": 1,
     "ongoingContract": 1,
-    "offerAccepted": 11,
-    "started": 0,
+    "offerAccepted": 10,
+    "started": 1,
     "paused": 2
   },
   "pausedRoles": [
@@ -48,7 +48,7 @@
       "startDate": "2026-09-28",
       "timeToHire": 11,
       "timeToFill": 27,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "Katrina May T. Edillon"
     },
