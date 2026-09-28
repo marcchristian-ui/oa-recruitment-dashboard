@@ -1173,11 +1173,12 @@ function drawSomAdditional(){
   var somWon = stages.som.forJobOffer + stages.som.ongoingContract + stages.som.offerAccepted + stages.som.started;
   var addlWon = stages.addl.forJobOffer + stages.addl.ongoingContract + stages.addl.offerAccepted + stages.addl.started;
   var addlRate = addl > 0 ? Math.round(addlWon / addl * 100) : 0;
-  // Fill rate is expressed against TARGET (capped at 100% once target is met);
-  // over-achievement stays visible via "N% of target" in the subtitle.
+  // Fill rate = filled SoM roles / eligible SoM HC. Target 70% is a threshold marker,
+  // not a divisor. Subtitle keeps "N% of target" as context for over-achievement.
+  var somRateExact = somEligible > 0 ? (somWon / somEligible * 100) : 0;
+  var somRate = Math.round(somRateExact * 10) / 10;   // one-decimal precision
   var somTargetPct = somTargetAdj > 0 ? Math.round(somWon / somTargetAdj * 100) : 0;
-  var somRate = Math.min(100, somTargetPct);
-  var somRateColor = somRate >= 100 ? "#38a169" : (somRate >= 70 ? "#dd6b20" : "#e53e3e");
+  var somRateColor = somRate >= 70 ? "#38a169" : (somRate >= 50 ? "#dd6b20" : "#e53e3e");
 
   // Headline blocks
   var subDetail = somWon+' of '+somEligible+' eligible HC ('+som+' SoM &minus; '+(somPausedHc+somLostHc)+' paused/lost) · Target 70% ('+somTargetAdj+' hires) · '+somTargetPct+'% of target';
@@ -1777,12 +1778,13 @@ function drawOverview(){
   var somEligible=Math.max(0, som - somPausedHc - somLostHc);
   var somTargetAdj=Math.ceil(somEligible*0.70);
 
-  // Fill rate is expressed against TARGET, not against eligible HC. Meeting the 70% target
-  // (e.g. 5 wins on 7 eligible) reads 100%; every win beyond that shows in the subtitle
-  // as "N% of target" so over-achievement stays visible.
+  // Fill rate = filled SoM roles / eligible SoM HC (100%). Target = 70% of eligible.
+  // Colors: green >= 70 (target met), yellow 50-69, red < 50. Subtitle also shows
+  // "N% of target" for context on over-achievement past the target line.
+  var somRateExact=somEligible>0?(somWonHc/somEligible*100):0;
+  var somRate=Math.round(somRateExact*10)/10;   // one-decimal precision (e.g. 85.7%)
   var somTargetPct=somTargetAdj>0?Math.round(somWonHc/somTargetAdj*100):0;
-  var somRate=Math.min(100, somTargetPct);
-  var somColor=somRate>=100?"gr":(somRate>=70?"or":"rd");
+  var somColor=somRate>=70?"gr":(somRate>=50?"or":"rd");
   var addlProgress=addl>0?Math.round(addlWonHc/addl*100):0;
 
   document.getElementById("fillKpi").innerHTML=
