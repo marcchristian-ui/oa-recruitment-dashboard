@@ -1,14 +1,14 @@
 {
-  "totalOpen": 5,
+  "totalOpen": 9,
   "startOfMonth": 9,
   "startOfMonthRoles": 7,
-  "additionalInMonth": 12,
-  "additionalInMonthRoles": 7,
+  "additionalInMonth": 15,
+  "additionalInMonthRoles": 10,
   "monthlyTarget": 5,
   "pipeline": {
-    "open": 5,
+    "open": 9,
     "forJobOffer": 1,
-    "ongoingContract": 2,
+    "ongoingContract": 1,
     "offerAccepted": 11,
     "started": 0,
     "paused": 2
@@ -184,16 +184,6 @@
   "ongoingContractRoles": [
     {
       "client": "ADAUGEO",
-      "role": "LAB PATIENT ACCOUNT CSR",
-      "headcount": 1,
-      "openedDate": "2026-09-11",
-      "startDate": "",
-      "stage": "Ongoing Contract",
-      "type": "Backfill",
-      "candidate": "Ruscel Joy Sta. Ana Dizon"
-    },
-    {
-      "client": "ADAUGEO",
       "role": "PRE-BILLING SPECIALIST",
       "headcount": 1,
       "openedDate": "2026-09-14",
@@ -279,8 +269,8 @@
   ],
   "business": {
     "newLogoCount": 2,
-    "rampCount": 2,
-    "backfillCount": 1,
+    "rampCount": 5,
+    "backfillCount": 2,
     "newLogoJobs": [
       {
         "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
@@ -307,6 +297,30 @@
         "opened": "2026-09-01",
         "days": 27,
         "headcount": 2
+      },
+      {
+        "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+        "client": "GAVBIZ LTD",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 5,
+        "headcount": 1
+      },
+      {
+        "role": "PROOFREADER",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 5,
+        "headcount": 1
+      },
+      {
+        "role": "HUBSPOT CRM COORDINATOR",
+        "client": "C3 INGENUITY",
+        "type": "Ramp",
+        "opened": "2026-09-24",
+        "days": 4,
+        "headcount": 1
       }
     ],
     "backfillJobs": [
@@ -317,15 +331,23 @@
         "opened": "2026-09-14",
         "days": 14,
         "headcount": 1
+      },
+      {
+        "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-11",
+        "days": 17,
+        "headcount": 1
       }
     ]
   },
   "aging": {
     "avgNewLogo": 51,
-    "avgRamp": 27,
-    "avgBackfill": 14,
-    "fresh": 1,
-    "normal": 3,
+    "avgRamp": 14,
+    "avgBackfill": 16,
+    "fresh": 4,
+    "normal": 4,
     "aging": 0,
     "critical": 1,
     "jobs": [
@@ -354,17 +376,49 @@
         "headcount": 2
       },
       {
+        "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-11",
+        "days": 17,
+        "headcount": 1
+      },
+      {
         "role": "PRE-BILLING SPECIALIST — 1 of 2 HC still open",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
         "days": 14,
         "headcount": 1
+      },
+      {
+        "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+        "client": "GAVBIZ LTD",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 5,
+        "headcount": 1
+      },
+      {
+        "role": "PROOFREADER",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 5,
+        "headcount": 1
+      },
+      {
+        "role": "HUBSPOT CRM COORDINATOR",
+        "client": "C3 INGENUITY",
+        "type": "Ramp",
+        "opened": "2026-09-24",
+        "days": 4,
+        "headcount": 1
       }
     ]
   },
   "avgTimeToHire": 29,
   "avgTimeToFill": 0,
-  "activeRequisitions": 5,
-  "activeRequisitionsRoles": 4
+  "activeRequisitions": 9,
+  "activeRequisitionsRoles": 8
 }
