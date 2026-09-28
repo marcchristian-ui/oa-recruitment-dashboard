@@ -19,8 +19,9 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "pausedDate": "2026-09-01",
-      "reason": "Client paused hiring",
-      "type": "Ramp"
+      "reason": "Client paused hiring — replaced with new requirement",
+      "type": "Ramp",
+      "subStatus": "Closed-Replaced"
     }
   ],
   "closedLostRoles": [],
