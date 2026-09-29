@@ -24,6 +24,32 @@
       "subStatus": "Closed-Replaced"
     }
   ],
+  "withdrawals": [
+    {
+      "client": "ADAUGEO",
+      "role": "LAB PATIENT ACCOUNT CSR",
+      "headcount": 1,
+      "openedDate": "2026-09-11",
+      "offerDate": "2026-09-24",
+      "withdrawnDate": "2026-09-28",
+      "priorStage": "Ongoing Contract",
+      "type": "Backfill",
+      "candidate": "Ruscel Joy Sta. Ana Dizon",
+      "reason": "Candidate withdrew after accepting offer"
+    },
+    {
+      "client": "SolCo (Solution Consultants ICT)",
+      "role": "IT SUPPORT ENGINEER",
+      "headcount": 1,
+      "openedDate": "2026-08-19",
+      "offerDate": "2026-09-24",
+      "withdrawnDate": "2026-09-29",
+      "priorStage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Maria Cristina Potayre",
+      "reason": "Candidate withdrew after accepting offer"
+    }
+  ],
   "closedLostRoles": [],
   "closedWon": [
     {

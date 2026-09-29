@@ -36,6 +36,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1a1a2e;}
 .kg{display:grid;gap:16px;margin-bottom:20px;}
 .k5{grid-template-columns:repeat(5,1fr);}
 .k4{grid-template-columns:repeat(4,1fr);}
+.k6{grid-template-columns:repeat(6,1fr);}
 .k3{grid-template-columns:repeat(3,1fr);}
 .k2{grid-template-columns:repeat(2,1fr);}
 
@@ -91,7 +92,7 @@ tbody tr:last-child td{border-bottom:none;}
 .lgnval{font-size:16px;font-weight:700;}
 
 @media(max-width:900px){
-  .k5,.k4{grid-template-columns:repeat(2,1fr);}
+  .k5,.k4,.k6{grid-template-columns:repeat(2,1fr);}
   .crow,.twocol{grid-template-columns:1fr;}
   .avgrow{grid-template-columns:repeat(2,1fr);}
   .page,.tabs{padding-left:12px;padding-right:12px;}
@@ -311,7 +312,7 @@ var CH   = {};
 
 <div id="p-cw" class="page">
   <div class="stitle" id="cwTitle">Closed Won</div>
-  <div class="kg k5" id="cwKpi"></div>
+  <div class="kg k6" id="cwKpi"></div>
   <div class="crow">
     <div class="cbox"><h3>Stage Breakdown</h3><div class="cwrap"><canvas id="donut4"></canvas></div></div>
     <div class="cbox" id="cwMeta" style="overflow-y:auto;max-height:270px;"></div>
@@ -330,6 +331,11 @@ var CH   = {};
     <h3 id="ocTblH">Ongoing Contract Roles</h3>
     <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
     <tbody id="ocRows"></tbody></table>
+  </div>
+  <div class="tbox">
+    <h3 id="wdTblH">Withdrawals</h3>
+    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Candidate</th><th>Headcount</th><th>Prior Stage</th><th>Offer Date</th><th>Withdrawn Date</th><th>Reason</th><th>Type</th></tr></thead>
+    <tbody id="wdRows"></tbody></table>
   </div>
 </div>
 
@@ -1670,6 +1676,7 @@ function chMonth(v){
     DATA.closedWon = m.closedWon;
     DATA.inOfferRoles = m.inOfferRoles || [];
     DATA.ongoingContractRoles = m.ongoingContractRoles || [];
+    DATA.withdrawals = m.withdrawals || [];
     DATA.somCarryOver = m.somCarryOver || [];
     DATA.business  = m.business;
     DATA.aging     = m.aging;
@@ -2015,13 +2022,16 @@ function drawClosed(){
   var ioHcCw=hcSum(ioRolesCw);
   var ocRolesCw=DATA.ongoingContractRoles||[];
   var ocHcCw=hcSum(ocRolesCw);
+  var wdRolesCw=DATA.withdrawals||[];
+  var wdHcCw=hcSum(wdRolesCw);
 
   document.getElementById("cwKpi").innerHTML=
     kc("gr","Total CW + In Offer + Ongoing (HC)",totalHc+ioHcCw+ocHcCw,(cw.length+ioRolesCw.length+ocRolesCw.length)+" role(s)")+
     kc("bl","Started (HC)",startedHc,startedRows.length+" role(s)")+
     kc("pu","Offer Accepted (HC)",acceptedHc,acceptedRows.length+" role(s)")+
     kc("or","For Job Offer (HC)",ioHcCw,ioRolesCw.length+" role(s)")+
-    kc("rd","Ongoing Contract (HC)",ocHcCw,ocRolesCw.length+" role(s)");
+    kc("rd","Ongoing Contract (HC)",ocHcCw,ocRolesCw.length+" role(s)")+
+    kc("rd","Withdrawals (HC)",wdHcCw,wdRolesCw.length+" candidate(s) withdrew from Job Offer / Ongoing Contract / Offer Accepted");
 
   donut("donut4",["Started","Offer Accepted","For Job Offer"],[startedHc,acceptedHc,ioHcCw],["#38a169","#805ad5","#dd6b20"]);
 
@@ -2083,6 +2093,36 @@ function drawClosed(){
       "<td>"+tBadge(r.type||"—")+"</td></tr>";
   });
   document.getElementById("ocRows").innerHTML=ocRows||empty(7);
+
+  // Withdrawals table — candidates who reached Job Offer / Ongoing Contract / Offer Accepted / Started
+  // but withdrew before starting. Each entry records the priorStage they pulled out from so it's
+  // clear what stage the loss happened at.
+  var wd=DATA.withdrawals||[];
+  var wdHc=hcSum(wd);
+  document.getElementById("wdTblH").textContent="Withdrawals — "+lbl+" ("+wdHc+" HC, "+wd.length+" candidate(s))";
+  var wdRows="";
+  wd.forEach(function(r,i){
+    var hc=r.headcount||1;
+    var priorLc=(r.priorStage||"").toLowerCase();
+    var priorBadge;
+    if(priorLc.indexOf("started")>-1)          priorBadge='<span class="badge" style="background:#38a16920;color:#38a169;">Started</span>';
+    else if(priorLc.indexOf("ongoing")>-1)     priorBadge='<span class="badge" style="background:#805ad520;color:#805ad5;">Ongoing Contract</span>';
+    else if(priorLc.indexOf("job offer")>-1)   priorBadge='<span class="badge bo">For Job Offer</span>';
+    else                                       priorBadge=sBadge(r.priorStage||"Offer Accepted");
+    wdRows+="<tr>"+
+      "<td style='font-weight:700;color:#718096;'>"+(i+1)+"</td>"+
+      "<td style='font-weight:600;'>"+r.client+"</td>"+
+      "<td>"+r.role+"</td>"+
+      "<td>"+(r.candidate||"—")+"</td>"+
+      "<td style='text-align:center;'><span style='background:#fed7d7;color:#742a2a;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;'>"+hc+"</span></td>"+
+      "<td>"+priorBadge+"</td>"+
+      "<td>"+fd(r.offerDate)+"</td>"+
+      "<td style='color:#742a2a;font-weight:600;'>"+fd(r.withdrawnDate)+"</td>"+
+      "<td style='color:#742a2a;'>"+(r.reason||"Candidate withdrew")+"</td>"+
+      "<td>"+tBadge(r.type||"—")+"</td>"+
+      "</tr>";
+  });
+  document.getElementById("wdRows").innerHTML=wdRows||empty(10);
 }
 
 function empty(cols){
