@@ -8,9 +8,9 @@
   "pipeline": {
     "open": 9,
     "forJobOffer": 1,
-    "ongoingContract": 1,
-    "offerAccepted": 10,
-    "started": 1,
+    "ongoingContract": 0,
+    "offerAccepted": 8,
+    "started": 4,
     "paused": 2
   },
   "pausedRoles": [
@@ -35,7 +35,7 @@
       "startDate": "2026-09-28",
       "timeToHire": 17,
       "timeToFill": 35,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "DIVINE ROJO"
     },
@@ -74,7 +74,7 @@
       "startDate": "2026-09-28",
       "timeToHire": 7,
       "timeToFill": 19,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Margie Santiago"
     },
@@ -87,7 +87,7 @@
       "startDate": "2026-09-28",
       "timeToHire": 12,
       "timeToFill": 19,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Janica Nina Alvarez"
     },
@@ -168,39 +168,41 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Jodelle Agsalud"
-    }
-  ],
-  "inOfferRoles": [
-    {
-      "client": "SolCo (Solution Consultants ICT)",
-      "role": "IT SUPPORT ENGINEER",
-      "headcount": 1,
-      "openedDate": "2026-08-19",
-      "startDate": "",
-      "stage": "For Job Offer",
-      "type": "Ramp",
-      "candidate": "Maria Cristina Potayre"
-    }
-  ],
-  "ongoingContractRoles": [
+    },
     {
       "client": "ADAUGEO",
       "role": "PRE-BILLING SPECIALIST",
       "headcount": 1,
       "openedDate": "2026-09-14",
+      "offerDate": "2026-09-25",
       "startDate": "",
-      "stage": "Ongoing Contract",
+      "timeToHire": 11,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "Backfill",
       "candidate": "JAMES KITH S. MACALUA"
     }
   ],
+  "inOfferRoles": [
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "openedDate": "2026-09-01",
+      "stage": "Job Offer",
+      "type": "Ramp",
+      "candidate": "JEFRY CRUZ",
+      "offerDate": "2026-09-29"
+    }
+  ],
+  "ongoingContractRoles": [],
   "somCarryOver": [
     {
       "client": "AUDIT DATA",
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 75,
+      "days": 76,
       "type": "New Logo",
       "status": "active"
     },
@@ -209,7 +211,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 75,
+      "days": 76,
       "type": "New Logo",
       "status": "won"
     },
@@ -218,7 +220,7 @@
       "role": "TECH LEAD",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 75,
+      "days": 76,
       "type": "New Logo",
       "status": "won"
     },
@@ -227,7 +229,7 @@
       "role": "INVENTORY ANALYST",
       "headcount": 1,
       "opened": "2026-08-04",
-      "days": 55,
+      "days": 56,
       "type": "Ramp",
       "status": "won"
     },
@@ -236,7 +238,7 @@
       "role": "SALES DEVELOPMENT REPRESENTATIVE",
       "headcount": 1,
       "opened": "2026-08-06",
-      "days": 53,
+      "days": 54,
       "type": "New Logo",
       "status": "won"
     },
@@ -245,25 +247,25 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "opened": "2026-08-12",
-      "days": 47,
+      "days": 48,
       "type": "Ramp",
       "status": "on_hold"
     },
     {
       "client": "SolCo (Solution Consultants ICT)",
-      "role": "IT SUPPORT ENGINEER",
+      "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 40,
+      "days": 41,
       "type": "Ramp",
-      "status": "won"
+      "status": "active"
     },
     {
       "client": "PROPLATE",
       "role": "MARKETING SUPPORT",
       "headcount": 1,
       "opened": "2026-08-24",
-      "days": 35,
+      "days": 36,
       "type": "Ramp",
       "status": "won"
     }
@@ -278,7 +280,7 @@
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 75,
+        "days": 76,
         "headcount": 1
       },
       {
@@ -286,25 +288,33 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 27,
+        "days": 28,
         "headcount": 1
       }
     ],
     "rampJobs": [
       {
-        "role": "BILLING ANALYST — 2 of 3 HC still open",
+        "role": "IT SUPPORT ENGINEER (re-opened)",
+        "client": "SolCo (Solution Consultants ICT)",
+        "type": "Ramp",
+        "opened": "2026-08-19",
+        "days": 41,
+        "headcount": 1
+      },
+      {
+        "role": "BILLING ANALYST — 1 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 27,
-        "headcount": 2
+        "days": 28,
+        "headcount": 1
       },
       {
         "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 5,
+        "days": 6,
         "headcount": 1
       },
       {
@@ -312,7 +322,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 5,
+        "days": 6,
         "headcount": 1
       },
       {
@@ -320,7 +330,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 4,
+        "days": 5,
         "headcount": 1
       }
     ],
@@ -330,7 +340,7 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 14,
+        "days": 15,
         "headcount": 1
       },
       {
@@ -338,26 +348,34 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-11",
-        "days": 17,
+        "days": 18,
         "headcount": 1
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 51,
-    "avgRamp": 14,
+    "avgNewLogo": 52,
+    "avgRamp": 17,
     "avgBackfill": 16,
-    "fresh": 4,
-    "normal": 4,
-    "aging": 0,
-    "critical": 1,
+    "fresh": 3,
+    "normal": 0,
+    "aging": 4,
+    "critical": 2,
     "jobs": [
+      {
+        "role": "IT SUPPORT ENGINEER (re-opened)",
+        "client": "SolCo (Solution Consultants ICT)",
+        "type": "Ramp",
+        "opened": "2026-08-19",
+        "days": 41,
+        "headcount": 1
+      },
       {
         "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
-        "days": 75,
+        "days": 76,
         "headcount": 1
       },
       {
@@ -365,23 +383,23 @@
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 27,
+        "days": 28,
         "headcount": 1
       },
       {
-        "role": "BILLING ANALYST — 2 of 3 HC still open",
+        "role": "BILLING ANALYST — 1 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 27,
-        "headcount": 2
+        "days": 28,
+        "headcount": 1
       },
       {
         "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-11",
-        "days": 17,
+        "days": 18,
         "headcount": 1
       },
       {
@@ -389,7 +407,7 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 14,
+        "days": 15,
         "headcount": 1
       },
       {
@@ -397,7 +415,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 5,
+        "days": 6,
         "headcount": 1
       },
       {
@@ -405,7 +423,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 5,
+        "days": 6,
         "headcount": 1
       },
       {
@@ -413,13 +431,13 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 4,
+        "days": 5,
         "headcount": 1
       }
     ]
   },
-  "avgTimeToHire": 29,
-  "avgTimeToFill": 0,
+  "avgTimeToHire": 28,
+  "avgTimeToFill": 45,
   "activeRequisitions": 9,
-  "activeRequisitionsRoles": 8
+  "activeRequisitionsRoles": 9
 }

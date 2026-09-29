@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-09-28",
+  "_generated": "2026-09-29",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) (1 of 2 HC still open)",
       "hc": 1,
       "opened": "2026-07-15",
-      "days": 75,
+      "days": 76,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -40,24 +40,51 @@
       ]
     },
     {
+      "client": "SolCo (Solution Consultants ICT)",
+      "role": "IT SUPPORT ENGINEER (re-opened — Maria Cristina Potayre withdrew 2026-09-29)",
+      "hc": 1,
+      "opened": "2026-08-19",
+      "days": 41,
+      "type": "Ramp",
+      "initialInterview": [
+        {
+          "name": "SHIENA MAE SAGURAN",
+          "movedAt": "2026-09-15"
+        },
+        {
+          "name": "Christy Canay",
+          "movedAt": "2026-09-14"
+        },
+        {
+          "name": "JHUNLERY PASTURAN",
+          "movedAt": "2026-09-09"
+        },
+        {
+          "name": "Coejoy",
+          "movedAt": "2026-09-01"
+        },
+        {
+          "name": "John Jayson Pradilla",
+          "movedAt": "2026-08-28"
+        }
+      ],
+      "clientEndorsement": [],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
+    },
+    {
       "client": "DEMAND BRIDGE",
       "role": "INTEGRATION SPECIALIST",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 27,
+      "days": 28,
       "type": "New Logo",
       "initialInterview": [
         {
           "name": "Harvey Azarcon",
           "movedAt": "2026-09-28"
-        },
-        {
-          "name": "John Louie Del Rosario",
-          "movedAt": "2026-09-25"
-        },
-        {
-          "name": "Rainerio Jr Agbayani",
-          "movedAt": "2026-09-25"
         }
       ],
       "clientEndorsement": [],
@@ -68,16 +95,12 @@
     },
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (2 of 3 HC still open)",
-      "hc": 2,
+      "role": "BILLING ANALYST (1 of 3 HC still open — JEFRY CRUZ at JO)",
+      "hc": 1,
       "opened": "2026-09-01",
-      "days": 27,
+      "days": 28,
       "type": "Ramp",
       "initialInterview": [
-        {
-          "name": "ARMIE MONZON",
-          "movedAt": "2026-09-24"
-        },
         {
           "name": "JOHN VINCENT DONAYRE",
           "movedAt": "2026-09-24"
@@ -115,15 +138,16 @@
           "movedAt": "2026-09-24"
         },
         {
-          "name": "JEFRY CRUZ",
-          "movedAt": "2026-09-24"
-        },
-        {
           "name": "ALVIN CARIDO",
           "movedAt": "2026-09-24"
         }
       ],
-      "jobOffer": [],
+      "jobOffer": [
+        {
+          "name": "JEFRY CRUZ",
+          "movedAt": "2026-09-29"
+        }
+      ],
       "ongoingContract": [],
       "offerAccepted": [
         {
@@ -137,7 +161,7 @@
       "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
       "hc": 1,
       "opened": "2026-09-11",
-      "days": 17,
+      "days": 18,
       "type": "Backfill",
       "initialInterview": [
         {
@@ -161,10 +185,10 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "PRE-BILLING SPECIALIST (1 of 2 HC still open)",
+      "role": "PRE-BILLING SPECIALIST (1 of 2 HC still open — James Kith moved OC→OA 2026-09-29)",
       "hc": 1,
       "opened": "2026-09-14",
-      "days": 14,
+      "days": 15,
       "type": "Backfill",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -183,20 +207,20 @@
         }
       ],
       "jobOffer": [],
-      "ongoingContract": [
+      "ongoingContract": [],
+      "offerAccepted": [
         {
           "name": "JAMES KITH S. MACALUA",
-          "movedAt": "2026-09-25"
+          "movedAt": "2026-09-29"
         }
-      ],
-      "offerAccepted": []
+      ]
     },
     {
       "client": "GAVBIZ LTD",
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 5,
+      "days": 6,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -232,7 +256,7 @@
       "role": "PROOFREADER",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 5,
+      "days": 6,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -264,7 +288,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "hc": 1,
       "opened": "2026-09-24",
-      "days": 4,
+      "days": 5,
       "type": "Ramp",
       "initialInterview": [
         {

@@ -1,5 +1,5 @@
 {
- "_generated": "2026-09-28",
+ "_generated": "2026-09-29",
  "_source": "snapshots/2026-01.json..2026-09.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714)",
  "_methodology": "MONOTONIC FUNNEL (rank roll-up) with OA/EVERGREEN/POOLING/EXCLUDE_HASHES exclusions applied. Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing Contract=5, Started=6, Failed=0. A match at rank K emits one dated event for every rank R<=K (it must have passed through them), dated by: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance (2026-09-23 fix) - rank6 updated_at; each falling back to updated_at when null. Events are pooled per CANDIDATE. For month M and rank R, a candidate is counted if they have any event in M at rank >= R, which makes Interviews>=Endorsed>=ClientPass>=Offers>=Hires>=Starts true by construction. YTD totals are unique candidates by max rank reached, so YTD is NOT the sum of the months. EXCLUSIONS: (a) Outsource Accelerator internal orgs 599280 and 1619851; (b) EVERGREEN REQUISITION org 1560151; (c) any job whose position_name contains 'POOLING'; (d) 10 EXCLUDE_HASHES per manatal/constants.py. Position type is derived from Manatal custom_fields.justification: 'NEW LOGO' and 'NEW REQUIREMENT' both map to New Logo (both labels are treated as one bucket - Manatal's dropdown was renamed and legacy jobs still carry the old label); 'RAMP' -> Ramp; 'BACKFILL' -> Backfill; any other value is Unclassified and excluded from positionTypes[] conversions. A candidate active on jobs of multiple types is counted in EACH type.",
  "_schema": {
@@ -28,7 +28,7 @@
   },
   "constraintFailuresPerMonth": [],
   "monthsAllMonotonic": true,
-  "note": "Loaded 1607 match records; dropped 298 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 338 total; kept 1269 candidate-job matches across 1230 unique candidates. 17 candidates unclassified."
+  "note": "Loaded 1607 match records; applied filter dropping 298 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 338 total; kept 1269 candidate-job matches across 1230 unique candidates. "
  },
  "period": {
   "start": "2026-01-01",
@@ -318,14 +318,14 @@
    "interviews": 151,
    "endorsed": 70,
    "clientPass": 53,
-   "offers": 20,
-   "hires": 19,
+   "offers": 21,
+   "hires": 20,
    "starts": 6,
    "intToEnd": 46.4,
    "endToClientPass": 75.7,
-   "endToHire": 27.1,
-   "intToHire": 12.6,
-   "offerToStart": 30.0,
+   "endToHire": 28.6,
+   "intToHire": 13.2,
+   "offerToStart": 28.6,
    "rolesFilled": 11,
    "avgTtf": 39,
    "medianTtf": 34,
@@ -350,8 +350,8 @@
   "interviews": 1230,
   "endorsed": 611,
   "clientPass": 379,
-  "offers": 157,
-  "hires": 150,
+  "offers": 158,
+  "hires": 151,
   "starts": 127
  },
  "ytdRoles": {
@@ -364,10 +364,10 @@
  "overallConversion": {
   "interviewToEndorse": 49.7,
   "endorseToClientPass": 62.0,
-  "clientPassToOffer": 41.4,
-  "endorseToHire": 24.5,
-  "interviewToHire": 12.2,
-  "offerToStart": 80.9
+  "clientPassToOffer": 41.7,
+  "endorseToHire": 24.7,
+  "interviewToHire": 12.3,
+  "offerToStart": 80.4
  },
  "ttfYtd": {
   "avgTtf": 39.5,
@@ -400,21 +400,21 @@
    "denominator": 611
   },
   "endToHire": {
-   "actual": 24.5,
+   "actual": 24.7,
    "target": 50,
    "status": "red",
    "numerator": 150,
    "denominator": 611
   },
   "intToHire": {
-   "actual": 12.2,
+   "actual": 12.3,
    "target": 33,
    "status": "red",
    "numerator": 150,
    "denominator": 1230
   },
   "offerToStart": {
-   "actual": 80.9,
+   "actual": 80.4,
    "target": 90,
    "status": "yellow",
    "numerator": 127,
@@ -486,15 +486,15 @@
    "currentlyOpenHc": 2,
    "intToEnd": 50.0,
    "endToClientPass": 60.7,
-   "endToHire": 27.3,
-   "intToHire": 13.7,
-   "offerToStart": 85.1,
+   "endToHire": 27.6,
+   "intToHire": 13.8,
+   "offerToStart": 84.3,
    "_funnel": {
     "interviews": 798,
     "endorsed": 399,
     "clientPass": 242,
-    "offers": 114,
-    "hires": 109,
+    "offers": 115,
+    "hires": 110,
     "starts": 97
    }
   },
@@ -598,8 +598,8 @@
   "pctFilled60dOverall": 85.1,
   "longestTtfPositionType": "New Logo - 54.0d average time-to-fill (n=27), vs Backfill at 36.2d. New Logo roles take materially longer to close.",
   "carryOverRisk": "1 of 4 currently-open roles (1 of 5 headcount) have been open more than 30 days; 1 past 60 days.",
-  "biggestBottleneck": "Endorse -> Hire at 24.5% vs a 50% target - 25.5 points short, the widest gap of any tracked conversion.",
-  "recommendedAction": "Attack Endorse -> Hire first - it is 25.5 points below its 50% target and gates every downstream stage.",
+  "biggestBottleneck": "Endorse -> Hire at 24.7% vs a 50% target - 25.3 points short, the widest gap of any tracked conversion.",
+  "recommendedAction": "Attack Endorse -> Hire first - it is 25.3 points below its 50% target and gates every downstream stage.",
   "rolesOver30": 1,
   "rolesOver60": 1,
   "_detail": {
@@ -620,9 +620,9 @@
    ],
    "bottleneck": {
     "stage": "Endorse -> Hire",
-    "actual": 24.5,
+    "actual": 24.7,
     "target": 50,
-    "gapPoints": 25.5
+    "gapPoints": 25.3
    }
   }
  },
