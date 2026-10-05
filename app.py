@@ -1,4 +1,5 @@
 import base64
+import datetime as dt
 import json
 from pathlib import Path
 
@@ -19,6 +20,37 @@ from manatal.client import (
 )
 from manatal.payload import build_payload, START_MONTH
 from manatal.transforms import jobs_to_frame
+
+# Pre-built payload path. If present and fresh, the deployed app skips the
+# live Manatal fetches entirely (which take 30-90s on a cold-started
+# Streamlit Cloud container). Rebuilt by scripts/build_dashboard_payload.py
+# as part of /refresh-dashboard.
+PAYLOAD_CACHE_PATH = Path(__file__).parent / "data" / "dashboard_payload.json"
+PAYLOAD_CACHE_MAX_AGE_HOURS = 48
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def _load_cached_payload(mtime_key: float):
+    """Return (payload, months, default_sel) from the pre-built JSON, or None.
+    mtime_key busts Streamlit's cache when the file is rewritten locally."""
+    if not PAYLOAD_CACHE_PATH.exists():
+        return None
+    try:
+        with PAYLOAD_CACHE_PATH.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data["payload"], data["months"], data["default_sel"]
+    except Exception:
+        return None
+
+
+def _cached_payload_or_none():
+    if not PAYLOAD_CACHE_PATH.exists():
+        return None
+    mtime = dt.datetime.fromtimestamp(PAYLOAD_CACHE_PATH.stat().st_mtime, dt.timezone.utc)
+    age_hours = (dt.datetime.now(dt.timezone.utc) - mtime).total_seconds() / 3600
+    if age_hours > PAYLOAD_CACHE_MAX_AGE_HOURS:
+        return None
+    return _load_cached_payload(PAYLOAD_CACHE_PATH.stat().st_mtime)
 
 st.set_page_config(
     page_title="Recruitment Dashboard — Outsource Accelerator",
@@ -46,58 +78,71 @@ st.markdown(
 # that moment, after which the app reruns and recomputes the next gap.
 st_autorefresh(interval=seconds_until_next_refresh() * 1000, key="manatal_refresh")
 
-if not has_credentials():
-    st.error("MANATAL_API_TOKEN missing. Add it to .env and rerun.")
-    st.stop()
-
-window_key = refresh_window_key()
-with st.spinner("Loading Manatal data…"):
-    try:
-        jobs = fetch_all_jobs(window_key)
-        orgs = fetch_all_organizations(window_key)
-        users = fetch_all_users(window_key)
-    except Exception as e:
-        st.error(f"Manatal API error (jobs/orgs/users): {e}")
+# Fast path: serve the pre-built payload if it's present and fresh. On Streamlit
+# Cloud this takes the first-paint from 30-90s (cold-start + 4 Manatal API round
+# trips) down to a few seconds (static JSON read).
+cached = _cached_payload_or_none()
+if cached is not None:
+    payload, months, default_sel = cached
+else:
+    # Fallback: live Manatal fetch. Used for local development and as a safety
+    # net if the pre-built payload is missing / older than 48h.
+    if not has_credentials():
+        st.error(
+            "MANATAL_API_TOKEN missing and no fresh data/dashboard_payload.json. "
+            "Run `python scripts/build_dashboard_payload.py` locally first, "
+            "or add MANATAL_API_TOKEN to .env / Streamlit secrets."
+        )
         st.stop()
 
-# Matches scan is optional — if it fails, candidate pipeline section just stays empty.
-try:
-    active_matches = fetch_all_active_matches(window_key)
-except Exception as e:
-    st.warning(f"Candidate pipeline scan failed ({type(e).__name__}); continuing without it. Refresh later if you want it populated.")
-    active_matches = []
-job_offer_matches = [
-    m for m in active_matches
-    if ((m.get("job_pipeline_stage") or {}).get("name") or "").strip().lower() == "job offer"
-]
+    window_key = refresh_window_key()
+    with st.spinner("Loading Manatal data…"):
+        try:
+            jobs = fetch_all_jobs(window_key)
+            orgs = fetch_all_organizations(window_key)
+            users = fetch_all_users(window_key)
+        except Exception as e:
+            st.error(f"Manatal API error (jobs/orgs/users): {e}")
+            st.stop()
 
-df = jobs_to_frame(jobs, orgs, users)
-if df.empty:
-    st.warning("No jobs returned from Manatal.")
-    st.stop()
+    # Matches scan is optional — if it fails, candidate pipeline section just stays empty.
+    try:
+        active_matches = fetch_all_active_matches(window_key)
+    except Exception as e:
+        st.warning(f"Candidate pipeline scan failed ({type(e).__name__}); continuing without it. Refresh later if you want it populated.")
+        active_matches = []
+    job_offer_matches = [
+        m for m in active_matches
+        if ((m.get("job_pipeline_stage") or {}).get("name") or "").strip().lower() == "job offer"
+    ]
 
-# Exclude OA (Outsource Accelerator) internal roles from all counts.
-df = df[df["client_name"].str.upper() != "OA"]
+    df = jobs_to_frame(jobs, orgs, users)
+    if df.empty:
+        st.warning("No jobs returned from Manatal.")
+        st.stop()
 
-# Exclude EVERGREEN REQUISITION (talent-pool placeholder, not real client work).
-df = df[~df["client_name"].str.contains("EVERGREEN", case=False, na=False)]
+    # Exclude OA (Outsource Accelerator) internal roles from all counts.
+    df = df[df["client_name"].str.upper() != "OA"]
 
-# Exclude pooling roles (sourcing pools, not actual hiring needs).
-df = df[~df["position_name"].str.contains("POOLING", case=False, na=False)]
+    # Exclude EVERGREEN REQUISITION (talent-pool placeholder, not real client work).
+    df = df[~df["client_name"].str.contains("EVERGREEN", case=False, na=False)]
 
-# Exclude specific job hashes (per user — not part of the dashboard scope).
-from manatal.constants import EXCLUDE_HASHES
-df = df[~df["hash"].isin(EXCLUDE_HASHES)]
+    # Exclude pooling roles (sourcing pools, not actual hiring needs).
+    df = df[~df["position_name"].str.contains("POOLING", case=False, na=False)]
 
-# Restrict to roles that touch the Nov 2025 → present window.
-window_start = pd.Timestamp(year=START_MONTH[0], month=START_MONTH[1], day=1)
-df = df[
-    (df["open_at"] >= window_start)
-    | (df["close_at"].isna())
-    | (df["close_at"] >= window_start)
-]
+    # Exclude specific job hashes (per user — not part of the dashboard scope).
+    from manatal.constants import EXCLUDE_HASHES
+    df = df[~df["hash"].isin(EXCLUDE_HASHES)]
 
-payload, months, default_sel = build_payload(df, job_offer_matches, active_matches=active_matches)
+    # Restrict to roles that touch the Nov 2025 → present window.
+    window_start = pd.Timestamp(year=START_MONTH[0], month=START_MONTH[1], day=1)
+    df = df[
+        (df["open_at"] >= window_start)
+        | (df["close_at"].isna())
+        | (df["close_at"] >= window_start)
+    ]
+
+    payload, months, default_sel = build_payload(df, job_offer_matches, active_matches=active_matches)
 
 template_path = Path(__file__).parent / "templates" / "dashboard.html"
 template = template_path.read_text(encoding="utf-8")
