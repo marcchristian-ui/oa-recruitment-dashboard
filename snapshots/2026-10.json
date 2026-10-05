@@ -1,0 +1,275 @@
+{
+  "totalOpen": 9,
+  "startOfMonth": 9,
+  "startOfMonthRoles": 9,
+  "additionalInMonth": 0,
+  "additionalInMonthRoles": 0,
+  "monthlyTarget": 7,
+  "pipeline": {
+    "open": 9,
+    "forJobOffer": 0,
+    "ongoingContract": 0,
+    "offerAccepted": 0,
+    "started": 0,
+    "paused": 0
+  },
+  "pausedRoles": [],
+  "closedLostRoles": [],
+  "closedWon": [],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [],
+  "withdrawals": [],
+  "somCarryOver": [
+    {
+      "client": "AUDIT DATA",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
+      "headcount": 1,
+      "opened": "2026-07-15",
+      "days": 82,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "SolCo (Solution Consultants ICT)",
+      "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
+      "headcount": 1,
+      "opened": "2026-08-19",
+      "days": 47,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "DEMAND BRIDGE",
+      "role": "INTEGRATION SPECIALIST",
+      "headcount": 1,
+      "opened": "2026-09-01",
+      "days": 34,
+      "type": "New Logo",
+      "status": "active"
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST — 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
+      "headcount": 1,
+      "opened": "2026-09-01",
+      "days": 34,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "LAB PATIENT ACCOUNT CSR — re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
+      "headcount": 1,
+      "opened": "2026-09-11",
+      "days": 24,
+      "type": "Backfill",
+      "status": "active"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover (James Kith Macalua won in Sept)",
+      "headcount": 1,
+      "opened": "2026-09-14",
+      "days": 21,
+      "type": "Backfill",
+      "status": "active"
+    },
+    {
+      "client": "GAVBIZ LTD",
+      "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+      "headcount": 1,
+      "opened": "2026-09-23",
+      "days": 12,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "BLUESKY",
+      "role": "PROOFREADER",
+      "headcount": 1,
+      "opened": "2026-09-23",
+      "days": 12,
+      "type": "Ramp",
+      "status": "active"
+    },
+    {
+      "client": "C3 INGENUITY",
+      "role": "HUBSPOT CRM COORDINATOR",
+      "headcount": 1,
+      "opened": "2026-09-24",
+      "days": 11,
+      "type": "Ramp",
+      "status": "active"
+    }
+  ],
+  "business": {
+    "newLogoCount": 2,
+    "rampCount": 5,
+    "backfillCount": 2,
+    "newLogoJobs": [
+      {
+        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
+        "client": "AUDIT DATA",
+        "type": "New Logo",
+        "opened": "2026-07-15",
+        "days": 82,
+        "headcount": 1
+      },
+      {
+        "role": "INTEGRATION SPECIALIST",
+        "client": "DEMAND BRIDGE",
+        "type": "New Logo",
+        "opened": "2026-09-01",
+        "days": 34,
+        "headcount": 1
+      }
+    ],
+    "rampJobs": [
+      {
+        "role": "IT SUPPORT ENGINEER (re-opened)",
+        "client": "SolCo (Solution Consultants ICT)",
+        "type": "Ramp",
+        "opened": "2026-08-19",
+        "days": 47,
+        "headcount": 1
+      },
+      {
+        "role": "BILLING ANALYST — 1 of 3 HC carryover",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-09-01",
+        "days": 34,
+        "headcount": 1
+      },
+      {
+        "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+        "client": "GAVBIZ LTD",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 12,
+        "headcount": 1
+      },
+      {
+        "role": "PROOFREADER",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 12,
+        "headcount": 1
+      },
+      {
+        "role": "HUBSPOT CRM COORDINATOR",
+        "client": "C3 INGENUITY",
+        "type": "Ramp",
+        "opened": "2026-09-24",
+        "days": 11,
+        "headcount": 1
+      }
+    ],
+    "backfillJobs": [
+      {
+        "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-11",
+        "days": 24,
+        "headcount": 1
+      },
+      {
+        "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-14",
+        "days": 21,
+        "headcount": 1
+      }
+    ]
+  },
+  "aging": {
+    "avgNewLogo": 58,
+    "avgRamp": 23,
+    "avgBackfill": 23,
+    "fresh": 5,
+    "normal": 2,
+    "aging": 1,
+    "critical": 1,
+    "jobs": [
+      {
+        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
+        "client": "AUDIT DATA",
+        "type": "New Logo",
+        "opened": "2026-07-15",
+        "days": 82,
+        "headcount": 1
+      },
+      {
+        "role": "IT SUPPORT ENGINEER (re-opened)",
+        "client": "SolCo (Solution Consultants ICT)",
+        "type": "Ramp",
+        "opened": "2026-08-19",
+        "days": 47,
+        "headcount": 1
+      },
+      {
+        "role": "INTEGRATION SPECIALIST",
+        "client": "DEMAND BRIDGE",
+        "type": "New Logo",
+        "opened": "2026-09-01",
+        "days": 34,
+        "headcount": 1
+      },
+      {
+        "role": "BILLING ANALYST — 1 of 3 HC carryover",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-09-01",
+        "days": 34,
+        "headcount": 1
+      },
+      {
+        "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-11",
+        "days": 24,
+        "headcount": 1
+      },
+      {
+        "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover",
+        "client": "ADAUGEO",
+        "type": "Backfill",
+        "opened": "2026-09-14",
+        "days": 21,
+        "headcount": 1
+      },
+      {
+        "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+        "client": "GAVBIZ LTD",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 12,
+        "headcount": 1
+      },
+      {
+        "role": "PROOFREADER",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-09-23",
+        "days": 12,
+        "headcount": 1
+      },
+      {
+        "role": "HUBSPOT CRM COORDINATOR",
+        "client": "C3 INGENUITY",
+        "type": "Ramp",
+        "opened": "2026-09-24",
+        "days": 11,
+        "headcount": 1
+      }
+    ]
+  },
+  "avgTimeToHire": 0,
+  "avgTimeToFill": 0,
+  "activeRequisitions": 9,
+  "activeRequisitionsRoles": 9
+}

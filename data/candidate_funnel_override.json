@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-09-29",
+  "_generated": "2026-10-05",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,12 +7,12 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) (1 of 2 HC still open)",
       "hc": 1,
       "opened": "2026-07-15",
-      "days": 76,
+      "days": 82,
       "type": "New Logo",
       "initialInterview": [
         {
-          "name": "ROBERTH DANIEL S. RUBIO",
-          "movedAt": "2026-09-28"
+          "name": "JOHN MARK OLESCO",
+          "movedAt": "2026-09-29"
         },
         {
           "name": "Shaun Patrick A. Alonzo",
@@ -23,15 +23,20 @@
           "movedAt": "2026-08-20"
         }
       ],
-      "clientEndorsement": [],
-      "clientInterview": [
+      "clientEndorsement": [
         {
-          "name": "HAZELL DORIA",
-          "movedAt": "2026-09-21"
+          "name": "ROBERTH DANIEL S. RUBIO",
+          "movedAt": "2026-10-01"
         }
       ],
+      "clientInterview": [],
       "jobOffer": [],
-      "ongoingContract": [],
+      "ongoingContract": [
+        {
+          "name": "HAZELL DORIA",
+          "movedAt": "2026-10-01"
+        }
+      ],
       "offerAccepted": [
         {
           "name": "RUEL B. SUCGANG",
@@ -44,16 +49,12 @@
       "role": "IT SUPPORT ENGINEER (re-opened — Maria Cristina Potayre withdrew 2026-09-29)",
       "hc": 1,
       "opened": "2026-08-19",
-      "days": 41,
+      "days": 47,
       "type": "Ramp",
       "initialInterview": [
         {
           "name": "SHIENA MAE SAGURAN",
           "movedAt": "2026-09-15"
-        },
-        {
-          "name": "Christy Canay",
-          "movedAt": "2026-09-14"
         },
         {
           "name": "JHUNLERY PASTURAN",
@@ -68,7 +69,12 @@
           "movedAt": "2026-08-28"
         }
       ],
-      "clientEndorsement": [],
+      "clientEndorsement": [
+        {
+          "name": "Ma Jiralyn Trocio",
+          "movedAt": "2026-10-02"
+        }
+      ],
       "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
@@ -79,31 +85,40 @@
       "role": "INTEGRATION SPECIALIST",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 28,
+      "days": 34,
       "type": "New Logo",
       "initialInterview": [
+        {
+          "name": "JOSE DE JESUS MONTANO",
+          "movedAt": "2026-10-02"
+        },
         {
           "name": "Harvey Azarcon",
           "movedAt": "2026-09-28"
         }
       ],
       "clientEndorsement": [],
-      "clientInterview": [],
+      "clientInterview": [
+        {
+          "name": "Aljon S. Quiambao",
+          "movedAt": "2026-10-01"
+        }
+      ],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []
     },
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (1 of 3 HC still open — JEFRY CRUZ at JO)",
+      "role": "BILLING ANALYST (1 of 3 HC still open — 2 HC Offer Accepted)",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 28,
+      "days": 34,
       "type": "Ramp",
       "initialInterview": [
         {
           "name": "JOHN VINCENT DONAYRE",
-          "movedAt": "2026-09-24"
+          "movedAt": "2026-09-30"
         },
         {
           "name": "JULIUS PRINCE R. DE LA TORRE",
@@ -111,10 +126,6 @@
         },
         {
           "name": "KRISTINE ROSE COLAS BALMAÑA",
-          "movedAt": "2026-09-24"
-        },
-        {
-          "name": "Judea Luna",
           "movedAt": "2026-09-24"
         },
         {
@@ -126,30 +137,20 @@
           "movedAt": "2026-09-23"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "Judea Maurice E. Luna",
-          "movedAt": "2026-09-25"
-        }
-      ],
+      "clientEndorsement": [],
       "clientInterview": [
         {
-          "name": "Cesar E.Tambasen Jr",
-          "movedAt": "2026-09-24"
-        },
-        {
-          "name": "ALVIN CARIDO",
-          "movedAt": "2026-09-24"
+          "name": "VANISSA DADO",
+          "movedAt": "2026-10-05"
         }
       ],
-      "jobOffer": [
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": [
         {
           "name": "JEFRY CRUZ",
           "movedAt": "2026-09-29"
-        }
-      ],
-      "ongoingContract": [],
-      "offerAccepted": [
+        },
         {
           "name": "CHESKA MAE CARONAN",
           "movedAt": "2026-09-22"
@@ -161,16 +162,52 @@
       "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
       "hc": 1,
       "opened": "2026-09-11",
-      "days": 18,
+      "days": 24,
       "type": "Backfill",
       "initialInterview": [
         {
-          "name": "ROSALYN MANILAG",
-          "movedAt": "2026-09-18"
+          "name": "Fatima Climaco",
+          "movedAt": "2026-09-30"
         },
         {
-          "name": "Ronie Pilapil",
-          "movedAt": "2026-09-15"
+          "name": "Allan Kenn Bobier",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "LOREWYN JAY CORTES",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "Rose Aleli Basa",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "CHRISTIAN SEACHON",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "Ma. Michaela Manatad",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "Nawal Hassan",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "Sheena Mariz Mateo",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "Aldrin John Racho",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "Erwin Coronel",
+          "movedAt": "2026-09-30"
+        },
+        {
+          "name": "ROSALYN MANILAG",
+          "movedAt": "2026-09-18"
         },
         {
           "name": "Maria Theresa Galvos",
@@ -188,30 +225,34 @@
       "role": "PRE-BILLING SPECIALIST (1 of 2 HC still open — James Kith moved OC→OA 2026-09-29)",
       "hc": 1,
       "opened": "2026-09-14",
-      "days": 15,
+      "days": 21,
       "type": "Backfill",
-      "initialInterview": [],
-      "clientEndorsement": [],
-      "clientInterview": [
+      "initialInterview": [
         {
-          "name": "Edmarie Alcazar",
-          "movedAt": "2026-09-25"
+          "name": "KRIZELLA MARIE TORRES",
+          "movedAt": "2026-10-02"
         },
         {
-          "name": "JONALYN CINTO",
-          "movedAt": "2026-09-25"
+          "name": "Enrica Dawn Pascua",
+          "movedAt": "2026-10-02"
         },
         {
-          "name": "Anamaria Santos",
-          "movedAt": "2026-09-25"
+          "name": "Nathaniel Ibanez",
+          "movedAt": "2026-10-02"
+        },
+        {
+          "name": "SHAINA M. AGASCON",
+          "movedAt": "2026-10-02"
         }
       ],
+      "clientEndorsement": [],
+      "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": [
         {
           "name": "JAMES KITH S. MACALUA",
-          "movedAt": "2026-09-29"
+          "movedAt": "2026-09-25"
         }
       ]
     },
@@ -220,7 +261,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 6,
+      "days": 12,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -230,23 +271,19 @@
         {
           "name": "MELCHOR PAGULAYAN",
           "movedAt": "2026-09-24"
+        }
+      ],
+      "clientEndorsement": [],
+      "clientInterview": [
+        {
+          "name": "Angel Amamio",
+          "movedAt": "2026-09-30"
         },
         {
           "name": "Joan Elvi Lapatha",
-          "movedAt": "2026-09-23"
+          "movedAt": "2026-09-29"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "Kristian Mark Antonio",
-          "movedAt": "2026-09-24"
-        },
-        {
-          "name": "ANGELO JOHN A. BRITON",
-          "movedAt": "2026-09-24"
-        }
-      ],
-      "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []
@@ -256,28 +293,15 @@
       "role": "PROOFREADER",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 6,
+      "days": 12,
       "type": "Ramp",
       "initialInterview": [
         {
-          "name": "Rogen Montimor Belo",
-          "movedAt": "2026-09-25"
+          "name": "Jeffrey Magnawa",
+          "movedAt": "2026-10-05"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "LEIGH JENESSEN A. SAN DIEGO",
-          "movedAt": "2026-09-25"
-        },
-        {
-          "name": "ELLEN JOYCE SORIANO",
-          "movedAt": "2026-09-25"
-        },
-        {
-          "name": "Alexandra D. Robel",
-          "movedAt": "2026-09-25"
-        }
-      ],
+      "clientEndorsement": [],
       "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
@@ -288,25 +312,25 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "hc": 1,
       "opened": "2026-09-24",
-      "days": 5,
+      "days": 11,
       "type": "Ramp",
       "initialInterview": [
         {
-          "name": "KENAH ZAMORA",
-          "movedAt": "2026-09-27"
+          "name": "ABIGAIL S. GABATINO",
+          "movedAt": "2026-10-05"
+        }
+      ],
+      "clientEndorsement": [],
+      "clientInterview": [
+        {
+          "name": "JUSTIN JONATHAN B. CHING",
+          "movedAt": "2026-10-01"
         },
         {
-          "name": "Racquel Joy Guiyab",
-          "movedAt": "2026-09-25"
-        }
-      ],
-      "clientEndorsement": [
-        {
           "name": "Ronnel Pagayunan",
-          "movedAt": "2026-09-28"
+          "movedAt": "2026-10-01"
         }
       ],
-      "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []

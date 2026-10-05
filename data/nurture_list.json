@@ -1,14 +1,14 @@
 {
-  "_generated": "2026-09-29",
+  "_generated": "2026-10-01",
   "_source": "https://docs.google.com/spreadsheets/d/18a_f9hO4RszZbJnJlhhvK5KIkkT-u3LWrk0fmaikJnI/edit?gid=1908017171",
-  "total": 45,
+  "total": 47,
   "stages": [
     {
       "key": "consent",
       "label": "Consent Requested",
       "advanced": 19,
       "advancedLabel": "Consent Confirmed",
-      "dropOff": 26,
+      "dropOff": 28,
       "dropOffLabel": "No Response",
       "inProgress": 0
     },
@@ -17,9 +17,9 @@
       "label": "Engagement",
       "advanced": 18,
       "advancedLabel": "Engaged (Yes)",
-      "dropOff": 13,
+      "dropOff": 26,
       "dropOffLabel": "Not Interested",
-      "inProgress": 13,
+      "inProgress": 0,
       "inProgressLabel": "Pending Response"
     },
     {

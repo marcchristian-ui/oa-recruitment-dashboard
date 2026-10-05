@@ -31,26 +31,44 @@ PAYLOAD_CACHE_MAX_AGE_HOURS = 48
 
 @st.cache_data(ttl=600, show_spinner=False)
 def _load_cached_payload(mtime_key: float):
-    """Return (payload, months, default_sel) from the pre-built JSON, or None.
-    mtime_key busts Streamlit's cache when the file is rewritten locally."""
+    """Return (payload, months, default_sel, built_at_iso) from the pre-built JSON,
+    or None if missing. mtime_key busts Streamlit's cache when the file is rewritten
+    (locally or via a fresh Streamlit Cloud deploy)."""
     if not PAYLOAD_CACHE_PATH.exists():
         return None
     try:
         with PAYLOAD_CACHE_PATH.open("r", encoding="utf-8") as f:
             data = json.load(f)
-        return data["payload"], data["months"], data["default_sel"]
+        return data["payload"], data["months"], data["default_sel"], data.get("_built_at", "")
     except Exception:
         return None
 
 
 def _cached_payload_or_none():
+    """Return (payload, months, default_sel) if the pre-built JSON is present and
+    its _built_at is within PAYLOAD_CACHE_MAX_AGE_HOURS; else None.
+
+    Uses the embedded _built_at timestamp rather than file mtime because Streamlit
+    Cloud resets mtime to the git-clone time on each deploy, which would otherwise
+    make the cache look always-fresh regardless of how old the data really is."""
     if not PAYLOAD_CACHE_PATH.exists():
         return None
-    mtime = dt.datetime.fromtimestamp(PAYLOAD_CACHE_PATH.stat().st_mtime, dt.timezone.utc)
-    age_hours = (dt.datetime.now(dt.timezone.utc) - mtime).total_seconds() / 3600
-    if age_hours > PAYLOAD_CACHE_MAX_AGE_HOURS:
+    loaded = _load_cached_payload(PAYLOAD_CACHE_PATH.stat().st_mtime)
+    if loaded is None:
         return None
-    return _load_cached_payload(PAYLOAD_CACHE_PATH.stat().st_mtime)
+    payload, months, default_sel, built_at_iso = loaded
+    if built_at_iso:
+        try:
+            built_at = dt.datetime.fromisoformat(built_at_iso.replace("Z", "+00:00"))
+            if built_at.tzinfo is None:
+                built_at = built_at.replace(tzinfo=dt.timezone.utc)
+            age_hours = (dt.datetime.now(dt.timezone.utc) - built_at).total_seconds() / 3600
+            if age_hours > PAYLOAD_CACHE_MAX_AGE_HOURS:
+                return None
+        except Exception:
+            # If the timestamp is unparseable, trust the file rather than refuse to render.
+            pass
+    return payload, months, default_sel
 
 st.set_page_config(
     page_title="Recruitment Dashboard — Outsource Accelerator",

@@ -1,5 +1,5 @@
 {
- "_generated": "2026-09-29",
+ "_generated": "2026-10-01",
  "_source": "snapshots/2026-01.json..2026-09.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714)",
  "_methodology": "MONOTONIC FUNNEL (rank roll-up) with OA/EVERGREEN/POOLING/EXCLUDE_HASHES exclusions applied. Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing Contract=5, Started=6, Failed=0. A match at rank K emits one dated event for every rank R<=K (it must have passed through them), dated by: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance (2026-09-23 fix) - rank6 updated_at; each falling back to updated_at when null. Events are pooled per CANDIDATE. For month M and rank R, a candidate is counted if they have any event in M at rank >= R, which makes Interviews>=Endorsed>=ClientPass>=Offers>=Hires>=Starts true by construction. YTD totals are unique candidates by max rank reached, so YTD is NOT the sum of the months. EXCLUSIONS: (a) Outsource Accelerator internal orgs 599280 and 1619851; (b) EVERGREEN REQUISITION org 1560151; (c) any job whose position_name contains 'POOLING'; (d) 10 EXCLUDE_HASHES per manatal/constants.py. Position type is derived from Manatal custom_fields.justification: 'NEW LOGO' and 'NEW REQUIREMENT' both map to New Logo (both labels are treated as one bucket - Manatal's dropdown was renamed and legacy jobs still carry the old label); 'RAMP' -> Ramp; 'BACKFILL' -> Backfill; any other value is Unclassified and excluded from positionTypes[] conversions. A candidate active on jobs of multiple types is counted in EACH type.",
  "_schema": {
@@ -8,16 +8,16 @@
   "overallConversion": "YTD conversion percentages computed from ytdTotals.",
   "kpiSnapshot": "KPI vs target keyed by metric, each {actual, target, status, note?}. Status: green = at/above target, yellow = within 10 points below, red = further below, gray = no target or no data.",
   "positionTypes[]": "New Logo / Ramp / Backfill roles filled, avg & median TTF, currently-open counts, and per-type candidate funnel conversions (intToEnd/endToClientPass/endToHire/intToHire/offerToStart). Position type comes from Manatal custom_fields.justification (NEW LOGO + NEW REQUIREMENT -> New Logo, RAMP -> Ramp, BACKFILL -> Backfill). A candidate active on jobs of multiple types is counted in each type. _funnel exposes the raw unique-candidate counts behind each conversion.",
-  "agingBuckets": "Currently-open HEADCOUNT by days open (d0_30/d31_45/d46_60/d61_90/gt90), recomputed from the current month's aging.jobs, with each job's days-open recomputed from its opened date as of _generated (the snapshot freezes days at snapshot-build time).",
-  "oldestOpen[]": "Top 10 oldest currently-open roles, oldest first by days open; days recomputed as of _generated.",
+  "agingBuckets": "Currently-open HEADCOUNT by days open (d0_30/d31_45/d46_60/d61_90/gt90), recomputed from the current month's aging.jobs, with each job's days-open recomputed from its opened date as of _generated (the snapshot freezes days at snapshot-build time), with each job's days-open recomputed from its opened date as of _generated (the snapshot freezes days at snapshot-build time), with each job's days-open recomputed from its opened date as of _generated (the snapshot freezes days at snapshot-build time), with each job's days-open recomputed from its opened date as of _generated (the snapshot freezes days at snapshot-build time).",
+  "oldestOpen[]": "Top 10 oldest currently-open roles, oldest first by days open; days recomputed as of _generated; days recomputed as of _generated; days recomputed as of _generated; days recomputed as of _generated.",
   "insights": "Derived narrative: best/weakest month, TTF trend, longest-TTF position type, biggest bottleneck and recommended action.",
   "dataGaps[]": "Known holes in the underlying data."
  },
  "_dataQuality": {
-  "totalMatchesFromAPI": 1607,
-  "uniqueMatchesLoaded": 1607,
-  "matchesAfterExclusions": 1269,
-  "uniqueCandidatesWithRankedEvents": 1230,
+  "totalMatchesFromAPI": 1634,
+  "uniqueMatchesLoaded": 1634,
+  "matchesAfterExclusions": 1296,
+  "uniqueCandidatesWithRankedEvents": 1253,
   "unclassifiedCandidates": 17,
   "exclusionsDropped": {
    "oa": 298,
@@ -28,11 +28,37 @@
   },
   "constraintFailuresPerMonth": [],
   "monthsAllMonotonic": true,
-  "note": "Loaded 1607 match records; applied filter dropping 298 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 338 total; kept 1269 candidate-job matches across 1230 unique candidates. "
+  "monthsReported": [
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09"
+  ],
+  "pendingMonth": {
+   "month": "2026-10",
+   "reason": "no snapshots/2026-10.json yet; not in LOCKED_MONTHS",
+   "funnelSoFar": {
+    "interviews": 0,
+    "endorsed": 0,
+    "clientPass": 0,
+    "offers": 0,
+    "hires": 0,
+    "starts": 0
+   },
+   "writtenToMonthly": false
+  },
+  "note": "Loaded 1634 match records; applied filter dropping 298 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 338 total; kept 1296 candidate-job matches across 1253 unique candidates. NEW LOGO and NEW REQUIREMENT both bucket to 'New Logo' (Manatal dropdown value + legacy value). 17 candidates are Unclassified (their jobs' justification is neither NEW LOGO/NEW REQUIREMENT nor RAMP nor BACKFILL) and are excluded from per-type conversions but counted in overall YTD."
  },
  "period": {
   "start": "2026-01-01",
-  "end": "2026-09-28"
+  "end": "2026-09-30",
+  "generatedOn": "2026-10-01",
+  "note": "monthly[] and ytdRoles cover Jan-Sep (closed months). 2026-10 has no snapshot yet."
  },
  "targets": {
   "interviewToEndorse": 70,
@@ -261,12 +287,12 @@
    "intToHire": 21.9,
    "offerToStart": 73.7,
    "rolesFilled": 9,
-   "avgTtf": 23,
-   "medianTtf": 22,
-   "ttfSampleSize": 8,
+   "avgTtf": 24,
+   "medianTtf": 23,
+   "ttfSampleSize": 9,
    "ttfBuckets": {
     "le30": 7,
-    "d31_60": 1,
+    "d31_60": 2,
     "d61_90": 0,
     "gt90": 0
    },
@@ -315,128 +341,118 @@
   {
    "month": "2026-09",
    "label": "Sep 2026",
-   "interviews": 151,
-   "endorsed": 70,
-   "clientPass": 53,
+   "interviews": 176,
+   "endorsed": 73,
+   "clientPass": 58,
    "offers": 21,
-   "hires": 20,
-   "starts": 6,
-   "intToEnd": 46.4,
-   "endToClientPass": 75.7,
-   "endToHire": 28.6,
-   "intToHire": 13.2,
-   "offerToStart": 28.6,
-   "rolesFilled": 11,
-   "avgTtf": 39,
+   "hires": 21,
+   "starts": 10,
+   "intToEnd": 41.5,
+   "endToClientPass": 79.5,
+   "endToHire": 28.8,
+   "intToHire": 11.9,
+   "offerToStart": 47.6,
+   "rolesFilled": 13,
+   "avgTtf": 45,
    "medianTtf": 34,
-   "ttfSampleSize": 7,
+   "ttfSampleSize": 11,
    "ttfBuckets": {
-    "le30": 3,
-    "d31_60": 3,
-    "d61_90": 1,
+    "le30": 4,
+    "d31_60": 4,
+    "d61_90": 3,
     "gt90": 0
    },
    "openingBacklog": 9,
-   "newOpens": 12,
-   "filled": 11,
+   "newOpens": 15,
+   "filled": 13,
    "lost": 0,
    "paused": 1,
-   "stillOpen": 5,
-   "totalOpenAtSnapshot": 5,
+   "stillOpen": 9,
+   "totalOpenAtSnapshot": 9,
    "monthlyTarget": 5
   }
  ],
  "ytdTotals": {
-  "interviews": 1230,
-  "endorsed": 611,
-  "clientPass": 379,
+  "interviews": 1253,
+  "endorsed": 614,
+  "clientPass": 384,
   "offers": 158,
-  "hires": 151,
-  "starts": 127
+  "hires": 152,
+  "starts": 131
  },
  "ytdRoles": {
-  "filled": 93,
+  "filled": 95,
   "lost": 14,
   "paused": 29,
-  "newOpens": 176,
-  "currentlyOpen": 5
+  "newOpens": 179,
+  "currentlyOpen": 9
  },
  "overallConversion": {
-  "interviewToEndorse": 49.7,
-  "endorseToClientPass": 62.0,
-  "clientPassToOffer": 41.7,
-  "endorseToHire": 24.7,
-  "interviewToHire": 12.3,
-  "offerToStart": 80.4
+  "interviewToEndorse": 49.0,
+  "endorseToClientPass": 62.5,
+  "clientPassToOffer": 41.1,
+  "endorseToHire": 24.8,
+  "interviewToHire": 12.1,
+  "offerToStart": 82.9
  },
  "ttfYtd": {
-  "avgTtf": 39.5,
-  "medianTtf": 35,
-  "sampleSize": 87,
+  "avgTtf": 40.1,
+  "medianTtf": 35.0,
+  "sampleSize": 92,
   "buckets": {
-   "le30": 37,
-   "d31_60": 37,
-   "d61_90": 10,
+   "le30": 38,
+   "d31_60": 39,
+   "d61_90": 12,
    "gt90": 3
   },
-  "pctLe30": 42.5,
-  "pctLe60": 85.1,
+  "pctLe30": 41.3,
+  "pctLe60": 83.7,
   "note": "Across Jan-Sep 2026 snapshots; months with TTF data: 2026-01, 2026-02, 2026-03, 2026-04, 2026-05, 2026-06, 2026-07, 2026-08, 2026-09"
  },
  "kpiSnapshot": {
   "intToEnd": {
-   "actual": 49.7,
+   "actual": 49.0,
    "target": 70,
-   "status": "red",
-   "numerator": 611,
-   "denominator": 1230
+   "status": "red"
   },
   "endToClientPass": {
-   "actual": 62.0,
+   "actual": 62.5,
    "target": null,
    "status": "gray",
-   "note": "No target defined",
-   "numerator": 379,
-   "denominator": 611
+   "note": "No target defined"
   },
   "endToHire": {
-   "actual": 24.7,
+   "actual": 24.8,
    "target": 50,
-   "status": "red",
-   "numerator": 150,
-   "denominator": 611
+   "status": "red"
   },
   "intToHire": {
-   "actual": 12.3,
+   "actual": 12.1,
    "target": 33,
-   "status": "red",
-   "numerator": 150,
-   "denominator": 1230
+   "status": "red"
   },
   "offerToStart": {
-   "actual": 80.4,
+   "actual": 82.9,
    "target": 90,
-   "status": "yellow",
-   "numerator": 127,
-   "denominator": 157
+   "status": "yellow"
   },
   "avgTtf": {
-   "actual": 39.5,
+   "actual": 40.1,
    "target": null,
    "status": "gray",
-   "note": "No numeric target . n=87"
+   "note": "No numeric target . n=92"
   },
   "pctFilled30d": {
-   "actual": 42.5,
+   "actual": 41.3,
    "target": null,
    "status": "gray",
-   "note": "Informational . n=87"
+   "note": "Informational . n=92"
   },
   "pctFilled60d": {
-   "actual": 85.1,
+   "actual": 83.7,
    "target": null,
    "status": "gray",
-   "note": "Informational . n=87"
+   "note": "Informational . n=92"
   },
   "retention90d": {
    "actual": null,
@@ -456,20 +472,20 @@
    "type": "New Logo",
    "label": "New Logo",
    "rolesFilled": 29,
-   "avgTtf": 54.0,
-   "medianTtf": 47,
-   "ttfSampleSize": 27,
+   "avgTtf": 55.9,
+   "medianTtf": 48,
+   "ttfSampleSize": 29,
    "currentlyOpenRoles": 2,
    "currentlyOpenHc": 2,
-   "intToEnd": 54.2,
-   "endToClientPass": 63.2,
-   "endToHire": 12.8,
-   "intToHire": 6.9,
+   "intToEnd": 52.0,
+   "endToClientPass": 63.6,
+   "endToHire": 12.7,
+   "intToHire": 6.6,
    "offerToStart": 56.2,
    "_funnel": {
-    "interviews": 216,
-    "endorsed": 117,
-    "clientPass": 74,
+    "interviews": 227,
+    "endorsed": 118,
+    "clientPass": 75,
     "offers": 16,
     "hires": 15,
     "starts": 9
@@ -478,74 +494,75 @@
   {
    "type": "Ramp",
    "label": "Ramp",
-   "rolesFilled": 46,
+   "rolesFilled": 47,
    "avgTtf": 31.7,
-   "medianTtf": 26.0,
-   "ttfSampleSize": 44,
-   "currentlyOpenRoles": 1,
-   "currentlyOpenHc": 2,
-   "intToEnd": 50.0,
-   "endToClientPass": 60.7,
-   "endToHire": 27.6,
+   "medianTtf": 26.5,
+   "ttfSampleSize": 46,
+   "currentlyOpenRoles": 5,
+   "currentlyOpenHc": 5,
+   "intToEnd": 49.6,
+   "endToClientPass": 61.4,
+   "endToHire": 27.9,
    "intToHire": 13.8,
-   "offerToStart": 84.3,
+   "offerToStart": 87.1,
    "_funnel": {
-    "interviews": 798,
-    "endorsed": 399,
-    "clientPass": 242,
-    "offers": 115,
-    "hires": 110,
-    "starts": 97
+    "interviews": 810,
+    "endorsed": 402,
+    "clientPass": 247,
+    "offers": 116,
+    "hires": 112,
+    "starts": 101
    }
   },
   {
    "type": "Backfill",
    "label": "Backfill",
-   "rolesFilled": 18,
+   "rolesFilled": 19,
    "avgTtf": 36.2,
-   "medianTtf": 29.5,
-   "ttfSampleSize": 16,
-   "currentlyOpenRoles": 1,
-   "currentlyOpenHc": 1,
+   "medianTtf": 32,
+   "ttfSampleSize": 17,
+   "currentlyOpenRoles": 2,
+   "currentlyOpenHc": 2,
    "intToEnd": 42.9,
    "endToClientPass": 68.1,
-   "endToHire": 24.2,
-   "intToHire": 10.4,
-   "offerToStart": 66.7,
+   "endToHire": 25.3,
+   "intToHire": 10.8,
+   "offerToStart": 75.0,
    "_funnel": {
     "interviews": 212,
     "endorsed": 91,
     "clientPass": 62,
     "offers": 24,
-    "hires": 22,
-    "starts": 16
+    "hires": 23,
+    "starts": 18
    }
   }
  ],
  "agingBuckets": {
-  "d0_30": 4,
-  "d31_45": 0,
+  "d0_30": 7,
+  "d31_45": 1,
   "d46_60": 0,
   "d61_90": 1,
   "gt90": 0
  },
  "agingBucketsRoles": {
-  "d0_30": 3,
-  "d31_45": 0,
+  "d0_30": 7,
+  "d31_45": 1,
   "d46_60": 0,
   "d61_90": 1,
   "gt90": 0
  },
  "aging": {
-  "asOf": "2026-09",
-  "totalOpenRoles": 4,
-  "totalOpenHc": 5,
-  "rolesOver30": 1,
+  "asOf": "2026-10-01",
+  "rolesFrom": "2026-09",
+  "totalOpenRoles": 9,
+  "totalOpenHc": 9,
+  "rolesOver30": 2,
   "rolesOver60": 1,
   "avgDaysByType": {
-   "newLogo": 51,
-   "ramp": 27,
-   "backfill": 14
+   "newLogo": 54,
+   "ramp": 19,
+   "backfill": 18
   }
  },
  "oldestOpen": [
@@ -554,7 +571,15 @@
    "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
    "type": "New Logo",
    "opened": "2026-07-15",
-   "days": 75,
+   "days": 78,
+   "headcount": 1
+  },
+  {
+   "client": "SolCo (Solution Consultants ICT)",
+   "role": "IT SUPPORT ENGINEER (re-opened)",
+   "type": "Ramp",
+   "opened": "2026-08-19",
+   "days": 43,
    "headcount": 1
   },
   {
@@ -562,23 +587,55 @@
    "role": "INTEGRATION SPECIALIST",
    "type": "New Logo",
    "opened": "2026-09-01",
-   "days": 27,
+   "days": 30,
    "headcount": 1
   },
   {
    "client": "MIRION (NUCMED)",
-   "role": "BILLING ANALYST — 2 of 3 HC still open",
+   "role": "BILLING ANALYST — 1 of 3 HC still open",
    "type": "Ramp",
    "opened": "2026-09-01",
-   "days": 27,
-   "headcount": 2
+   "days": 30,
+   "headcount": 1
+  },
+  {
+   "client": "ADAUGEO",
+   "role": "LAB PATIENT ACCOUNT CSR (Ruscel Joy withdrew post-OA)",
+   "type": "Backfill",
+   "opened": "2026-09-11",
+   "days": 20,
+   "headcount": 1
   },
   {
    "client": "ADAUGEO",
    "role": "PRE-BILLING SPECIALIST — 1 of 2 HC still open",
    "type": "Backfill",
    "opened": "2026-09-14",
-   "days": 14,
+   "days": 17,
+   "headcount": 1
+  },
+  {
+   "client": "GAVBIZ LTD",
+   "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+   "type": "Ramp",
+   "opened": "2026-09-23",
+   "days": 8,
+   "headcount": 1
+  },
+  {
+   "client": "BLUESKY",
+   "role": "PROOFREADER",
+   "type": "Ramp",
+   "opened": "2026-09-23",
+   "days": 8,
+   "headcount": 1
+  },
+  {
+   "client": "C3 INGENUITY",
+   "role": "HUBSPOT CRM COORDINATOR",
+   "type": "Ramp",
+   "opened": "2026-09-24",
+   "days": 7,
    "headcount": 1
   }
  ],
@@ -590,23 +647,23 @@
   },
   "weakestMonth": {
    "month": "Jan 2026",
-   "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). Sep 2026 is excluded as it is still mid-month.",
+   "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). All of Jan-Sep are closed months, so none is excluded.",
    "hires": 11
   },
-  "ttfTrend": "Falling - avg TTF moved -3 days from 2026-04-2026-06 (37d) to 2026-07-2026-09 (34d)",
-  "pctFilled30dOverall": 42.5,
-  "pctFilled60dOverall": 85.1,
-  "longestTtfPositionType": "New Logo - 54.0d average time-to-fill (n=27), vs Backfill at 36.2d. New Logo roles take materially longer to close.",
-  "carryOverRisk": "1 of 4 currently-open roles (1 of 5 headcount) have been open more than 30 days; 1 past 60 days.",
-  "biggestBottleneck": "Endorse -> Hire at 24.7% vs a 50% target - 25.3 points short, the widest gap of any tracked conversion.",
-  "recommendedAction": "Attack Endorse -> Hire first - it is 25.3 points below its 50% target and gates every downstream stage.",
-  "rolesOver30": 1,
+  "ttfTrend": "Falling - avg TTF moved -1 days from 2026-04-2026-06 (37d) to 2026-07-2026-09 (36d)",
+  "pctFilled30dOverall": 41.3,
+  "pctFilled60dOverall": 83.7,
+  "longestTtfPositionType": "New Logo - 55.9d average time-to-fill (n=29), vs Backfill at 36.2d. New Logo roles take materially longer to close.",
+  "carryOverRisk": "2 of 9 currently-open roles (2 of 9 headcount) have been open more than 30 days; 1 past 60 days.",
+  "biggestBottleneck": "Endorse -> Hire at 24.8% vs a 50% target - 25.2 points short, the widest gap of any tracked conversion.",
+  "recommendedAction": "Attack Endorse -> Hire first - it is 25.2 points below its 50% target and gates every downstream stage.",
+  "rolesOver30": 2,
   "rolesOver60": 1,
   "_detail": {
    "bestMonthKey": "2026-07",
    "weakestMonthKey": "2026-01",
    "ttfTrendDirection": "down",
-   "ttfDeltaDays": -3,
+   "ttfDeltaDays": -1,
    "monthsWithTtf": [
     "2026-01",
     "2026-02",
@@ -620,9 +677,9 @@
    ],
    "bottleneck": {
     "stage": "Endorse -> Hire",
-    "actual": 24.7,
+    "actual": 24.8,
     "target": 50,
-    "gapPoints": 25.3
+    "gapPoints": 25.2
    }
   }
  },
@@ -630,10 +687,12 @@
   "90-day retention is not tracked in Manatal - kpiSnapshot.retention90d.actual is null.",
   "Regularization rate is not tracked in Manatal - kpiSnapshot.regularization.actual is null.",
   "Manatal's Open API exposes only each match's CURRENT stage, so a candidate endorsed and then failed on a job collapses to rank 0 on that job; they still count if another of their matches holds rank >= 2.",
-  "Sep 2026 has TTF data for 7 of 11 closed-won roles; 4 role(s) have no start date yet and are excluded from TTF.",
+  "Sep 2026 has TTF data for 11 of 13 closed-won roles; 2 role(s) have no start date yet and are excluded from TTF.",
+  "MONTH ROLLOVER: generated 2026-10-01, but snapshots/2026-10.json does not exist yet (new months are created by hand and must be added to LOCKED_MONTHS). monthly[] therefore runs Jan-Sep, all closed months. 2026-10 funnel activity (0 interviews / 0 hires so far) is NOT in monthly[] and NOT in ytdRoles; it IS included in ytdTotals, which counts unique candidates by max rank reached across the whole pull.",
+  "aging/oldestOpen list the roles open in the 2026-09 snapshot with days-open recomputed live as of 2026-10-01, so they are 1 day older than the frozen snapshot values. snapshots/2026-09.json itself was not modified.",
   "YTD totals are unique-candidate counts and deliberately do not equal the sum of the monthly columns.",
   "Funnel counts are keyed on Manatal candidate id, so one person held under two candidate records counts twice. A known instance on MIRION (NUCMED) BILLING ANALYST inflates that role's funnel by 1.",
   "Position type is derived from Manatal custom_fields.justification. NEW LOGO and NEW REQUIREMENT both map to 'New Logo'; RAMP->Ramp; BACKFILL->Backfill. 17 candidates whose jobs' justification is none of these are Unclassified and excluded from positionTypes[] conversions.",
-  "Loaded 1607 match records; after excluding OA-internal, EVERGREEN, POOLING and EXCLUDE_HASHES jobs, 1269 matches across 1230 unique candidates remain."
+  "Loaded 1634 match records; after excluding OA-internal, EVERGREEN, POOLING and EXCLUDE_HASHES jobs, 1296 matches across 1253 unique candidates remain."
  ]
 }
