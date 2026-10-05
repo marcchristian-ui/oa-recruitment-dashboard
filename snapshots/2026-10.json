@@ -1,21 +1,35 @@
 {
-  "totalOpen": 9,
+  "totalOpen": 8,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
   "additionalInMonth": 0,
   "additionalInMonthRoles": 0,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 9,
+    "open": 8,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 0,
+    "offerAccepted": 1,
     "started": 0,
     "paused": 0
   },
   "pausedRoles": [],
   "closedLostRoles": [],
-  "closedWon": [],
+  "closedWon": [
+    {
+      "client": "AUDIT DATA",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT)",
+      "headcount": 1,
+      "openedDate": "2026-07-15",
+      "offerDate": "2026-10-05",
+      "startDate": "2026-11-05",
+      "timeToHire": 82,
+      "timeToFill": 113,
+      "stage": "Offer Accepted",
+      "type": "New Logo",
+      "candidate": "HAZELL DORIA"
+    }
+  ],
   "inOfferRoles": [],
   "ongoingContractRoles": [],
   "withdrawals": [],
@@ -27,7 +41,7 @@
       "opened": "2026-07-15",
       "days": 82,
       "type": "New Logo",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "SolCo (Solution Consultants ICT)",
@@ -103,18 +117,10 @@
     }
   ],
   "business": {
-    "newLogoCount": 2,
+    "newLogoCount": 1,
     "rampCount": 5,
     "backfillCount": 2,
     "newLogoJobs": [
-      {
-        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
-        "client": "AUDIT DATA",
-        "type": "New Logo",
-        "opened": "2026-07-15",
-        "days": 82,
-        "headcount": 1
-      },
       {
         "role": "INTEGRATION SPECIALIST",
         "client": "DEMAND BRIDGE",
@@ -186,22 +192,14 @@
     ]
   },
   "aging": {
-    "avgNewLogo": 58,
+    "avgNewLogo": 34,
     "avgRamp": 23,
-    "avgBackfill": 23,
-    "fresh": 5,
+    "avgBackfill": 22,
+    "fresh": 3,
     "normal": 2,
-    "aging": 1,
+    "aging": 2,
     "critical": 1,
     "jobs": [
-      {
-        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
-        "client": "AUDIT DATA",
-        "type": "New Logo",
-        "opened": "2026-07-15",
-        "days": 82,
-        "headcount": 1
-      },
       {
         "role": "IT SUPPORT ENGINEER (re-opened)",
         "client": "SolCo (Solution Consultants ICT)",
@@ -268,8 +266,8 @@
       }
     ]
   },
-  "avgTimeToHire": 0,
-  "avgTimeToFill": 0,
-  "activeRequisitions": 9,
-  "activeRequisitionsRoles": 9
+  "avgTimeToHire": 82,
+  "avgTimeToFill": 113,
+  "activeRequisitions": 8,
+  "activeRequisitionsRoles": 8
 }

@@ -1270,14 +1270,25 @@ function drawSomAdditional(){
 
 function drawCandidateFunnel(){
   var funnel = DATA.openJobsFunnel || [];
-  var totII = 0, totCE = 0, totCI = 0, totJO = 0, totOC = 0, totOA = 0;
+  var curKey = SEL || "";  // "YYYY-MM" selected month
+  // For late-stage KPIs (JO / OC / OA) count only candidates whose stage-move
+  // happened in the selected month. Without this filter, a Sept Offer Accepted
+  // that hasn't started yet keeps counting in October's tile because the
+  // candidate is still live in Manatal at that stage. II / CE / CI are kept
+  // unfiltered — those are "currently sourcing" counts, not stage-move counts.
+  function inCurMonth(c){
+    var m = (c && c.movedAt) || "";
+    return typeof m === "string" && m.length >= 7 && m.substring(0,7) === curKey;
+  }
+  var totII = 0, totCE = 0, totCI = 0;
+  var totJO = 0, totOC = 0, totOA = 0;
   funnel.forEach(function(j){
     totII += (j.initialInterview||[]).length;
     totCE += (j.clientEndorsement||[]).length;
     totCI += (j.clientInterview||[]).length;
-    totJO += (j.jobOffer||[]).length;
-    totOC += (j.ongoingContract||[]).length;
-    totOA += (j.offerAccepted||[]).length;
+    totJO += (j.jobOffer||[]).filter(inCurMonth).length;
+    totOC += (j.ongoingContract||[]).filter(inCurMonth).length;
+    totOA += (j.offerAccepted||[]).filter(inCurMonth).length;
   });
 
   // Top-row summary (row 1): 4 cards
@@ -1287,13 +1298,14 @@ function drawCandidateFunnel(){
     kc("bb","Client Endorsement", totCE,"sent to client")+
     kc("bp","Client Interview",   totCI,"interviewing with client");
 
-  // Second summary row: 3 late-stage cards
+  // Second summary row: 3 late-stage cards (this-month moves only).
+  var moLbl = moLabel();
   var kpi2 = document.getElementById("cfKpi2");
   if(kpi2){
     kpi2.innerHTML =
-      kc("or","Job Offer",           totJO,"offer extended, awaiting response")+
-      kc("pu","Ongoing Contract",    totOC,"contract in progress")+
-      kc("gr","Offer Accepted",      totOA,"accepted, pending start date");
+      kc("or","Job Offer ("+moLbl+")",        totJO,"offer extended in "+moLbl)+
+      kc("pu","Ongoing Contract ("+moLbl+")", totOC,"contract signed in "+moLbl)+
+      kc("gr","Offer Accepted ("+moLbl+")",   totOA,"offer accepted in "+moLbl);
   }
 
   var box = document.getElementById("cfCards");
