@@ -9,8 +9,8 @@
     "open": 9,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 9,
-    "started": 4,
+    "offerAccepted": 4,
+    "started": 9,
     "paused": 2
   },
   "pausedRoles": [
@@ -87,7 +87,7 @@
       "startDate": "2026-10-05",
       "timeToHire": 64,
       "timeToFill": 82,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "Mark Angelo T. Suguitan"
     },
@@ -126,7 +126,7 @@
       "startDate": "2026-10-05",
       "timeToHire": 68,
       "timeToFill": 82,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "RUEL B. SUCGANG"
     },
@@ -152,7 +152,7 @@
       "startDate": "2026-10-01",
       "timeToHire": 42,
       "timeToFill": 58,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "JESSICA RABANG"
     },
@@ -165,7 +165,7 @@
       "startDate": "2026-10-05",
       "timeToHire": 21,
       "timeToFill": 34,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "CHESKA MAE CARONAN"
     },
@@ -191,7 +191,7 @@
       "startDate": "2026-10-05",
       "timeToHire": 16,
       "timeToFill": 26,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Jodelle Agsalud"
     },

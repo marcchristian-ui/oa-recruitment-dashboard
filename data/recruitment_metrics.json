@@ -1,5 +1,5 @@
 {
- "_generated": "2026-10-01",
+ "_generated": "2026-10-06",
  "_source": "snapshots/2026-01.json..2026-09.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714)",
  "_methodology": "MONOTONIC FUNNEL (rank roll-up) with OA/EVERGREEN/POOLING/EXCLUDE_HASHES exclusions applied. Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing Contract=5, Started=6, Failed=0. A match at rank K emits one dated event for every rank R<=K (it must have passed through them), dated by: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance (2026-09-23 fix) - rank6 updated_at; each falling back to updated_at when null. Events are pooled per CANDIDATE. For month M and rank R, a candidate is counted if they have any event in M at rank >= R, which makes Interviews>=Endorsed>=ClientPass>=Offers>=Hires>=Starts true by construction. YTD totals are unique candidates by max rank reached, so YTD is NOT the sum of the months. EXCLUSIONS: (a) Outsource Accelerator internal orgs 599280 and 1619851; (b) EVERGREEN REQUISITION org 1560151; (c) any job whose position_name contains 'POOLING'; (d) 10 EXCLUDE_HASHES per manatal/constants.py. Position type is derived from Manatal custom_fields.justification: 'NEW LOGO' and 'NEW REQUIREMENT' both map to New Logo (both labels are treated as one bucket - Manatal's dropdown was renamed and legacy jobs still carry the old label); 'RAMP' -> Ramp; 'BACKFILL' -> Backfill; any other value is Unclassified and excluded from positionTypes[] conversions. A candidate active on jobs of multiple types is counted in EACH type.",
  "_schema": {
@@ -14,45 +14,21 @@
   "dataGaps[]": "Known holes in the underlying data."
  },
  "_dataQuality": {
-  "totalMatchesFromAPI": 1634,
-  "uniqueMatchesLoaded": 1634,
-  "matchesAfterExclusions": 1296,
-  "uniqueCandidatesWithRankedEvents": 1253,
+  "totalMatchesFromAPI": 2087,
+  "uniqueMatchesLoaded": 2087,
+  "matchesAfterExclusions": 1694,
+  "uniqueCandidatesWithRankedEvents": 1266,
   "unclassifiedCandidates": 17,
   "exclusionsDropped": {
-   "oa": 298,
+   "oa": 309,
    "evergreen": 0,
    "pooling": 0,
    "exclude_hashes": 40,
-   "no_job": 0
+   "no_job": 44
   },
   "constraintFailuresPerMonth": [],
   "monthsAllMonotonic": true,
-  "monthsReported": [
-   "2026-01",
-   "2026-02",
-   "2026-03",
-   "2026-04",
-   "2026-05",
-   "2026-06",
-   "2026-07",
-   "2026-08",
-   "2026-09"
-  ],
-  "pendingMonth": {
-   "month": "2026-10",
-   "reason": "no snapshots/2026-10.json yet; not in LOCKED_MONTHS",
-   "funnelSoFar": {
-    "interviews": 0,
-    "endorsed": 0,
-    "clientPass": 0,
-    "offers": 0,
-    "hires": 0,
-    "starts": 0
-   },
-   "writtenToMonthly": false
-  },
-  "note": "Loaded 1634 match records; applied filter dropping 298 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 338 total; kept 1296 candidate-job matches across 1253 unique candidates. NEW LOGO and NEW REQUIREMENT both bucket to 'New Logo' (Manatal dropdown value + legacy value). 17 candidates are Unclassified (their jobs' justification is neither NEW LOGO/NEW REQUIREMENT nor RAMP nor BACKFILL) and are excluded from per-type conversions but counted in overall YTD."
+  "note": "Loaded 2087 match records; applied filter dropping 309 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 393 total; kept 1694 candidate-job matches across 1626 unique candidates. "
  },
  "period": {
   "start": "2026-01-01",
@@ -105,7 +81,23 @@
    "paused": 1,
    "stillOpen": 0,
    "totalOpenAtSnapshot": 0,
-   "monthlyTarget": 12
+   "monthlyTarget": 12,
+   "intToEnd_nd": {
+    "n": 77,
+    "d": 178
+   },
+   "endToHire_nd": {
+    "n": 11,
+    "d": 77
+   },
+   "intToHire_nd": {
+    "n": 11,
+    "d": 178
+   },
+   "offerToStart_nd": {
+    "n": 10,
+    "d": 11
+   }
   },
   {
    "month": "2026-02",
@@ -138,7 +130,23 @@
    "paused": 7,
    "stillOpen": 0,
    "totalOpenAtSnapshot": 0,
-   "monthlyTarget": 29
+   "monthlyTarget": 29,
+   "intToEnd_nd": {
+    "n": 81,
+    "d": 170
+   },
+   "endToHire_nd": {
+    "n": 16,
+    "d": 81
+   },
+   "intToHire_nd": {
+    "n": 16,
+    "d": 170
+   },
+   "offerToStart_nd": {
+    "n": 7,
+    "d": 18
+   }
   },
   {
    "month": "2026-03",
@@ -171,7 +179,23 @@
    "paused": 6,
    "stillOpen": 0,
    "totalOpenAtSnapshot": 0,
-   "monthlyTarget": 12
+   "monthlyTarget": 12,
+   "intToEnd_nd": {
+    "n": 102,
+    "d": 178
+   },
+   "endToHire_nd": {
+    "n": 32,
+    "d": 102
+   },
+   "intToHire_nd": {
+    "n": 32,
+    "d": 178
+   },
+   "offerToStart_nd": {
+    "n": 31,
+    "d": 32
+   }
   },
   {
    "month": "2026-04",
@@ -204,7 +228,23 @@
    "paused": 0,
    "stillOpen": 15,
    "totalOpenAtSnapshot": 15,
-   "monthlyTarget": 11
+   "monthlyTarget": 11,
+   "intToEnd_nd": {
+    "n": 69,
+    "d": 120
+   },
+   "endToHire_nd": {
+    "n": 12,
+    "d": 69
+   },
+   "intToHire_nd": {
+    "n": 12,
+    "d": 120
+   },
+   "offerToStart_nd": {
+    "n": 4,
+    "d": 12
+   }
   },
   {
    "month": "2026-05",
@@ -237,7 +277,23 @@
    "paused": 3,
    "stillOpen": 9,
    "totalOpenAtSnapshot": 9,
-   "monthlyTarget": 11
+   "monthlyTarget": 11,
+   "intToEnd_nd": {
+    "n": 70,
+    "d": 138
+   },
+   "endToHire_nd": {
+    "n": 31,
+    "d": 70
+   },
+   "intToHire_nd": {
+    "n": 31,
+    "d": 138
+   },
+   "offerToStart_nd": {
+    "n": 26,
+    "d": 32
+   }
   },
   {
    "month": "2026-06",
@@ -270,7 +326,23 @@
    "paused": 7,
    "stillOpen": 10,
    "totalOpenAtSnapshot": 10,
-   "monthlyTarget": 7
+   "monthlyTarget": 7,
+   "intToEnd_nd": {
+    "n": 59,
+    "d": 122
+   },
+   "endToHire_nd": {
+    "n": 22,
+    "d": 59
+   },
+   "intToHire_nd": {
+    "n": 22,
+    "d": 122
+   },
+   "offerToStart_nd": {
+    "n": 4,
+    "d": 23
+   }
   },
   {
    "month": "2026-07",
@@ -303,7 +375,23 @@
    "paused": 2,
    "stillOpen": 17,
    "totalOpenAtSnapshot": 17,
-   "monthlyTarget": 7
+   "monthlyTarget": 7,
+   "intToEnd_nd": {
+    "n": 96,
+    "d": 169
+   },
+   "endToHire_nd": {
+    "n": 37,
+    "d": 96
+   },
+   "intToHire_nd": {
+    "n": 37,
+    "d": 169
+   },
+   "offerToStart_nd": {
+    "n": 28,
+    "d": 38
+   }
   },
   {
    "month": "2026-08",
@@ -336,22 +424,38 @@
    "paused": 2,
    "stillOpen": 9,
    "totalOpenAtSnapshot": 9,
-   "monthlyTarget": 12
+   "monthlyTarget": 12,
+   "intToEnd_nd": {
+    "n": 89,
+    "d": 151
+   },
+   "endToHire_nd": {
+    "n": 19,
+    "d": 89
+   },
+   "intToHire_nd": {
+    "n": 19,
+    "d": 151
+   },
+   "offerToStart_nd": {
+    "n": 12,
+    "d": 20
+   }
   },
   {
    "month": "2026-09",
    "label": "Sep 2026",
-   "interviews": 176,
-   "endorsed": 73,
+   "interviews": 167,
+   "endorsed": 71,
    "clientPass": 58,
    "offers": 21,
    "hires": 21,
-   "starts": 10,
-   "intToEnd": 41.5,
-   "endToClientPass": 79.5,
-   "endToHire": 28.8,
-   "intToHire": 11.9,
-   "offerToStart": 47.6,
+   "starts": 6,
+   "intToEnd": 42.5,
+   "endToClientPass": 81.7,
+   "endToHire": 29.6,
+   "intToHire": 12.6,
+   "offerToStart": 28.6,
    "rolesFilled": 13,
    "avgTtf": 45,
    "medianTtf": 34,
@@ -369,16 +473,63 @@
    "paused": 1,
    "stillOpen": 9,
    "totalOpenAtSnapshot": 9,
-   "monthlyTarget": 5
+   "monthlyTarget": 5,
+   "intToEnd_nd": {
+    "n": 71,
+    "d": 167
+   },
+   "endToHire_nd": {
+    "n": 21,
+    "d": 71
+   },
+   "intToHire_nd": {
+    "n": 21,
+    "d": 167
+   },
+   "offerToStart_nd": {
+    "n": 6,
+    "d": 21
+   }
+  },
+  {
+   "month": "2026-10",
+   "label": "Oct 2026",
+   "interviews": 28,
+   "endorsed": 18,
+   "clientPass": 12,
+   "offers": 4,
+   "hires": 2,
+   "starts": 1,
+   "intToEnd": 64.3,
+   "endToClientPass": 66.7,
+   "endToHire": 11.1,
+   "intToHire": 7.1,
+   "offerToStart": 25.0,
+   "intToEnd_nd": {
+    "n": 18,
+    "d": 28
+   },
+   "endToHire_nd": {
+    "n": 2,
+    "d": 18
+   },
+   "intToHire_nd": {
+    "n": 2,
+    "d": 28
+   },
+   "offerToStart_nd": {
+    "n": 1,
+    "d": 4
+   }
   }
  ],
  "ytdTotals": {
-  "interviews": 1253,
-  "endorsed": 614,
-  "clientPass": 384,
-  "offers": 158,
-  "hires": 152,
-  "starts": 131
+  "interviews": 1266,
+  "endorsed": 624,
+  "clientPass": 392,
+  "offers": 161,
+  "hires": 153,
+  "starts": 128
  },
  "ytdRoles": {
   "filled": 95,
@@ -388,12 +539,30 @@
   "currentlyOpen": 9
  },
  "overallConversion": {
-  "interviewToEndorse": 49.0,
-  "endorseToClientPass": 62.5,
+  "interviewToEndorse": 49.3,
+  "endorseToClientPass": 62.8,
   "clientPassToOffer": 41.1,
-  "endorseToHire": 24.8,
+  "endorseToHire": 24.5,
   "interviewToHire": 12.1,
-  "offerToStart": 82.9
+  "offerToStart": 79.5,
+  "_nd": {
+   "interviewToEndorse": {
+    "n": 624,
+    "d": 1266
+   },
+   "endorseToHire": {
+    "n": 153,
+    "d": 624
+   },
+   "interviewToHire": {
+    "n": 153,
+    "d": 1266
+   },
+   "offerToStart": {
+    "n": 128,
+    "d": 161
+   }
+  }
  },
  "ttfYtd": {
   "avgTtf": 40.1,
@@ -411,18 +580,18 @@
  },
  "kpiSnapshot": {
   "intToEnd": {
-   "actual": 49.0,
+   "actual": 49.3,
    "target": 70,
    "status": "red"
   },
   "endToClientPass": {
-   "actual": 62.5,
+   "actual": 62.8,
    "target": null,
    "status": "gray",
    "note": "No target defined"
   },
   "endToHire": {
-   "actual": 24.8,
+   "actual": 24.5,
    "target": 50,
    "status": "red"
   },
@@ -432,9 +601,9 @@
    "status": "red"
   },
   "offerToStart": {
-   "actual": 82.9,
+   "actual": 79.5,
    "target": 90,
-   "status": "yellow"
+   "status": "red"
   },
   "avgTtf": {
    "actual": 40.1,
@@ -477,17 +646,17 @@
    "ttfSampleSize": 29,
    "currentlyOpenRoles": 2,
    "currentlyOpenHc": 2,
-   "intToEnd": 52.0,
-   "endToClientPass": 63.6,
-   "endToHire": 12.7,
-   "intToHire": 6.6,
-   "offerToStart": 56.2,
+   "intToEnd": 52.9,
+   "endToClientPass": 62.2,
+   "endToHire": 13.4,
+   "intToHire": 7.1,
+   "offerToStart": 52.9,
    "_funnel": {
-    "interviews": 227,
-    "endorsed": 118,
-    "clientPass": 75,
-    "offers": 16,
-    "hires": 15,
+    "interviews": 225,
+    "endorsed": 119,
+    "clientPass": 74,
+    "offers": 17,
+    "hires": 16,
     "starts": 9
    }
   },
@@ -500,18 +669,18 @@
    "ttfSampleSize": 46,
    "currentlyOpenRoles": 5,
    "currentlyOpenHc": 5,
-   "intToEnd": 49.6,
-   "endToClientPass": 61.4,
-   "endToHire": 27.9,
-   "intToHire": 13.8,
-   "offerToStart": 87.1,
+   "intToEnd": 50.0,
+   "endToClientPass": 62.4,
+   "endToHire": 27.3,
+   "intToHire": 13.6,
+   "offerToStart": 83.8,
    "_funnel": {
-    "interviews": 810,
-    "endorsed": 402,
-    "clientPass": 247,
-    "offers": 116,
-    "hires": 112,
-    "starts": 101
+    "interviews": 814,
+    "endorsed": 407,
+    "clientPass": 254,
+    "offers": 117,
+    "hires": 111,
+    "starts": 98
    }
   },
   {
@@ -523,18 +692,18 @@
    "ttfSampleSize": 17,
    "currentlyOpenRoles": 2,
    "currentlyOpenHc": 2,
-   "intToEnd": 42.9,
-   "endToClientPass": 68.1,
-   "endToHire": 25.3,
-   "intToHire": 10.8,
-   "offerToStart": 75.0,
+   "intToEnd": 42.0,
+   "endToClientPass": 67.0,
+   "endToHire": 23.4,
+   "intToHire": 9.8,
+   "offerToStart": 66.7,
    "_funnel": {
-    "interviews": 212,
-    "endorsed": 91,
-    "clientPass": 62,
+    "interviews": 224,
+    "endorsed": 94,
+    "clientPass": 63,
     "offers": 24,
-    "hires": 23,
-    "starts": 18
+    "hires": 22,
+    "starts": 16
    }
   }
  ],
@@ -647,7 +816,7 @@
   },
   "weakestMonth": {
    "month": "Jan 2026",
-   "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). All of Jan-Sep are closed months, so none is excluded.",
+   "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). Oct 2026 is excluded as it is still mid-month.",
    "hires": 11
   },
   "ttfTrend": "Falling - avg TTF moved -1 days from 2026-04-2026-06 (37d) to 2026-07-2026-09 (36d)",
@@ -655,8 +824,8 @@
   "pctFilled60dOverall": 83.7,
   "longestTtfPositionType": "New Logo - 55.9d average time-to-fill (n=29), vs Backfill at 36.2d. New Logo roles take materially longer to close.",
   "carryOverRisk": "2 of 9 currently-open roles (2 of 9 headcount) have been open more than 30 days; 1 past 60 days.",
-  "biggestBottleneck": "Endorse -> Hire at 24.8% vs a 50% target - 25.2 points short, the widest gap of any tracked conversion.",
-  "recommendedAction": "Attack Endorse -> Hire first - it is 25.2 points below its 50% target and gates every downstream stage.",
+  "biggestBottleneck": "Endorse -> Hire at 24.5% vs a 50% target - 25.5 points short, the widest gap of any tracked conversion.",
+  "recommendedAction": "Attack Endorse -> Hire first - it is 25.5 points below its 50% target and gates every downstream stage.",
   "rolesOver30": 2,
   "rolesOver60": 1,
   "_detail": {
@@ -677,9 +846,9 @@
    ],
    "bottleneck": {
     "stage": "Endorse -> Hire",
-    "actual": 24.8,
+    "actual": 24.5,
     "target": 50,
-    "gapPoints": 25.2
+    "gapPoints": 25.5
    }
   }
  },
