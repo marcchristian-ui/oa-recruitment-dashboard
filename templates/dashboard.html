@@ -131,7 +131,6 @@ var CH   = {};
   <div class="tab"     onclick="sw('rv',this)">&#128100; Recruiter View</div>
   <div class="tab"     onclick="sw('cf',this)">&#128101; Candidate Funnel</div>
   <div class="tab"     onclick="sw('nl',this)">&#127793; Nurture List</div>
-  <div class="tab"     onclick="sw('sc',this)">&#127919; Candidate Scoring</div>
 </div>
 
 
@@ -556,38 +555,6 @@ var CH   = {};
 </div>
 
 
-<div id="p-sc" class="page">
-  <div class="stitle">Candidate Scoring &mdash; is the score predictive?</div>
-  <div style="font-size:12px;color:#718096;margin:-8px 0 18px;">
-    Candidate Scoring Framework v1.1 (Recruiter Toolkit &sect;9). Scores come from the structured notes in Manatal
-    (interview scorecards drafted by the Read.ai automation and confirmed by the recruiter, plus paper, assessment and
-    submission scores). Rates on fewer than 10 events show as counts. Per-recruiter figures are for coaching, not ranking.
-    <span id="scStamp" style="font-style:italic;"></span>
-  </div>
-  <div class="kg k5" id="scKpis"></div>
-  <div class="tbox"><h3>Gate exceptions to act on</h3>
-    <div style="overflow-x:auto;"><table><thead><tr><th>Type</th><th>Candidate ID</th><th>Job</th><th>Recruiter</th><th>Stage</th><th>Detail</th></tr></thead>
-    <tbody id="scExc"></tbody></table></div></div>
-  <div class="twocol">
-    <div class="tbox"><h3>Funnel conversion (scored candidates)</h3>
-      <table><thead><tr><th>Step</th><th>From</th><th>To</th><th>Conversion</th></tr></thead><tbody id="scFunnel"></tbody></table></div>
-    <div class="tbox"><h3>Patterns to review</h3>
-      <table><thead><tr><th>Pattern</th><th>Count</th><th>The question to ask</th></tr></thead><tbody id="scPat"></tbody></table></div>
-  </div>
-  <div class="tbox"><h3>Conversion by band at submission</h3>
-    <div style="overflow-x:auto;"><table><thead><tr><th>Band</th><th>Endorsed</th><th>Endorse &rarr; client IV</th><th>Client IV &rarr; offer</th><th>Offer &rarr; start</th><th>90-day retention</th><th>Avg C score</th></tr></thead>
-    <tbody id="scBand"></tbody></table></div></div>
-  <div class="twocol">
-    <div class="tbox"><h3>Average scores</h3><table><tbody id="scAvg"></tbody></table></div>
-    <div class="tbox"><h3>Criterion discrimination (selected vs rejected on capability)</h3>
-      <table><thead><tr><th>Criterion</th><th>Selected</th><th>Rejected</th><th>Difference</th></tr></thead><tbody id="scDisc"></tbody></table></div>
-  </div>
-  <div class="tbox"><h3>By recruiter (coaching only)</h3>
-    <div style="overflow-x:auto;"><table><thead><tr><th>Recruiter</th><th>Interviews scored</th><th>Avg I</th><th>Endorsed</th><th>Avg C endorsed</th><th>Endorse &rarr; client IV</th><th>Selected</th></tr></thead>
-    <tbody id="scRec"></tbody></table></div></div>
-</div>
-
-
 <div id="p-sa" class="page">
   <div class="stitle">SoM vs Additional — Requisition Tracking</div>
   <div style="font-size:12px;color:#718096;margin:-8px 0 18px;">
@@ -696,7 +663,7 @@ function sw(id,el){
   if(id==="sa") drawSomAdditional();
   if(id==="nl") drawNurtureList();
   if(id==="rm") drawRecruitmentMetrics();
-  if(id==="sc") drawCandidateScoring();
+  // 'sc' (Candidate Scoring) tab + handler removed per user request 2026-10-06.
 }
 
 function drawRecruitmentMetrics(){
@@ -2263,53 +2230,7 @@ function drawPaused(){
     '<tr><td colspan="7" style="text-align:center;color:#a0aec0;padding:24px;">No closed lost roles for this month</td></tr>';
 }
 
-function drawCandidateScoring(){
-  var S = DATA.candidateScoring || {};
-  var M = S.metrics || null;
-  var esc = function(x){ return String(x==null?"":x).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); };
-  var pct = function(v){ return v==null ? "&mdash;" : (Math.round(v*10)/10)+"%"; };
-  var rt  = function(r){ if(!r || !r.den) return "&mdash;"; if(r.small) return "n&lt;10 ("+r.num+"/"+r.den+")"; return Math.round(r.rate*1000)/10+"%"; };
-  var empty = function(n,msg){ return '<tr><td colspan="'+n+'" style="text-align:center;color:#a0aec0;padding:18px;font-style:italic;">'+msg+'</td></tr>'; };
-  document.getElementById("scStamp").textContent = S.generated_at ? " Updated "+S.generated_at.replace("T"," ").slice(0,16)+" UTC." : " No data yet: run scripts/scoring_sync.py.";
-  if(!M){ document.getElementById("scKpis").innerHTML = '<div style="grid-column:1/-1;padding:20px;text-align:center;color:#a0aec0;font-style:italic;">No scoring data yet.</div>'; return; }
-  var A = M.averages || {}, exc = S.exceptions || [];
-  var endorsed = (M.by_band||[]).reduce(function(t,b){return t+b.endorsed;},0);
-  var civ = (M.funnel||[])[2] || {};
-  document.getElementById("scKpis").innerHTML =
-    kc("bl","Candidates scored", S.scored_candidates||0, "v1.1 scores since "+(S.since||"")) +
-    kc("pu","Avg interview score", pct(A.interview), "I checkpoint") +
-    kc("gr","Avg submitted score", pct(A.endorsed), endorsed+" endorsed") +
-    kc("or","Endorse → client IV", rt(civ), "target > 70%") +
-    kc(exc.length ? "rd" : "gr","Gate exceptions", exc.length, "flagged, not blocked");
-  document.getElementById("scExc").innerHTML = exc.length ? exc.map(function(e){
-    return "<tr><td><span class='badge br'>"+esc(e.type)+"</span></td><td>"+esc(e.candidate_id)+"</td><td>"+esc(e.job_id)+"</td><td>"+esc(e.recruiter)+"</td><td>"+esc(e.stage)+"</td><td>"+esc(e.detail)+"</td></tr>";
-  }).join("") : empty(6,"No exceptions.");
-  document.getElementById("scFunnel").innerHTML = (M.funnel||[]).map(function(f){
-    return "<tr><td>"+esc(f.step)+"</td><td>"+f.den+"</td><td>"+f.num+"</td><td><strong>"+rt(f)+"</strong></td></tr>"; }).join("");
-  var Q = {"High score + client rejection":"Is our scoring too generous, or are the client requirements unclear?",
-           "Low score + successful hire":"Are we over-weighting certain criteria?",
-           "High score + early attrition":"Did we miss motivation, culture, expectation or role-fit risks?",
-           "Low score + 90-day success":"What did the recruiter or client recognise that the model missed?"};
-  document.getElementById("scPat").innerHTML = Object.keys(Q).map(function(k){
-    var n=(M.patterns||{})[k]||0; return "<tr><td>"+k+"</td><td><strong>"+n+"</strong></td><td style='color:#718096;'>"+Q[k]+"</td></tr>"; }).join("");
-  document.getElementById("scBand").innerHTML = (M.by_band||[]).map(function(b){
-    return "<tr><td><strong>"+esc(b.band)+"</strong></td><td>"+b.endorsed+"</td><td>"+rt(b.civ)+"</td><td>"+rt(b.offer)+"</td><td>"+rt(b.start)+"</td><td>"+rt(b.d90)+"</td><td>"+pct(b.avg_c)+"</td></tr>"; }).join("");
-  var gap = A.gap_selected_rejected;
-  document.getElementById("scAvg").innerHTML = [
-    ["Endorsed candidates (C)", pct(A.endorsed)], ["Hired (started)", pct(A.hired)],
-    ["Selected by the client", pct(A.selected)+" <span style='color:#a0aec0'>(n="+(A.n_selected||0)+")</span>"],
-    ["Rejected on capability", pct(A.rejected_capability)+" <span style='color:#a0aec0'>(n="+(A.n_rejected||0)+")</span>"],
-    ["Gap: selected − rejected", gap==null?"&mdash;":(gap>0?"+":"")+gap+" pts <span style='color:#a0aec0'>(target ≥ +8)</span>"],
-    ["Retained at day 90", pct(A.retained_d90)], ["Exited before day 90", pct(A.exited_d90)],
-    ["Correlation: score vs outcome", (M.correlation&&M.correlation.r!=null)? M.correlation.r+" <span style='color:#a0aec0'>(n="+M.correlation.n+")</span>" : "&mdash; <span style='color:#a0aec0'>(needs n ≥ 20 per role type)</span>"]
-  ].map(function(r){ return "<tr><td>"+r[0]+"</td><td style='text-align:right;'><strong>"+r[1]+"</strong></td></tr>"; }).join("");
-  document.getElementById("scDisc").innerHTML = (M.discrimination||[]).map(function(d){
-    var col = d.diff==null ? "#a0aec0" : (d.diff>=0.25 ? "#276749" : (d.diff<=-0.25 ? "#742a2a" : "#718096"));
-    return "<tr><td>"+d.criterion+" "+esc(d.name)+"</td><td>"+(d.selected==null?"&mdash;":d.selected)+"</td><td>"+(d.rejected==null?"&mdash;":d.rejected)+"</td><td style='color:"+col+";font-weight:700;'>"+(d.diff==null?"&mdash;":d.diff)+"</td></tr>"; }).join("");
-  var R = M.by_recruiter||[];
-  document.getElementById("scRec").innerHTML = R.length ? R.map(function(r){
-    return "<tr><td>"+esc(r.recruiter)+"</td><td>"+r.interviews+"</td><td>"+pct(r.avg_i)+"</td><td>"+r.endorsed+"</td><td>"+pct(r.avg_c)+"</td><td>"+rt(r.civ)+"</td><td>"+r.selected+"</td></tr>"; }).join("") : empty(7,"No scored candidates yet.");
-}
+// drawCandidateScoring() removed per user request 2026-10-06 along with the Candidate Scoring tab.
 </script>
 </body>
 </html>
