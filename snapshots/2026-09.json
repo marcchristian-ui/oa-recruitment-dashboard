@@ -9,8 +9,8 @@
     "open": 9,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 4,
-    "started": 9,
+    "offerAccepted": 3,
+    "started": 10,
     "paused": 2
   },
   "pausedRoles": [
@@ -139,7 +139,7 @@
       "startDate": "2026-10-12",
       "timeToHire": 13,
       "timeToFill": 34,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "TRISHA PARONG"
     },

@@ -1,15 +1,15 @@
 {
-  "totalOpen": 13,
+  "totalOpen": 11,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
-  "additionalInMonth": 5,
-  "additionalInMonthRoles": 1,
+  "additionalInMonth": 8,
+  "additionalInMonthRoles": 4,
   "monthlyTarget": 7,
   "pipeline": {
     "open": 11,
-    "forJobOffer": 2,
-    "ongoingContract": 0,
-    "offerAccepted": 1,
+    "forJobOffer": 1,
+    "ongoingContract": 1,
+    "offerAccepted": 4,
     "started": 0,
     "paused": 0
   },
@@ -28,24 +28,71 @@
       "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "HAZELL DORIA"
+    },
+    {
+      "client": "BLUESKY",
+      "role": "PROOFREADER",
+      "headcount": 1,
+      "openedDate": "2026-09-23",
+      "offerDate": "2026-10-08",
+      "startDate": "",
+      "timeToHire": 15,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "ELLEN JOYCE SORIANO"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-06",
+      "offerDate": "2026-10-06",
+      "startDate": "",
+      "timeToHire": 0,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Edmarie Alcazar"
+    },
+    {
+      "client": "SolCo (Solution Consultants ICT)",
+      "role": "IT SUPPORT ENGINEER (re-opened)",
+      "headcount": 1,
+      "openedDate": "2026-08-19",
+      "offerDate": "2026-10-08",
+      "startDate": "",
+      "timeToHire": 50,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Ma Jiralyn Trocio"
     }
   ],
   "inOfferRoles": [
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 2,
-      "openedDate": "2026-10-06",
-      "offerDate": "2026-10-06",
-      "stage": "Job Offer",
-      "type": "Ramp",
-      "candidates": [
-        "Edmarie Alcazar",
-        "Anamaria Santos"
-      ]
+      "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
+      "headcount": 1,
+      "openedDate": "2026-09-11",
+      "offerDate": "2026-10-09",
+      "startDate": "",
+      "stage": "For Job Offer",
+      "type": "Backfill",
+      "candidate": "MARIA ELENA OLEA"
     }
   ],
-  "ongoingContractRoles": [],
+  "ongoingContractRoles": [
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Anamaria Santos"
+    }
+  ],
   "withdrawals": [],
   "somCarryOver": [
     {
@@ -53,7 +100,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 83,
+      "days": 89,
       "type": "New Logo",
       "status": "won"
     },
@@ -62,16 +109,16 @@
       "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 48,
+      "days": 54,
       "type": "Ramp",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "DEMAND BRIDGE",
       "role": "INTEGRATION SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 35,
+      "days": 41,
       "type": "New Logo",
       "status": "active"
     },
@@ -80,7 +127,7 @@
       "role": "BILLING ANALYST — 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 35,
+      "days": 41,
       "type": "Ramp",
       "status": "active"
     },
@@ -89,16 +136,16 @@
       "role": "LAB PATIENT ACCOUNT CSR — re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
       "headcount": 1,
       "opened": "2026-09-11",
-      "days": 25,
+      "days": 31,
       "type": "Backfill",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "ADAUGEO",
       "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover (James Kith Macalua won in Sept)",
       "headcount": 1,
       "opened": "2026-09-14",
-      "days": 22,
+      "days": 28,
       "type": "Backfill",
       "status": "active"
     },
@@ -107,7 +154,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 13,
+      "days": 19,
       "type": "Ramp",
       "status": "active"
     },
@@ -116,58 +163,57 @@
       "role": "PROOFREADER",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 13,
+      "days": 19,
       "type": "Ramp",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "C3 INGENUITY",
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-24",
-      "days": 12,
-      "type": "Ramp",
-      "status": "active"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (5 HC opened 2026-10-06 — 2 HC at Job Offer same day)",
-      "headcount": 5,
-      "opened": "2026-10-06",
-      "days": 0,
+      "days": 18,
       "type": "Ramp",
       "status": "active"
     }
   ],
   "business": {
-    "newLogoCount": 1,
-    "rampCount": 6,
-    "backfillCount": 2,
+    "newLogoCount": 2,
+    "rampCount": 8,
+    "backfillCount": 1,
     "newLogoJobs": [
       {
         "role": "INTEGRATION SPECIALIST",
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 35,
+        "days": 41,
+        "headcount": 1
+      },
+      {
+        "role": "E-COMMERCE OPERATIONS SPECIALIST",
+        "client": "PARISA WANG",
+        "type": "New Logo",
+        "opened": "2026-10-07",
+        "days": 5,
         "headcount": 1
       }
     ],
     "rampJobs": [
       {
-        "role": "IT SUPPORT ENGINEER (re-opened)",
-        "client": "SolCo (Solution Consultants ICT)",
-        "type": "Ramp",
-        "opened": "2026-08-19",
-        "days": 48,
-        "headcount": 1
-      },
-      {
         "role": "BILLING ANALYST — 1 of 3 HC carryover",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 35,
+        "days": 41,
+        "headcount": 1
+      },
+      {
+        "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-10-02",
+        "days": 10,
         "headcount": 1
       },
       {
@@ -175,15 +221,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 13,
-        "headcount": 1
-      },
-      {
-        "role": "PROOFREADER",
-        "client": "BLUESKY",
-        "type": "Ramp",
-        "opened": "2026-09-23",
-        "days": 13,
+        "days": 19,
         "headcount": 1
       },
       {
@@ -191,60 +229,52 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 12,
+        "days": 18,
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 HC still open — 2 HC at JO)",
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 HC still open — 1 HC Offer Accepted, 1 HC Ongoing Contract)",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 0,
+        "days": 6,
         "headcount": 3
+      },
+      {
+        "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 3,
+        "headcount": 1
       }
     ],
     "backfillJobs": [
-      {
-        "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
-        "client": "ADAUGEO",
-        "type": "Backfill",
-        "opened": "2026-09-11",
-        "days": 25,
-        "headcount": 1
-      },
       {
         "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 22,
+        "days": 28,
         "headcount": 1
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 35,
-    "avgRamp": 20,
-    "avgBackfill": 23,
-    "fresh": 1,
+    "avgNewLogo": 23,
+    "avgRamp": 14,
+    "avgBackfill": 28,
+    "fresh": 6,
     "normal": 3,
     "aging": 2,
-    "critical": 3,
+    "critical": 0,
     "jobs": [
-      {
-        "role": "IT SUPPORT ENGINEER (re-opened)",
-        "client": "SolCo (Solution Consultants ICT)",
-        "type": "Ramp",
-        "opened": "2026-08-19",
-        "days": 48,
-        "headcount": 1
-      },
       {
         "role": "INTEGRATION SPECIALIST",
         "client": "DEMAND BRIDGE",
         "type": "New Logo",
         "opened": "2026-09-01",
-        "days": 35,
+        "days": 41,
         "headcount": 1
       },
       {
@@ -252,15 +282,15 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 35,
+        "days": 41,
         "headcount": 1
       },
       {
-        "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
-        "client": "ADAUGEO",
-        "type": "Backfill",
-        "opened": "2026-09-11",
-        "days": 25,
+        "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-10-02",
+        "days": 10,
         "headcount": 1
       },
       {
@@ -268,7 +298,7 @@
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
-        "days": 22,
+        "days": 28,
         "headcount": 1
       },
       {
@@ -276,15 +306,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 13,
-        "headcount": 1
-      },
-      {
-        "role": "PROOFREADER",
-        "client": "BLUESKY",
-        "type": "Ramp",
-        "opened": "2026-09-23",
-        "days": 13,
+        "days": 19,
         "headcount": 1
       },
       {
@@ -292,20 +314,36 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 12,
+        "days": 18,
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 HC still open — 2 HC at JO)",
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 HC still open — 1 HC Offer Accepted, 1 HC Ongoing Contract)",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 0,
+        "days": 6,
         "headcount": 3
+      },
+      {
+        "role": "E-COMMERCE OPERATIONS SPECIALIST",
+        "client": "PARISA WANG",
+        "type": "New Logo",
+        "opened": "2026-10-07",
+        "days": 5,
+        "headcount": 1
+      },
+      {
+        "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 3,
+        "headcount": 1
       }
     ]
   },
-  "avgTimeToHire": 82,
+  "avgTimeToHire": 36,
   "avgTimeToFill": 113,
   "activeRequisitions": 11,
   "activeRequisitionsRoles": 9
