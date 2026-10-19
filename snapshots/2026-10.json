@@ -1,12 +1,12 @@
 {
-  "totalOpen": 10,
+  "totalOpen": 29,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
-  "additionalInMonth": 12,
-  "additionalInMonthRoles": 8,
+  "additionalInMonth": 31,
+  "additionalInMonthRoles": 10,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 10,
+    "open": 29,
     "forJobOffer": 0,
     "ongoingContract": 2,
     "offerAccepted": 7,
@@ -253,31 +253,31 @@
   ],
   "business": {
     "newLogoCount": 3,
-    "rampCount": 6,
+    "rampCount": 9,
     "backfillCount": 1,
     "newLogoJobs": [
       {
-        "role": "E-COMMERCE OPERATIONS SPECIALIST",
+        "role": "E-COMMERCE  OPERATIONS MANAGER",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 10,
+        "days": 12,
+        "headcount": 2
+      },
+      {
+        "role": "PART TIME NETSUITE BOOKKEEPER",
+        "client": "PINEAPPLE AUDIO",
+        "type": "New Logo",
+        "opened": "2026-10-15",
+        "days": 4,
         "headcount": 1
       },
       {
         "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
-        "client": "ARCHITECTURE (US)",
+        "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 3,
-        "headcount": 1
-      },
-      {
-        "role": "PART TIME BOOKKEEPER",
-        "client": "PINEAPPLE AUDIO",
-        "type": "New Logo",
-        "opened": "2026-10-15",
-        "days": 2,
+        "days": 5,
         "headcount": 1
       }
     ],
@@ -319,7 +319,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 8,
+        "days": 10,
         "headcount": 1
       },
       {
@@ -329,6 +329,30 @@
         "opened": "2026-10-16",
         "days": 1,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 2 of 7 HC still open",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-06",
+        "days": 13,
+        "headcount": 2
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-16",
+        "days": 3,
+        "headcount": 15
+      },
+      {
+        "role": "CUSTOMER SERVICE SUPPORT",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-10-19",
+        "days": 0,
+        "headcount": 1
       }
     ],
     "backfillJobs": [
@@ -337,16 +361,16 @@
         "client": "MIRION",
         "type": "Backfill",
         "opened": "2026-10-13",
-        "days": 4,
+        "days": 6,
         "headcount": 1
       }
     ]
   },
   "aging": {
     "avgNewLogo": 7,
-    "avgRamp": 22,
+    "avgRamp": 16,
     "avgBackfill": 6,
-    "fresh": 9,
+    "fresh": 28,
     "normal": 0,
     "aging": 1,
     "critical": 0,
@@ -384,12 +408,12 @@
         "headcount": 1
       },
       {
-        "role": "E-COMMERCE OPERATIONS SPECIALIST",
+        "role": "E-COMMERCE  OPERATIONS MANAGER",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
         "days": 12,
-        "headcount": 1
+        "headcount": 2
       },
       {
         "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
@@ -408,15 +432,7 @@
         "headcount": 1
       },
       {
-        "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
-        "client": "ARCHITECTURE (US)",
-        "type": "New Logo",
-        "opened": "2026-10-14",
-        "days": 5,
-        "headcount": 1
-      },
-      {
-        "role": "PART TIME BOOKKEEPER",
+        "role": "PART TIME NETSUITE BOOKKEEPER",
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
@@ -430,11 +446,43 @@
         "opened": "2026-10-16",
         "days": 3,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 2 of 7 HC still open",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-06",
+        "days": 13,
+        "headcount": 2
+      },
+      {
+        "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
+        "client": "SIEGEL DESIGN",
+        "type": "New Logo",
+        "opened": "2026-10-14",
+        "days": 5,
+        "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-16",
+        "days": 3,
+        "headcount": 15
+      },
+      {
+        "role": "CUSTOMER SERVICE SUPPORT",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-10-19",
+        "days": 0,
+        "headcount": 1
       }
     ]
   },
   "avgTimeToHire": 28,
   "avgTimeToFill": 113,
-  "activeRequisitions": 10,
-  "activeRequisitionsRoles": 10
+  "activeRequisitions": 29,
+  "activeRequisitionsRoles": 13
 }

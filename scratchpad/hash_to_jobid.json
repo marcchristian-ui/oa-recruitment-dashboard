@@ -1,0 +1,10 @@
+{
+  "V68579W6": {"job_id": 4469761, "client": "PARISA WANG", "org_id": 8234305, "position_name": "E-COMMERCE  OPERATIONS MANAGER", "headcount": 2, "open_at": "2026-10-07", "justification": "NEW LOGO", "owner_id": 306203},
+  "Y68WY875": {"job_id": 4476316, "client": "ADAUGEO", "org_id": 639129, "position_name": "REFERRALS & PRIOR AUTHORIZATION MANAGER", "headcount": 1, "open_at": "2026-10-09", "justification": "RAMP", "owner_id": 1242516},
+  "7X7YRY6X": {"job_id": 4498069, "client": "PINEAPPLE AUDIO", "org_id": 8253100, "position_name": "PART TIME NETSUITE BOOKKEEPER", "headcount": 1, "open_at": "2026-10-15", "justification": "NEW LOGO", "owner_id": 105855},
+  "7X7YVW4X": {"job_id": 4486345, "client": "SIEGEL DESIGN", "org_id": 8244237, "position_name": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)", "headcount": 1, "open_at": "2026-10-14", "justification": "NEW LOGO", "owner_id": 105855},
+  "RYW6R94R": {"job_id": 4486696, "client": "MIRION", "org_id": 639276, "position_name": "SR. CUSTOMER SERVICE REPRESENTATIVE", "headcount": 1, "open_at": "2026-10-13", "justification": "BACKFILL", "owner_id": 105855},
+  "Y676VV35": {"job_id": 4499740, "client": "ADAUGEO", "org_id": 639129, "position_name": "CLINIC REFERRAL & PRIOR AUTHORIZATION", "headcount": 15, "open_at": "2026-10-16", "justification": "RAMP", "owner_id": 1242516},
+  "X97956W3": {"job_id": 4500115, "client": "BLUESKY", "org_id": 3820788, "position_name": "SOCIAL MEDIA SPECIALIST & COPYWRITER", "headcount": 1, "open_at": "2026-10-16", "justification": "RAMP", "owner_id": 99045},
+  "V676W458": {"job_id": 4500425, "client": "BLUESKY", "org_id": 3820788, "position_name": "CUSTOMER SERVICE SUPPORT", "headcount": 1, "open_at": "2026-10-19", "justification": "RAMP", "owner_id": 99045}
+}
