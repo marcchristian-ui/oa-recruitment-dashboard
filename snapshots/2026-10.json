@@ -8,9 +8,9 @@
   "pipeline": {
     "open": 29,
     "forJobOffer": 0,
-    "ongoingContract": 2,
+    "ongoingContract": 1,
     "offerAccepted": 7,
-    "started": 0,
+    "started": 1,
     "paused": 1
   },
   "pausedRoles": [
@@ -19,7 +19,7 @@
       "role": "PRE-BILLING SPECIALIST (remaining 1 HC)",
       "headcount": 1,
       "pausedDate": "2026-10-19",
-      "reason": "Requirement changed — replaced with 7-HC Clinic Referral & Prior Authorization",
+      "reason": "Requirement changed \u2014 replaced with 7-HC Clinic Referral & Prior Authorization",
       "type": "Backfill",
       "subStatus": "Closed-Replaced"
     }
@@ -83,7 +83,7 @@
       "startDate": "2026-10-20",
       "timeToHire": 50,
       "timeToFill": 62,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Ma Jiralyn Trocio"
     },
@@ -125,10 +125,7 @@
       "stage": "Offer Accepted",
       "type": "Backfill",
       "candidate": "MARIA ELENA OLEA"
-    }
-  ],
-  "inOfferRoles": [],
-  "ongoingContractRoles": [
+    },
     {
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
@@ -136,11 +133,15 @@
       "openedDate": "2026-10-06",
       "offerDate": "2026-10-15",
       "startDate": "2026-10-29",
-      "stage": "Ongoing Contract",
+      "timeToHire": 9,
+      "timeToFill": 23,
+      "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Redy Bonnie Rarang",
-      "timeToFill": 23
-    },
+      "candidate": "Redy Bonnie Rarang"
+    }
+  ],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [
     {
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
@@ -171,7 +172,7 @@
   "somCarryOver": [
     {
       "client": "AUDIT DATA",
-      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) \u2014 1 of 2 HC carryover",
       "headcount": 1,
       "opened": "2026-07-15",
       "days": 96,
@@ -180,7 +181,7 @@
     },
     {
       "client": "SolCo (Solution Consultants ICT)",
-      "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
+      "role": "IT SUPPORT ENGINEER \u2014 re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
       "days": 61,
@@ -198,7 +199,7 @@
     },
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST — 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
+      "role": "BILLING ANALYST \u2014 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
       "headcount": 1,
       "opened": "2026-09-01",
       "days": 48,
@@ -207,7 +208,7 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "LAB PATIENT ACCOUNT CSR — re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
+      "role": "LAB PATIENT ACCOUNT CSR \u2014 re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
       "headcount": 1,
       "opened": "2026-09-11",
       "days": 38,
@@ -216,7 +217,7 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover (James Kith Macalua won in Sept)",
+      "role": "PRE-BILLING SPECIALIST \u2014 1 of 2 HC carryover (James Kith Macalua won in Sept)",
       "headcount": 1,
       "opened": "2026-09-14",
       "days": 35,
@@ -252,8 +253,8 @@
     }
   ],
   "business": {
-    "newLogoCount": 3,
-    "rampCount": 9,
+    "newLogoCount": 4,
+    "rampCount": 24,
     "backfillCount": 1,
     "newLogoJobs": [
       {
@@ -283,11 +284,11 @@
     ],
     "rampJobs": [
       {
-        "role": "BILLING ANALYST — 1 of 3 HC carryover",
+        "role": "BILLING ANALYST \u2014 1 of 3 HC carryover",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
-        "days": 46,
+        "days": 48,
         "headcount": 1
       },
       {
@@ -295,7 +296,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 15,
+        "days": 17,
         "headcount": 1
       },
       {
@@ -303,7 +304,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 24,
+        "days": 26,
         "headcount": 1
       },
       {
@@ -311,7 +312,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 23,
+        "days": 25,
         "headcount": 1
       },
       {
@@ -327,11 +328,11 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 1,
+        "days": 3,
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 2 of 7 HC still open",
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION \u2014 2 of 7 HC still open",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
@@ -370,13 +371,13 @@
     "avgNewLogo": 7,
     "avgRamp": 16,
     "avgBackfill": 6,
-    "fresh": 28,
-    "normal": 0,
-    "aging": 1,
-    "critical": 0,
+    "fresh": 25,
+    "normal": 3,
+    "aging": 0,
+    "critical": 1,
     "jobs": [
       {
-        "role": "BILLING ANALYST — 1 of 3 HC carryover",
+        "role": "BILLING ANALYST \u2014 1 of 3 HC carryover",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
@@ -448,7 +449,7 @@
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 2 of 7 HC still open",
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION \u2014 2 of 7 HC still open",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
