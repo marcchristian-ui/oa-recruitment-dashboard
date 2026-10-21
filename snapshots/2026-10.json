@@ -1,14 +1,14 @@
 {
-  "totalOpen": 29,
+  "totalOpen": 28,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
   "additionalInMonth": 31,
   "additionalInMonthRoles": 10,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 29,
+    "open": 28,
     "forJobOffer": 0,
-    "ongoingContract": 1,
+    "ongoingContract": 2,
     "offerAccepted": 7,
     "started": 1,
     "paused": 1
@@ -153,6 +153,18 @@
       "type": "Ramp",
       "candidate": "Bryan Namli",
       "timeToFill": 23
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST (1 of 3 HC carryover)",
+      "headcount": 1,
+      "openedDate": "2026-09-01",
+      "offerDate": "2026-10-21",
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Krishian C. Quiambao",
+      "timeToFill": 50
     }
   ],
   "withdrawals": [
@@ -175,7 +187,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 97,
+      "days": 98,
       "type": "New Logo",
       "status": "won"
     },
@@ -184,7 +196,7 @@
       "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 62,
+      "days": 63,
       "type": "Ramp",
       "status": "won"
     },
@@ -193,7 +205,7 @@
       "role": "INTEGRATION SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 49,
+      "days": 50,
       "type": "Backfill",
       "status": "lost"
     },
@@ -202,16 +214,16 @@
       "role": "BILLING ANALYST — 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 49,
+      "days": 50,
       "type": "Ramp",
-      "status": "active"
+      "status": "won"
     },
     {
       "client": "ADAUGEO",
       "role": "LAB PATIENT ACCOUNT CSR — re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
       "headcount": 1,
       "opened": "2026-09-11",
-      "days": 39,
+      "days": 40,
       "type": "Backfill",
       "status": "won"
     },
@@ -220,7 +232,7 @@
       "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover (James Kith Macalua won in Sept)",
       "headcount": 1,
       "opened": "2026-09-14",
-      "days": 36,
+      "days": 37,
       "type": "Backfill",
       "status": "paused"
     },
@@ -229,7 +241,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 27,
+      "days": 28,
       "type": "Ramp",
       "status": "active"
     },
@@ -238,7 +250,7 @@
       "role": "PROOFREADER",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 27,
+      "days": 28,
       "type": "Ramp",
       "status": "won"
     },
@@ -247,14 +259,14 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-24",
-      "days": 26,
+      "days": 27,
       "type": "Ramp",
       "status": "active"
     }
   ],
   "business": {
     "newLogoCount": 4,
-    "rampCount": 24,
+    "rampCount": 23,
     "backfillCount": 1,
     "newLogoJobs": [
       {
@@ -262,7 +274,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 13,
+        "days": 14,
         "headcount": 2
       },
       {
@@ -270,7 +282,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
-        "days": 5,
+        "days": 6,
         "headcount": 1
       },
       {
@@ -278,25 +290,17 @@
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 6,
+        "days": 7,
         "headcount": 1
       }
     ],
     "rampJobs": [
       {
-        "role": "BILLING ANALYST — 1 of 3 HC carryover",
-        "client": "MIRION (NUCMED)",
-        "type": "Ramp",
-        "opened": "2026-09-01",
-        "days": 49,
-        "headcount": 1
-      },
-      {
         "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 18,
+        "days": 19,
         "headcount": 1
       },
       {
@@ -304,7 +308,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 27,
+        "days": 28,
         "headcount": 1
       },
       {
@@ -312,7 +316,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 26,
+        "days": 27,
         "headcount": 1
       },
       {
@@ -320,7 +324,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 11,
+        "days": 12,
         "headcount": 1
       },
       {
@@ -328,7 +332,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 4,
+        "days": 5,
         "headcount": 1
       },
       {
@@ -336,7 +340,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 14,
+        "days": 15,
         "headcount": 2
       },
       {
@@ -344,7 +348,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 4,
+        "days": 5,
         "headcount": 15
       },
       {
@@ -352,7 +356,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 1,
+        "days": 2,
         "headcount": 1
       }
     ],
@@ -362,34 +366,26 @@
         "client": "MIRION",
         "type": "Backfill",
         "opened": "2026-10-13",
-        "days": 7,
+        "days": 8,
         "headcount": 1
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 8,
-    "avgRamp": 17,
-    "avgBackfill": 7,
-    "fresh": 25,
-    "normal": 3,
+    "avgNewLogo": 9,
+    "avgRamp": 14,
+    "avgBackfill": 8,
+    "fresh": 23,
+    "normal": 5,
     "aging": 0,
-    "critical": 1,
+    "critical": 0,
     "jobs": [
-      {
-        "role": "BILLING ANALYST — 1 of 3 HC carryover",
-        "client": "MIRION (NUCMED)",
-        "type": "Ramp",
-        "opened": "2026-09-01",
-        "days": 49,
-        "headcount": 1
-      },
       {
         "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 18,
+        "days": 19,
         "headcount": 1
       },
       {
@@ -397,7 +393,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 27,
+        "days": 28,
         "headcount": 1
       },
       {
@@ -405,7 +401,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 26,
+        "days": 27,
         "headcount": 1
       },
       {
@@ -413,7 +409,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 13,
+        "days": 14,
         "headcount": 2
       },
       {
@@ -421,7 +417,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 11,
+        "days": 12,
         "headcount": 1
       },
       {
@@ -429,7 +425,7 @@
         "client": "MIRION",
         "type": "Backfill",
         "opened": "2026-10-13",
-        "days": 7,
+        "days": 8,
         "headcount": 1
       },
       {
@@ -437,7 +433,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
-        "days": 5,
+        "days": 6,
         "headcount": 1
       },
       {
@@ -445,7 +441,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 4,
+        "days": 5,
         "headcount": 1
       },
       {
@@ -453,7 +449,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 14,
+        "days": 15,
         "headcount": 2
       },
       {
@@ -461,7 +457,7 @@
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 6,
+        "days": 7,
         "headcount": 1
       },
       {
@@ -469,7 +465,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 4,
+        "days": 5,
         "headcount": 15
       },
       {
@@ -477,13 +473,13 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 1,
+        "days": 2,
         "headcount": 1
       }
     ]
   },
   "avgTimeToHire": 28,
   "avgTimeToFill": 113,
-  "activeRequisitions": 29,
-  "activeRequisitionsRoles": 13
+  "activeRequisitions": 28,
+  "activeRequisitionsRoles": 12
 }
