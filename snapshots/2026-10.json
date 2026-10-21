@@ -1,13 +1,13 @@
 {
-  "totalOpen": 28,
+  "totalOpen": 27,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
   "additionalInMonth": 31,
   "additionalInMonthRoles": 10,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 28,
-    "forJobOffer": 0,
+    "open": 27,
+    "forJobOffer": 1,
     "ongoingContract": 2,
     "offerAccepted": 7,
     "started": 1,
@@ -140,7 +140,19 @@
       "candidate": "Redy Bonnie Rarang"
     }
   ],
-  "inOfferRoles": [],
+  "inOfferRoles": [
+    {
+      "client": "MIRION",
+      "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
+      "headcount": 1,
+      "openedDate": "2026-10-13",
+      "offerDate": "2026-10-21",
+      "startDate": "",
+      "stage": "For Job Offer",
+      "type": "Backfill",
+      "candidate": "CELESTINE B. SANTOS"
+    }
+  ],
   "ongoingContractRoles": [
     {
       "client": "ADAUGEO",
@@ -267,7 +279,7 @@
   "business": {
     "newLogoCount": 4,
     "rampCount": 23,
-    "backfillCount": 1,
+    "backfillCount": 0,
     "newLogoJobs": [
       {
         "role": "E-COMMERCE  OPERATIONS MANAGER",
@@ -360,22 +372,13 @@
         "headcount": 1
       }
     ],
-    "backfillJobs": [
-      {
-        "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
-        "client": "MIRION",
-        "type": "Backfill",
-        "opened": "2026-10-13",
-        "days": 8,
-        "headcount": 1
-      }
-    ]
+    "backfillJobs": []
   },
   "aging": {
     "avgNewLogo": 9,
     "avgRamp": 14,
-    "avgBackfill": 8,
-    "fresh": 23,
+    "avgBackfill": 0,
+    "fresh": 22,
     "normal": 5,
     "aging": 0,
     "critical": 0,
@@ -418,14 +421,6 @@
         "type": "Ramp",
         "opened": "2026-10-09",
         "days": 12,
-        "headcount": 1
-      },
-      {
-        "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
-        "client": "MIRION",
-        "type": "Backfill",
-        "opened": "2026-10-13",
-        "days": 8,
         "headcount": 1
       },
       {
@@ -480,6 +475,6 @@
   },
   "avgTimeToHire": 28,
   "avgTimeToFill": 113,
-  "activeRequisitions": 28,
-  "activeRequisitionsRoles": 12
+  "activeRequisitions": 27,
+  "activeRequisitionsRoles": 11
 }

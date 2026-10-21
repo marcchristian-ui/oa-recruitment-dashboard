@@ -230,34 +230,6 @@
       "offerAccepted": []
     },
     {
-      "client": "MIRION",
-      "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
-      "hc": 1,
-      "opened": "2026-10-13",
-      "days": 8,
-      "type": "Backfill",
-      "initialInterview": [],
-      "clientEndorsement": [
-        {
-          "name": "Edian Tablizo",
-          "movedAt": "2026-10-14"
-        },
-        {
-          "name": "JEMARIE ANNE MARQUEZ",
-          "movedAt": "2026-10-14"
-        }
-      ],
-      "clientInterview": [
-        {
-          "name": "Botalon, Jaslyn N",
-          "movedAt": "2026-10-19"
-        }
-      ],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": []
-    },
-    {
       "client": "SIEGEL DESIGN",
       "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
       "hc": 1,
@@ -348,10 +320,6 @@
           "movedAt": "2026-10-20"
         },
         {
-          "name": "Marionette Cortes",
-          "movedAt": "2026-10-20"
-        },
-        {
           "name": "Noel Sy",
           "movedAt": "2026-10-20"
         },
@@ -391,6 +359,10 @@
         },
         {
           "name": "Joan Espinosa",
+          "movedAt": "2026-10-21"
+        },
+        {
+          "name": "Marionette Cortes",
           "movedAt": "2026-10-21"
         }
       ],
