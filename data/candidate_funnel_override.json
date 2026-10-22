@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-10-21",
+  "_generated": "2026-10-22",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 28,
+      "days": 29,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -26,7 +26,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "hc": 1,
       "opened": "2026-09-24",
-      "days": 27,
+      "days": 28,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -58,7 +58,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (2 of 7 HC still open — 4 OA + 1 OC filled)",
       "hc": 2,
       "opened": "2026-10-06",
-      "days": 15,
+      "days": 16,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -165,7 +165,7 @@
       "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
       "hc": 1,
       "opened": "2026-10-02",
-      "days": 19,
+      "days": 20,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -179,16 +179,16 @@
       "role": "E-COMMERCE  OPERATIONS MANAGER",
       "hc": 2,
       "opened": "2026-10-07",
-      "days": 14,
+      "days": 15,
       "type": "New Logo",
       "initialInterview": [
         {
-          "name": "Maeyel Felicierta",
-          "movedAt": "2026-10-20"
-        },
-        {
           "name": "Melody Caballero",
           "movedAt": "2026-10-15"
+        },
+        {
+          "name": "Renalyn Alaurin",
+          "movedAt": "2026-10-14"
         }
       ],
       "clientEndorsement": [
@@ -207,7 +207,7 @@
       "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
       "hc": 1,
       "opened": "2026-10-09",
-      "days": 12,
+      "days": 13,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -234,7 +234,7 @@
       "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
       "hc": 1,
       "opened": "2026-10-14",
-      "days": 7,
+      "days": 8,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -248,7 +248,7 @@
       "role": "PART TIME NETSUITE BOOKKEEPER",
       "hc": 1,
       "opened": "2026-10-15",
-      "days": 6,
+      "days": 7,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -281,7 +281,7 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "hc": 1,
       "opened": "2026-10-16",
-      "days": 5,
+      "days": 6,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -305,10 +305,10 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (15 HC)",
-      "hc": 15,
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (11 of 15 HC still open — 4 at Job Offer)",
+      "hc": 11,
       "opened": "2026-10-16",
-      "days": 5,
+      "days": 6,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -340,17 +340,11 @@
           "movedAt": "2026-10-20"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "MAR ERICSON RAFOLS",
-          "movedAt": "2026-10-21"
-        },
+      "clientEndorsement": [],
+      "clientInterview": [],
+      "jobOffer": [
         {
           "name": "JINO FERNANDEZ",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "CARLA VERANGA",
           "movedAt": "2026-10-21"
         },
         {
@@ -366,8 +360,6 @@
           "movedAt": "2026-10-21"
         }
       ],
-      "clientInterview": [],
-      "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []
     },
@@ -376,7 +368,7 @@
       "role": "CUSTOMER SERVICE SUPPORT",
       "hc": 1,
       "opened": "2026-10-19",
-      "days": 2,
+      "days": 3,
       "type": "Ramp",
       "initialInterview": [
         {
