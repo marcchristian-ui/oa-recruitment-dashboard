@@ -1,15 +1,15 @@
 {
-  "totalOpen": 24,
+  "totalOpen": 19,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
   "additionalInMonth": 31,
   "additionalInMonthRoles": 10,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 24,
+    "open": 19,
     "forJobOffer": 1,
-    "ongoingContract": 3,
-    "offerAccepted": 7,
+    "ongoingContract": 2,
+    "offerAccepted": 13,
     "started": 3,
     "paused": 1
   },
@@ -143,6 +143,45 @@
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 1,
+      "openedDate": "2026-10-06",
+      "offerDate": "2026-10-22",
+      "startDate": "",
+      "timeToHire": 16,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Patrich Walter L. Harris"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-06",
+      "offerDate": "2026-10-22",
+      "startDate": "",
+      "timeToHire": 16,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Rodney A. Lugod"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-06",
+      "offerDate": "2026-10-22",
+      "startDate": "",
+      "timeToHire": 16,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Earl Esparagoza"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
       "openedDate": "2026-10-16",
       "offerDate": "2026-10-21",
       "startDate": "",
@@ -164,6 +203,45 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Renaliza B. Pavo"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-21",
+      "startDate": "",
+      "timeToHire": 5,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Joan Espinosa"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-21",
+      "startDate": "",
+      "timeToHire": 5,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Marionette Cortes"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-23",
+      "startDate": "",
+      "timeToHire": 7,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Kenneth Ramos"
     }
   ],
   "inOfferRoles": [
@@ -196,19 +274,12 @@
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 1,
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-23",
       "startDate": "",
       "stage": "Ongoing Contract",
       "type": "Ramp",
-      "candidate": "Joan Espinosa"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "startDate": "",
-      "stage": "Ongoing Contract",
-      "type": "Ramp",
-      "candidate": "Marionette Cortes"
+      "candidate": "Bryan Namli"
     }
   ],
   "withdrawals": [
@@ -222,18 +293,6 @@
       "priorStage": "Ongoing Contract",
       "type": "Ramp",
       "candidate": "Anamaria Santos",
-      "reason": "Candidate withdrew after accepting offer"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-06",
-      "offerDate": "2026-10-15",
-      "withdrawnDate": "2026-10-22",
-      "priorStage": "Ongoing Contract",
-      "type": "Ramp",
-      "candidate": "Bryan Namli",
       "reason": "Candidate withdrew after accepting offer"
     }
   ],
@@ -322,7 +381,7 @@
   ],
   "business": {
     "newLogoCount": 4,
-    "rampCount": 20,
+    "rampCount": 15,
     "backfillCount": 0,
     "newLogoJobs": [
       {
@@ -392,20 +451,12 @@
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 3 of 7 HC still open",
-        "client": "ADAUGEO",
-        "type": "Ramp",
-        "opened": "2026-10-06",
-        "days": 17,
-        "headcount": 3
-      },
-      {
         "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
         "days": 7,
-        "headcount": 11
+        "headcount": 9
       },
       {
         "role": "CUSTOMER SERVICE SUPPORT",
@@ -420,10 +471,10 @@
   },
   "aging": {
     "avgNewLogo": 11,
-    "avgRamp": 16,
+    "avgRamp": 15,
     "avgBackfill": 0,
-    "fresh": 16,
-    "normal": 8,
+    "fresh": 14,
+    "normal": 5,
     "aging": 0,
     "critical": 0,
     "jobs": [
@@ -484,14 +535,6 @@
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 3 of 7 HC still open",
-        "client": "ADAUGEO",
-        "type": "Ramp",
-        "opened": "2026-10-06",
-        "days": 17,
-        "headcount": 3
-      },
-      {
         "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
@@ -505,7 +548,7 @@
         "type": "Ramp",
         "opened": "2026-10-16",
         "days": 7,
-        "headcount": 11
+        "headcount": 9
       },
       {
         "role": "CUSTOMER SERVICE SUPPORT",
@@ -519,6 +562,6 @@
   },
   "avgTimeToHire": 28,
   "avgTimeToFill": 113,
-  "activeRequisitions": 24,
-  "activeRequisitionsRoles": 11
+  "activeRequisitions": 19,
+  "activeRequisitionsRoles": 10
 }
