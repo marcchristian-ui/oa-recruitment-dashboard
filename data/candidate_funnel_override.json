@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-10-22",
+  "_generated": "2026-10-23",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -102,43 +102,34 @@
           "movedAt": "2026-10-12"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "Kenneth Ramos",
-          "movedAt": "2026-10-20"
-        },
-        {
-          "name": "Earl Esparagoza",
-          "movedAt": "2026-10-19"
-        },
-        {
-          "name": "ADREAN BAUTISTA",
-          "movedAt": "2026-10-19"
-        }
-      ],
+      "clientEndorsement": [],
       "clientInterview": [
         {
+          "name": "ADREAN BAUTISTA",
+          "movedAt": "2026-10-22"
+        },
+        {
           "name": "JUDY ANN NORTE ZAIDE",
-          "movedAt": "2026-10-20"
-        },
-        {
-          "name": "P A T R I C H W A L T E R L . H A R R I S",
-          "movedAt": "2026-10-20"
-        },
-        {
-          "name": "RODNEY A. LUGOD",
-          "movedAt": "2026-10-20"
-        },
-        {
-          "name": "IREZ ALCOBER",
           "movedAt": "2026-10-20"
         }
       ],
       "jobOffer": [],
       "ongoingContract": [
         {
-          "name": "Bryan Namli",
-          "movedAt": "2026-10-16"
+          "name": "Kenneth Ramos",
+          "movedAt": "2026-10-22"
+        },
+        {
+          "name": "P A T R I C H W A L T E R L . H A R R I S",
+          "movedAt": "2026-10-22"
+        },
+        {
+          "name": "RODNEY A. LUGOD",
+          "movedAt": "2026-10-22"
+        },
+        {
+          "name": "Earl Esparagoza",
+          "movedAt": "2026-10-22"
         }
       ],
       "offerAccepted": [
@@ -153,10 +144,6 @@
         {
           "name": "Redy Bonnie Rarang",
           "movedAt": "2026-10-15"
-        },
-        {
-          "name": "Edmarie Alcazar",
-          "movedAt": "2026-10-06"
         }
       ]
     },
@@ -181,17 +168,16 @@
       "opened": "2026-10-07",
       "days": 15,
       "type": "New Logo",
-      "initialInterview": [
+      "initialInterview": [],
+      "clientEndorsement": [
         {
-          "name": "Melody Caballero",
-          "movedAt": "2026-10-15"
+          "name": "Blessie Villanueva",
+          "movedAt": "2026-10-23"
         },
         {
-          "name": "Renalyn Alaurin",
-          "movedAt": "2026-10-14"
-        }
-      ],
-      "clientEndorsement": [
+          "name": "Ren Alaurin",
+          "movedAt": "2026-10-22"
+        },
         {
           "name": "Daniel Joshua Garcia",
           "movedAt": "2026-10-14"
@@ -285,10 +271,6 @@
       "type": "Ramp",
       "initialInterview": [
         {
-          "name": "Wyatt Axel Orsal",
-          "movedAt": "2026-10-20"
-        },
-        {
           "name": "Naomi Tupas",
           "movedAt": "2026-10-20"
         },
@@ -297,7 +279,12 @@
           "movedAt": "2026-10-19"
         }
       ],
-      "clientEndorsement": [],
+      "clientEndorsement": [
+        {
+          "name": "Wyatt Axel Orsal",
+          "movedAt": "2026-10-22"
+        }
+      ],
       "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
@@ -305,12 +292,20 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (11 of 15 HC still open — 4 at Job Offer)",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (11 of 15 HC still open — 2 Offer Accepted + 2 at Ongoing Contract)",
       "hc": 11,
       "opened": "2026-10-16",
-      "days": 6,
+      "days": 7,
       "type": "Ramp",
       "initialInterview": [
+        {
+          "name": "MUSNGI",
+          "movedAt": "2026-10-22"
+        },
+        {
+          "name": "Camille Jane Polvinar",
+          "movedAt": "2026-10-22"
+        },
         {
           "name": "Daryl Lucanas",
           "movedAt": "2026-10-20"
@@ -340,9 +335,41 @@
           "movedAt": "2026-10-20"
         }
       ],
-      "clientEndorsement": [],
+      "clientEndorsement": [
+        {
+          "name": "MISHELLA MARIE CATAPANG",
+          "movedAt": "2026-10-23"
+        },
+        {
+          "name": "NONELYN ALEJANDRO",
+          "movedAt": "2026-10-23"
+        },
+        {
+          "name": "JELLY BERE",
+          "movedAt": "2026-10-23"
+        },
+        {
+          "name": "CARLA ROSS DARWIN",
+          "movedAt": "2026-10-22"
+        },
+        {
+          "name": "Michael Joseph Encinares",
+          "movedAt": "2026-10-22"
+        }
+      ],
       "clientInterview": [],
-      "jobOffer": [
+      "jobOffer": [],
+      "ongoingContract": [
+        {
+          "name": "Joan Espinosa",
+          "movedAt": "2026-10-22"
+        },
+        {
+          "name": "Marionette Cortes",
+          "movedAt": "2026-10-22"
+        }
+      ],
+      "offerAccepted": [
         {
           "name": "JINO FERNANDEZ",
           "movedAt": "2026-10-21"
@@ -350,18 +377,8 @@
         {
           "name": "Renaliza B. Pavo",
           "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Joan Espinosa",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Marionette Cortes",
-          "movedAt": "2026-10-21"
         }
-      ],
-      "ongoingContract": [],
-      "offerAccepted": []
+      ]
     },
     {
       "client": "BLUESKY",

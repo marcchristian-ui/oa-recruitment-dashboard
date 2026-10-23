@@ -1,16 +1,16 @@
 {
-  "totalOpen": 23,
+  "totalOpen": 24,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
   "additionalInMonth": 31,
   "additionalInMonthRoles": 10,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 23,
-    "forJobOffer": 5,
-    "ongoingContract": 2,
+    "open": 24,
+    "forJobOffer": 1,
+    "ongoingContract": 3,
     "offerAccepted": 7,
-    "started": 1,
+    "started": 3,
     "paused": 1
   },
   "pausedRoles": [
@@ -70,7 +70,7 @@
       "startDate": "2026-10-22",
       "timeToHire": 0,
       "timeToFill": 16,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Edmarie Alcazar"
     },
@@ -122,7 +122,7 @@
       "startDate": "2026-10-22",
       "timeToHire": 28,
       "timeToFill": 41,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Backfill",
       "candidate": "MARIA ELENA OLEA"
     },
@@ -138,6 +138,32 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Redy Bonnie Rarang"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-21",
+      "startDate": "",
+      "timeToHire": 5,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "JINO FERNANDEZ"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-21",
+      "startDate": "",
+      "timeToHire": 5,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Renaliza B. Pavo"
     }
   ],
   "inOfferRoles": [
@@ -151,65 +177,9 @@
       "stage": "For Job Offer",
       "type": "Backfill",
       "candidate": "CELESTINE B. SANTOS"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-16",
-      "offerDate": "2026-10-21",
-      "startDate": "",
-      "stage": "For Job Offer",
-      "type": "Ramp",
-      "candidate": "JINO FERNANDEZ"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-16",
-      "offerDate": "2026-10-21",
-      "startDate": "",
-      "stage": "For Job Offer",
-      "type": "Ramp",
-      "candidate": "Renaliza B. Pavo"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-16",
-      "offerDate": "2026-10-21",
-      "startDate": "",
-      "stage": "For Job Offer",
-      "type": "Ramp",
-      "candidate": "Joan Espinosa"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-16",
-      "offerDate": "2026-10-21",
-      "startDate": "",
-      "stage": "For Job Offer",
-      "type": "Ramp",
-      "candidate": "Marionette Cortes"
     }
   ],
   "ongoingContractRoles": [
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-06",
-      "offerDate": "2026-10-15",
-      "startDate": "2026-10-29",
-      "stage": "Ongoing Contract",
-      "type": "Ramp",
-      "candidate": "Bryan Namli",
-      "timeToFill": 23
-    },
     {
       "client": "MIRION (NUCMED)",
       "role": "BILLING ANALYST (1 of 3 HC carryover)",
@@ -221,6 +191,24 @@
       "type": "Ramp",
       "candidate": "Krishian C. Quiambao",
       "timeToFill": 50
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Joan Espinosa"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Marionette Cortes"
     }
   ],
   "withdrawals": [
@@ -235,6 +223,18 @@
       "type": "Ramp",
       "candidate": "Anamaria Santos",
       "reason": "Candidate withdrew after accepting offer"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-06",
+      "offerDate": "2026-10-15",
+      "withdrawnDate": "2026-10-22",
+      "priorStage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Bryan Namli",
+      "reason": "Candidate withdrew after accepting offer"
     }
   ],
   "somCarryOver": [
@@ -243,7 +243,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 99,
+      "days": 100,
       "type": "New Logo",
       "status": "won"
     },
@@ -252,7 +252,7 @@
       "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 64,
+      "days": 65,
       "type": "Ramp",
       "status": "won"
     },
@@ -261,7 +261,7 @@
       "role": "INTEGRATION SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 51,
+      "days": 52,
       "type": "Backfill",
       "status": "lost"
     },
@@ -270,7 +270,7 @@
       "role": "BILLING ANALYST — 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 51,
+      "days": 52,
       "type": "Ramp",
       "status": "won"
     },
@@ -279,7 +279,7 @@
       "role": "LAB PATIENT ACCOUNT CSR — re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
       "headcount": 1,
       "opened": "2026-09-11",
-      "days": 41,
+      "days": 42,
       "type": "Backfill",
       "status": "won"
     },
@@ -288,7 +288,7 @@
       "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover (James Kith Macalua won in Sept)",
       "headcount": 1,
       "opened": "2026-09-14",
-      "days": 38,
+      "days": 39,
       "type": "Backfill",
       "status": "paused"
     },
@@ -297,7 +297,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 29,
+      "days": 30,
       "type": "Ramp",
       "status": "active"
     },
@@ -306,7 +306,7 @@
       "role": "PROOFREADER",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 29,
+      "days": 30,
       "type": "Ramp",
       "status": "won"
     },
@@ -315,14 +315,14 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-24",
-      "days": 28,
+      "days": 29,
       "type": "Ramp",
       "status": "active"
     }
   ],
   "business": {
     "newLogoCount": 4,
-    "rampCount": 19,
+    "rampCount": 20,
     "backfillCount": 0,
     "newLogoJobs": [
       {
@@ -330,7 +330,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 15,
+        "days": 16,
         "headcount": 2
       },
       {
@@ -338,7 +338,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
-        "days": 7,
+        "days": 8,
         "headcount": 1
       },
       {
@@ -346,7 +346,7 @@
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 8,
+        "days": 9,
         "headcount": 1
       }
     ],
@@ -356,7 +356,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 20,
+        "days": 21,
         "headcount": 1
       },
       {
@@ -364,7 +364,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 29,
+        "days": 30,
         "headcount": 1
       },
       {
@@ -372,7 +372,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 28,
+        "days": 29,
         "headcount": 1
       },
       {
@@ -380,7 +380,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 13,
+        "days": 14,
         "headcount": 1
       },
       {
@@ -388,23 +388,23 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 6,
+        "days": 7,
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 2 of 7 HC still open",
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 3 of 7 HC still open",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 16,
-        "headcount": 2
+        "days": 17,
+        "headcount": 3
       },
       {
         "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 6,
+        "days": 7,
         "headcount": 11
       },
       {
@@ -412,7 +412,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 3,
+        "days": 4,
         "headcount": 1
       }
     ],
@@ -424,7 +424,7 @@
     "avgBackfill": 0,
     "fresh": 16,
     "normal": 7,
-    "aging": 0,
+    "aging": 1,
     "critical": 0,
     "jobs": [
       {
@@ -432,7 +432,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 20,
+        "days": 21,
         "headcount": 1
       },
       {
@@ -440,7 +440,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 29,
+        "days": 30,
         "headcount": 1
       },
       {
@@ -448,7 +448,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 28,
+        "days": 29,
         "headcount": 1
       },
       {
@@ -456,7 +456,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 15,
+        "days": 16,
         "headcount": 2
       },
       {
@@ -464,7 +464,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 13,
+        "days": 14,
         "headcount": 1
       },
       {
@@ -472,7 +472,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
-        "days": 7,
+        "days": 8,
         "headcount": 1
       },
       {
@@ -480,23 +480,23 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 6,
+        "days": 7,
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 2 of 7 HC still open",
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION — 3 of 7 HC still open",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 16,
-        "headcount": 2
+        "days": 17,
+        "headcount": 3
       },
       {
         "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 8,
+        "days": 9,
         "headcount": 1
       },
       {
@@ -504,7 +504,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 6,
+        "days": 7,
         "headcount": 11
       },
       {
@@ -512,13 +512,13 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 3,
+        "days": 4,
         "headcount": 1
       }
     ]
   },
   "avgTimeToHire": 28,
   "avgTimeToFill": 113,
-  "activeRequisitions": 23,
+  "activeRequisitions": 24,
   "activeRequisitionsRoles": 11
 }
