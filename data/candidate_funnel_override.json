@@ -114,7 +114,8 @@
         }
       ],
       "jobOffer": [],
-      "ongoingContract": [
+      "ongoingContract": [],
+      "offerAccepted": [
         {
           "name": "Kenneth Ramos",
           "movedAt": "2026-10-22"
@@ -130,9 +131,7 @@
         {
           "name": "Earl Esparagoza",
           "movedAt": "2026-10-22"
-        }
-      ],
-      "offerAccepted": [
+        },
         {
           "name": "Allysa Batulan",
           "movedAt": "2026-10-15"
@@ -382,21 +381,29 @@
       "jobOffer": [],
       "ongoingContract": [
         {
-          "name": "Joan Espinosa",
-          "movedAt": "2026-10-22"
-        },
-        {
-          "name": "Marionette Cortes",
-          "movedAt": "2026-10-22"
+          "name": "Bryan Namli",
+          "movedAt": "2026-10-23"
         }
       ],
       "offerAccepted": [
+        {
+          "name": "Kenneth Ramos",
+          "movedAt": "2026-10-23"
+        },
         {
           "name": "JINO FERNANDEZ",
           "movedAt": "2026-10-21"
         },
         {
           "name": "Renaliza B. Pavo",
+          "movedAt": "2026-10-21"
+        },
+        {
+          "name": "Joan Espinosa",
+          "movedAt": "2026-10-21"
+        },
+        {
+          "name": "Marionette Cortes",
           "movedAt": "2026-10-21"
         }
       ]
