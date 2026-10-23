@@ -419,12 +419,12 @@
     "backfillJobs": []
   },
   "aging": {
-    "avgNewLogo": 10,
-    "avgRamp": 15,
+    "avgNewLogo": 11,
+    "avgRamp": 16,
     "avgBackfill": 0,
     "fresh": 16,
-    "normal": 7,
-    "aging": 1,
+    "normal": 8,
+    "aging": 0,
     "critical": 0,
     "jobs": [
       {

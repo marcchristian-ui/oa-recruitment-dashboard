@@ -7,7 +7,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 29,
+      "days": 30,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -26,7 +26,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "hc": 1,
       "opened": "2026-09-24",
-      "days": 28,
+      "days": 29,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -55,12 +55,16 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (2 of 7 HC still open — 4 OA + 1 OC filled)",
-      "hc": 2,
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 of 7 HC still open — 3 Offer Accepted + 1 Started)",
+      "hc": 3,
       "opened": "2026-10-06",
-      "days": 16,
+      "days": 17,
       "type": "Ramp",
       "initialInterview": [
+        {
+          "name": "CRISANTA ALTEZA-CASTILLO",
+          "movedAt": "2026-10-22"
+        },
         {
           "name": "Me Anne Hernandez",
           "movedAt": "2026-10-16"
@@ -87,10 +91,6 @@
         },
         {
           "name": "CLAUDETTE GULO",
-          "movedAt": "2026-10-16"
-        },
-        {
-          "name": "CRISANTA ALTEZA-CASTILLO",
           "movedAt": "2026-10-16"
         },
         {
@@ -152,7 +152,7 @@
       "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
       "hc": 1,
       "opened": "2026-10-02",
-      "days": 20,
+      "days": 21,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -166,9 +166,22 @@
       "role": "E-COMMERCE  OPERATIONS MANAGER",
       "hc": 2,
       "opened": "2026-10-07",
-      "days": 15,
+      "days": 16,
       "type": "New Logo",
-      "initialInterview": [],
+      "initialInterview": [
+        {
+          "name": "Czarlyn Gonzales",
+          "movedAt": "2026-10-23"
+        },
+        {
+          "name": "KATHLYN MERU",
+          "movedAt": "2026-10-23"
+        },
+        {
+          "name": "John Carlo Recarro",
+          "movedAt": "2026-10-23"
+        }
+      ],
       "clientEndorsement": [
         {
           "name": "Blessie Villanueva",
@@ -193,7 +206,7 @@
       "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
       "hc": 1,
       "opened": "2026-10-09",
-      "days": 13,
+      "days": 14,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -220,7 +233,7 @@
       "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
       "hc": 1,
       "opened": "2026-10-14",
-      "days": 8,
+      "days": 9,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -234,7 +247,7 @@
       "role": "PART TIME NETSUITE BOOKKEEPER",
       "hc": 1,
       "opened": "2026-10-15",
-      "days": 7,
+      "days": 8,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -267,16 +280,20 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "hc": 1,
       "opened": "2026-10-16",
-      "days": 6,
+      "days": 7,
       "type": "Ramp",
       "initialInterview": [
         {
-          "name": "Naomi Tupas",
-          "movedAt": "2026-10-20"
+          "name": "Katherine Decena",
+          "movedAt": "2026-10-23"
         },
         {
-          "name": "Debborah Villanueva",
-          "movedAt": "2026-10-19"
+          "name": "Shaira Manalili",
+          "movedAt": "2026-10-23"
+        },
+        {
+          "name": "Naomi Tupas",
+          "movedAt": "2026-10-20"
         }
       ],
       "clientEndorsement": [
@@ -337,6 +354,10 @@
       ],
       "clientEndorsement": [
         {
+          "name": "BRAILLE GONZALES",
+          "movedAt": "2026-10-23"
+        },
+        {
           "name": "MISHELLA MARIE CATAPANG",
           "movedAt": "2026-10-23"
         },
@@ -349,11 +370,11 @@
           "movedAt": "2026-10-23"
         },
         {
-          "name": "CARLA ROSS DARWIN",
+          "name": "Michael Joseph Encinares",
           "movedAt": "2026-10-22"
         },
         {
-          "name": "Michael Joseph Encinares",
+          "name": "CARLA ROSS DARWIN",
           "movedAt": "2026-10-22"
         }
       ],
@@ -385,7 +406,7 @@
       "role": "CUSTOMER SERVICE SUPPORT",
       "hc": 1,
       "opened": "2026-10-19",
-      "days": 3,
+      "days": 4,
       "type": "Ramp",
       "initialInterview": [
         {
