@@ -7,9 +7,9 @@
   "monthlyTarget": 7,
   "pipeline": {
     "open": 19,
-    "forJobOffer": 1,
+    "forJobOffer": 0,
     "ongoingContract": 2,
-    "offerAccepted": 13,
+    "offerAccepted": 14,
     "started": 3,
     "paused": 1
   },
@@ -242,9 +242,7 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Kenneth Ramos"
-    }
-  ],
-  "inOfferRoles": [
+    },
     {
       "client": "MIRION",
       "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
@@ -252,11 +250,14 @@
       "openedDate": "2026-10-13",
       "offerDate": "2026-10-21",
       "startDate": "",
-      "stage": "For Job Offer",
+      "timeToHire": 8,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "Backfill",
       "candidate": "CELESTINE B. SANTOS"
     }
   ],
+  "inOfferRoles": [],
   "ongoingContractRoles": [
     {
       "client": "MIRION (NUCMED)",
@@ -356,7 +357,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 30,
+      "days": 33,
       "type": "Ramp",
       "status": "active"
     },
@@ -374,7 +375,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-24",
-      "days": 29,
+      "days": 32,
       "type": "Ramp",
       "status": "active"
     }
@@ -389,7 +390,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 16,
+        "days": 19,
         "headcount": 2
       },
       {
@@ -397,7 +398,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
-        "days": 8,
+        "days": 11,
         "headcount": 1
       },
       {
@@ -405,7 +406,7 @@
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 9,
+        "days": 12,
         "headcount": 1
       }
     ],
@@ -415,7 +416,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 21,
+        "days": 24,
         "headcount": 1
       },
       {
@@ -423,7 +424,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 30,
+        "days": 33,
         "headcount": 1
       },
       {
@@ -431,7 +432,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 29,
+        "days": 32,
         "headcount": 1
       },
       {
@@ -439,7 +440,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 14,
+        "days": 17,
         "headcount": 1
       },
       {
@@ -447,7 +448,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 7,
+        "days": 10,
         "headcount": 1
       },
       {
@@ -455,7 +456,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 7,
+        "days": 10,
         "headcount": 9
       },
       {
@@ -463,19 +464,19 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 4,
+        "days": 7,
         "headcount": 1
       }
     ],
     "backfillJobs": []
   },
   "aging": {
-    "avgNewLogo": 11,
-    "avgRamp": 16,
+    "avgNewLogo": 14,
+    "avgRamp": 19,
     "avgBackfill": 0,
-    "fresh": 14,
-    "normal": 5,
-    "aging": 0,
+    "fresh": 13,
+    "normal": 4,
+    "aging": 2,
     "critical": 0,
     "jobs": [
       {
@@ -483,7 +484,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 21,
+        "days": 24,
         "headcount": 1
       },
       {
@@ -491,7 +492,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 30,
+        "days": 33,
         "headcount": 1
       },
       {
@@ -499,7 +500,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 29,
+        "days": 32,
         "headcount": 1
       },
       {
@@ -507,7 +508,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 16,
+        "days": 19,
         "headcount": 2
       },
       {
@@ -515,7 +516,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 14,
+        "days": 17,
         "headcount": 1
       },
       {
@@ -523,7 +524,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-15",
-        "days": 8,
+        "days": 11,
         "headcount": 1
       },
       {
@@ -531,7 +532,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 7,
+        "days": 10,
         "headcount": 1
       },
       {
@@ -539,7 +540,7 @@
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 9,
+        "days": 12,
         "headcount": 1
       },
       {
@@ -547,7 +548,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 7,
+        "days": 10,
         "headcount": 9
       },
       {
@@ -555,7 +556,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 4,
+        "days": 7,
         "headcount": 1
       }
     ]

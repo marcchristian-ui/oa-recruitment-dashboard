@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-10-23",
+  "_generated": "2026-10-26",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 30,
+      "days": 33,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -26,7 +26,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "hc": 1,
       "opened": "2026-09-24",
-      "days": 29,
+      "days": 32,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -58,7 +58,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 of 7 HC still open — 3 Offer Accepted + 1 Started)",
       "hc": 3,
       "opened": "2026-10-06",
-      "days": 17,
+      "days": 20,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -151,7 +151,7 @@
       "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
       "hc": 1,
       "opened": "2026-10-02",
-      "days": 21,
+      "days": 24,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -165,7 +165,7 @@
       "role": "E-COMMERCE  OPERATIONS MANAGER",
       "hc": 2,
       "opened": "2026-10-07",
-      "days": 16,
+      "days": 19,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -189,10 +189,6 @@
         {
           "name": "Ren Alaurin",
           "movedAt": "2026-10-22"
-        },
-        {
-          "name": "Daniel Joshua Garcia",
-          "movedAt": "2026-10-14"
         }
       ],
       "clientInterview": [],
@@ -205,7 +201,7 @@
       "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
       "hc": 1,
       "opened": "2026-10-09",
-      "days": 14,
+      "days": 17,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -232,7 +228,7 @@
       "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
       "hc": 1,
       "opened": "2026-10-14",
-      "days": 9,
+      "days": 12,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -246,7 +242,7 @@
       "role": "PART TIME NETSUITE BOOKKEEPER",
       "hc": 1,
       "opened": "2026-10-15",
-      "days": 8,
+      "days": 11,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -279,7 +275,7 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "hc": 1,
       "opened": "2026-10-16",
-      "days": 7,
+      "days": 10,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -311,7 +307,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (11 of 15 HC still open — 2 Offer Accepted + 2 at Ongoing Contract)",
       "hc": 11,
       "opened": "2026-10-16",
-      "days": 7,
+      "days": 10,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -352,6 +348,10 @@
         }
       ],
       "clientEndorsement": [
+        {
+          "name": "MAGNO, PIA TAJAN",
+          "movedAt": "2026-10-23"
+        },
         {
           "name": "BRAILLE GONZALES",
           "movedAt": "2026-10-23"
@@ -413,7 +413,7 @@
       "role": "CUSTOMER SERVICE SUPPORT",
       "hc": 1,
       "opened": "2026-10-19",
-      "days": 4,
+      "days": 7,
       "type": "Ramp",
       "initialInterview": [
         {
