@@ -1,12 +1,12 @@
 {
-  "totalOpen": 30,
+  "totalOpen": 19,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
-  "additionalInMonth": 42,
-  "additionalInMonthRoles": 12,
+  "additionalInMonth": 31,
+  "additionalInMonthRoles": 10,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 30,
+    "open": 19,
     "forJobOffer": 0,
     "ongoingContract": 0,
     "offerAccepted": 15,
@@ -31,14 +31,6 @@
       "headcount": 1,
       "lostDate": "2026-10-19",
       "reason": "Client hired locally",
-      "type": "Backfill"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "PRE-BILLING SPECIALIST (job 4504302)",
-      "headcount": 1,
-      "lostDate": "2026-10-19",
-      "reason": "Replaced by Clinic Referral cohort",
       "type": "Backfill"
     }
   ],
@@ -404,7 +396,7 @@
   ],
   "business": {
     "newLogoCount": 4,
-    "rampCount": 22,
+    "rampCount": 7,
     "backfillCount": 0,
     "newLogoJobs": [
       {
@@ -474,14 +466,6 @@
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-        "client": "ADAUGEO",
-        "type": "Ramp",
-        "opened": "2026-10-16",
-        "days": 10,
-        "headcount": 7
-      },
-      {
         "role": "CUSTOMER SERVICE SUPPORT",
         "client": "BLUESKY",
         "type": "Ramp",
@@ -501,13 +485,13 @@
     "backfillJobs": []
   },
   "aging": {
-    "avgNewLogo": 15,
-    "avgRamp": 21,
+    "avgNewLogo": 16,
+    "avgRamp": 11,
     "avgBackfill": 0,
-    "fresh": 20,
-    "normal": 7,
-    "aging": 2,
-    "critical": 1,
+    "fresh": 16,
+    "normal": 2,
+    "aging": 1,
+    "critical": 0,
     "jobs": [
       {
         "role": "BILLING ANALYST (1 of 3 HC carryover)",
@@ -532,14 +516,6 @@
         "opened": "2026-09-24",
         "days": 33,
         "headcount": 1
-      },
-      {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (7 HC)",
-        "client": "ADAUGEO",
-        "type": "Ramp",
-        "opened": "2026-10-06",
-        "days": 21,
-        "headcount": 4
       },
       {
         "role": "E-COMMERCE  OPERATIONS MANAGER",
@@ -582,14 +558,6 @@
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (15 HC)",
-        "client": "ADAUGEO",
-        "type": "Ramp",
-        "opened": "2026-10-16",
-        "days": 11,
-        "headcount": 7
-      },
-      {
         "role": "CUSTOMER SERVICE SUPPORT",
         "client": "BLUESKY",
         "type": "Ramp",
@@ -609,6 +577,6 @@
   },
   "avgTimeToHire": 15,
   "avgTimeToFill": 41,
-  "activeRequisitions": 30,
-  "activeRequisitionsRoles": 12
+  "activeRequisitions": 19,
+  "activeRequisitionsRoles": 10
 }
