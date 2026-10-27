@@ -9,8 +9,8 @@
     "open": 9,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 3,
-    "started": 10,
+    "offerAccepted": 2,
+    "started": 11,
     "paused": 2
   },
   "pausedRoles": [
@@ -19,7 +19,7 @@
       "role": "COLLECTIONS SPECIALIST",
       "headcount": 2,
       "pausedDate": "2026-09-01",
-      "reason": "Client paused hiring — replaced with new requirement",
+      "reason": "Client paused hiring â€” replaced with new requirement",
       "type": "Ramp",
       "subStatus": "Closed-Replaced"
     }
@@ -178,7 +178,7 @@
       "startDate": "2026-10-26",
       "timeToHire": 48,
       "timeToFill": 81,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "MANUEL AMADEO"
     },
@@ -227,7 +227,7 @@
   "somCarryOver": [
     {
       "client": "AUDIT DATA",
-      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) â€” 1 of 2 HC still open",
       "headcount": 1,
       "opened": "2026-07-15",
       "days": 77,
@@ -236,7 +236,7 @@
     },
     {
       "client": "AUDIT DATA",
-      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — Sucgang won",
+      "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) â€” Sucgang won",
       "headcount": 1,
       "opened": "2026-07-15",
       "days": 77,
@@ -281,7 +281,7 @@
     },
     {
       "client": "SolCo (Solution Consultants ICT)",
-      "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina withdrew 2026-09-29)",
+      "role": "IT SUPPORT ENGINEER â€” re-opened (Maria Cristina withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
       "days": 42,
@@ -304,7 +304,7 @@
     "backfillCount": 2,
     "newLogoJobs": [
       {
-        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) â€” 1 of 2 HC still open",
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
@@ -330,7 +330,7 @@
         "headcount": 1
       },
       {
-        "role": "BILLING ANALYST — 1 of 3 HC still open",
+        "role": "BILLING ANALYST â€” 1 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
@@ -364,7 +364,7 @@
     ],
     "backfillJobs": [
       {
-        "role": "PRE-BILLING SPECIALIST — 1 of 2 HC still open",
+        "role": "PRE-BILLING SPECIALIST â€” 1 of 2 HC still open",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",
@@ -399,7 +399,7 @@
         "headcount": 1
       },
       {
-        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC still open",
+        "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) â€” 1 of 2 HC still open",
         "client": "AUDIT DATA",
         "type": "New Logo",
         "opened": "2026-07-15",
@@ -415,7 +415,7 @@
         "headcount": 1
       },
       {
-        "role": "BILLING ANALYST — 1 of 3 HC still open",
+        "role": "BILLING ANALYST â€” 1 of 3 HC still open",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-01",
@@ -431,7 +431,7 @@
         "headcount": 1
       },
       {
-        "role": "PRE-BILLING SPECIALIST — 1 of 2 HC still open",
+        "role": "PRE-BILLING SPECIALIST â€” 1 of 2 HC still open",
         "client": "ADAUGEO",
         "type": "Backfill",
         "opened": "2026-09-14",

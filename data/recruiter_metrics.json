@@ -1,32 +1,32 @@
 {
- "_generated": "2026-10-23",
- "_source": "Manatal matches Jan 1 - 2026-10-23 (matches_2026_v11.json = v9 baseline + 2026-10-12..16 delta), attributed at the CANDIDATE level: candidate_id in data/recruiter_override.json -> tracker recruiter; otherwise most-recent match.owner mapped via RECRUITER_MAP (unknown owners -> Other). OA internal orgs (599280, 1619851), EVERGREEN org 1560151, POOLING positions, and 10 EXCLUDE_HASHES dropped.",
+ "_generated": "2026-10-27",
+ "_source": "Manatal matches Jan 1 - 2026-10-27 (matches_2026_v11.json = v9 baseline + 2026-10-12..16 delta), attributed at the CANDIDATE level: candidate_id in data/recruiter_override.json -> tracker recruiter; otherwise most-recent match.owner mapped via RECRUITER_MAP (unknown owners -> Other). OA internal orgs (599280, 1619851), EVERGREEN org 1560151, POOLING positions, and 10 EXCLUDE_HASHES dropped.",
  "_methodology": "Rank-rollup per (recruiter, candidate). Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing=5, Started=6. A rank-K match emits events at ranks 1..K, dated per stage: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance, misbucketing late-month accepteds - rank6 updated_at. Each falls back to updated_at when null. Per (recruiter, month, rank), unique candidates are counted after rollup - guaranteeing Int >= End >= CP >= Off >= Hire >= Start. Attribution is CANDIDATE-LEVEL (not per match): a candidate's entire funnel activity is credited to a single recruiter, so the same candidate never appears under two recruiters. YTD totals are unique-candidate counts at each rank (never a sum of monthly buckets).",
  "_dataQuality": {
-  "totalMatchesFromAPI": 2702,
-  "matchesAfterExclusions": 2258,
-  "uniqueCandidatesKept": 2160,
+  "totalMatchesFromAPI": 2931,
+  "matchesAfterExclusions": 2439,
+  "uniqueCandidatesKept": 2323,
   "exclusionsDropped": {
-   "oa": 325,
-   "exclude_hashes": 40,
-   "no_job": 79
+   "no_job": 124,
+   "oa": 328,
+   "exclude_hashes": 40
   },
   "candidatesByRecruiter": {
-   "Alan": 394,
-   "Louie": 329,
-   "Iyah": 336,
+   "Alan": 442,
+   "Louie": 384,
+   "Iyah": 368,
    "Joberth": 195,
-   "Mark": 390,
-   "Khamz": 309,
+   "Mark": 401,
+   "Khamz": 326,
    "Other": 207
   },
   "matchesByRecruiter": {
-   "Alan": 410,
-   "Louie": 339,
-   "Iyah": 362,
+   "Alan": 461,
+   "Louie": 395,
+   "Iyah": 405,
    "Joberth": 203,
-   "Mark": 413,
-   "Khamz": 320,
+   "Mark": 424,
+   "Khamz": 340,
    "Other": 211
   },
   "extraOwnerIdsInOtherBucket": {
@@ -38,19 +38,10 @@
   "attributionSourceCounts": {
    "override_named": 125,
    "override_other": 7,
-   "match_owner_named": 1828,
+   "match_owner_named": 1991,
    "match_owner_other": 200
   },
   "priorHiresYTD": {
-   "Alan": 18,
-   "Louie": 25,
-   "Iyah": 23,
-   "Joberth": 25,
-   "Mark": 22,
-   "Khamz": 40,
-   "Other": 10
-  },
-  "newHiresYTD": {
    "Alan": 19,
    "Louie": 25,
    "Iyah": 28,
@@ -58,32 +49,41 @@
    "Mark": 22,
    "Khamz": 40,
    "Other": 10
+  },
+  "newHiresYTD": {
+   "Alan": 18,
+   "Louie": 25,
+   "Iyah": 29,
+   "Joberth": 27,
+   "Mark": 22,
+   "Khamz": 41,
+   "Other": 11
   }
  },
  "recruiters": [
   {
    "name": "Alan",
    "ytdTotals": {
-    "interviews": 242,
-    "endorsed": 148,
-    "clientPass": 77,
-    "offers": 20,
-    "hires": 19,
+    "interviews": 244,
+    "endorsed": 147,
+    "clientPass": 76,
+    "offers": 19,
+    "hires": 18,
     "starts": 16
    },
    "ytdConversion": {
-    "interviewToEndorse": 61.2,
-    "endorseToClientPass": 52.0,
-    "endorseToHire": 12.8,
-    "offerToStart": 80.0
+    "interviewToEndorse": 60.2,
+    "endorseToClientPass": 51.7,
+    "endorseToHire": 12.2,
+    "offerToStart": 84.2
    },
    "positionTypeMix": {
     "Ramp": {
-     "interviews": 162,
-     "endorsed": 96,
-     "clientPass": 44,
-     "offers": 14,
-     "hires": 14,
+     "interviews": 164,
+     "endorsed": 95,
+     "clientPass": 43,
+     "offers": 13,
+     "hires": 13,
      "starts": 13
     },
     "New Logo": {
@@ -223,51 +223,51 @@
     },
     {
      "month": "2026-10",
-     "interviews": 20,
-     "endorsed": 8,
-     "clientPass": 6,
-     "offers": 3,
-     "hires": 3,
+     "interviews": 22,
+     "endorsed": 7,
+     "clientPass": 5,
+     "offers": 2,
+     "hires": 2,
      "starts": 2,
-     "intToEnd": 40.0,
-     "endToClientPass": 75.0,
-     "endToHire": 37.5,
-     "offerToStart": 66.7
+     "intToEnd": 31.8,
+     "endToClientPass": 71.4,
+     "endToHire": 28.6,
+     "offerToStart": 100.0
     }
    ]
   },
   {
    "name": "Louie",
    "ytdTotals": {
-    "interviews": 149,
-    "endorsed": 88,
-    "clientPass": 61,
+    "interviews": 151,
+    "endorsed": 90,
+    "clientPass": 62,
     "offers": 26,
     "hires": 25,
     "starts": 20
    },
    "ytdConversion": {
-    "interviewToEndorse": 59.1,
-    "endorseToClientPass": 69.3,
-    "endorseToHire": 28.4,
+    "interviewToEndorse": 59.6,
+    "endorseToClientPass": 68.9,
+    "endorseToHire": 27.8,
     "offerToStart": 76.9
    },
    "positionTypeMix": {
     "Ramp": {
-     "interviews": 99,
-     "endorsed": 61,
-     "clientPass": 43,
+     "interviews": 100,
+     "endorsed": 62,
+     "clientPass": 44,
      "offers": 20,
      "hires": 19,
      "starts": 14
     },
-    "Unclassified": {
-     "interviews": 6,
-     "endorsed": 4,
-     "clientPass": 3,
-     "offers": 3,
-     "hires": 3,
-     "starts": 3
+    "New Logo": {
+     "interviews": 35,
+     "endorsed": 15,
+     "clientPass": 11,
+     "offers": 2,
+     "hires": 2,
+     "starts": 2
     },
     "Backfill": {
      "interviews": 13,
@@ -277,13 +277,13 @@
      "hires": 2,
      "starts": 1
     },
-    "New Logo": {
-     "interviews": 34,
-     "endorsed": 14,
-     "clientPass": 11,
-     "offers": 2,
-     "hires": 2,
-     "starts": 2
+    "Unclassified": {
+     "interviews": 6,
+     "endorsed": 4,
+     "clientPass": 3,
+     "offers": 3,
+     "hires": 3,
+     "starts": 3
     }
    },
    "monthly": [
@@ -406,15 +406,15 @@
     },
     {
      "month": "2026-10",
-     "interviews": 8,
-     "endorsed": 7,
-     "clientPass": 4,
+     "interviews": 10,
+     "endorsed": 9,
+     "clientPass": 5,
      "offers": 1,
      "hires": 1,
      "starts": 1,
-     "intToEnd": 87.5,
-     "endToClientPass": 57.1,
-     "endToHire": 14.3,
+     "intToEnd": 90.0,
+     "endToClientPass": 55.6,
+     "endToHire": 11.1,
      "offerToStart": 100.0
     }
    ]
@@ -422,40 +422,32 @@
   {
    "name": "Iyah",
    "ytdTotals": {
-    "interviews": 152,
-    "endorsed": 71,
-    "clientPass": 57,
-    "offers": 29,
-    "hires": 28,
-    "starts": 15
+    "interviews": 166,
+    "endorsed": 74,
+    "clientPass": 62,
+    "offers": 30,
+    "hires": 29,
+    "starts": 16
    },
    "ytdConversion": {
-    "interviewToEndorse": 46.7,
-    "endorseToClientPass": 80.3,
-    "endorseToHire": 39.4,
-    "offerToStart": 51.7
+    "interviewToEndorse": 44.6,
+    "endorseToClientPass": 83.8,
+    "endorseToHire": 39.2,
+    "offerToStart": 53.3
    },
    "positionTypeMix": {
+    "Ramp": {
+     "interviews": 103,
+     "endorsed": 53,
+     "clientPass": 45,
+     "offers": 25,
+     "hires": 24,
+     "starts": 13
+    },
     "Backfill": {
      "interviews": 27,
      "endorsed": 9,
      "clientPass": 9,
-     "offers": 1,
-     "hires": 1,
-     "starts": 1
-    },
-    "Ramp": {
-     "interviews": 89,
-     "endorsed": 50,
-     "clientPass": 40,
-     "offers": 24,
-     "hires": 23,
-     "starts": 12
-    },
-    "Unclassified": {
-     "interviews": 1,
-     "endorsed": 1,
-     "clientPass": 1,
      "offers": 1,
      "hires": 1,
      "starts": 1
@@ -466,6 +458,14 @@
      "clientPass": 8,
      "offers": 3,
      "hires": 3,
+     "starts": 1
+    },
+    "Unclassified": {
+     "interviews": 1,
+     "endorsed": 1,
+     "clientPass": 1,
+     "offers": 1,
+     "hires": 1,
      "starts": 1
     }
    },
@@ -589,23 +589,23 @@
     },
     {
      "month": "2026-10",
-     "interviews": 62,
-     "endorsed": 29,
-     "clientPass": 22,
-     "offers": 12,
-     "hires": 12,
-     "starts": 1,
-     "intToEnd": 46.8,
-     "endToClientPass": 75.9,
-     "endToHire": 41.4,
-     "offerToStart": 8.3
+     "interviews": 77,
+     "endorsed": 33,
+     "clientPass": 28,
+     "offers": 14,
+     "hires": 14,
+     "starts": 2,
+     "intToEnd": 42.9,
+     "endToClientPass": 84.8,
+     "endToHire": 42.4,
+     "offerToStart": 14.3
     }
    ]
   },
   {
    "name": "Joberth",
    "ytdTotals": {
-    "interviews": 189,
+    "interviews": 193,
     "endorsed": 79,
     "clientPass": 53,
     "offers": 28,
@@ -613,14 +613,14 @@
     "starts": 22
    },
    "ytdConversion": {
-    "interviewToEndorse": 41.8,
+    "interviewToEndorse": 40.9,
     "endorseToClientPass": 67.1,
     "endorseToHire": 34.2,
     "offerToStart": 78.6
    },
    "positionTypeMix": {
     "Ramp": {
-     "interviews": 117,
+     "interviews": 121,
      "endorsed": 56,
      "clientPass": 37,
      "offers": 21,
@@ -764,13 +764,13 @@
     },
     {
      "month": "2026-10",
-     "interviews": 3,
+     "interviews": 7,
      "endorsed": 3,
      "clientPass": 2,
      "offers": 2,
      "hires": 2,
      "starts": 0,
-     "intToEnd": 100.0,
+     "intToEnd": 42.9,
      "endToClientPass": 66.7,
      "endToHire": 66.7,
      "offerToStart": 0.0
@@ -780,35 +780,27 @@
   {
    "name": "Mark",
    "ytdTotals": {
-    "interviews": 254,
-    "endorsed": 122,
-    "clientPass": 65,
+    "interviews": 256,
+    "endorsed": 123,
+    "clientPass": 67,
     "offers": 23,
     "hires": 22,
-    "starts": 20
+    "starts": 22
    },
    "ytdConversion": {
     "interviewToEndorse": 48.0,
-    "endorseToClientPass": 53.3,
-    "endorseToHire": 18.0,
-    "offerToStart": 87.0
+    "endorseToClientPass": 54.5,
+    "endorseToHire": 17.9,
+    "offerToStart": 95.7
    },
    "positionTypeMix": {
-    "Backfill": {
-     "interviews": 64,
-     "endorsed": 26,
-     "clientPass": 16,
-     "offers": 4,
-     "hires": 3,
-     "starts": 3
-    },
     "New Logo": {
-     "interviews": 73,
-     "endorsed": 43,
-     "clientPass": 20,
+     "interviews": 75,
+     "endorsed": 44,
+     "clientPass": 22,
      "offers": 4,
      "hires": 4,
-     "starts": 3
+     "starts": 4
     },
     "Ramp": {
      "interviews": 120,
@@ -816,7 +808,15 @@
      "clientPass": 30,
      "offers": 16,
      "hires": 15,
-     "starts": 14
+     "starts": 15
+    },
+    "Backfill": {
+     "interviews": 64,
+     "endorsed": 26,
+     "clientPass": 16,
+     "offers": 4,
+     "hires": 3,
+     "starts": 3
     }
    },
    "monthly": [
@@ -939,43 +939,43 @@
     },
     {
      "month": "2026-10",
-     "interviews": 15,
-     "endorsed": 8,
-     "clientPass": 3,
-     "offers": 1,
-     "hires": 1,
-     "starts": 0,
-     "intToEnd": 53.3,
-     "endToClientPass": 37.5,
-     "endToHire": 12.5,
-     "offerToStart": 0.0
+     "interviews": 18,
+     "endorsed": 10,
+     "clientPass": 6,
+     "offers": 2,
+     "hires": 2,
+     "starts": 2,
+     "intToEnd": 55.6,
+     "endToClientPass": 60.0,
+     "endToHire": 20.0,
+     "offerToStart": 100.0
     }
    ]
   },
   {
    "name": "Khamz",
    "ytdTotals": {
-    "interviews": 234,
-    "endorsed": 100,
-    "clientPass": 80,
-    "offers": 41,
-    "hires": 40,
-    "starts": 31
+    "interviews": 236,
+    "endorsed": 102,
+    "clientPass": 82,
+    "offers": 42,
+    "hires": 41,
+    "starts": 32
    },
    "ytdConversion": {
-    "interviewToEndorse": 42.7,
-    "endorseToClientPass": 80.0,
-    "endorseToHire": 40.0,
-    "offerToStart": 75.6
+    "interviewToEndorse": 43.2,
+    "endorseToClientPass": 80.4,
+    "endorseToHire": 40.2,
+    "offerToStart": 76.2
    },
    "positionTypeMix": {
     "Ramp": {
-     "interviews": 199,
-     "endorsed": 80,
-     "clientPass": 63,
-     "offers": 32,
-     "hires": 32,
-     "starts": 25
+     "interviews": 201,
+     "endorsed": 82,
+     "clientPass": 65,
+     "offers": 33,
+     "hires": 33,
+     "starts": 26
     },
     "Backfill": {
      "interviews": 31,
@@ -1114,15 +1114,15 @@
     },
     {
      "month": "2026-10",
-     "interviews": 27,
-     "endorsed": 9,
-     "clientPass": 8,
-     "offers": 2,
-     "hires": 2,
-     "starts": 1,
-     "intToEnd": 33.3,
-     "endToClientPass": 88.9,
-     "endToHire": 22.2,
+     "interviews": 30,
+     "endorsed": 12,
+     "clientPass": 11,
+     "offers": 4,
+     "hires": 4,
+     "starts": 2,
+     "intToEnd": 40.0,
+     "endToClientPass": 91.7,
+     "endToHire": 33.3,
      "offerToStart": 50.0
     }
    ]
@@ -1131,26 +1131,26 @@
    "name": "Other",
    "ytdTotals": {
     "interviews": 147,
-    "endorsed": 57,
-    "clientPass": 31,
-    "offers": 10,
-    "hires": 10,
+    "endorsed": 58,
+    "clientPass": 32,
+    "offers": 11,
+    "hires": 11,
     "starts": 9
    },
    "ytdConversion": {
-    "interviewToEndorse": 38.8,
-    "endorseToClientPass": 54.4,
-    "endorseToHire": 17.5,
-    "offerToStart": 90.0
+    "interviewToEndorse": 39.5,
+    "endorseToClientPass": 55.2,
+    "endorseToHire": 19.0,
+    "offerToStart": 81.8
    },
    "positionTypeMix": {
-    "Unclassified": {
-     "interviews": 11,
-     "endorsed": 5,
-     "clientPass": 1,
-     "offers": 1,
-     "hires": 1,
-     "starts": 1
+    "Backfill": {
+     "interviews": 9,
+     "endorsed": 8,
+     "clientPass": 6,
+     "offers": 5,
+     "hires": 5,
+     "starts": 3
     },
     "Ramp": {
      "interviews": 116,
@@ -1160,14 +1160,6 @@
      "hires": 5,
      "starts": 5
     },
-    "Backfill": {
-     "interviews": 8,
-     "endorsed": 7,
-     "clientPass": 5,
-     "offers": 4,
-     "hires": 4,
-     "starts": 3
-    },
     "New Logo": {
      "interviews": 12,
      "endorsed": 7,
@@ -1175,6 +1167,14 @@
      "offers": 0,
      "hires": 0,
      "starts": 0
+    },
+    "Unclassified": {
+     "interviews": 11,
+     "endorsed": 5,
+     "clientPass": 1,
+     "offers": 1,
+     "hires": 1,
+     "starts": 1
     }
    },
    "monthly": [
@@ -1298,15 +1298,15 @@
     {
      "month": "2026-10",
      "interviews": 5,
-     "endorsed": 1,
-     "clientPass": 1,
-     "offers": 1,
-     "hires": 1,
+     "endorsed": 2,
+     "clientPass": 2,
+     "offers": 2,
+     "hires": 2,
      "starts": 1,
-     "intToEnd": 20.0,
+     "intToEnd": 40.0,
      "endToClientPass": 100.0,
      "endToHire": 100.0,
-     "offerToStart": 100.0
+     "offerToStart": 50.0
     }
    ]
   }

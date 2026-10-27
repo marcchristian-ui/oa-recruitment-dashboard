@@ -1,16 +1,16 @@
 {
-  "totalOpen": 19,
+  "totalOpen": 29,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
-  "additionalInMonth": 31,
-  "additionalInMonthRoles": 10,
+  "additionalInMonth": 41,
+  "additionalInMonthRoles": 11,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 19,
+    "open": 29,
     "forJobOffer": 0,
-    "ongoingContract": 2,
-    "offerAccepted": 14,
-    "started": 3,
+    "ongoingContract": 0,
+    "offerAccepted": 15,
+    "started": 4,
     "paused": 1
   },
   "pausedRoles": [
@@ -57,7 +57,7 @@
       "startDate": "2026-10-26",
       "timeToHire": 15,
       "timeToFill": 33,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "ELLEN JOYCE SORIANO"
     },
@@ -143,10 +143,10 @@
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 1,
-      "openedDate": "2026-10-06",
-      "offerDate": "2026-10-22",
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-27",
       "startDate": "",
-      "timeToHire": 16,
+      "timeToHire": 11,
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
@@ -156,10 +156,10 @@
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 1,
-      "openedDate": "2026-10-06",
-      "offerDate": "2026-10-22",
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-27",
       "startDate": "",
-      "timeToHire": 16,
+      "timeToHire": 11,
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
@@ -169,10 +169,10 @@
       "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 1,
-      "openedDate": "2026-10-06",
-      "offerDate": "2026-10-22",
+      "openedDate": "2026-10-16",
+      "offerDate": "2026-10-27",
       "startDate": "",
-      "timeToHire": 16,
+      "timeToHire": 11,
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
@@ -232,12 +232,12 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
       "headcount": 1,
-      "openedDate": "2026-10-16",
-      "offerDate": "2026-10-23",
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-10-27",
       "startDate": "",
-      "timeToHire": 7,
+      "timeToHire": 0,
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
@@ -255,21 +255,19 @@
       "stage": "Offer Accepted",
       "type": "Backfill",
       "candidate": "CELESTINE B. SANTOS"
-    }
-  ],
-  "inOfferRoles": [],
-  "ongoingContractRoles": [
+    },
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (1 of 3 HC carryover)",
+      "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
       "headcount": 1,
-      "openedDate": "2026-09-01",
-      "offerDate": "2026-10-21",
+      "openedDate": "2026-10-02",
+      "offerDate": "2026-10-26",
       "startDate": "",
-      "stage": "Ongoing Contract",
+      "timeToHire": 24,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Krishian C. Quiambao",
-      "timeToFill": 50
+      "candidate": "OSCAR MIRON"
     },
     {
       "client": "ADAUGEO",
@@ -278,11 +276,15 @@
       "openedDate": "2026-10-16",
       "offerDate": "2026-10-23",
       "startDate": "",
-      "stage": "Ongoing Contract",
+      "timeToHire": 7,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Bryan Namli"
     }
   ],
+  "inOfferRoles": [],
+  "ongoingContractRoles": [],
   "withdrawals": [
     {
       "client": "ADAUGEO",
@@ -295,6 +297,18 @@
       "type": "Ramp",
       "candidate": "Anamaria Santos",
       "reason": "Candidate withdrew after accepting offer"
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST (1 of 3 HC carryover)",
+      "headcount": 1,
+      "openedDate": "2026-09-01",
+      "offerDate": "2026-10-21",
+      "withdrawnDate": "2026-10-26",
+      "priorStage": "Ongoing Contract",
+      "type": "Ramp",
+      "candidate": "Krishian C. Quiambao",
+      "reason": "Candidate withdrew after on-going contract acceptance"
     }
   ],
   "somCarryOver": [
@@ -303,7 +317,7 @@
       "role": "SENIOR FULL STACK SOFTWARE ENGINEER (.NET/REACT) — 1 of 2 HC carryover",
       "headcount": 1,
       "opened": "2026-07-15",
-      "days": 100,
+      "days": 104,
       "type": "New Logo",
       "status": "won"
     },
@@ -312,7 +326,7 @@
       "role": "IT SUPPORT ENGINEER — re-opened (Maria Cristina Potayre withdrew 2026-09-29)",
       "headcount": 1,
       "opened": "2026-08-19",
-      "days": 65,
+      "days": 69,
       "type": "Ramp",
       "status": "won"
     },
@@ -321,7 +335,7 @@
       "role": "INTEGRATION SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 52,
+      "days": 56,
       "type": "Backfill",
       "status": "lost"
     },
@@ -330,16 +344,16 @@
       "role": "BILLING ANALYST — 1 of 3 HC carryover (Cheska + Jefry won in Sept)",
       "headcount": 1,
       "opened": "2026-09-01",
-      "days": 52,
+      "days": 56,
       "type": "Ramp",
-      "status": "won"
+      "status": "withdrew"
     },
     {
       "client": "ADAUGEO",
       "role": "LAB PATIENT ACCOUNT CSR — re-opened (Ruscel Joy Sta. Ana Dizon withdrew 2026-09-28)",
       "headcount": 1,
       "opened": "2026-09-11",
-      "days": 42,
+      "days": 46,
       "type": "Backfill",
       "status": "won"
     },
@@ -348,7 +362,7 @@
       "role": "PRE-BILLING SPECIALIST — 1 of 2 HC carryover (James Kith Macalua won in Sept)",
       "headcount": 1,
       "opened": "2026-09-14",
-      "days": 39,
+      "days": 43,
       "type": "Backfill",
       "status": "paused"
     },
@@ -357,7 +371,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 33,
+      "days": 34,
       "type": "Ramp",
       "status": "active"
     },
@@ -366,7 +380,7 @@
       "role": "PROOFREADER",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 30,
+      "days": 34,
       "type": "Ramp",
       "status": "won"
     },
@@ -375,14 +389,14 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-24",
-      "days": 32,
+      "days": 33,
       "type": "Ramp",
       "status": "active"
     }
   ],
   "business": {
     "newLogoCount": 4,
-    "rampCount": 15,
+    "rampCount": 25,
     "backfillCount": 0,
     "newLogoJobs": [
       {
@@ -466,25 +480,33 @@
         "opened": "2026-10-19",
         "days": 7,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-27",
+        "days": 0,
+        "headcount": 10
       }
     ],
     "backfillJobs": []
   },
   "aging": {
-    "avgNewLogo": 14,
-    "avgRamp": 19,
+    "avgNewLogo": 15,
+    "avgRamp": 21,
     "avgBackfill": 0,
-    "fresh": 13,
-    "normal": 4,
+    "fresh": 20,
+    "normal": 6,
     "aging": 2,
-    "critical": 0,
+    "critical": 1,
     "jobs": [
       {
-        "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
+        "role": "BILLING ANALYST (1 of 3 HC carryover)",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
-        "opened": "2026-10-02",
-        "days": 24,
+        "opened": "2026-09-01",
+        "days": 56,
         "headcount": 1
       },
       {
@@ -492,7 +514,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 33,
+        "days": 34,
         "headcount": 1
       },
       {
@@ -500,15 +522,23 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-24",
-        "days": 32,
+        "days": 33,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (7 HC)",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-06",
+        "days": 21,
+        "headcount": 3
       },
       {
         "role": "E-COMMERCE  OPERATIONS MANAGER",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-07",
-        "days": 19,
+        "days": 20,
         "headcount": 2
       },
       {
@@ -516,23 +546,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 17,
-        "headcount": 1
-      },
-      {
-        "role": "PART TIME NETSUITE BOOKKEEPER",
-        "client": "PINEAPPLE AUDIO",
-        "type": "New Logo",
-        "opened": "2026-10-15",
-        "days": 11,
-        "headcount": 1
-      },
-      {
-        "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
-        "client": "BLUESKY",
-        "type": "Ramp",
-        "opened": "2026-10-16",
-        "days": 10,
+        "days": 18,
         "headcount": 1
       },
       {
@@ -540,29 +554,53 @@
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
+        "days": 13,
+        "headcount": 1
+      },
+      {
+        "role": "PART TIME NETSUITE BOOKKEEPER",
+        "client": "PINEAPPLE AUDIO",
+        "type": "New Logo",
+        "opened": "2026-10-15",
         "days": 12,
         "headcount": 1
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
+        "client": "BLUESKY",
+        "type": "Ramp",
+        "opened": "2026-10-16",
+        "days": 11,
+        "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (15 HC)",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 10,
-        "headcount": 9
+        "days": 11,
+        "headcount": 7
       },
       {
         "role": "CUSTOMER SERVICE SUPPORT",
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-19",
-        "days": 7,
+        "days": 8,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-27",
+        "days": 0,
+        "headcount": 9
       }
     ]
   },
-  "avgTimeToHire": 28,
-  "avgTimeToFill": 113,
-  "activeRequisitions": 19,
-  "activeRequisitionsRoles": 10
+  "avgTimeToHire": 15,
+  "avgTimeToFill": 41,
+  "activeRequisitions": 29,
+  "activeRequisitionsRoles": 12
 }
