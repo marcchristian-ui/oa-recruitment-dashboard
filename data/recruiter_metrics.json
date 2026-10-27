@@ -1,32 +1,32 @@
 {
  "_generated": "2026-10-27",
- "_source": "Manatal matches Jan 1 - 2026-10-27 (matches_2026_v11.json = v9 baseline + 2026-10-12..16 delta), attributed at the CANDIDATE level: candidate_id in data/recruiter_override.json -> tracker recruiter; otherwise most-recent match.owner mapped via RECRUITER_MAP (unknown owners -> Other). OA internal orgs (599280, 1619851), EVERGREEN org 1560151, POOLING positions, and 10 EXCLUDE_HASHES dropped.",
+ "_source": "Manatal matches Jan 1 - 2026-10-27 (matches_2026_v15.json = v14 baseline + 2026-10-27T12:00+ delta), attributed at the CANDIDATE level: candidate_id in data/recruiter_override.json -> tracker recruiter; otherwise most-recent match.owner mapped via RECRUITER_MAP (unknown owners -> Other). OA internal orgs (599280, 1619851), EVERGREEN org 1560151, POOLING positions, and 10 EXCLUDE_HASHES dropped.",
  "_methodology": "Rank-rollup per (recruiter, candidate). Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing=5, Started=6. A rank-K match emits events at ranks 1..K, dated per stage: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance, misbucketing late-month accepteds - rank6 updated_at. Each falls back to updated_at when null. Per (recruiter, month, rank), unique candidates are counted after rollup - guaranteeing Int >= End >= CP >= Off >= Hire >= Start. Attribution is CANDIDATE-LEVEL (not per match): a candidate's entire funnel activity is credited to a single recruiter, so the same candidate never appears under two recruiters. YTD totals are unique-candidate counts at each rank (never a sum of monthly buckets).",
  "_dataQuality": {
-  "totalMatchesFromAPI": 2931,
-  "matchesAfterExclusions": 2439,
-  "uniqueCandidatesKept": 2323,
+  "totalMatchesFromAPI": 2935,
+  "matchesAfterExclusions": 2444,
+  "uniqueCandidatesKept": 2327,
   "exclusionsDropped": {
-   "no_job": 124,
+   "no_job": 123,
    "oa": 328,
    "exclude_hashes": 40
   },
   "candidatesByRecruiter": {
-   "Alan": 442,
+   "Alan": 444,
    "Louie": 384,
-   "Iyah": 368,
+   "Iyah": 369,
    "Joberth": 195,
    "Mark": 401,
-   "Khamz": 326,
+   "Khamz": 327,
    "Other": 207
   },
   "matchesByRecruiter": {
-   "Alan": 461,
+   "Alan": 463,
    "Louie": 395,
-   "Iyah": 405,
+   "Iyah": 407,
    "Joberth": 203,
    "Mark": 424,
-   "Khamz": 340,
+   "Khamz": 341,
    "Other": 211
   },
   "extraOwnerIdsInOtherBucket": {
@@ -38,17 +38,17 @@
   "attributionSourceCounts": {
    "override_named": 125,
    "override_other": 7,
-   "match_owner_named": 1991,
+   "match_owner_named": 1995,
    "match_owner_other": 200
   },
   "priorHiresYTD": {
-   "Alan": 19,
+   "Alan": 18,
    "Louie": 25,
-   "Iyah": 28,
+   "Iyah": 29,
    "Joberth": 27,
    "Mark": 22,
-   "Khamz": 40,
-   "Other": 10
+   "Khamz": 41,
+   "Other": 11
   },
   "newHiresYTD": {
    "Alan": 18,
@@ -422,23 +422,23 @@
   {
    "name": "Iyah",
    "ytdTotals": {
-    "interviews": 166,
-    "endorsed": 74,
+    "interviews": 167,
+    "endorsed": 75,
     "clientPass": 62,
     "offers": 30,
     "hires": 29,
     "starts": 16
    },
    "ytdConversion": {
-    "interviewToEndorse": 44.6,
-    "endorseToClientPass": 83.8,
-    "endorseToHire": 39.2,
+    "interviewToEndorse": 44.9,
+    "endorseToClientPass": 82.7,
+    "endorseToHire": 38.7,
     "offerToStart": 53.3
    },
    "positionTypeMix": {
     "Ramp": {
-     "interviews": 103,
-     "endorsed": 53,
+     "interviews": 104,
+     "endorsed": 54,
      "clientPass": 45,
      "offers": 25,
      "hires": 24,
@@ -589,15 +589,15 @@
     },
     {
      "month": "2026-10",
-     "interviews": 77,
-     "endorsed": 33,
+     "interviews": 78,
+     "endorsed": 34,
      "clientPass": 28,
      "offers": 14,
      "hires": 14,
      "starts": 2,
-     "intToEnd": 42.9,
-     "endToClientPass": 84.8,
-     "endToHire": 42.4,
+     "intToEnd": 43.6,
+     "endToClientPass": 82.4,
+     "endToHire": 41.2,
      "offerToStart": 14.3
     }
    ]

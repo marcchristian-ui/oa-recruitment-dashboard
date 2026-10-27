@@ -198,6 +198,20 @@
       ]
     },
     {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (1 HC separate req 4524443)",
+      "hc": 1,
+      "opened": "2026-10-06",
+      "days": 21,
+      "type": "Ramp",
+      "initialInterview": [],
+      "clientEndorsement": [],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
+    },
+    {
       "client": "MIRION (NUCMED)",
       "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
       "hc": 1,
@@ -470,6 +484,10 @@
         {
           "name": "BRAILLE GONZALES",
           "movedAt": "2026-10-23"
+        },
+        {
+          "name": "MAYCE BESIN TOMENIO",
+          "movedAt": "2026-10-27"
         }
       ],
       "clientInterview": [

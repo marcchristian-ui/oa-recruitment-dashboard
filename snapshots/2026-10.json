@@ -1,12 +1,12 @@
 {
-  "totalOpen": 29,
+  "totalOpen": 30,
   "startOfMonth": 9,
   "startOfMonthRoles": 9,
-  "additionalInMonth": 41,
-  "additionalInMonthRoles": 11,
+  "additionalInMonth": 42,
+  "additionalInMonthRoles": 12,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 29,
+    "open": 30,
     "forJobOffer": 0,
     "ongoingContract": 0,
     "offerAccepted": 15,
@@ -31,6 +31,14 @@
       "headcount": 1,
       "lostDate": "2026-10-19",
       "reason": "Client hired locally",
+      "type": "Backfill"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "PRE-BILLING SPECIALIST (job 4504302)",
+      "headcount": 1,
+      "lostDate": "2026-10-19",
+      "reason": "Replaced by Clinic Referral cohort",
       "type": "Backfill"
     }
   ],
@@ -63,7 +71,7 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (1 HC separate req 4524443)",
       "headcount": 1,
       "openedDate": "2026-10-06",
       "offerDate": "2026-10-06",
@@ -396,7 +404,7 @@
   ],
   "business": {
     "newLogoCount": 4,
-    "rampCount": 25,
+    "rampCount": 22,
     "backfillCount": 0,
     "newLogoJobs": [
       {
@@ -471,7 +479,7 @@
         "type": "Ramp",
         "opened": "2026-10-16",
         "days": 10,
-        "headcount": 9
+        "headcount": 7
       },
       {
         "role": "CUSTOMER SERVICE SUPPORT",
@@ -487,7 +495,7 @@
         "type": "Ramp",
         "opened": "2026-10-27",
         "days": 0,
-        "headcount": 10
+        "headcount": 9
       }
     ],
     "backfillJobs": []
@@ -497,7 +505,7 @@
     "avgRamp": 21,
     "avgBackfill": 0,
     "fresh": 20,
-    "normal": 6,
+    "normal": 7,
     "aging": 2,
     "critical": 1,
     "jobs": [
@@ -531,7 +539,7 @@
         "type": "Ramp",
         "opened": "2026-10-06",
         "days": 21,
-        "headcount": 3
+        "headcount": 4
       },
       {
         "role": "E-COMMERCE  OPERATIONS MANAGER",
@@ -601,6 +609,6 @@
   },
   "avgTimeToHire": 15,
   "avgTimeToFill": 41,
-  "activeRequisitions": 29,
+  "activeRequisitions": 30,
   "activeRequisitionsRoles": 12
 }
