@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-10-27",
+  "_generated": "2026-10-29",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -182,20 +182,7 @@
       "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
-      "offerAccepted": [
-        {
-          "name": "Allysa Batulan",
-          "movedAt": "2026-10-15"
-        },
-        {
-          "name": "Dianne Pozalida",
-          "movedAt": "2026-10-15"
-        },
-        {
-          "name": "Redy Bonnie Rarang",
-          "movedAt": "2026-10-15"
-        }
-      ]
+      "offerAccepted": []
     },
     {
       "client": "ADAUGEO",
@@ -530,10 +517,6 @@
         {
           "name": "Earl Esparagoza",
           "movedAt": "2026-10-27"
-        },
-        {
-          "name": "Bryan Namli",
-          "movedAt": "2026-10-23"
         },
         {
           "name": "JINO FERNANDEZ",

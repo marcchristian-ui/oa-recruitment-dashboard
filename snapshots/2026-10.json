@@ -9,8 +9,8 @@
     "open": 19,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 15,
-    "started": 4,
+    "offerAccepted": 11,
+    "started": 8,
     "paused": 1
   },
   "pausedRoles": [
@@ -96,7 +96,7 @@
       "startDate": "2026-10-29",
       "timeToHire": 9,
       "timeToFill": 23,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Allysa Batulan"
     },
@@ -109,7 +109,7 @@
       "startDate": "2026-10-29",
       "timeToHire": 9,
       "timeToFill": 23,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Dianne Pozalida"
     },
@@ -135,7 +135,7 @@
       "startDate": "2026-10-29",
       "timeToHire": 9,
       "timeToFill": 23,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Redy Bonnie Rarang"
     },
@@ -278,7 +278,7 @@
       "startDate": "2026-10-29",
       "timeToHire": 7,
       "timeToFill": 13,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Bryan Namli"
     }
