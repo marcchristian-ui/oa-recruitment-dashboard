@@ -1,15 +1,15 @@
 {
-  "totalOpen": 19,
+  "totalOpen": 15,
   "startOfMonth": 30,
   "startOfMonthRoles": 14,
   "additionalInMonth": 0,
   "additionalInMonthRoles": 0,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 19,
+    "open": 15,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 11,
+    "offerAccepted": 15,
     "started": 0,
     "paused": 0
   },
@@ -158,6 +158,58 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "OSCAR MIRON"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
+      "headcount": 1,
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-10-29",
+      "startDate": "",
+      "timeToHire": 2,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "John Paul Bucao Delaraga"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
+      "headcount": 1,
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-10-29",
+      "startDate": "",
+      "timeToHire": 2,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Mary Grace Vedana"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
+      "headcount": 1,
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-10-29",
+      "startDate": "",
+      "timeToHire": 2,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Braille Gonzales"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
+      "headcount": 1,
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-10-30",
+      "startDate": "2026-11-03",
+      "timeToHire": 3,
+      "timeToFill": 7,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Carla Ross Darwin"
     }
   ],
   "inOfferRoles": [],
@@ -296,12 +348,12 @@
         "type": "Ramp",
         "opened": "2026-10-27",
         "days": 7,
-        "headcount": 9
+        "headcount": 5
       }
     ]
   },
   "avgTimeToHire": null,
   "avgTimeToFill": null,
-  "activeRequisitions": 19,
+  "activeRequisitions": 15,
   "activeRequisitionsRoles": 10
 }
