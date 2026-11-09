@@ -2,14 +2,14 @@
   "totalOpen": 9,
   "startOfMonth": 13,
   "startOfMonthRoles": 10,
-  "additionalInMonth": 0,
-  "additionalInMonthRoles": 0,
+  "additionalInMonth": 1,
+  "additionalInMonthRoles": 1,
   "monthlyTarget": 7,
   "pipeline": {
     "open": 9,
-    "forJobOffer": 0,
-    "ongoingContract": 0,
-    "offerAccepted": 4,
+    "forJobOffer": 1,
+    "ongoingContract": 3,
+    "offerAccepted": 1,
     "started": 0,
     "paused": 0
   },
@@ -25,7 +25,7 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Job Offer",
+      "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Melanie Chan"
     },
@@ -38,7 +38,7 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Job Offer",
+      "stage": "Ongoing Contract",
       "type": "Ramp",
       "candidate": "Mayce Besin Tomenio"
     },
@@ -51,7 +51,7 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Job Offer",
+      "stage": "Ongoing Contract",
       "type": "Ramp",
       "candidate": "Michael Joseph Encinares"
     },
@@ -64,9 +64,22 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Job Offer",
+      "stage": "Ongoing Contract",
       "type": "Ramp",
       "candidate": "Nonelyn Alejandro"
+    },
+    {
+      "client": "PINEAPPLE AUDIO",
+      "role": "PART-TIME NETSUITE BOOKKEEPER",
+      "headcount": 1,
+      "openedDate": "2026-10-14",
+      "offerDate": "2026-11-04",
+      "startDate": "",
+      "timeToHire": 21,
+      "timeToFill": null,
+      "stage": "Job Offer",
+      "type": "New Logo",
+      "candidate": "Marie Hail Querol"
     }
   ],
   "inOfferRoles": [],
@@ -78,7 +91,7 @@
       "role": "PART-TIME E-COMMERCE SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-22",
-      "days": 43,
+      "days": 48,
       "type": "Ramp",
       "status": "active"
     },
@@ -87,7 +100,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 42,
+      "days": 47,
       "type": "Ramp",
       "status": "active"
     },
@@ -96,7 +109,7 @@
       "role": "BILLING ANALYST (NucMed-specific)",
       "headcount": 1,
       "opened": "2026-10-02",
-      "days": 33,
+      "days": 38,
       "type": "Ramp",
       "status": "active"
     },
@@ -105,7 +118,7 @@
       "role": "E-COMMERCE OPERATIONS MANAGER",
       "headcount": 2,
       "opened": "2026-10-09",
-      "days": 26,
+      "days": 31,
       "type": "New Logo",
       "status": "active"
     },
@@ -114,7 +127,7 @@
       "role": "REFERRAL & PRIOR AUTHORIZATION MANAGER",
       "headcount": 1,
       "opened": "2026-10-09",
-      "days": 26,
+      "days": 31,
       "type": "Ramp",
       "status": "won-in-month"
     },
@@ -123,16 +136,16 @@
       "role": "PART-TIME NETSUITE BOOKKEEPER",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 21,
+      "days": 26,
       "type": "New Logo",
-      "status": "active"
+      "status": "won-in-month"
     },
     {
       "client": "SIEGEL DESIGN",
       "role": "SENIOR US BOOKKEEPER",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 21,
+      "days": 26,
       "type": "New Logo",
       "status": "active"
     },
@@ -141,7 +154,7 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "headcount": 1,
       "opened": "2026-10-16",
-      "days": 19,
+      "days": 24,
       "type": "Ramp",
       "status": "active"
     },
@@ -150,7 +163,7 @@
       "role": "CUSTOMER SERVICE SUPPORT",
       "headcount": 1,
       "opened": "2026-10-16",
-      "days": 19,
+      "days": 24,
       "type": "Ramp",
       "status": "active"
     },
@@ -159,38 +172,30 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 3,
       "opened": "2026-10-09",
-      "days": 26,
+      "days": 31,
       "type": "Ramp",
       "status": "won-in-month"
     }
   ],
   "business": {
-    "newLogoCount": 4,
+    "newLogoCount": 3,
     "rampCount": 5,
-    "backfillCount": 0,
+    "backfillCount": 1,
     "newLogoJobs": [
       {
         "role": "E-COMMERCE OPERATIONS MANAGER",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 26,
+        "days": 31,
         "headcount": 2
-      },
-      {
-        "role": "PART-TIME NETSUITE BOOKKEEPER",
-        "client": "PINEAPPLE AUDIO",
-        "type": "New Logo",
-        "opened": "2026-10-14",
-        "days": 21,
-        "headcount": 1
       },
       {
         "role": "SENIOR US BOOKKEEPER",
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 21,
+        "days": 26,
         "headcount": 1
       }
     ],
@@ -200,7 +205,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-22",
-        "days": 43,
+        "days": 48,
         "headcount": 1
       },
       {
@@ -208,7 +213,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 42,
+        "days": 47,
         "headcount": 1
       },
       {
@@ -216,7 +221,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 33,
+        "days": 38,
         "headcount": 1
       },
       {
@@ -224,7 +229,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 19,
+        "days": 24,
         "headcount": 1
       },
       {
@@ -232,19 +237,28 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 19,
+        "days": 24,
         "headcount": 1
       }
     ],
-    "backfillJobs": []
+    "backfillJobs": [
+      {
+        "role": "INTEGRATION ENGINEER (reopen)",
+        "client": "DEMAND BRIDGE",
+        "type": "Backfill",
+        "opened": "2026-11-06",
+        "days": 3,
+        "headcount": 1
+      }
+    ]
   },
   "aging": {
-    "avgNewLogo": 24,
-    "avgRamp": 31,
-    "avgBackfill": 0,
-    "fresh": 0,
+    "avgNewLogo": 28,
+    "avgRamp": 36,
+    "avgBackfill": 3,
+    "fresh": 1,
     "normal": 0,
-    "aging": 6,
+    "aging": 4,
     "critical": 3,
     "jobs": [
       {
@@ -252,7 +266,7 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-22",
-        "days": 43,
+        "days": 48,
         "headcount": 1
       },
       {
@@ -260,7 +274,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 42,
+        "days": 47,
         "headcount": 1
       },
       {
@@ -268,7 +282,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 33,
+        "days": 38,
         "headcount": 1
       },
       {
@@ -276,23 +290,15 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 26,
+        "days": 31,
         "headcount": 2
-      },
-      {
-        "role": "PART-TIME NETSUITE BOOKKEEPER",
-        "client": "PINEAPPLE AUDIO",
-        "type": "New Logo",
-        "opened": "2026-10-14",
-        "days": 21,
-        "headcount": 1
       },
       {
         "role": "SENIOR US BOOKKEEPER",
         "client": "SIEGEL DESIGN",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 21,
+        "days": 26,
         "headcount": 1
       },
       {
@@ -300,7 +306,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 19,
+        "days": 24,
         "headcount": 1
       },
       {
@@ -308,13 +314,21 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 19,
+        "days": 24,
+        "headcount": 1
+      },
+      {
+        "role": "INTEGRATION ENGINEER (reopen)",
+        "client": "DEMAND BRIDGE",
+        "type": "Backfill",
+        "opened": "2026-11-06",
+        "days": 3,
         "headcount": 1
       }
     ]
   },
-  "avgTimeToHire": 26,
+  "avgTimeToHire": 25,
   "avgTimeToFill": 0,
   "activeRequisitions": 9,
-  "activeRequisitionsRoles": 9
+  "activeRequisitionsRoles": 8
 }

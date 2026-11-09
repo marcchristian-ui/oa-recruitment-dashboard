@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-11-03",
+  "_generated": "2026-11-09",
   "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
   "roles": [
     {
@@ -7,7 +7,7 @@
       "role": "BILLING ANALYST (1 of 3 HC carryover)",
       "hc": 1,
       "opened": "2026-09-01",
-      "days": 56,
+      "days": 69,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -34,7 +34,7 @@
       "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
       "hc": 1,
       "opened": "2026-09-11",
-      "days": 46,
+      "days": 59,
       "type": "Backfill",
       "initialInterview": [
         {
@@ -69,7 +69,7 @@
       "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 34,
+      "days": 47,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [
@@ -88,7 +88,7 @@
       "role": "PROOFREADER",
       "hc": 1,
       "opened": "2026-09-23",
-      "days": 34,
+      "days": 47,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -102,7 +102,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "hc": 1,
       "opened": "2026-09-24",
-      "days": 33,
+      "days": 46,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -134,7 +134,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (7 HC opened 10/06)",
       "hc": 7,
       "opened": "2026-10-06",
-      "days": 21,
+      "days": 34,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -189,7 +189,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (1 HC separate req 4524443)",
       "hc": 1,
       "opened": "2026-10-06",
-      "days": 21,
+      "days": 34,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -203,7 +203,7 @@
       "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
       "hc": 1,
       "opened": "2026-10-02",
-      "days": 25,
+      "days": 38,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -231,7 +231,7 @@
       "role": "E-COMMERCE  OPERATIONS MANAGER",
       "hc": 2,
       "opened": "2026-10-07",
-      "days": 20,
+      "days": 33,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [
@@ -250,13 +250,9 @@
       "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER",
       "hc": 1,
       "opened": "2026-10-09",
-      "days": 18,
+      "days": 31,
       "type": "Ramp",
       "initialInterview": [
-        {
-          "name": "Melanie Chan",
-          "movedAt": "2026-10-16"
-        },
         {
           "name": "May Ann PERDIGUERRA",
           "movedAt": "2026-10-15"
@@ -279,14 +275,19 @@
       "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
-      "offerAccepted": []
+      "offerAccepted": [
+        {
+          "name": "Melanie Chan",
+          "movedAt": "2026-11-04"
+        }
+      ]
     },
     {
       "client": "PINEAPPLE AUDIO",
       "role": "PART TIME NETSUITE BOOKKEEPER",
       "hc": 1,
       "opened": "2026-10-15",
-      "days": 12,
+      "days": 25,
       "type": "New Logo",
       "initialInterview": [
         {
@@ -304,13 +305,14 @@
         {
           "name": "JOY-ANN Q. LUANSING",
           "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Marie Hail Querol",
-          "movedAt": "2026-10-21"
         }
       ],
-      "jobOffer": [],
+      "jobOffer": [
+        {
+          "name": "Marie Hail Querol",
+          "movedAt": "2026-11-04"
+        }
+      ],
       "ongoingContract": [],
       "offerAccepted": []
     },
@@ -319,7 +321,7 @@
       "role": "US ACCOUNTANT - FULL CHARGE BOOKKEEPER (QBO)",
       "hc": 1,
       "opened": "2026-10-14",
-      "days": 13,
+      "days": 26,
       "type": "New Logo",
       "initialInterview": [],
       "clientEndorsement": [
@@ -338,7 +340,7 @@
       "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
       "hc": 1,
       "opened": "2026-10-13",
-      "days": 14,
+      "days": 27,
       "type": "Backfill",
       "initialInterview": [],
       "clientEndorsement": [
@@ -371,7 +373,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (15 HC opened 10/16)",
       "hc": 15,
       "opened": "2026-10-16",
-      "days": 11,
+      "days": 24,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -471,10 +473,6 @@
         {
           "name": "BRAILLE GONZALES",
           "movedAt": "2026-10-23"
-        },
-        {
-          "name": "MAYCE BESIN TOMENIO",
-          "movedAt": "2026-10-27"
         }
       ],
       "clientInterview": [
@@ -483,15 +481,7 @@
           "movedAt": "2026-10-27"
         },
         {
-          "name": "Michael Joseph Encinares",
-          "movedAt": "2026-10-27"
-        },
-        {
           "name": "MISHELLA MARIE CATAPANG",
-          "movedAt": "2026-10-27"
-        },
-        {
-          "name": "NONELYN ALEJANDRO",
           "movedAt": "2026-10-27"
         },
         {
@@ -504,7 +494,20 @@
         }
       ],
       "jobOffer": [],
-      "ongoingContract": [],
+      "ongoingContract": [
+        {
+          "name": "MAYCE BESIN TOMENIO",
+          "movedAt": "2026-11-04"
+        },
+        {
+          "name": "Michael Joseph Encinares",
+          "movedAt": "2026-11-04"
+        },
+        {
+          "name": "NONELYN ALEJANDRO",
+          "movedAt": "2026-11-04"
+        }
+      ],
       "offerAccepted": [
         {
           "name": "PATRICH WALTER L. HARRIS",
@@ -541,7 +544,7 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "hc": 1,
       "opened": "2026-10-16",
-      "days": 11,
+      "days": 24,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -577,7 +580,7 @@
       "role": "CUSTOMER SERVICE SUPPORT",
       "hc": 1,
       "opened": "2026-10-19",
-      "days": 8,
+      "days": 21,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -608,7 +611,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
       "hc": 10,
       "opened": "2026-10-27",
-      "days": 0,
+      "days": 13,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -621,6 +624,20 @@
           "movedAt": "2026-10-27"
         }
       ]
+    },
+    {
+      "client": "DEMAND BRIDGE",
+      "role": "INTEGRATION ENGINEER (reopen)",
+      "hc": 1,
+      "opened": "2026-11-06",
+      "days": 3,
+      "type": "Backfill",
+      "initialInterview": [],
+      "clientEndorsement": [],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
     }
   ]
 }

@@ -9,8 +9,8 @@
     "open": 15,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 15,
-    "started": 8,
+    "offerAccepted": 5,
+    "started": 18,
     "paused": 1
   },
   "pausedRoles": [
@@ -44,7 +44,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 82,
       "timeToFill": 113,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "HAZELL DORIA"
     },
@@ -148,7 +148,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 11,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Patrich Walter L. Harris"
     },
@@ -161,7 +161,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 11,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Rodney A. Lugod"
     },
@@ -174,7 +174,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 11,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Earl Esparagoza"
     },
@@ -187,7 +187,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 5,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "JINO FERNANDEZ"
     },
@@ -200,7 +200,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 5,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Renaliza B. Pavo"
     },
@@ -213,7 +213,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 5,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Joan Espinosa"
     },
@@ -226,7 +226,7 @@
       "startDate": "2026-11-05",
       "timeToHire": 5,
       "timeToFill": 20,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Marionette Cortes"
     },
@@ -249,10 +249,10 @@
       "headcount": 1,
       "openedDate": "2026-10-13",
       "offerDate": "2026-10-21",
-      "startDate": "",
+      "startDate": "2026-10-23",
       "timeToHire": 8,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
+      "timeToFill": 10,
+      "stage": "Started",
       "type": "Backfill",
       "candidate": "CELESTINE B. SANTOS"
     },
@@ -330,7 +330,7 @@
       "startDate": "2026-11-03",
       "timeToHire": 3,
       "timeToFill": 7,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Carla Ross Darwin"
     }

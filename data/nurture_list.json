@@ -1,21 +1,21 @@
 {
-  "_generated": "2026-11-03",
+  "_generated": "2026-11-09",
   "_source": "https://docs.google.com/spreadsheets/d/18a_f9hO4RszZbJnJlhhvK5KIkkT-u3LWrk0fmaikJnI/edit?gid=1908017171",
-  "total": 47,
+  "total": 53,
   "stages": [
     {
       "key": "consent",
       "label": "Consent Requested",
-      "advanced": 19,
+      "advanced": 24,
       "advancedLabel": "Consent Confirmed",
-      "dropOff": 28,
+      "dropOff": 29,
       "dropOffLabel": "No Response",
       "inProgress": 0
     },
     {
       "key": "engage",
       "label": "Engagement",
-      "advanced": 18,
+      "advanced": 23,
       "advancedLabel": "Engaged (Yes)",
       "dropOff": 26,
       "dropOffLabel": "Not Interested",
@@ -25,7 +25,7 @@
     {
       "key": "interview",
       "label": "Interview",
-      "advanced": 16,
+      "advanced": 21,
       "advancedLabel": "Interview Passed",
       "dropOff": 2,
       "dropOffLabel": "Interview Failed",
@@ -34,7 +34,7 @@
     {
       "key": "nurture",
       "label": "Placement",
-      "advanced": 16,
+      "advanced": 21,
       "advancedLabel": "Placed / Nurtured",
       "dropOff": 0,
       "inProgress": 0
