@@ -20,3 +20,9 @@ Thumbs.db
 
 # Claude Code local settings (paths/hooks specific to this workstation)
 .claude/
+
+# Evidence index cache: personal data, never commit (Recruitment OS)
+data/evidence/
+
+# Firebase service-account key for the Interview Desk sync: never commit
+.secrets/

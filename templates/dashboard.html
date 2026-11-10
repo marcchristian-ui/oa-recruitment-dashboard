@@ -593,6 +593,27 @@ var CH   = {};
     <div id="saConversion" style="margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;font-size:12px;color:#4a5568;"></div>
   </div>
 
+  <!-- Section 3b: Filled, Pending Start (cross-month) -->
+  <div class="cbox" style="margin-bottom:14px;background:linear-gradient(135deg,#f0fff4 0%,#e6fffa 100%);border:1px solid #9ae6b4;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:10px;">
+      <div style="flex:1;min-width:280px;">
+        <h3 style="margin:0;color:#22543d;">&#9989; Filled, Pending Start</h3>
+        <div style="font-size:11px;color:#2d5243;margin-top:2px;">Roles where the candidate has accepted an offer, signed a contract, or has a job offer out &mdash; but hasn't physically started yet (start date is in the future or unconfirmed). These roles are <strong>not open</strong> &mdash; recruitment is done &mdash; but they still count against the pipeline until Day 1. Target start date is the Manatal Employee Details &rarr; Start Date; where blank, the tracker date needs confirmation.</div>
+      </div>
+      <div style="text-align:right;">
+        <div id="fpsCount" style="font-size:32px;font-weight:800;color:#276749;line-height:1;"></div>
+        <div style="font-size:11px;color:#2d5243;margin-top:2px;">HC awaiting start</div>
+      </div>
+    </div>
+    <div class="kg k3" id="fpsKpi" style="margin-bottom:10px;"></div>
+    <div style="overflow-y:auto;max-height:420px;">
+      <table>
+        <thead><tr><th>#</th><th>Client</th><th>Role</th><th>Candidate</th><th>Stage</th><th>Offer Accepted</th><th>Expected Start</th><th>Status</th></tr></thead>
+        <tbody id="fpsRows"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- Detail tables -->
   <div class="crow" style="margin-bottom:14px;">
     <div class="cbox">
@@ -1262,6 +1283,110 @@ function drawSomAdditional(){
   }
   document.getElementById("saSomRows").innerHTML = tblRows(somDetail);
   document.getElementById("saAddlRows").innerHTML = tblRows(addlDetail);
+
+  drawFilledPendingStart();
+}
+
+// Cross-month roll-up of every closedWon entry that is NOT physically started yet:
+// stage = "Offer Accepted" / "Ongoing Contract" / "Job Offer", OR stage = "Started"
+// but startDate is in the future. These roles are filled from a recruitment POV but
+// still count against the pipeline until Day 1.
+function drawFilledPendingStart(){
+  var today = new Date(); today.setHours(0,0,0,0);
+  function parseDate(s){ if(!s||typeof s!=="string") return null; try{var d=new Date(s); if(isNaN(d.getTime())) return null; d.setHours(0,0,0,0); return d;}catch(e){return null;} }
+  function daysBetween(a,b){ return Math.round((a-b)/86400000); }
+
+  // Gather all closedWon across Nov (payload root) + each historical month in allMonths.
+  var all = [];
+  function collect(entries, monthKey){
+    (entries||[]).forEach(function(r){
+      var stage = (r.stage||"").trim();
+      var sl = stage.toLowerCase();
+      var startD = parseDate(r.startDate);
+      // Include if (a) stage is not "Started", OR (b) stage is Started but start date is future.
+      var notStartedYet = sl.indexOf("started")<0 || (startD && startD > today);
+      if(notStartedYet){
+        all.push({
+          client:r.client||"",
+          role:r.role||"",
+          candidate:r.candidate||"—",
+          stage:stage || "Offer Accepted",
+          offerDate:r.offerDate||"",
+          startDate:r.startDate||"",
+          startD:startD,
+          hc:r.headcount||1,
+          cohortMonth:monthKey||""
+        });
+      }
+    });
+  }
+  // Current month (Nov)
+  collect(DATA.closedWon, DATA.month || "");
+  // Historical months
+  var amAll = DATA.allMonths || {};
+  Object.keys(amAll).forEach(function(mk){
+    collect((amAll[mk]||{}).closedWon, mk);
+  });
+
+  // Sort: soonest start date first, blanks last; then by client/candidate.
+  all.sort(function(a,b){
+    if(a.startD && b.startD) return a.startD - b.startD;
+    if(a.startD && !b.startD) return -1;
+    if(!a.startD && b.startD) return 1;
+    return (a.client||"").localeCompare(b.client||"") || (a.candidate||"").localeCompare(b.candidate||"");
+  });
+
+  var totalHc = all.reduce(function(s,r){return s+(r.hc||1);},0);
+  var missingStart = all.filter(function(r){return !r.startD;}).length;
+  var dueThisWeek = all.filter(function(r){
+    if(!r.startD) return false;
+    var dd = daysBetween(r.startD, today);
+    return dd>=0 && dd<=7;
+  }).length;
+  var overdue = all.filter(function(r){
+    if(!r.startD) return false;
+    return daysBetween(r.startD, today) < 0 && (r.stage||"").toLowerCase().indexOf("started")<0;
+  }).length;
+
+  document.getElementById("fpsCount").textContent = totalHc;
+  document.getElementById("fpsKpi").innerHTML =
+    kc("gr","Due this week",     dueThisWeek,"starts on/before "+ (function(){var d=new Date(today); d.setDate(d.getDate()+7); return d.toLocaleDateString("en-US",{month:"short",day:"numeric"});})()) +
+    kc("or","Start date missing",missingStart,"needs confirmation from recruiter") +
+    kc("rd","Overdue",           overdue,"start date passed but not yet marked Started");
+
+  var box = document.getElementById("fpsRows");
+  if(!all.length){
+    box.innerHTML = '<tr><td colspan="8" style="text-align:center;color:#a0aec0;padding:18px;font-style:italic;">No roles in the filled-pending-start bucket.</td></tr>';
+    return;
+  }
+  box.innerHTML = all.map(function(r,i){
+    var statusHtml;
+    if(!r.startD){
+      statusHtml = '<span class="badge bo">Start date missing</span>';
+    } else {
+      var dd = daysBetween(r.startD, today);
+      if(dd < 0){
+        statusHtml = '<span class="badge br">Overdue '+Math.abs(dd)+'d</span>';
+      } else if(dd === 0){
+        statusHtml = '<span class="badge bg">Starts TODAY</span>';
+      } else if(dd <= 7){
+        statusHtml = '<span class="badge bg">In '+dd+'d</span>';
+      } else {
+        statusHtml = '<span class="badge bb">In '+dd+'d</span>';
+      }
+    }
+    var stageBadge = sBadge(r.stage);
+    return '<tr>'+
+      '<td>'+(i+1)+'</td>'+
+      '<td>'+r.client+'</td>'+
+      '<td>'+r.role+'</td>'+
+      '<td>'+r.candidate+'</td>'+
+      '<td>'+stageBadge+'</td>'+
+      '<td>'+fd(r.offerDate)+'</td>'+
+      '<td>'+(r.startDate?fd(r.startDate):'<span style="color:#c05621;font-style:italic;">— needs entry</span>')+'</td>'+
+      '<td>'+statusHtml+'</td>'+
+    '</tr>';
+  }).join("");
 }
 
 function drawCandidateFunnel(){

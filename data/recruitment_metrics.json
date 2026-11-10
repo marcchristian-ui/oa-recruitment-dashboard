@@ -1,9 +1,9 @@
 {
  "_generated": "2026-11-09",
- "_source": "snapshots/2026-01.json..2026-11.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714 filtered client-side). 2026-11 role accounting counts 4 new win(s) and excludes 0 carry-forward row(s) already won in an earlier month.",
+ "_source": "snapshots/2026-01.json..2026-11.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714 filtered client-side). 2026-11 role accounting counts 5 new win(s) and excludes 0 carry-forward row(s) already won in an earlier month.",
  "_methodology": "MONOTONIC FUNNEL (rank roll-up) with OA/EVERGREEN/POOLING/EXCLUDE_HASHES exclusions applied. Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing Contract=5, Started=6, Failed=0. A match at rank K emits one dated event for every rank R<=K (it must have passed through them), dated by: rank1 interview_at, rank2 submitted_at, rank3 interview_at, rank4 offer_at, rank5 offer_at (fallback hired_at) - the offer_accepted date, NOT the move-to-Started date, since Manatal's hired_at fires on the Started transition and can drift days after acceptance (2026-09-23 fix) - rank6 updated_at; each falling back to updated_at when null. Events are pooled per CANDIDATE. For month M and rank R, a candidate is counted if they have any event in M at rank >= R, which makes Interviews>=Endorsed>=ClientPass>=Offers>=Hires>=Starts true by construction. YTD totals are unique candidates by max rank reached, so YTD is NOT the sum of the months. EXCLUSIONS: (a) Outsource Accelerator internal orgs 599280 and 1619851; (b) EVERGREEN REQUISITION org 1560151; (c) any job whose position_name contains 'POOLING'; (d) 10 EXCLUDE_HASHES per manatal/constants.py. Position type is derived from Manatal custom_fields.justification: 'NEW LOGO' and 'NEW REQUIREMENT' both map to New Logo (both labels are treated as one bucket - Manatal's dropdown was renamed and legacy jobs still carry the old label); 'RAMP' -> Ramp; 'BACKFILL' -> Backfill; any other value is Unclassified and excluded from positionTypes[] conversions. A candidate active on jobs of multiple types is counted in EACH type.",
  "_schema": {
-  "monthly[]": "Per-month funnel counts (interviews/endorsed/clientPass/offers/hires/starts), conversion percentages, TTF and role-flow fields from that month's snapshot. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero.",
+  "monthly[]": "Per-month funnel counts (interviews/endorsed/clientPass/offers/hires/starts), conversion percentages, TTF and role-flow fields from that month's snapshot. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero.",
   "ytdTotals": "Unique candidates reaching each rank across the full period.",
   "overallConversion": "YTD conversion percentages computed from ytdTotals.",
   "kpiSnapshot": "KPI vs target keyed by metric, each {actual, target, status, note?}. Status: green = at/above target, yellow = within 10 points below, red = further below, gray = no target or no data.",
@@ -14,13 +14,13 @@
   "dataGaps[]": "Known holes in the underlying data."
  },
  "_dataQuality": {
-  "totalMatchesFromAPI": 3644,
-  "uniqueMatchesLoaded": 3644,
-  "matchesAfterExclusions": 3099,
-  "uniqueCandidatesWithRankedEvents": 1474,
+  "totalMatchesFromAPI": 1897,
+  "uniqueMatchesLoaded": 1897,
+  "matchesAfterExclusions": 1532,
+  "uniqueCandidatesWithRankedEvents": 1478,
   "unclassifiedCandidates": 17,
   "exclusionsDropped": {
-   "oa": 505,
+   "oa": 325,
    "evergreen": 0,
    "pooling": 0,
    "exclude_hashes": 40,
@@ -41,20 +41,40 @@
    "2026-10",
    "2026-11"
   ],
+  "monthsWithSnapshots": [
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11"
+  ],
   "partialMonth": {
    "month": "2026-11",
    "daysElapsed": 9,
    "daysInMonth": 30,
-   "writtenToMonthly": true
+   "writtenToMonthly": true,
+   "hasSnapshot": true,
+   "roleDataPending": false,
+   "snapshotClosedWonRows": 5,
+   "carryForwardExcluded": 0,
+   "newWinsCounted": 5
   },
+  "closedWonCarryForward": {},
+  "agingRosterFrom": "2026-11",
   "stageFilter": "client-side (stage__in query param not trusted)",
-  "note": "Loaded 3644 match records (v19 = v17 + 2026-11-03T00+ delta); applied filter dropping 505 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 545 total; kept 3099 candidate-job matches across 2940 unique candidates. "
+  "note": "Loaded 1897 match records; applied filter dropping 325 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 365 total; kept 1532 candidate-job matches across 1478 unique candidates. NEW LOGO and NEW REQUIREMENT both bucket to 'New Logo' (Manatal dropdown value + legacy value). 17 candidates are Unclassified (their jobs' justification is neither NEW LOGO/NEW REQUIREMENT nor RAMP nor BACKFILL) and are excluded from per-type conversions but counted in overall YTD."
  },
  "period": {
   "start": "2026-01-01",
   "end": "2026-11-09",
   "generatedOn": "2026-11-09",
-  "note": "monthly[] covers Jan-Nov. Jan-Oct are closed; Nov 2026 is partial (9/30 days)."
+  "note": "monthly[] covers Jan-Nov. Jan-Oct are closed; Nov 2026 is partial (9/30 days) and has a snapshot carrying 5 new win(s) and no carry-forward rows."
  },
  "targets": {
   "interviewToEndorse": 50,
@@ -102,23 +122,7 @@
    "paused": 1,
    "stillOpen": 0,
    "totalOpenAtSnapshot": 0,
-   "monthlyTarget": 12,
-   "intToEnd_nd": {
-    "n": 77,
-    "d": 178
-   },
-   "endToHire_nd": {
-    "n": 11,
-    "d": 77
-   },
-   "intToHire_nd": {
-    "n": 11,
-    "d": 178
-   },
-   "offerToStart_nd": {
-    "n": 10,
-    "d": 11
-   }
+   "monthlyTarget": 12
   },
   {
    "month": "2026-02",
@@ -151,23 +155,7 @@
    "paused": 7,
    "stillOpen": 0,
    "totalOpenAtSnapshot": 0,
-   "monthlyTarget": 29,
-   "intToEnd_nd": {
-    "n": 81,
-    "d": 170
-   },
-   "endToHire_nd": {
-    "n": 16,
-    "d": 81
-   },
-   "intToHire_nd": {
-    "n": 16,
-    "d": 170
-   },
-   "offerToStart_nd": {
-    "n": 7,
-    "d": 18
-   }
+   "monthlyTarget": 29
   },
   {
    "month": "2026-03",
@@ -200,23 +188,7 @@
    "paused": 6,
    "stillOpen": 0,
    "totalOpenAtSnapshot": 0,
-   "monthlyTarget": 12,
-   "intToEnd_nd": {
-    "n": 102,
-    "d": 178
-   },
-   "endToHire_nd": {
-    "n": 32,
-    "d": 102
-   },
-   "intToHire_nd": {
-    "n": 32,
-    "d": 178
-   },
-   "offerToStart_nd": {
-    "n": 31,
-    "d": 32
-   }
+   "monthlyTarget": 12
   },
   {
    "month": "2026-04",
@@ -249,23 +221,7 @@
    "paused": 0,
    "stillOpen": 15,
    "totalOpenAtSnapshot": 15,
-   "monthlyTarget": 11,
-   "intToEnd_nd": {
-    "n": 69,
-    "d": 120
-   },
-   "endToHire_nd": {
-    "n": 12,
-    "d": 69
-   },
-   "intToHire_nd": {
-    "n": 12,
-    "d": 120
-   },
-   "offerToStart_nd": {
-    "n": 4,
-    "d": 12
-   }
+   "monthlyTarget": 11
   },
   {
    "month": "2026-05",
@@ -298,23 +254,7 @@
    "paused": 3,
    "stillOpen": 9,
    "totalOpenAtSnapshot": 9,
-   "monthlyTarget": 11,
-   "intToEnd_nd": {
-    "n": 70,
-    "d": 138
-   },
-   "endToHire_nd": {
-    "n": 31,
-    "d": 70
-   },
-   "intToHire_nd": {
-    "n": 31,
-    "d": 138
-   },
-   "offerToStart_nd": {
-    "n": 26,
-    "d": 32
-   }
+   "monthlyTarget": 11
   },
   {
    "month": "2026-06",
@@ -347,23 +287,7 @@
    "paused": 7,
    "stillOpen": 10,
    "totalOpenAtSnapshot": 10,
-   "monthlyTarget": 7,
-   "intToEnd_nd": {
-    "n": 59,
-    "d": 122
-   },
-   "endToHire_nd": {
-    "n": 22,
-    "d": 59
-   },
-   "intToHire_nd": {
-    "n": 22,
-    "d": 122
-   },
-   "offerToStart_nd": {
-    "n": 4,
-    "d": 23
-   }
+   "monthlyTarget": 7
   },
   {
    "month": "2026-07",
@@ -396,23 +320,7 @@
    "paused": 2,
    "stillOpen": 17,
    "totalOpenAtSnapshot": 17,
-   "monthlyTarget": 7,
-   "intToEnd_nd": {
-    "n": 96,
-    "d": 169
-   },
-   "endToHire_nd": {
-    "n": 37,
-    "d": 96
-   },
-   "intToHire_nd": {
-    "n": 37,
-    "d": 169
-   },
-   "offerToStart_nd": {
-    "n": 28,
-    "d": 38
-   }
+   "monthlyTarget": 7
   },
   {
    "month": "2026-08",
@@ -445,38 +353,22 @@
    "paused": 2,
    "stillOpen": 9,
    "totalOpenAtSnapshot": 9,
-   "monthlyTarget": 12,
-   "intToEnd_nd": {
-    "n": 89,
-    "d": 151
-   },
-   "endToHire_nd": {
-    "n": 19,
-    "d": 89
-   },
-   "intToHire_nd": {
-    "n": 19,
-    "d": 151
-   },
-   "offerToStart_nd": {
-    "n": 12,
-    "d": 20
-   }
+   "monthlyTarget": 12
   },
   {
    "month": "2026-09",
    "label": "Sep 2026",
-   "interviews": 161,
-   "endorsed": 73,
-   "clientPass": 58,
-   "offers": 21,
-   "hires": 21,
-   "starts": 6,
-   "intToEnd": 45.3,
-   "endToClientPass": 79.5,
-   "endToHire": 28.8,
-   "intToHire": 13.0,
-   "offerToStart": 28.6,
+   "interviews": 165,
+   "endorsed": 68,
+   "clientPass": 53,
+   "offers": 19,
+   "hires": 19,
+   "starts": 10,
+   "intToEnd": 41.2,
+   "endToClientPass": 77.9,
+   "endToHire": 27.9,
+   "intToHire": 11.5,
+   "offerToStart": 52.6,
    "rolesFilled": 13,
    "avgTtf": 45,
    "medianTtf": 34,
@@ -494,44 +386,28 @@
    "paused": 1,
    "stillOpen": 9,
    "totalOpenAtSnapshot": 9,
-   "monthlyTarget": 5,
-   "intToEnd_nd": {
-    "n": 73,
-    "d": 161
-   },
-   "endToHire_nd": {
-    "n": 21,
-    "d": 73
-   },
-   "intToHire_nd": {
-    "n": 21,
-    "d": 161
-   },
-   "offerToStart_nd": {
-    "n": 6,
-    "d": 21
-   }
+   "monthlyTarget": 5
   },
   {
    "month": "2026-10",
    "label": "Oct 2026",
-   "interviews": 203,
-   "endorsed": 88,
-   "clientPass": 70,
-   "offers": 32,
-   "hires": 32,
-   "starts": 12,
-   "intToEnd": 43.3,
-   "endToClientPass": 79.5,
-   "endToHire": 36.4,
-   "intToHire": 15.8,
-   "offerToStart": 37.5,
+   "interviews": 204,
+   "endorsed": 90,
+   "clientPass": 72,
+   "offers": 35,
+   "hires": 35,
+   "starts": 15,
+   "intToEnd": 44.1,
+   "endToClientPass": 80.0,
+   "endToHire": 38.9,
+   "intToHire": 17.2,
+   "offerToStart": 42.9,
    "rolesFilled": 23,
-   "avgTtf": 30,
+   "avgTtf": 29,
    "medianTtf": 20,
-   "ttfSampleSize": 19,
+   "ttfSampleSize": 20,
    "ttfBuckets": {
-    "le30": 14,
+    "le30": 15,
     "d31_60": 3,
     "d61_90": 1,
     "gt90": 1
@@ -543,23 +419,7 @@
    "paused": 1,
    "stillOpen": 15,
    "totalOpenAtSnapshot": 15,
-   "monthlyTarget": 7,
-   "intToEnd_nd": {
-    "n": 88,
-    "d": 203
-   },
-   "endToHire_nd": {
-    "n": 32,
-    "d": 88
-   },
-   "intToHire_nd": {
-    "n": 32,
-    "d": 203
-   },
-   "offerToStart_nd": {
-    "n": 12,
-    "d": 32
-   }
+   "monthlyTarget": 7
   },
   {
    "month": "2026-11",
@@ -575,7 +435,7 @@
    "endToHire": 47.1,
    "intToHire": 12.5,
    "offerToStart": 40.0,
-   "rolesFilled": 4,
+   "rolesFilled": 5,
    "avgTtf": null,
    "medianTtf": null,
    "ttfSampleSize": 0,
@@ -586,8 +446,8 @@
     "gt90": 0
    },
    "openingBacklog": 13,
-   "newOpens": 0,
-   "filled": 4,
+   "newOpens": 1,
+   "filled": 5,
    "lost": 0,
    "paused": 0,
    "stillOpen": 9,
@@ -595,125 +455,109 @@
    "monthlyTarget": 7,
    "partial": true,
    "daysElapsed": 9,
-   "daysInMonth": 30,
-   "intToEnd_nd": {
-    "n": 17,
-    "d": 64
-   },
-   "endToHire_nd": {
-    "n": 8,
-    "d": 17
-   },
-   "intToHire_nd": {
-    "n": 8,
-    "d": 64
-   },
-   "offerToStart_nd": {
-    "n": 4,
-    "d": 10
-   }
+   "daysInMonth": 30
   }
  ],
  "ytdTotals": {
-  "interviews": 1474,
-  "endorsed": 693,
-  "clientPass": 447,
+  "interviews": 1478,
+  "endorsed": 689,
+  "clientPass": 443,
   "offers": 189,
   "hires": 181,
-  "starts": 143
+  "starts": 150
  },
  "ytdRoles": {
-  "filled": 122,
+  "filled": 123,
   "lost": 15,
   "paused": 30,
-  "newOpens": 210,
+  "newOpens": 211,
   "currentlyOpen": 9,
-  "_note": "Role counts cover Jan-Nov; every month now has a snapshot. Nov 2026 contributes 4 fill(s) -- all 4 of its snapshot's closed-won rows are genuine new wins (none duplicates an earlier month), so nothing is excluded. currentlyOpen is the 2026-11 roster re-aged to 2026-11-09."
+  "_note": "Role counts cover Jan-Nov; every month now has a snapshot. Nov 2026 contributes 5 fill(s) -- all 5 of its snapshot's closed-won rows are genuine new wins (none duplicates an earlier month), so nothing is excluded. currentlyOpen is the 2026-11 roster re-aged to 2026-11-09."
  },
  "overallConversion": {
-  "interviewToEndorse": 47.0,
-  "endorseToClientPass": 64.5,
-  "clientPassToOffer": 42.3,
-  "endorseToHire": 26.1,
-  "interviewToHire": 12.3,
-  "offerToStart": 75.7,
+  "interviewToEndorse": 46.6,
+  "endorseToClientPass": 64.3,
+  "clientPassToOffer": 42.7,
+  "endorseToHire": 26.3,
+  "interviewToHire": 12.2,
+  "offerToStart": 79.4,
   "_nd": {
    "interviewToEndorse": {
-    "n": 693,
-    "d": 1474
+    "n": 689,
+    "d": 1478
    },
    "endorseToHire": {
     "n": 181,
-    "d": 693
+    "d": 689
    },
    "interviewToHire": {
     "n": 181,
-    "d": 1474
+    "d": 1478
    },
    "offerToStart": {
-    "n": 143,
+    "n": 150,
     "d": 189
    }
   }
  },
  "ttfYtd": {
-  "avgTtf": 38.4,
-  "medianTtf": 33,
-  "sampleSize": 111,
+  "avgTtf": 38.1,
+  "medianTtf": 32.5,
+  "sampleSize": 112,
   "buckets": {
-   "le30": 52,
+   "le30": 53,
    "d31_60": 42,
    "d61_90": 13,
    "gt90": 4
   },
-  "pctLe30": 46.8,
-  "pctLe60": 84.7,
-  "note": "Across Jan-Nov 2026 snapshots; months with TTF data: 2026-01, 2026-02, 2026-03, 2026-04, 2026-05, 2026-06, 2026-07, 2026-08, 2026-09, 2026-10. Nov 2026 contributes no TTF: none of its 4 new win(s) has a start date yet, so no time-to-fill can be computed for them."
+  "pctLe30": 47.3,
+  "pctLe60": 84.8,
+  "note": "Across Jan-Nov 2026 snapshots; months with TTF data: 2026-01, 2026-02, 2026-03, 2026-04, 2026-05, 2026-06, 2026-07, 2026-08, 2026-09, 2026-10. Nov 2026 contributes no TTF: none of its 5 new win(s) has a start date yet, so no time-to-fill can be computed for them."
  },
  "kpiSnapshot": {
   "intToEnd": {
-   "actual": 47.0,
+   "actual": 46.6,
    "target": 70,
-   "status": "yellow"
+   "status": "red"
   },
   "endToClientPass": {
-   "actual": 64.5,
+   "actual": 64.3,
    "target": null,
    "status": "gray",
    "note": "No target defined"
   },
   "endToHire": {
-   "actual": 26.1,
+   "actual": 26.3,
    "target": 50,
    "status": "red"
   },
   "intToHire": {
-   "actual": 12.3,
+   "actual": 12.2,
    "target": 33,
-   "status": "gray"
+   "status": "red"
   },
   "offerToStart": {
-   "actual": 75.7,
+   "actual": 79.4,
    "target": 90,
    "status": "red"
   },
   "avgTtf": {
-   "actual": 38.4,
+   "actual": 38.1,
    "target": null,
    "status": "gray",
-   "note": "No numeric target . n=111"
+   "note": "No numeric target . n=112"
   },
   "pctFilled30d": {
-   "actual": 46.8,
+   "actual": 47.3,
    "target": null,
    "status": "gray",
-   "note": "Informational . n=111"
+   "note": "Informational . n=112"
   },
   "pctFilled60d": {
-   "actual": 84.7,
+   "actual": 84.8,
    "target": null,
    "status": "gray",
-   "note": "Informational . n=111"
+   "note": "Informational . n=112"
   },
   "retention90d": {
    "actual": null,
@@ -732,24 +576,24 @@
   {
    "type": "New Logo",
    "label": "New Logo",
-   "rolesFilled": 30,
+   "rolesFilled": 31,
    "avgTtf": 57.8,
    "medianTtf": 48.0,
    "ttfSampleSize": 30,
-   "currentlyOpenRoles": 3,
-   "currentlyOpenHc": 4,
-   "intToEnd": 48.5,
-   "endToClientPass": 61.7,
-   "endToHire": 12.5,
-   "intToHire": 6.1,
-   "offerToStart": 72.2,
+   "currentlyOpenRoles": 2,
+   "currentlyOpenHc": 3,
+   "intToEnd": 48.7,
+   "endToClientPass": 62.0,
+   "endToHire": 12.4,
+   "intToHire": 6.0,
+   "offerToStart": 88.9,
    "_funnel": {
-    "interviews": 264,
-    "endorsed": 128,
-    "clientPass": 79,
+    "interviews": 265,
+    "endorsed": 129,
+    "clientPass": 80,
     "offers": 18,
     "hires": 16,
-    "starts": 13
+    "starts": 16
    }
   },
   {
@@ -761,41 +605,41 @@
    "ttfSampleSize": 63,
    "currentlyOpenRoles": 5,
    "currentlyOpenHc": 5,
-   "intToEnd": 47.2,
-   "endToClientPass": 64.8,
-   "endToHire": 29.8,
-   "intToHire": 14.1,
-   "offerToStart": 75.4,
+   "intToEnd": 46.7,
+   "endToClientPass": 64.6,
+   "endToHire": 30.4,
+   "intToHire": 14.2,
+   "offerToStart": 77.8,
    "_funnel": {
-    "interviews": 975,
-    "endorsed": 460,
-    "clientPass": 298,
-    "offers": 142,
-    "hires": 137,
-    "starts": 107
+    "interviews": 978,
+    "endorsed": 457,
+    "clientPass": 295,
+    "offers": 144,
+    "hires": 139,
+    "starts": 112
    }
   },
   {
    "type": "Backfill",
    "label": "Backfill",
    "rolesFilled": 21,
-   "avgTtf": 36.4,
-   "medianTtf": 32.0,
-   "ttfSampleSize": 18,
-   "currentlyOpenRoles": 0,
-   "currentlyOpenHc": 0,
-   "intToEnd": 42.8,
-   "endToClientPass": 68.3,
-   "endToHire": 23.8,
-   "intToHire": 10.2,
-   "offerToStart": 69.2,
+   "avgTtf": 35.1,
+   "medianTtf": 32,
+   "ttfSampleSize": 19,
+   "currentlyOpenRoles": 1,
+   "currentlyOpenHc": 1,
+   "intToEnd": 43.2,
+   "endToClientPass": 68.6,
+   "endToHire": 25.5,
+   "intToHire": 11.0,
+   "offerToStart": 77.8,
    "_funnel": {
     "interviews": 236,
-    "endorsed": 101,
-    "clientPass": 69,
-    "offers": 26,
-    "hires": 24,
-    "starts": 18
+    "endorsed": 102,
+    "clientPass": 70,
+    "offers": 27,
+    "hires": 26,
+    "starts": 21
    }
   }
  ],
@@ -823,7 +667,7 @@
   "avgDaysByType": {
    "newLogo": 28,
    "ramp": 36,
-   "backfill": null
+   "backfill": 3
   },
   "note": "Roster is the 2026-11 snapshot's open roles (newest available), with days-open recomputed live as of 2026-11-09."
  },
@@ -861,14 +705,6 @@
    "headcount": 2
   },
   {
-   "client": "PINEAPPLE AUDIO",
-   "role": "PART-TIME NETSUITE BOOKKEEPER",
-   "type": "New Logo",
-   "opened": "2026-10-14",
-   "days": 26,
-   "headcount": 1
-  },
-  {
    "client": "SIEGEL DESIGN",
    "role": "SENIOR US BOOKKEEPER",
    "type": "New Logo",
@@ -891,6 +727,14 @@
    "opened": "2026-10-16",
    "days": 24,
    "headcount": 1
+  },
+  {
+   "client": "DEMAND BRIDGE",
+   "role": "INTEGRATION ENGINEER (reopen)",
+   "type": "Backfill",
+   "opened": "2026-11-06",
+   "days": 3,
+   "headcount": 1
   }
  ],
  "insights": {
@@ -901,16 +745,16 @@
   },
   "weakestMonth": {
    "month": "Jan 2026",
-   "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). Nov 2026 is excluded as it is still mid-month.",
+   "reason": "only 11 hires on 178 interviews (6.2% Interview->Hire). Nov 2026 is excluded - it is only 9 of 30 days in.",
    "hires": 11
   },
   "ttfTrend": "Rising - avg TTF moved +8 days from 2026-05-2026-07 (30d) to 2026-08-2026-10 (38d)",
-  "pctFilled30dOverall": 46.8,
-  "pctFilled60dOverall": 84.7,
-  "longestTtfPositionType": "New Logo - 57.8d average time-to-fill (n=30), vs Backfill at 36.4d. New Logo roles take materially longer to close.",
+  "pctFilled30dOverall": 47.3,
+  "pctFilled60dOverall": 84.8,
+  "longestTtfPositionType": "New Logo - 57.8d average time-to-fill (n=30), vs Backfill at 35.1d. New Logo roles take materially longer to close.",
   "carryOverRisk": "4 of 8 currently-open roles (5 of 9 headcount) have been open more than 30 days; 0 past 60 days.",
-  "biggestBottleneck": "Endorse -> Hire at 26.1% vs a 90% target - 63.9 points short, the widest gap of any tracked conversion.",
-  "recommendedAction": "Attack Endorse -> Hire first - it is 63.9 points below its 90% target and gates every downstream stage.",
+  "biggestBottleneck": "Endorse -> Hire at 26.3% vs a 50% target - 23.7 points short, the widest gap of any tracked conversion.",
+  "recommendedAction": "Attack Endorse -> Hire first - it is 23.7 points below its 50% target and gates every downstream stage.",
   "rolesOver30": 4,
   "rolesOver60": 0,
   "currentMonthPartial": {
@@ -919,7 +763,7 @@
    "daysElapsed": 9,
    "daysInMonth": 30,
    "carryForwardExcluded": 0,
-   "note": "Nov 2026 is in monthly[] but covers only 9 of 30 days (64 interviews / 8 hires / 4 starts so far) - do not read it as a month-over-month decline. It HAS a snapshot, and all 4 of its closed-won rows are genuine new Nov 2026 wins, so filled=4 is real, not a carry-forward and not null. None has a start date yet, so Nov 2026 contributes no TTF."
+   "note": "Nov 2026 is in monthly[] but covers only 9 of 30 days (64 interviews / 8 hires / 4 starts so far) - do not read it as a month-over-month decline. It HAS a snapshot, and all 5 of its closed-won rows are genuine new Nov 2026 wins, so filled=5 is real, not a carry-forward and not null. None has a start date yet, so Nov 2026 contributes no TTF."
   },
   "_detail": {
    "bestMonthKey": "2026-07",
@@ -940,9 +784,9 @@
    ],
    "bottleneck": {
     "stage": "Endorse -> Hire",
-    "actual": 26.1,
-    "target": 90,
-    "gapPoints": 63.9
+    "actual": 26.3,
+    "target": 50,
+    "gapPoints": 23.7
    }
   }
  },
@@ -950,10 +794,10 @@
   "90-day retention is not tracked in Manatal - kpiSnapshot.retention90d.actual is null.",
   "Regularization rate is not tracked in Manatal - kpiSnapshot.regularization.actual is null.",
   "Manatal's Open API exposes only each match's CURRENT stage, so a candidate endorsed and then failed on a job collapses to rank 0 on that job; they still count if another of their matches holds rank >= 2.",
-  "CARRY-FORWARD CHECK CLEAN for 2026-11: all 4 closed-won row(s) in snapshots/2026-11.json are genuine new Nov 2026 wins -- none duplicates a (client, role, candidate) already present in an earlier month's closedWon -- so all 4 count toward ytdRoles.filled and none is excluded. None of them carries a start date or timeToFill yet, so Nov 2026 contributes no TTF point. The carry-forward dedupe remains armed for future runs.",
+  "CARRY-FORWARD CHECK CLEAN for 2026-11: all 5 closed-won row(s) in snapshots/2026-11.json are genuine new Nov 2026 wins -- none duplicates a (client, role, candidate) already present in an earlier month's closedWon -- so all 5 count toward ytdRoles.filled and none is excluded. None of them carries a start date or timeToFill yet, so Nov 2026 contributes no TTF point. The carry-forward dedupe remains armed for future runs.",
   "SNAPSHOT INVARIANTS HOLD for 2026-11: startOfMonth=13 == somCarryOver headcount (13) across 10 role(s), and totalOpen == pipeline.open (9). monthly[].openingBacklog for 2026-11 propagates startOfMonth verbatim and is not suspect.",
   "aging/oldestOpen/agingBuckets describe the 2026-11 snapshot's open roles with days-open recomputed live as of 2026-11-09, so they run ahead of the frozen snapshot values. Roles opened or closed after that snapshot was last written are NOT reflected. snapshots/2026-11.json itself was not modified.",
-  "Oct 2026 is a CLOSED month and participates in weakestMonth and the TTF trend. Its role counts come from snapshots/2026-10.json as last written; 19 of 23 closed-won roles carry a timeToFill (4 have no start date yet and are excluded from TTF).",
+  "Oct 2026 is a CLOSED month and participates in weakestMonth and the TTF trend. Its role counts come from snapshots/2026-10.json as last written; 20 of 23 closed-won roles carry a timeToFill (3 have no start date yet and are excluded from TTF).",
   "Sep 2026 has TTF data for 11 of 13 closed-won roles; 2 role(s) have no start date yet and are excluded from TTF.",
   "YTD totals are unique-candidate counts and deliberately do not equal the sum of the monthly columns.",
   "Funnel counts are keyed on Manatal candidate id, so one person held under two candidate records counts twice. A known instance on MIRION (NUCMED) BILLING ANALYST inflates that role's funnel by 1.",

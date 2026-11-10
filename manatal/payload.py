@@ -918,6 +918,7 @@ def build_payload(df: pd.DataFrame, job_offer_matches: list[dict] | None = None,
         "nurtureList": _load_nurture_list(),
         "recruitmentMetrics": _load_recruitment_metrics(),
         "recruiterMetrics": _load_recruiter_metrics(),
+        "candidateScoring": _load_candidate_scoring(),
     }
     return payload, months, default_sel
 
@@ -961,5 +962,20 @@ def _load_nurture_list() -> dict:
     try:
         with p.open("r", encoding="utf-8-sig") as f:
             return json.load(f)
+    except Exception:
+        return {}
+
+
+def _load_candidate_scoring() -> dict:
+    """Candidate Scoring Framework v1.1 metrics + gate exceptions from data/scoring_tracker.json.
+    Written by scripts/scoring_sync.py (IDs only). Row-level data is dropped to keep the payload small."""
+    p = Path(__file__).parent.parent / "data" / "scoring_tracker.json"
+    if not p.exists():
+        return {}
+    try:
+        with p.open("r", encoding="utf-8-sig") as f:
+            d = json.load(f)
+        d.pop("rows", None)
+        return d
     except Exception:
         return {}
