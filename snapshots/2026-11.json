@@ -1,15 +1,15 @@
 {
-  "totalOpen": 9,
-  "startOfMonth": 13,
-  "startOfMonthRoles": 10,
+  "totalOpen": 12,
+  "startOfMonth": 16,
+  "startOfMonthRoles": 11,
   "additionalInMonth": 1,
   "additionalInMonthRoles": 1,
   "monthlyTarget": 7,
   "pipeline": {
-    "open": 9,
+    "open": 12,
     "forJobOffer": 1,
-    "ongoingContract": 3,
-    "offerAccepted": 1,
+    "ongoingContract": 0,
+    "offerAccepted": 4,
     "started": 0,
     "paused": 0
   },
@@ -22,7 +22,7 @@
       "headcount": 1,
       "openedDate": "2026-10-09",
       "offerDate": "2026-11-04",
-      "startDate": "",
+      "startDate": "2026-11-12",
       "timeToHire": 26,
       "timeToFill": null,
       "stage": "Offer Accepted",
@@ -38,7 +38,7 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Ongoing Contract",
+      "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Mayce Besin Tomenio"
     },
@@ -51,7 +51,7 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Ongoing Contract",
+      "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Michael Joseph Encinares"
     },
@@ -64,7 +64,7 @@
       "startDate": "",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Ongoing Contract",
+      "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Nonelyn Alejandro"
     },
@@ -175,6 +175,16 @@
       "days": 31,
       "type": "Ramp",
       "status": "won-in-month"
+    },
+    {
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "client": "ADAUGEO",
+      "headcount": 3,
+      "status": "active",
+      "type": "Ramp",
+      "opened": "2026-10-09",
+      "days": 32,
+      "hash": "8XR7975R"
     }
   ],
   "business": {
@@ -239,6 +249,15 @@
         "opened": "2026-10-16",
         "days": 24,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 32,
+        "headcount": 3,
+        "hash": "8XR7975R"
       }
     ],
     "backfillJobs": [
@@ -257,9 +276,9 @@
     "avgRamp": 36,
     "avgBackfill": 3,
     "fresh": 1,
-    "normal": 0,
-    "aging": 4,
-    "critical": 3,
+    "normal": 3,
+    "aging": 6,
+    "critical": 2,
     "jobs": [
       {
         "role": "PART-TIME E-COMMERCE SPECIALIST",
@@ -324,11 +343,19 @@
         "opened": "2026-11-06",
         "days": 3,
         "headcount": 1
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 32,
+        "headcount": 3
       }
     ]
   },
   "avgTimeToHire": 25,
   "avgTimeToFill": 0,
-  "activeRequisitions": 9,
+  "activeRequisitions": 12,
   "activeRequisitionsRoles": 8
 }
