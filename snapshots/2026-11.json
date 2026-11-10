@@ -101,7 +101,8 @@
       "opened": "2026-09-22",
       "days": 48,
       "type": "Ramp",
-      "status": "active"
+      "status": "active",
+      "hash": "5W8XW6R3"
     },
     {
       "client": "C3 INGENUITY",
@@ -120,7 +121,8 @@
       "opened": "2026-10-02",
       "days": 38,
       "type": "Ramp",
-      "status": "active"
+      "status": "active",
+      "hash": "X98R5V8R"
     },
     {
       "client": "PARISA WANG",
@@ -129,7 +131,8 @@
       "opened": "2026-10-09",
       "days": 31,
       "type": "New Logo",
-      "status": "active"
+      "status": "active",
+      "hash": "V68579W6"
     },
     {
       "client": "ADAUGEO",
@@ -158,7 +161,8 @@
       "opened": "2026-10-14",
       "days": 26,
       "type": "New Logo",
-      "status": "active"
+      "status": "active",
+      "hash": "7X7YVW4X"
     },
     {
       "client": "BLUESKY",
