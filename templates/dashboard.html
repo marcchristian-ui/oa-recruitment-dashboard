@@ -144,7 +144,7 @@ var CH   = {};
   <details id="somDetails" style="margin:-6px 0 18px;background:#fff;border:1px solid #e2e8f0;border-radius:10px;">
     <summary style="cursor:pointer;padding:12px 16px;font-size:12px;font-weight:700;color:#3182ce;text-transform:uppercase;letter-spacing:.5px;">View carry-over roles</summary>
     <div style="padding:4px 16px 12px;">
-      <table><thead><tr><th>#</th><th>Role</th><th>Job Client</th><th>HC</th><th>Type</th><th>Opened</th><th>Age</th><th>Status</th></tr></thead>
+      <table><thead><tr><th>#</th><th>Job Ref</th><th>Role</th><th>Job Client</th><th>HC</th><th>Type</th><th>Opened</th><th>Age</th><th>Status</th></tr></thead>
       <tbody id="somRows"></tbody></table>
     </div>
   </details>
@@ -1915,11 +1915,14 @@ function drawOverview(){
   var somDetails=document.getElementById("somDetails");
   if(somTbody){
     if(somList.length===0){
-      somTbody.innerHTML='<tr><td colspan="8" style="text-align:center;color:#a0aec0;padding:18px;font-style:italic;">No carry-over roles for '+moLabel()+'</td></tr>';
+      somTbody.innerHTML='<tr><td colspan="9" style="text-align:center;color:#a0aec0;padding:18px;font-style:italic;">No carry-over roles for '+moLabel()+'</td></tr>';
     } else {
       somTbody.innerHTML=somList.map(function(r,i){
-        var statusLabel=r.status==="on_hold"?'<span class="badge" style="background:#fef3c7;color:#92400e;">Paused</span>':(r.status==="active"?'<span class="badge" style="background:#c6f6d5;color:#22543d;">Open</span>':r.status);
-        return '<tr><td>'+(i+1)+'</td><td>'+(r.role||"")+'</td><td>'+(r.client||"")+'</td><td>'+(r.headcount||1)+'</td><td>'+(r.type||"")+'</td><td>'+(r.opened||"")+'</td><td>'+(r.days||0)+'d</td><td>'+statusLabel+'</td></tr>';
+        var statusLabel=r.status==="on_hold"?'<span class="badge" style="background:#fef3c7;color:#92400e;">Paused</span>':(r.status==="active"?'<span class="badge" style="background:#c6f6d5;color:#22543d;">Open</span>':(r.status==="won-in-month"?'<span class="badge" style="background:#e9d8fd;color:#553c9a;">Won in Month</span>':(r.status==="won"?'<span class="badge" style="background:#c6f6d5;color:#22543d;">Won</span>':r.status)));
+        var ref = r.hash
+          ? '<code style="background:#edf2f7;padding:2px 6px;border-radius:3px;font-size:10px;color:#2d3748;">'+r.hash+'</code>'
+          : '<span style="color:#cbd5e0;">—</span>';
+        return '<tr><td>'+(i+1)+'</td><td>'+ref+'</td><td>'+(r.role||"")+'</td><td>'+(r.client||"")+'</td><td style="text-align:center;font-weight:600;">'+(r.headcount||1)+'</td><td>'+(r.type||"")+'</td><td>'+(r.opened||"")+'</td><td>'+(r.days||0)+'d</td><td>'+statusLabel+'</td></tr>';
       }).join("");
     }
   }
