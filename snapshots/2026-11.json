@@ -9,8 +9,8 @@
     "open": 12,
     "forJobOffer": 1,
     "ongoingContract": 0,
-    "offerAccepted": 4,
-    "started": 0,
+    "offerAccepted": 3,
+    "started": 1,
     "paused": 0
   },
   "pausedRoles": [],
@@ -48,10 +48,10 @@
       "headcount": 1,
       "openedDate": "2026-10-09",
       "offerDate": "2026-11-04",
-      "startDate": "",
+      "startDate": "2026-11-05",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Michael Joseph Encinares"
     },

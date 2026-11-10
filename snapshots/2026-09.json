@@ -9,8 +9,8 @@
     "open": 9,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 2,
-    "started": 11,
+    "offerAccepted": 0,
+    "started": 13,
     "paused": 2
   },
   "pausedRoles": [
@@ -201,10 +201,10 @@
       "headcount": 1,
       "openedDate": "2026-09-14",
       "offerDate": "2026-09-25",
-      "startDate": "",
+      "startDate": "2026-10-08",
       "timeToHire": 11,
       "timeToFill": null,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Backfill",
       "candidate": "JAMES KITH S. MACALUA"
     },
@@ -214,10 +214,10 @@
       "headcount": 1,
       "openedDate": "2026-09-01",
       "offerDate": "2026-09-29",
-      "startDate": "",
+      "startDate": "2026-10-12",
       "timeToHire": 28,
       "timeToFill": null,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "JEFRY CRUZ"
     }
