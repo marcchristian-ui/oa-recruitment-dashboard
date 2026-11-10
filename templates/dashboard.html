@@ -608,7 +608,7 @@ var CH   = {};
     <div class="kg k3" id="fpsKpi" style="margin-bottom:10px;"></div>
     <div style="overflow-y:auto;max-height:420px;">
       <table>
-        <thead><tr><th>#</th><th>Client</th><th>Role</th><th>Candidate</th><th>Stage</th><th>Offer Accepted</th><th>Expected Start</th><th>Status</th></tr></thead>
+        <thead><tr><th>#</th><th>Job Ref</th><th>HC</th><th>Client</th><th>Role</th><th>Candidate</th><th>Stage</th><th>Offer Accepted</th><th>Expected Start</th><th>Status</th></tr></thead>
         <tbody id="fpsRows"></tbody>
       </table>
     </div>
@@ -1331,6 +1331,8 @@ function drawFilledPendingStart(){
         startDate:r.startDate||"",
         startD:startD,
         hc:r.headcount||1,
+        jobHash:r.jobHash||"",
+        jobHC:r.jobHC||null,
         cohortMonth:monthKey||""
       });
     });
@@ -1372,7 +1374,7 @@ function drawFilledPendingStart(){
 
   var box = document.getElementById("fpsRows");
   if(!all.length){
-    box.innerHTML = '<tr><td colspan="8" style="text-align:center;color:#a0aec0;padding:18px;font-style:italic;">No roles in the filled-pending-start bucket.</td></tr>';
+    box.innerHTML = '<tr><td colspan="10" style="text-align:center;color:#a0aec0;padding:18px;font-style:italic;">No roles in the filled-pending-start bucket.</td></tr>';
     return;
   }
   box.innerHTML = all.map(function(r,i){
@@ -1392,8 +1394,16 @@ function drawFilledPendingStart(){
       }
     }
     var stageBadge = sBadge(r.stage);
+    var jobRefCell = r.jobHash
+      ? '<code style="background:#edf2f7;padding:2px 6px;border-radius:3px;font-size:10px;color:#2d3748;">'+r.jobHash+'</code>'
+      : '<span style="color:#cbd5e0;">—</span>';
+    var hcCell = (r.jobHC!=null)
+      ? '<span style="font-weight:600;color:#2d3748;">'+r.jobHC+'</span>'
+      : '<span style="color:#cbd5e0;">—</span>';
     return '<tr>'+
       '<td>'+(i+1)+'</td>'+
+      '<td>'+jobRefCell+'</td>'+
+      '<td style="text-align:center;">'+hcCell+'</td>'+
       '<td>'+r.client+'</td>'+
       '<td>'+r.role+'</td>'+
       '<td>'+r.candidate+'</td>'+

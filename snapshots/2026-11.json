@@ -27,7 +27,9 @@
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Melanie Chan"
+      "candidate": "Melanie Chan",
+      "jobHash": "Y68WY875",
+      "jobHC": 1
     },
     {
       "client": "ADAUGEO",
@@ -40,7 +42,9 @@
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Mayce Besin Tomenio"
+      "candidate": "Mayce Besin Tomenio",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -53,7 +57,9 @@
       "timeToFill": null,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Michael Joseph Encinares"
+      "candidate": "Michael Joseph Encinares",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -66,7 +72,9 @@
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Nonelyn Alejandro"
+      "candidate": "Nonelyn Alejandro",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "PINEAPPLE AUDIO",
@@ -129,7 +137,8 @@
       "opened": "2026-10-09",
       "days": 31,
       "type": "Ramp",
-      "status": "won-in-month"
+      "status": "won-in-month",
+      "hash": "Y68WY875"
     },
     {
       "client": "PINEAPPLE AUDIO",
@@ -174,7 +183,8 @@
       "opened": "2026-10-09",
       "days": 31,
       "type": "Ramp",
-      "status": "won-in-month"
+      "status": "won-in-month",
+      "hash": "Y676VV35"
     },
     {
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",

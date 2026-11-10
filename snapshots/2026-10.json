@@ -72,7 +72,9 @@
       "timeToFill": 16,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Edmarie Alcazar"
+      "candidate": "Edmarie Alcazar",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "SolCo (Solution Consultants ICT)",
@@ -98,7 +100,9 @@
       "timeToFill": 23,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Allysa Batulan"
+      "candidate": "Allysa Batulan",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "ADAUGEO",
@@ -111,7 +115,9 @@
       "timeToFill": 23,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Dianne Pozalida"
+      "candidate": "Dianne Pozalida",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "ADAUGEO",
@@ -137,7 +143,9 @@
       "timeToFill": 23,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Redy Bonnie Rarang"
+      "candidate": "Redy Bonnie Rarang",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "ADAUGEO",
@@ -150,7 +158,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Patrich Walter L. Harris"
+      "candidate": "Patrich Walter L. Harris",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "ADAUGEO",
@@ -163,7 +173,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Rodney A. Lugod"
+      "candidate": "Rodney A. Lugod",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -176,7 +188,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Earl Esparagoza"
+      "candidate": "Earl Esparagoza",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -189,7 +203,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "JINO FERNANDEZ"
+      "candidate": "JINO FERNANDEZ",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -202,7 +218,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Renaliza B. Pavo"
+      "candidate": "Renaliza B. Pavo",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -215,7 +233,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Joan Espinosa"
+      "candidate": "Joan Espinosa",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -228,7 +248,9 @@
       "timeToFill": 20,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Marionette Cortes"
+      "candidate": "Marionette Cortes",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -241,7 +263,9 @@
       "timeToFill": 15,
       "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Kenneth Ramos"
+      "candidate": "Kenneth Ramos",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "MIRION",
@@ -280,7 +304,9 @@
       "timeToFill": 13,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Bryan Namli"
+      "candidate": "Bryan Namli",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     },
     {
       "client": "ADAUGEO",
@@ -293,7 +319,9 @@
       "timeToFill": null,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "John Paul Bucao Delaraga"
+      "candidate": "John Paul Bucao Delaraga",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -306,7 +334,9 @@
       "timeToFill": null,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Mary Grace Vedana"
+      "candidate": "Mary Grace Vedana",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -319,7 +349,9 @@
       "timeToFill": null,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Braille Gonzales"
+      "candidate": "Braille Gonzales",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     },
     {
       "client": "ADAUGEO",
@@ -332,7 +364,9 @@
       "timeToFill": 7,
       "stage": "Started",
       "type": "Ramp",
-      "candidate": "Carla Ross Darwin"
+      "candidate": "Carla Ross Darwin",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     }
   ],
   "inOfferRoles": [],
