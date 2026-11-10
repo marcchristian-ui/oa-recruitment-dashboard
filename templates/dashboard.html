@@ -1297,35 +1297,51 @@ function drawFilledPendingStart(){
   function daysBetween(a,b){ return Math.round((a-b)/86400000); }
 
   // Gather all closedWon across Nov (payload root) + each historical month in allMonths.
+  // Stale-data guard for historical months only: require future startDate OR
+  // blank startDate with offer accepted within last 60 days.
   var all = [];
-  function collect(entries, monthKey){
+  var curMonthKey = SEL || DATA.month || "";
+  function collect(entries, monthKey, isHistorical){
     (entries||[]).forEach(function(r){
       var stage = (r.stage||"").trim();
       var sl = stage.toLowerCase();
       var startD = parseDate(r.startDate);
-      // Include if (a) stage is not "Started", OR (b) stage is Started but start date is future.
+      var offerD = parseDate(r.offerDate);
+
       var notStartedYet = sl.indexOf("started")<0 || (startD && startD > today);
-      if(notStartedYet){
-        all.push({
-          client:r.client||"",
-          role:r.role||"",
-          candidate:r.candidate||"—",
-          stage:stage || "Offer Accepted",
-          offerDate:r.offerDate||"",
-          startDate:r.startDate||"",
-          startD:startD,
-          hc:r.headcount||1,
-          cohortMonth:monthKey||""
-        });
+      if(!notStartedYet) return;
+
+      if(isHistorical){
+        // Require either future startDate OR blank with recent offer
+        var pass = false;
+        if(startD && startD >= today) pass = true;
+        else if(!startD && offerD){
+          var ageDays = Math.round((today - offerD)/86400000);
+          if(ageDays <= 60) pass = true;
+        }
+        if(!pass) return;
       }
+
+      all.push({
+        client:r.client||"",
+        role:r.role||"",
+        candidate:r.candidate||"—",
+        stage:stage || "Offer Accepted",
+        offerDate:r.offerDate||"",
+        startDate:r.startDate||"",
+        startD:startD,
+        hc:r.headcount||1,
+        cohortMonth:monthKey||""
+      });
     });
   }
   // Current month (Nov)
-  collect(DATA.closedWon, DATA.month || "");
-  // Historical months
+  collect(DATA.closedWon, curMonthKey, false);
+  // Historical months — with stale guard
   var amAll = DATA.allMonths || {};
   Object.keys(amAll).forEach(function(mk){
-    collect((amAll[mk]||{}).closedWon, mk);
+    if(mk >= curMonthKey) return;
+    collect((amAll[mk]||{}).closedWon, mk, true);
   });
 
   // Sort: soonest start date first, blanks last; then by client/candidate.
@@ -1835,8 +1851,52 @@ function drawOverview(){
   var addl=DATA.additionalInMonth||0;
   var addlR=DATA.additionalInMonthRoles||0;
   var tgt=DATA.monthlyTarget||0;
+
+  // Prior-month HC that is "hired on our end but hasn't started yet" — these
+  // candidates still count against the active workload even though their
+  // requisition opened in an earlier cohort. Counted ONLY from months before
+  // SEL so we don't double-count the current month's pending-start HC
+  // (which is already inside `som` and already shown in the Nov wins).
+  //
+  // Guard against stale snapshots: only include if startDate is in the future,
+  // OR startDate is blank AND the offer was accepted within the last 60 days.
+  // Without this, historical months with never-promoted OAs (whose candidates
+  // have long since started) would inflate the count.
+  var priorPendingHc = 0, priorPendingRoles = 0;
+  (function(){
+    var today = new Date(); today.setHours(0,0,0,0);
+    function pd(s){ if(!s||typeof s!=="string") return null; try{var d=new Date(s); if(isNaN(d.getTime())) return null; d.setHours(0,0,0,0); return d;}catch(e){return null;} }
+    var am = DATA.allMonths || {};
+    Object.keys(am).forEach(function(mk){
+      if(mk >= (SEL||"")) return;  // skip current + future months
+      ((am[mk]||{}).closedWon||[]).forEach(function(r){
+        var sl = (r.stage||"").toLowerCase();
+        if(sl.indexOf("started")>=0) return;  // already marked started — not pending
+        var sd = pd(r.startDate);
+        var od = pd(r.offerDate);
+        var include = false;
+        if(sd && sd >= today) include = true;
+        else if(!sd && od){
+          var ageDays = Math.round((today - od)/86400000);
+          if(ageDays <= 60) include = true;
+        }
+        if(include){
+          priorPendingHc += (r.headcount||1);
+          priorPendingRoles += 1;
+        }
+      });
+    });
+  })();
+
+  var combinedHc = som + priorPendingHc;
+  var combinedRoles = somR + priorPendingRoles;
+  var somSubtitle = (priorPendingHc > 0)
+    ? (somR+' SoM role(s) + '+priorPendingRoles+' pending-start from prior month(s) = '+combinedHc+' HC in play')
+    : (somR+' role(s) carried over, '+som+' total HC');
+  var somDisplay = (priorPendingHc > 0) ? combinedHc : som;
+
   document.getElementById("monthSnap").innerHTML=
-    kc("bl","Start-of-Month Open (HC)",som,somR+" role(s) carried over, "+som+" total HC")+
+    kc("bl","Start-of-Month Open (HC)",somDisplay,somSubtitle)+
     kc("or","Additional This Month (HC)",addl,addlR+" role(s) opened in "+moLabel()+", "+addl+" total HC")+
     kc("pu","Monthly Target (70%)",tgt,"Target hires for "+moLabel());
 
