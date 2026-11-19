@@ -9,7 +9,7 @@
     "open": 15,
     "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 2,
+    "offerAccepted": 1,
     "started": 21,
     "paused": 1
   },
@@ -32,6 +32,18 @@
       "lostDate": "2026-10-19",
       "reason": "Client hired locally",
       "type": "Backfill"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-16",
+      "lostDate": "2026-11-13",
+      "reason": "Candidate withdrew after accepting offer (Y676VV35)",
+      "candidate": "Marionette Cortes",
+      "type": "Ramp",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     }
   ],
   "closedWon": [
@@ -239,21 +251,6 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-16",
-      "offerDate": "2026-10-21",
-      "startDate": "2026-11-05",
-      "timeToHire": 5,
-      "timeToFill": 20,
-      "stage": "Started",
-      "type": "Ramp",
-      "candidate": "Marionette Cortes",
-      "jobHash": "Y676VV35",
-      "jobHC": 13
-    },
-    {
-      "client": "ADAUGEO",
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (10 HC opened 10/27)",
       "headcount": 1,
       "openedDate": "2026-10-27",
@@ -261,7 +258,7 @@
       "startDate": "2026-11-11",
       "timeToHire": 0,
       "timeToFill": 15,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Kenneth Ramos",
       "jobHash": "5W8593W3",
@@ -395,6 +392,20 @@
       "type": "Ramp",
       "candidate": "Krishian C. Quiambao",
       "reason": "Candidate withdrew after on-going contract acceptance"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-09",
+      "offerDate": "2026-10-21",
+      "withdrawnDate": "2026-11-13",
+      "priorStage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Marionette Cortes",
+      "reason": "Candidate withdrew after accepting offer",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
     }
   ],
   "somCarryOver": [

@@ -2,19 +2,42 @@
   "totalOpen": 12,
   "startOfMonth": 16,
   "startOfMonthRoles": 11,
-  "additionalInMonth": 1,
-  "additionalInMonthRoles": 1,
-  "monthlyTarget": 7,
+  "additionalInMonth": 4,
+  "additionalInMonthRoles": 4,
+  "monthlyTarget": 14,
   "pipeline": {
     "open": 12,
     "forJobOffer": 1,
     "ongoingContract": 0,
-    "offerAccepted": 3,
+    "offerAccepted": 4,
     "started": 1,
     "paused": 0
   },
   "pausedRoles": [],
-  "closedLostRoles": [],
+  "closedLostRoles": [
+    {
+      "client": "SIEGEL DESIGN",
+      "role": "US ARCHITECTURAL FULL CHARGE BOOKKEEPER (QBO)",
+      "headcount": 1,
+      "openedDate": "2026-10-14",
+      "lostDate": "2026-11-17",
+      "type": "New Logo",
+      "reason": "Client closed the requirement (Manatal status=lost 2026-11-17)",
+      "jobHash": "7X7YVW4X"
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-09",
+      "lostDate": "2026-11-12",
+      "reason": "Candidate withdrew after accepting offer (Y676VV35)",
+      "candidate": "Michael Joseph Encinares",
+      "type": "Ramp",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
+    }
+  ],
   "closedWon": [
     {
       "client": "ADAUGEO",
@@ -25,7 +48,7 @@
       "startDate": "2026-11-12",
       "timeToHire": 26,
       "timeToFill": null,
-      "stage": "Offer Accepted",
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Melanie Chan",
       "jobHash": "Y68WY875",
@@ -43,21 +66,6 @@
       "stage": "Offer Accepted",
       "type": "Ramp",
       "candidate": "Mayce Besin Tomenio",
-      "jobHash": "Y676VV35",
-      "jobHC": 13
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-09",
-      "offerDate": "2026-11-04",
-      "startDate": "2026-11-05",
-      "timeToHire": 26,
-      "timeToFill": null,
-      "stage": "Started",
-      "type": "Ramp",
-      "candidate": "Michael Joseph Encinares",
       "jobHash": "Y676VV35",
       "jobHC": 13
     },
@@ -85,21 +93,51 @@
       "startDate": "",
       "timeToHire": 21,
       "timeToFill": null,
-      "stage": "Job Offer",
+      "stage": "Offer Accepted",
       "type": "New Logo",
       "candidate": "Marie Hail Querol"
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST (late-admission req 4524882)",
+      "headcount": 1,
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-11-09",
+      "startDate": "",
+      "timeToHire": 13,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Angelina Pastrana",
+      "jobHash": "8XR33R4R",
+      "jobHC": 1
     }
   ],
   "inOfferRoles": [],
   "ongoingContractRoles": [],
-  "withdrawals": [],
+  "withdrawals": [
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 1,
+      "openedDate": "2026-10-09",
+      "offerDate": "2026-11-04",
+      "withdrawnDate": "2026-11-12",
+      "priorStage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Michael Joseph Encinares",
+      "reason": "Candidate withdrew after accepting offer",
+      "jobHash": "Y676VV35",
+      "jobHC": 13
+    }
+  ],
   "somCarryOver": [
     {
       "client": "GAVBIZ LTD",
       "role": "PART-TIME E-COMMERCE SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-22",
-      "days": 48,
+      "days": 56,
       "type": "Ramp",
       "status": "active",
       "hash": "5W8XW6R3"
@@ -109,7 +147,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 47,
+      "days": 55,
       "type": "Ramp",
       "status": "active",
       "hash": "V68R7378"
@@ -119,7 +157,7 @@
       "role": "BILLING ANALYST (NucMed-specific)",
       "headcount": 1,
       "opened": "2026-10-02",
-      "days": 38,
+      "days": 46,
       "type": "Ramp",
       "status": "active",
       "hash": "X98R5V8R"
@@ -129,7 +167,7 @@
       "role": "E-COMMERCE OPERATIONS MANAGER",
       "headcount": 2,
       "opened": "2026-10-09",
-      "days": 31,
+      "days": 39,
       "type": "New Logo",
       "status": "active",
       "hash": "V68579W6"
@@ -139,7 +177,7 @@
       "role": "REFERRAL & PRIOR AUTHORIZATION MANAGER",
       "headcount": 1,
       "opened": "2026-10-09",
-      "days": 31,
+      "days": 39,
       "type": "Ramp",
       "status": "won-in-month",
       "hash": "Y68WY875"
@@ -149,7 +187,7 @@
       "role": "PART-TIME NETSUITE BOOKKEEPER",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 26,
+      "days": 34,
       "type": "New Logo",
       "status": "won-in-month",
       "hash": "7X7YRY6X"
@@ -159,9 +197,9 @@
       "role": "SENIOR US BOOKKEEPER",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 26,
+      "days": 34,
       "type": "New Logo",
-      "status": "active",
+      "status": "lost-in-month",
       "hash": "7X7YVW4X"
     },
     {
@@ -169,7 +207,7 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "headcount": 1,
       "opened": "2026-10-16",
-      "days": 24,
+      "days": 32,
       "type": "Ramp",
       "status": "active",
       "hash": "X97956W3"
@@ -179,7 +217,7 @@
       "role": "CUSTOMER SERVICE SUPPORT",
       "headcount": 1,
       "opened": "2026-10-16",
-      "days": 24,
+      "days": 32,
       "type": "Ramp",
       "status": "active",
       "hash": "V676W458"
@@ -189,7 +227,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 3,
       "opened": "2026-10-09",
-      "days": 31,
+      "days": 39,
       "type": "Ramp",
       "status": "won-in-month",
       "hash": "Y676VV35"
@@ -201,30 +239,23 @@
       "status": "active",
       "type": "Ramp",
       "opened": "2026-10-09",
-      "days": 32,
+      "days": 39,
       "hash": "8XR7975R"
     }
   ],
   "business": {
-    "newLogoCount": 3,
-    "rampCount": 5,
-    "backfillCount": 1,
+    "newLogoCount": 2,
+    "rampCount": 10,
+    "backfillCount": 2,
     "newLogoJobs": [
       {
         "role": "E-COMMERCE OPERATIONS MANAGER",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 31,
-        "headcount": 2
-      },
-      {
-        "role": "SENIOR US BOOKKEEPER",
-        "client": "SIEGEL DESIGN",
-        "type": "New Logo",
-        "opened": "2026-10-14",
-        "days": 26,
-        "headcount": 1
+        "days": 41,
+        "headcount": 2,
+        "hash": "V68579W6"
       }
     ],
     "rampJobs": [
@@ -233,49 +264,72 @@
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-22",
-        "days": 48,
-        "headcount": 1
+        "days": 58,
+        "headcount": 1,
+        "hash": "5W8XW6R3"
       },
       {
         "role": "HUBSPOT CRM COORDINATOR",
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 47,
-        "headcount": 1
+        "days": 57,
+        "headcount": 1,
+        "hash": "V68R7378"
       },
       {
         "role": "BILLING ANALYST (NucMed-specific)",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 38,
-        "headcount": 1
+        "days": 48,
+        "headcount": 1,
+        "hash": "X98R5V8R"
       },
       {
         "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 24,
-        "headcount": 1
+        "days": 34,
+        "headcount": 1,
+        "hash": "X97956W3"
       },
       {
         "role": "CUSTOMER SERVICE SUPPORT",
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 24,
-        "headcount": 1
+        "days": 34,
+        "headcount": 1,
+        "hash": "V676W458"
       },
       {
         "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 32,
+        "days": 41,
         "headcount": 3,
         "hash": "8XR7975R"
+      },
+      {
+        "role": "BILLING ANALYST (late-admission req 4524882, opened 2026-10-27)",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-10-27",
+        "days": 23,
+        "headcount": 1,
+        "hash": "8XR33R4R"
+      },
+      {
+        "role": "BILLING ANALYST (new req 4571755)",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-11-10",
+        "days": 9,
+        "headcount": 1,
+        "hash": "5W7984R3"
       }
     ],
     "backfillJobs": [
@@ -284,26 +338,36 @@
         "client": "DEMAND BRIDGE",
         "type": "Backfill",
         "opened": "2026-11-06",
-        "days": 3,
-        "headcount": 1
+        "days": 13,
+        "headcount": 1,
+        "hash": "W3957Y66"
+      },
+      {
+        "role": "JUNIOR MECHANICAL DESIGN ENGINEER",
+        "client": "JCPS",
+        "type": "Backfill",
+        "opened": "2026-11-18",
+        "days": 1,
+        "headcount": 1,
+        "hash": "5W783R6R"
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 28,
-    "avgRamp": 36,
-    "avgBackfill": 3,
-    "fresh": 1,
-    "normal": 3,
-    "aging": 6,
-    "critical": 2,
+    "avgNewLogo": 39,
+    "avgRamp": 43,
+    "avgBackfill": 6,
+    "fresh": 2,
+    "normal": 0,
+    "aging": 4,
+    "critical": 3,
     "jobs": [
       {
         "role": "PART-TIME E-COMMERCE SPECIALIST",
         "client": "GAVBIZ LTD",
         "type": "Ramp",
         "opened": "2026-09-22",
-        "days": 48,
+        "days": 56,
         "headcount": 1
       },
       {
@@ -311,7 +375,7 @@
         "client": "C3 INGENUITY",
         "type": "Ramp",
         "opened": "2026-09-23",
-        "days": 47,
+        "days": 55,
         "headcount": 1
       },
       {
@@ -319,7 +383,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-02",
-        "days": 38,
+        "days": 46,
         "headcount": 1
       },
       {
@@ -327,23 +391,15 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 31,
+        "days": 39,
         "headcount": 2
-      },
-      {
-        "role": "SENIOR US BOOKKEEPER",
-        "client": "SIEGEL DESIGN",
-        "type": "New Logo",
-        "opened": "2026-10-14",
-        "days": 26,
-        "headcount": 1
       },
       {
         "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 24,
+        "days": 32,
         "headcount": 1
       },
       {
@@ -351,7 +407,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 24,
+        "days": 32,
         "headcount": 1
       },
       {
@@ -359,7 +415,7 @@
         "client": "DEMAND BRIDGE",
         "type": "Backfill",
         "opened": "2026-11-06",
-        "days": 3,
+        "days": 11,
         "headcount": 1
       },
       {
@@ -367,13 +423,24 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 32,
+        "days": 39,
         "headcount": 3
+      },
+      {
+        "role": "JUNIOR MECHANICAL DESIGN ENGINEER",
+        "client": "JCPS",
+        "type": "Backfill",
+        "opened": "2026-11-18",
+        "days": 1,
+        "headcount": 1,
+        "hash": "5W783R6R"
       }
     ]
   },
-  "avgTimeToHire": 25,
+  "avgTimeToHire": 23,
   "avgTimeToFill": 0,
   "activeRequisitions": 12,
-  "activeRequisitionsRoles": 8
+  "activeRequisitionsRoles": 9,
+  "operationalHcStart": 271,
+  "targetFormula": "5% of operational HC (start of Nov)"
 }

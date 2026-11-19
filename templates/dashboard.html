@@ -1908,7 +1908,9 @@ function drawOverview(){
   document.getElementById("monthSnap").innerHTML=
     kc("bl","Start-of-Month Open (HC)",somDisplay,somSubtitle)+
     kc("or","Additional This Month (HC)",addl,addlR+" role(s) opened in "+moLabel()+", "+addl+" total HC")+
-    kc("pu","Monthly Target (70%)",tgt,"Target hires for "+moLabel());
+    kc("pu","Monthly Target",tgt, (DATA.operationalHcStart && DATA.targetFormula)
+      ? (DATA.targetFormula + " = " + tgt + " hires for " + moLabel() + " (base: " + DATA.operationalHcStart + " HC)")
+      : ("Target hires for " + moLabel()));
 
   var somList=DATA.somCarryOver||[];
   var somTbody=document.getElementById("somRows");
