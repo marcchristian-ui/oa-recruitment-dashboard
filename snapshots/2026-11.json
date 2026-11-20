@@ -107,7 +107,7 @@
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Backfill",
-      "candidate": "Candidate TBC (req 5W7984R3)",
+      "candidate": "Clariza Sogador",
       "jobHash": "5W7984R3",
       "jobHC": 1
     },
@@ -372,12 +372,12 @@
       "headcount": 1,
       "openedDate": "2026-10-06",
       "offerDate": "2026-10-15",
-      "startDate": "2026-10-29",
+      "startDate": "2026-11-11",
       "timeToHire": 9,
       "timeToFill": null,
       "stage": "Offer Accepted",
       "type": "Ramp",
-      "candidate": "Bryan Namli",
+      "candidate": "Kenneth Ramos",
       "jobHash": "5W8593W3",
       "jobHC": 7
     }
@@ -390,11 +390,11 @@
       "startDate": "",
       "stage": "For Job Offer",
       "type": "Backfill",
-      "candidate": "Candidate TBC (req W3957Y66)",
+      "candidate": "Joshua B. Cariño",
       "jobHash": "W3957Y66",
       "jobHC": 1,
       "openedDate": "2026-11-06",
-      "offerDate": ""
+      "offerDate": "2026-11-19"
     }
   ],
   "ongoingContractRoles": [],
