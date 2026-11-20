@@ -1,19 +1,30 @@
 {
-  "totalOpen": 12,
-  "startOfMonth": 16,
+  "totalOpen": 9,
+  "startOfMonth": 30,
   "startOfMonthRoles": 11,
-  "additionalInMonth": 4,
+  "additionalInMonth": 5,
   "additionalInMonthRoles": 4,
   "monthlyTarget": 14,
   "pipeline": {
-    "open": 12,
+    "open": 9,
     "forJobOffer": 1,
     "ongoingContract": 0,
-    "offerAccepted": 4,
-    "started": 1,
-    "paused": 0
+    "offerAccepted": 14,
+    "started": 9,
+    "paused": 1
   },
-  "pausedRoles": [],
+  "pausedRoles": [
+    {
+      "client": "C3 INGENUITY",
+      "role": "HUBSPOT CRM COORDINATOR",
+      "headcount": 1,
+      "openedDate": "2026-09-23",
+      "pausedDate": "2026-11-09",
+      "type": "Ramp",
+      "reason": "Client paused the requirement (Manatal status=On-Hold)",
+      "jobHash": "V68R7378"
+    }
+  ],
   "closedLostRoles": [
     {
       "client": "SIEGEL DESIGN",
@@ -24,18 +35,6 @@
       "type": "New Logo",
       "reason": "Client closed the requirement (Manatal status=lost 2026-11-17)",
       "jobHash": "7X7YVW4X"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-09",
-      "lostDate": "2026-11-12",
-      "reason": "Candidate withdrew after accepting offer (Y676VV35)",
-      "candidate": "Michael Joseph Encinares",
-      "type": "Ramp",
-      "jobHash": "Y676VV35",
-      "jobHC": 13
     }
   ],
   "closedWon": [
@@ -53,36 +52,6 @@
       "candidate": "Melanie Chan",
       "jobHash": "Y68WY875",
       "jobHC": 1
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-09",
-      "offerDate": "2026-11-04",
-      "startDate": "",
-      "timeToHire": 26,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
-      "type": "Ramp",
-      "candidate": "Mayce Besin Tomenio",
-      "jobHash": "Y676VV35",
-      "jobHC": 13
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 1,
-      "openedDate": "2026-10-09",
-      "offerDate": "2026-11-04",
-      "startDate": "",
-      "timeToHire": 26,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
-      "type": "Ramp",
-      "candidate": "Nonelyn Alejandro",
-      "jobHash": "Y676VV35",
-      "jobHC": 13
     },
     {
       "client": "PINEAPPLE AUDIO",
@@ -111,9 +80,68 @@
       "candidate": "Angelina Pastrana",
       "jobHash": "8XR33R4R",
       "jobHC": 1
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "openedDate": "2026-09-02",
+      "offerDate": "2026-10-09",
+      "startDate": "2026-11-26",
+      "timeToHire": 37,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Oscar Miron",
+      "jobHash": "X98R5V8R",
+      "jobHC": 1
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST (req 5W7984R3)",
+      "headcount": 1,
+      "openedDate": "2026-11-09",
+      "offerDate": "2026-11-18",
+      "startDate": "",
+      "timeToHire": 9,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Backfill",
+      "candidate": "Candidate TBC (req 5W7984R3)",
+      "jobHash": "5W7984R3",
+      "jobHC": 1
+    },
+    {
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (req 5W8593W3)",
+      "headcount": 1,
+      "openedDate": "2026-10-06",
+      "offerDate": "2026-11-18",
+      "startDate": "",
+      "timeToHire": 43,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Candidate TBC (req 5W8593W3)",
+      "jobHash": "5W8593W3",
+      "jobHC": 7
     }
   ],
-  "inOfferRoles": [],
+  "inOfferRoles": [
+    {
+      "client": "DEMAND BRIDGE",
+      "role": "INTEGRATION ENGINEER",
+      "headcount": 1,
+      "startDate": "",
+      "stage": "For Job Offer",
+      "type": "Backfill",
+      "candidate": "Candidate TBC (req W3957Y66)",
+      "jobHash": "W3957Y66",
+      "jobHC": 1,
+      "openedDate": "2026-11-06",
+      "offerDate": ""
+    }
+  ],
   "ongoingContractRoles": [],
   "withdrawals": [
     {
@@ -133,12 +161,22 @@
   ],
   "somCarryOver": [
     {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "opened": "2026-09-02",
+      "days": 79,
+      "type": "Ramp",
+      "status": "won-in-month",
+      "hash": "X98R5V8R"
+    },
+    {
       "client": "GAVBIZ LTD",
       "role": "PART-TIME E-COMMERCE SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-22",
-      "days": 56,
-      "type": "Ramp",
+      "days": 59,
+      "type": "Backfill",
       "status": "active",
       "hash": "5W8XW6R3"
     },
@@ -147,27 +185,27 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 55,
+      "days": 58,
       "type": "Ramp",
-      "status": "active",
+      "status": "paused-in-month",
       "hash": "V68R7378"
     },
     {
-      "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (NucMed-specific)",
-      "headcount": 1,
-      "opened": "2026-10-02",
-      "days": 46,
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 7,
+      "opened": "2026-10-06",
+      "days": 45,
       "type": "Ramp",
-      "status": "active",
-      "hash": "X98R5V8R"
+      "status": "won-in-month",
+      "hash": "5W8593W3"
     },
     {
       "client": "PARISA WANG",
-      "role": "E-COMMERCE OPERATIONS MANAGER",
+      "role": "CREATOR PARTNERSHIPS & PR COORDINATOR",
       "headcount": 2,
       "opened": "2026-10-09",
-      "days": 39,
+      "days": 42,
       "type": "New Logo",
       "status": "active",
       "hash": "V68579W6"
@@ -177,7 +215,7 @@
       "role": "REFERRAL & PRIOR AUTHORIZATION MANAGER",
       "headcount": 1,
       "opened": "2026-10-09",
-      "days": 39,
+      "days": 42,
       "type": "Ramp",
       "status": "won-in-month",
       "hash": "Y68WY875"
@@ -187,260 +225,303 @@
       "role": "PART-TIME NETSUITE BOOKKEEPER",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 34,
+      "days": 37,
       "type": "New Logo",
       "status": "won-in-month",
       "hash": "7X7YRY6X"
     },
     {
-      "client": "SIEGEL DESIGN",
-      "role": "SENIOR US BOOKKEEPER",
-      "headcount": 1,
-      "opened": "2026-10-14",
-      "days": 34,
-      "type": "New Logo",
-      "status": "lost-in-month",
-      "hash": "7X7YVW4X"
+      "client": "ADAUGEO",
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+      "headcount": 13,
+      "opened": "2026-10-09",
+      "days": 42,
+      "type": "Ramp",
+      "status": "won-in-month",
+      "hash": "Y676VV35"
     },
     {
       "client": "BLUESKY",
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "headcount": 1,
       "opened": "2026-10-16",
-      "days": 32,
+      "days": 35,
       "type": "Ramp",
       "status": "active",
       "hash": "X97956W3"
     },
     {
-      "client": "BLUESKY",
-      "role": "CUSTOMER SERVICE SUPPORT",
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
       "headcount": 1,
-      "opened": "2026-10-16",
-      "days": 32,
-      "type": "Ramp",
-      "status": "active",
-      "hash": "V676W458"
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "headcount": 3,
-      "opened": "2026-10-09",
-      "days": 39,
+      "opened": "2026-10-10",
+      "days": 41,
       "type": "Ramp",
       "status": "won-in-month",
-      "hash": "Y676VV35"
+      "hash": "8XR33R4R"
     },
     {
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-      "client": "ADAUGEO",
-      "headcount": 3,
-      "status": "active",
-      "type": "Ramp",
-      "opened": "2026-10-09",
-      "days": 39,
-      "hash": "8XR7975R"
+      "client": "SIEGEL DESIGN",
+      "role": "US ARCHITECTURAL FULL CHARGE BOOKKEEPER (QBO)",
+      "headcount": 1,
+      "opened": "2026-10-14",
+      "days": 37,
+      "type": "New Logo",
+      "status": "lost-in-month",
+      "hash": "7X7YVW4X"
     }
   ],
   "business": {
-    "newLogoCount": 2,
-    "rampCount": 10,
-    "backfillCount": 2,
+    "newLogoCount": 4,
+    "rampCount": 6,
+    "backfillCount": 3,
     "newLogoJobs": [
       {
-        "role": "E-COMMERCE OPERATIONS MANAGER",
+        "role": "CREATOR PARTNERSHIPS & PR COORDINATOR",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 41,
+        "days": 42,
         "headcount": 2,
         "hash": "V68579W6"
+      },
+      {
+        "role": "PART-TIME NETSUITE BOOKKEEPER",
+        "client": "PINEAPPLE AUDIO",
+        "type": "New Logo",
+        "opened": "2026-10-14",
+        "days": 37,
+        "headcount": 1,
+        "hash": "7X7YRY6X"
+      },
+      {
+        "role": "SENIOR MECHANICAL BUILDING SERVICES ENGINEER",
+        "client": "JCPS MECHANICAL",
+        "type": "New Logo",
+        "opened": "2026-11-19",
+        "days": 1,
+        "headcount": 1,
+        "hash": "RYW93R7R"
+      },
+      {
+        "role": "JUNIOR MECHANICAL BUILDING SERVICES ENGINEER",
+        "client": "JCPS MECHANICAL",
+        "type": "New Logo",
+        "opened": "2026-11-19",
+        "days": 1,
+        "headcount": 2,
+        "hash": "5W783R6R"
       }
     ],
     "rampJobs": [
       {
-        "role": "PART-TIME E-COMMERCE SPECIALIST",
-        "client": "GAVBIZ LTD",
-        "type": "Ramp",
-        "opened": "2026-09-22",
-        "days": 58,
-        "headcount": 1,
-        "hash": "5W8XW6R3"
-      },
-      {
-        "role": "HUBSPOT CRM COORDINATOR",
-        "client": "C3 INGENUITY",
-        "type": "Ramp",
-        "opened": "2026-09-23",
-        "days": 57,
-        "headcount": 1,
-        "hash": "V68R7378"
-      },
-      {
-        "role": "BILLING ANALYST (NucMed-specific)",
+        "role": "BILLING ANALYST",
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
-        "opened": "2026-10-02",
-        "days": 48,
+        "opened": "2026-09-02",
+        "days": 79,
         "headcount": 1,
         "hash": "X98R5V8R"
       },
       {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-06",
+        "days": 45,
+        "headcount": 7,
+        "hash": "5W8593W3"
+      },
+      {
+        "role": "REFERRAL & PRIOR AUTHORIZATION MANAGER",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 42,
+        "headcount": 1,
+        "hash": "Y68WY875"
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 42,
+        "headcount": 13,
+        "hash": "Y676VV35"
+      },
+      {
         "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 34,
+        "days": 35,
         "headcount": 1,
         "hash": "X97956W3"
       },
       {
-        "role": "CUSTOMER SERVICE SUPPORT",
-        "client": "BLUESKY",
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
         "type": "Ramp",
-        "opened": "2026-10-16",
-        "days": 34,
+        "opened": "2026-10-10",
+        "days": 41,
         "headcount": 1,
-        "hash": "V676W458"
+        "hash": "8XR33R4R"
+      }
+    ],
+    "backfillJobs": [
+      {
+        "role": "PART-TIME E-COMMERCE SPECIALIST",
+        "client": "GAVBIZ LTD",
+        "type": "Backfill",
+        "opened": "2026-09-22",
+        "days": 59,
+        "headcount": 1,
+        "hash": "5W8XW6R3"
+      },
+      {
+        "role": "INTEGRATION ENGINEER",
+        "client": "DEMAND BRIDGE",
+        "type": "Backfill",
+        "opened": "2026-11-06",
+        "days": 14,
+        "headcount": 1,
+        "hash": "W3957Y66"
+      },
+      {
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
+        "type": "Backfill",
+        "opened": "2026-11-09",
+        "days": 11,
+        "headcount": 1,
+        "hash": "5W7984R3"
+      }
+    ]
+  },
+  "aging": {
+    "avgNewLogo": 21,
+    "avgRamp": 45,
+    "avgBackfill": 28,
+    "fresh": 5,
+    "normal": 17,
+    "aging": 1,
+    "critical": 1,
+    "jobs": [
+      {
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-09-02",
+        "days": 79,
+        "headcount": 1,
+        "hash": "X98R5V8R"
+      },
+      {
+        "role": "PART-TIME E-COMMERCE SPECIALIST",
+        "client": "GAVBIZ LTD",
+        "type": "Backfill",
+        "opened": "2026-09-22",
+        "days": 59,
+        "headcount": 1,
+        "hash": "5W8XW6R3"
       },
       {
         "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
         "client": "ADAUGEO",
         "type": "Ramp",
-        "opened": "2026-10-09",
-        "days": 41,
+        "opened": "2026-10-06",
+        "days": 45,
         "headcount": 3,
-        "hash": "8XR7975R"
+        "hash": "5W8593W3"
       },
       {
-        "role": "BILLING ANALYST (late-admission req 4524882, opened 2026-10-27)",
-        "client": "MIRION (NUCMED)",
-        "type": "Ramp",
-        "opened": "2026-10-27",
-        "days": 23,
-        "headcount": 1,
-        "hash": "8XR33R4R"
-      },
-      {
-        "role": "BILLING ANALYST (new req 4571755)",
-        "client": "MIRION (NUCMED)",
-        "type": "Ramp",
-        "opened": "2026-11-10",
-        "days": 9,
-        "headcount": 1,
-        "hash": "5W7984R3"
-      }
-    ],
-    "backfillJobs": [
-      {
-        "role": "INTEGRATION ENGINEER (reopen)",
-        "client": "DEMAND BRIDGE",
-        "type": "Backfill",
-        "opened": "2026-11-06",
-        "days": 13,
-        "headcount": 1,
-        "hash": "W3957Y66"
-      },
-      {
-        "role": "JUNIOR MECHANICAL DESIGN ENGINEER",
-        "client": "JCPS",
-        "type": "Backfill",
-        "opened": "2026-11-18",
-        "days": 1,
-        "headcount": 1,
-        "hash": "5W783R6R"
-      }
-    ]
-  },
-  "aging": {
-    "avgNewLogo": 39,
-    "avgRamp": 43,
-    "avgBackfill": 6,
-    "fresh": 2,
-    "normal": 0,
-    "aging": 4,
-    "critical": 3,
-    "jobs": [
-      {
-        "role": "PART-TIME E-COMMERCE SPECIALIST",
-        "client": "GAVBIZ LTD",
-        "type": "Ramp",
-        "opened": "2026-09-22",
-        "days": 56,
-        "headcount": 1
-      },
-      {
-        "role": "HUBSPOT CRM COORDINATOR",
-        "client": "C3 INGENUITY",
-        "type": "Ramp",
-        "opened": "2026-09-23",
-        "days": 55,
-        "headcount": 1
-      },
-      {
-        "role": "BILLING ANALYST (NucMed-specific)",
-        "client": "MIRION (NUCMED)",
-        "type": "Ramp",
-        "opened": "2026-10-02",
-        "days": 46,
-        "headcount": 1
-      },
-      {
-        "role": "E-COMMERCE OPERATIONS MANAGER",
+        "role": "CREATOR PARTNERSHIPS & PR COORDINATOR",
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 39,
-        "headcount": 2
+        "days": 42,
+        "headcount": 2,
+        "hash": "V68579W6"
+      },
+      {
+        "role": "PART-TIME NETSUITE BOOKKEEPER",
+        "client": "PINEAPPLE AUDIO",
+        "type": "New Logo",
+        "opened": "2026-10-14",
+        "days": 37,
+        "headcount": 1,
+        "hash": "7X7YRY6X"
+      },
+      {
+        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (9 OA pending)",
+        "client": "ADAUGEO",
+        "type": "Ramp",
+        "opened": "2026-10-09",
+        "days": 42,
+        "headcount": 9,
+        "hash": "Y676VV35"
       },
       {
         "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 32,
-        "headcount": 1
+        "days": 35,
+        "headcount": 1,
+        "hash": "X97956W3"
       },
       {
-        "role": "CUSTOMER SERVICE SUPPORT",
-        "client": "BLUESKY",
+        "role": "BILLING ANALYST (Angelina OA)",
+        "client": "MIRION (NUCMED)",
         "type": "Ramp",
-        "opened": "2026-10-16",
-        "days": 32,
-        "headcount": 1
+        "opened": "2026-10-10",
+        "days": 41,
+        "headcount": 1,
+        "hash": "8XR33R4R"
       },
       {
-        "role": "INTEGRATION ENGINEER (reopen)",
+        "role": "INTEGRATION ENGINEER",
         "client": "DEMAND BRIDGE",
         "type": "Backfill",
         "opened": "2026-11-06",
-        "days": 11,
-        "headcount": 1
+        "days": 14,
+        "headcount": 1,
+        "hash": "W3957Y66"
       },
       {
-        "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
-        "client": "ADAUGEO",
-        "type": "Ramp",
-        "opened": "2026-10-09",
-        "days": 39,
-        "headcount": 3
-      },
-      {
-        "role": "JUNIOR MECHANICAL DESIGN ENGINEER",
-        "client": "JCPS",
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
         "type": "Backfill",
-        "opened": "2026-11-18",
+        "opened": "2026-11-09",
+        "days": 11,
+        "headcount": 1,
+        "hash": "5W7984R3"
+      },
+      {
+        "role": "SENIOR MECHANICAL BUILDING SERVICES ENGINEER",
+        "client": "JCPS MECHANICAL",
+        "type": "New Logo",
+        "opened": "2026-11-19",
         "days": 1,
         "headcount": 1,
+        "hash": "RYW93R7R"
+      },
+      {
+        "role": "JUNIOR MECHANICAL BUILDING SERVICES ENGINEER",
+        "client": "JCPS MECHANICAL",
+        "type": "New Logo",
+        "opened": "2026-11-19",
+        "days": 1,
+        "headcount": 2,
         "hash": "5W783R6R"
       }
     ]
   },
   "avgTimeToHire": 23,
   "avgTimeToFill": 0,
-  "activeRequisitions": 12,
-  "activeRequisitionsRoles": 9,
+  "activeRequisitions": 33,
+  "activeRequisitionsRoles": 13,
   "operationalHcStart": 271,
   "targetFormula": "5% of operational HC (start of Nov)"
 }
