@@ -62,14 +62,14 @@
     "endorsed": 153,
     "clientPass": 75,
     "offers": 20,
-    "hires": 18,
+    "hires": 19,
     "starts": 18
    },
    "ytdConversion": {
     "intToEnd": 59.5,
     "endToClientPass": 49.0,
-    "endToHire": 11.8,
-    "intToHire": 7.0,
+    "endToHire": 12.4,
+    "intToHire": 7.4,
     "offerToStart": 90.0
    },
    "positionTypeMix": {
@@ -214,11 +214,11 @@
      "endorsed": 6,
      "clientPass": 1,
      "offers": 1,
-     "hires": 0,
+     "hires": 1,
      "starts": 0,
      "intToEnd": 42.9,
      "endToClientPass": 16.7,
-     "endToHire": 0.0,
+     "endToHire": 16.7,
      "offerToStart": 0.0
     }
    ]

@@ -7,9 +7,9 @@
   "monthlyTarget": 14,
   "pipeline": {
     "open": 12,
-    "forJobOffer": 1,
+    "forJobOffer": 0,
     "ongoingContract": 0,
-    "offerAccepted": 10,
+    "offerAccepted": 11,
     "started": 11,
     "paused": 1
   },
@@ -352,23 +352,24 @@
       "candidate": "Bryan Namli",
       "jobHash": "Y676VV35",
       "jobHC": 13
-    }
-  ],
-  "inOfferRoles": [
+    },
     {
       "client": "DEMAND BRIDGE",
       "role": "INTEGRATION ENGINEER",
       "headcount": 1,
-      "startDate": "",
-      "stage": "For Job Offer",
+      "openedDate": "2026-11-06",
+      "offerDate": "2026-11-19",
+      "startDate": null,
+      "timeToHire": 13,
+      "timeToFill": null,
+      "stage": "Offer Accepted",
       "type": "Backfill",
       "candidate": "Joshua B. Cariño",
       "jobHash": "W3957Y66",
-      "jobHC": 1,
-      "openedDate": "2026-11-06",
-      "offerDate": "2026-11-19"
+      "jobHC": 1
     }
   ],
+  "inOfferRoles": [],
   "ongoingContractRoles": [],
   "withdrawals": [
     {

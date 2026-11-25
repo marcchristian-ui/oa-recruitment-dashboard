@@ -3,7 +3,7 @@
  "_source": "snapshots/2026-01.json..2026-11.json + Manatal matches API (updated_at >= 2026-01-01, stages 381877/381880/381881/381882/384349/1897035/388313/381903/342714 filtered client-side). 2026-11 role accounting counts 11 new win(s), excluding 10 carry-forward row(s) already won in an earlier month and 0 intra-month duplicate row(s).",
  "_methodology": "MONOTONIC FUNNEL (rank roll-up). Stage ranks: Initial Interview=1, Client Endorsement=2, Client Interview=3, Job Offer=4, Offer Accepted/Ongoing Contract=5, Started=6, Failed=0. Each match at rank K emits events for ranks 1..K dated by: r1 interview_at, r2 submitted_at, r3 interview_at, r4 offer_at, r5 offer_at (fallback hired_at), r6 updated_at. Each falls back to updated_at when null. For month M and rank R, a candidate is counted if they have any rank>=R event in M. YTD totals are unique candidates by max rank reached. EXCLUSIONS: (a) OA internal orgs 599280/1619851; (b) EVERGREEN org 1560151; (c) position_name contains 'POOLING'; (d) 10 EXCLUDE_HASHES per manatal/constants.py. Position type comes from Manatal custom_fields.justification (NEW LOGO / NEW REQUIREMENT -> New Logo, RAMP -> Ramp, BACKFILL -> Backfill).",
  "_schema": {
-  "monthly[]": "Per-month funnel counts (interviews/endorsed/clientPass/offers/hires/starts), conversion percentages, TTF and role-flow fields from that month's snapshot. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero.",
+  "monthly[]": "Per-month funnel counts (interviews/endorsed/clientPass/offers/hires/starts), conversion percentages, TTF and role-flow fields from that month's snapshot. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero. The newest row may carry partial=true with daysElapsed/daysInMonth when the month is still in progress; its counts are not comparable to the closed months. A row may also carry roleDataPending=true, meaning that month has no snapshot yet: its funnel counts are real but its role-accounting cells (rolesFilled/newOpens/filled/lost/paused/monthlyTarget/avgTtf/medianTtf) are null = unknown, and must not be read as zero.",
   "ytdTotals": "Unique candidates reaching each rank across the full period.",
   "overallConversion": "YTD conversion percentages computed from ytdTotals.",
   "kpiSnapshot": "KPI vs target keyed by metric, each {actual, target, status, note?}. Status: green = at/above target, yellow = within 10 points below, red = further below, gray = no target or no data.",
@@ -14,10 +14,10 @@
   "dataGaps[]": "Known holes in the underlying data."
  },
  "_dataQuality": {
-  "totalMatchesFromAPI": 1959,
-  "uniqueMatchesLoaded": 1959,
-  "matchesAfterExclusions": 1582,
-  "uniqueCandidatesWithRankedEvents": 1530,
+  "totalMatchesFromAPI": 1958,
+  "uniqueMatchesLoaded": 1958,
+  "matchesAfterExclusions": 1581,
+  "uniqueCandidatesWithRankedEvents": 1529,
   "unclassifiedCandidates": 17,
   "exclusionsDropped": {
    "oa": 337,
@@ -72,7 +72,7 @@
   "closedWonIntraMonthDup": {},
   "agingRosterFrom": "2026-11",
   "stageFilter": "client-side (stage__in query param not trusted)",
-  "note": "Loaded 1959 match records; applied filter dropping 337 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 377 total; kept 1582 candidate-job matches across 1530 unique candidates. NEW LOGO and NEW REQUIREMENT both bucket to 'New Logo' (Manatal dropdown value + legacy value). 17 candidates are Unclassified (their jobs' justification is neither NEW LOGO/NEW REQUIREMENT nor RAMP nor BACKFILL) and are excluded from per-type conversions but counted in overall YTD."
+  "note": "Loaded 1958 match records; applied filter dropping 337 OA-internal + 0 EVERGREEN + 0 POOLING + 40 EXCLUDE_HASHES = 377 total; kept 1581 candidate-job matches across 1529 unique candidates. NEW LOGO and NEW REQUIREMENT both bucket to 'New Logo' (Manatal dropdown value + legacy value). 17 candidates are Unclassified (their jobs' justification is neither NEW LOGO/NEW REQUIREMENT nor RAMP nor BACKFILL) and are excluded from per-type conversions but counted in overall YTD."
  },
  "period": {
   "start": "2026-01-01",
@@ -428,16 +428,16 @@
   {
    "month": "2026-11",
    "label": "Nov 2026",
-   "interviews": 130,
+   "interviews": 129,
    "endorsed": 52,
-   "clientPass": 31,
+   "clientPass": 34,
    "offers": 22,
-   "hires": 21,
+   "hires": 22,
    "starts": 11,
-   "intToEnd": 40.0,
-   "endToClientPass": 59.6,
-   "endToHire": 40.4,
-   "intToHire": 16.2,
+   "intToEnd": 40.3,
+   "endToClientPass": 65.4,
+   "endToHire": 42.3,
+   "intToHire": 17.1,
    "offerToStart": 50.0,
    "rolesFilled": 11,
    "avgTtf": 46,
@@ -465,11 +465,11 @@
   }
  ],
  "ytdTotals": {
-  "interviews": 1530,
+  "interviews": 1529,
   "endorsed": 714,
-  "clientPass": 451,
+  "clientPass": 454,
   "offers": 191,
-  "hires": 184,
+  "hires": 185,
   "starts": 156
  },
  "ytdRoles": {
@@ -482,23 +482,23 @@
  },
  "overallConversion": {
   "interviewToEndorse": 46.7,
-  "endorseToClientPass": 63.2,
-  "clientPassToOffer": 42.4,
-  "endorseToHire": 25.8,
-  "interviewToHire": 12.0,
+  "endorseToClientPass": 63.6,
+  "clientPassToOffer": 42.1,
+  "endorseToHire": 25.9,
+  "interviewToHire": 12.1,
   "offerToStart": 81.7,
   "_nd": {
    "interviewToEndorse": {
     "n": 714,
-    "d": 1530
+    "d": 1529
    },
    "endorseToHire": {
-    "n": 184,
+    "n": 185,
     "d": 714
    },
    "interviewToHire": {
-    "n": 184,
-    "d": 1530
+    "n": 185,
+    "d": 1529
    },
    "offerToStart": {
     "n": 156,
@@ -527,18 +527,18 @@
    "status": "red"
   },
   "endToClientPass": {
-   "actual": 63.2,
+   "actual": 63.6,
    "target": null,
    "status": "gray",
    "note": "No target defined"
   },
   "endToHire": {
-   "actual": 25.8,
+   "actual": 25.9,
    "target": 50,
    "status": "red"
   },
   "intToHire": {
-   "actual": 12.0,
+   "actual": 12.1,
    "target": 33,
    "status": "red"
   },
@@ -612,14 +612,14 @@
    "currentlyOpenRoles": 4,
    "currentlyOpenHc": 5,
    "intToEnd": 47.2,
-   "endToClientPass": 63.6,
+   "endToClientPass": 64.2,
    "endToHire": 29.9,
    "intToHire": 14.1,
    "offerToStart": 80.7,
    "_funnel": {
-    "interviews": 1000,
+    "interviews": 999,
     "endorsed": 472,
-    "clientPass": 300,
+    "clientPass": 303,
     "offers": 145,
     "hires": 141,
     "starts": 117
@@ -636,15 +636,15 @@
    "currentlyOpenHc": 2,
    "intToEnd": 43.9,
    "endToClientPass": 67.6,
-   "endToHire": 24.8,
-   "intToHire": 10.9,
+   "endToHire": 25.7,
+   "intToHire": 11.3,
    "offerToStart": 75.0,
    "_funnel": {
     "interviews": 239,
     "endorsed": 105,
     "clientPass": 71,
     "offers": 28,
-    "hires": 26,
+    "hires": 27,
     "starts": 21
    }
   }
@@ -767,8 +767,8 @@
   "pctFilled60dOverall": 85.2,
   "longestTtfPositionType": "New Logo - 57.3d average time-to-fill (n=31), vs Backfill at 35.1d. New Logo roles take materially longer to close.",
   "carryOverRisk": "5 of 9 currently-open roles (7 of 12 headcount) have been open more than 30 days; 2 past 60 days.",
-  "biggestBottleneck": "Endorse -> Hire at 25.8% vs a 50% target - 24.2 points short, the widest gap of any tracked conversion.",
-  "recommendedAction": "Attack Endorse -> Hire first - it is 24.2 points below its 50% target and gates every downstream stage.",
+  "biggestBottleneck": "Endorse -> Hire at 25.9% vs a 50% target - 24.1 points short, the widest gap of any tracked conversion.",
+  "recommendedAction": "Attack Endorse -> Hire first - it is 24.1 points below its 50% target and gates every downstream stage.",
   "rolesOver30": 5,
   "rolesOver60": 2,
   "currentMonthPartial": {
@@ -778,7 +778,7 @@
    "daysInMonth": 30,
    "carryForwardExcluded": 10,
    "intraMonthDupExcluded": 0,
-   "note": "Nov 2026 is in monthly[] but covers only 25 of 30 days (130 interviews / 21 hires / 11 starts so far) - do not read it as a month-over-month decline. It HAS a snapshot, and of its 21 closed-won row(s), 10 are carry-forwards of earlier-month wins, leaving 11 new fill(s)."
+   "note": "Nov 2026 is in monthly[] but covers only 25 of 30 days (129 interviews / 22 hires / 11 starts so far) - do not read it as a month-over-month decline. It HAS a snapshot, and of its 21 closed-won row(s), 10 are carry-forwards of earlier-month wins, leaving 11 new fill(s)."
   },
   "_detail": {
    "bestMonthKey": "2026-07",
@@ -800,9 +800,9 @@
    ],
    "bottleneck": {
     "stage": "Endorse -> Hire",
-    "actual": 25.8,
+    "actual": 25.9,
     "target": 50,
-    "gapPoints": 24.2
+    "gapPoints": 24.1
    }
   }
  },
@@ -819,7 +819,7 @@
   "YTD totals are unique-candidate counts and deliberately do not equal the sum of the monthly columns.",
   "Funnel counts are keyed on Manatal candidate id, so one person held under two candidate records counts twice. A known instance on MIRION (NUCMED) BILLING ANALYST inflates that role's funnel by 1.",
   "Position type is derived from Manatal custom_fields.justification. NEW LOGO and NEW REQUIREMENT both map to 'New Logo'; RAMP->Ramp; BACKFILL->Backfill. 17 candidates whose jobs' justification is none of these are Unclassified and excluded from positionTypes[] conversions.",
-  "Loaded 1959 match records; after excluding OA-internal, EVERGREEN, POOLING and EXCLUDE_HASHES jobs, 1582 matches across 1530 unique candidates remain.",
+  "Loaded 1958 match records; after excluding OA-internal, EVERGREEN, POOLING and EXCLUDE_HASHES jobs, 1581 matches across 1529 unique candidates remain.",
   "Stage filtering is done CLIENT-SIDE: this run paged every match with updated_at >= 2026-01-01 and kept the nine tracked stages itself, because Manatal's stage__in query param has returned wrong stages and spurious zeros."
  ]
 }

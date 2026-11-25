@@ -1,6 +1,6 @@
 {
   "_generated": "2026-11-25",
-  "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at. 2026-11-25 run: Oscar Miron (X98R5V8R) and Angelina Pastrana (8XR33R4R) withdrew; roles flipped back to Active.",
+  "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at. 2026-11-25 run #2 (incremental): Joshua Cariño (W3957Y66) JobOffer->OfferAccepted (new Closed Won); Leilani Aguilar + Norelie Villar (Y676VV35) CE->CI; Benedict Rion Rivera (Y677VVX5) II->CI; Wowie Aragona (5W7984R3) CE->II.",
   "roles": [
     {
       "client": "MIRION (NUCMED)",
@@ -161,17 +161,17 @@
       "days": 47,
       "type": "Ramp",
       "initialInterview": [],
-      "clientEndorsement": [
+      "clientEndorsement": [],
+      "clientInterview": [
         {
           "name": "Leilani D.P. Aguilar",
-          "movedAt": "2026-11-24"
+          "movedAt": "2026-11-25"
         },
         {
           "name": "NORELIE D. VILLAR",
-          "movedAt": "2026-11-24"
+          "movedAt": "2026-11-25"
         }
       ],
-      "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": [
@@ -299,7 +299,7 @@
     },
     {
       "client": "DEMAND BRIDGE",
-      "role": "INTEGRATION ENGINEER (reopen)",
+      "role": "INTEGRATION ENGINEER (reopen — Joshua OA 11/25)",
       "hc": 1,
       "opened": "2026-11-06",
       "days": 19,
@@ -307,14 +307,14 @@
       "initialInterview": [],
       "clientEndorsement": [],
       "clientInterview": [],
-      "jobOffer": [
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": [
         {
           "name": "Cariño, Joshua B.",
-          "movedAt": "2026-11-19"
+          "movedAt": "2026-11-25"
         }
-      ],
-      "ongoingContract": [],
-      "offerAccepted": []
+      ]
     },
     {
       "client": "MIRION (NUCMED)",
@@ -325,16 +325,15 @@
       "type": "Backfill",
       "initialInterview": [
         {
+          "name": "WOWIE ARAGONA",
+          "movedAt": "2026-11-25"
+        },
+        {
           "name": "RUCEL JENN BOQUE",
           "movedAt": "2026-11-13"
         }
       ],
-      "clientEndorsement": [
-        {
-          "name": "WOWIE ARAGONA",
-          "movedAt": "2026-11-24"
-        }
-      ],
+      "clientEndorsement": [],
       "clientInterview": [
         {
           "name": "JUDIE CANJA BIBOSO",
@@ -426,10 +425,6 @@
       "type": "Backfill",
       "initialInterview": [
         {
-          "name": "Benedict Rion Rivera",
-          "movedAt": "2026-11-24"
-        },
-        {
           "name": "Maria Concepcion Feliciano",
           "movedAt": "2026-11-24"
         },
@@ -440,6 +435,10 @@
       ],
       "clientEndorsement": [],
       "clientInterview": [
+        {
+          "name": "Benedict Rion Rivera",
+          "movedAt": "2026-11-25"
+        },
         {
           "name": "MARK ESCAT",
           "movedAt": "2026-11-24"
