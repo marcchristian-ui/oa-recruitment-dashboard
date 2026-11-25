@@ -1,61 +1,18 @@
 {
-  "_generated": "2026-11-19",
-  "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at.",
+  "_generated": "2026-11-25",
+  "_note": "Six-stage pipeline: Initial Interview -> Client Endorsement -> Client Interview -> Job Offer -> Ongoing Contract -> Offer Accepted. Each candidate is an object with name + movedAt. movedAt priority: Offer Accepted/Job Offer -> offer_at else updated_at; Ongoing Contract -> updated_at; Client Interview -> interview_at else submitted_at else updated_at; Client Endorsement -> submitted_at else updated_at; Initial Interview -> updated_at. 2026-11-25 run: Oscar Miron (X98R5V8R) and Angelina Pastrana (8XR33R4R) withdrew; roles flipped back to Active.",
   "roles": [
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (1 of 3 HC carryover)",
+      "role": "BILLING ANALYST (SoM carryover — Oscar withdrew 11/24)",
       "hc": 1,
-      "opened": "2026-09-01",
-      "days": 79,
+      "opened": "2026-09-02",
+      "days": 84,
       "type": "Ramp",
       "initialInterview": [
         {
-          "name": "JOHN DEJUCOS",
-          "movedAt": "2026-10-20"
-        },
-        {
-          "name": "JHONN CLARENZ CABALLERO",
-          "movedAt": "2026-10-20"
-        },
-        {
-          "name": "ANN ORALE",
-          "movedAt": "2026-10-20"
-        }
-      ],
-      "clientEndorsement": [],
-      "clientInterview": [],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": []
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "LAB PATIENT ACCOUNT CSR (re-opened)",
-      "hc": 1,
-      "opened": "2026-09-11",
-      "days": 69,
-      "type": "Backfill",
-      "initialInterview": [
-        {
-          "name": "Sheena Mariz Mateo",
-          "movedAt": "2026-09-30"
-        },
-        {
-          "name": "LOREWYN JAY CORTES",
-          "movedAt": "2026-09-30"
-        },
-        {
-          "name": "Erwin Coronel",
-          "movedAt": "2026-09-30"
-        },
-        {
-          "name": "Aldrin John Racho",
-          "movedAt": "2026-09-30"
-        },
-        {
-          "name": "Maria Theresa Galvos",
-          "movedAt": "2026-09-11"
+          "name": "Jennielyn Opema",
+          "movedAt": "2026-11-05"
         }
       ],
       "clientEndorsement": [],
@@ -66,22 +23,39 @@
     },
     {
       "client": "GAVBIZ LTD",
-      "role": "PART-TIME E-COMMERCE SALES SPECIALIST",
+      "role": "PART-TIME E-COMMERCE SPECIALIST",
       "hc": 1,
-      "opened": "2026-09-23",
-      "days": 57,
-      "type": "Ramp",
-      "initialInterview": [],
+      "opened": "2026-09-22",
+      "days": 64,
+      "type": "Backfill",
+      "initialInterview": [
+        {
+          "name": "Charles Kenneth M. Servidad",
+          "movedAt": "2026-11-20"
+        },
+        {
+          "name": "Daryl Mikhaela Tababa",
+          "movedAt": "2026-11-20"
+        },
+        {
+          "name": "Jomari Flores",
+          "movedAt": "2026-11-20"
+        }
+      ],
       "clientEndorsement": [
         {
-          "name": "Ephraim Sapiandante",
-          "movedAt": "2026-11-04"
+          "name": "VENAICA ANTOINETTE AMADO",
+          "movedAt": "2026-11-25"
+        },
+        {
+          "name": "SAMUEL REU D. FLORES",
+          "movedAt": "2026-11-25"
         }
       ],
       "clientInterview": [
         {
-          "name": "WINSTON JHON L. BALASBAS",
-          "movedAt": "2026-11-04"
+          "name": "Elgin Macadildig",
+          "movedAt": "2026-11-23"
         }
       ],
       "jobOffer": [],
@@ -90,10 +64,10 @@
     },
     {
       "client": "C3 INGENUITY",
-      "role": "HUBSPOT CRM COORDINATOR (Manatal status ON HOLD since 2026-11-09)",
+      "role": "HUBSPOT CRM COORDINATOR (PAUSED — on hold)",
       "hc": 1,
-      "opened": "2026-09-24",
-      "days": 56,
+      "opened": "2026-09-23",
+      "days": 63,
       "type": "Ramp",
       "initialInterview": [
         {
@@ -129,40 +103,11 @@
       "offerAccepted": []
     },
     {
-      "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (NucMed-specific req opened 2026-10-02)",
-      "hc": 1,
-      "opened": "2026-10-02",
-      "days": 48,
-      "type": "Ramp",
-      "initialInterview": [
-        {
-          "name": "Jennielyn Opema",
-          "movedAt": "2026-11-05"
-        }
-      ],
-      "clientEndorsement": [],
-      "clientInterview": [
-        {
-          "name": "Angelina Pastrana",
-          "movedAt": "2026-10-28"
-        }
-      ],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": [
-        {
-          "name": "OSCAR MIRON",
-          "movedAt": "2026-10-26"
-        }
-      ]
-    },
-    {
       "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (7 HC req 4466179 — all 7 HC won)",
-      "hc": 1,
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (2 of 7 HC open)",
+      "hc": 2,
       "opened": "2026-10-06",
-      "days": 44,
+      "days": 50,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -171,37 +116,37 @@
       "ongoingContract": [],
       "offerAccepted": [
         {
-          "name": "Patrich Walter Harris",
-          "movedAt": "2026-11-09"
-        },
-        {
           "name": "Kenneth Ramos",
           "movedAt": "2026-11-09"
-        },
-        {
-          "name": "Bryan Namli",
-          "movedAt": "2026-10-15"
         }
       ]
     },
     {
       "client": "PARISA WANG",
-      "role": "E-COMMERCE  OPERATIONS MANAGER (Manatal renamed to Creator Partnerships & PR Coordinator)",
+      "role": "CREATOR PARTNERSHIPS & PR COORDINATOR",
       "hc": 2,
-      "opened": "2026-10-07",
-      "days": 43,
+      "opened": "2026-10-09",
+      "days": 47,
       "type": "New Logo",
-      "initialInterview": [],
-      "clientEndorsement": [
+      "initialInterview": [
         {
-          "name": "John Paolo Wong",
-          "movedAt": "2026-11-13"
+          "name": "JABRIEL SUMAGAYAN",
+          "movedAt": "2026-11-25"
+        },
+        {
+          "name": "JASMIN ALBERTO",
+          "movedAt": "2026-11-25"
+        },
+        {
+          "name": "Bernadette Tejada",
+          "movedAt": "2026-11-24"
         }
       ],
+      "clientEndorsement": [],
       "clientInterview": [
         {
-          "name": "JANINE MAYO",
-          "movedAt": "2026-11-11"
+          "name": "John Paolo Wong",
+          "movedAt": "2026-11-19"
         }
       ],
       "jobOffer": [],
@@ -210,70 +155,82 @@
     },
     {
       "client": "ADAUGEO",
-      "role": "REFERRALS & PRIOR AUTHORIZATION MANAGER (HC won — Manatal req closed status=won 2026-11-13)",
-      "hc": 1,
+      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (13 HC)",
+      "hc": 13,
       "opened": "2026-10-09",
-      "days": 41,
+      "days": 47,
       "type": "Ramp",
-      "initialInterview": [
-        {
-          "name": "May Ann PERDIGUERRA",
-          "movedAt": "2026-10-27"
-        },
-        {
-          "name": "JOEL JOEL",
-          "movedAt": "2026-10-16"
-        }
-      ],
-      "clientEndorsement": [],
-      "clientInterview": [
-        {
-          "name": "Michelle Anne Vales Pantia",
-          "movedAt": "2026-10-30"
-        }
-      ],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": []
-    },
-    {
-      "client": "MIRION",
-      "role": "SR. CUSTOMER SERVICE REPRESENTATIVE",
-      "hc": 1,
-      "opened": "2026-10-13",
-      "days": 37,
-      "type": "Backfill",
       "initialInterview": [],
       "clientEndorsement": [
         {
-          "name": "JEMARIE ANNE MARQUEZ",
-          "movedAt": "2026-10-14"
+          "name": "Leilani D.P. Aguilar",
+          "movedAt": "2026-11-24"
         },
         {
-          "name": "Edian Tablizo",
-          "movedAt": "2026-10-14"
+          "name": "NORELIE D. VILLAR",
+          "movedAt": "2026-11-24"
         }
       ],
-      "clientInterview": [
-        {
-          "name": "Botalon, Jaslyn N",
-          "movedAt": "2026-10-19"
-        }
-      ],
+      "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
-      "offerAccepted": []
+      "offerAccepted": [
+        {
+          "name": "John Paul Bucao Delaraga",
+          "movedAt": "2026-11-09"
+        },
+        {
+          "name": "MARY GRACE VEDANA",
+          "movedAt": "2026-11-09"
+        },
+        {
+          "name": "BRAILLE GONZALES",
+          "movedAt": "2026-11-09"
+        },
+        {
+          "name": "CARLA ROSS DARWIN",
+          "movedAt": "2026-11-09"
+        },
+        {
+          "name": "MAYCE BESIN TOMENIO",
+          "movedAt": "2026-11-04"
+        },
+        {
+          "name": "NONELYN ALEJANDRO",
+          "movedAt": "2026-11-04"
+        },
+        {
+          "name": "JINO FERNANDEZ",
+          "movedAt": "2026-10-21"
+        },
+        {
+          "name": "Renaliza B. Pavo",
+          "movedAt": "2026-10-21"
+        },
+        {
+          "name": "Joan Espinosa",
+          "movedAt": "2026-10-21"
+        }
+      ]
     },
     {
       "client": "PINEAPPLE AUDIO",
-      "role": "PART TIME NETSUITE BOOKKEEPER",
+      "role": "PART-TIME NETSUITE BOOKKEEPER",
       "hc": 1,
-      "opened": "2026-10-15",
-      "days": 35,
+      "opened": "2026-10-14",
+      "days": 42,
       "type": "New Logo",
       "initialInterview": [
         {
-          "name": "MARK CRISTOPHER ANGELO N. SERRANO",
+          "name": "CARMELO HINACAY",
+          "movedAt": "2026-10-30"
+        },
+        {
+          "name": "Aimee Princess Lopez",
+          "movedAt": "2026-10-30"
+        },
+        {
+          "name": "JOANNA INSIGNE",
           "movedAt": "2026-10-30"
         },
         {
@@ -285,15 +242,7 @@
           "movedAt": "2026-10-30"
         },
         {
-          "name": "JOANNA INSIGNE",
-          "movedAt": "2026-10-30"
-        },
-        {
-          "name": "CARMELO HINACAY",
-          "movedAt": "2026-10-30"
-        },
-        {
-          "name": "Aimee Princess Lopez",
+          "name": "MARK CRISTOPHER ANGELO N. SERRANO",
           "movedAt": "2026-10-30"
         },
         {
@@ -305,90 +254,25 @@
       "clientInterview": [],
       "jobOffer": [],
       "ongoingContract": [],
-      "offerAccepted": [
-        {
-          "name": "Marie Hail Querol",
-          "movedAt": "2026-11-04"
-        }
-      ]
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (13 HC req 4499740 — all HC won)",
-      "hc": 1,
-      "opened": "2026-10-16",
-      "days": 34,
-      "type": "Ramp",
-      "initialInterview": [],
-      "clientEndorsement": [],
-      "clientInterview": [],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": [
-        {
-          "name": "MARY GRACE VEDANA",
-          "movedAt": "2026-11-09"
-        },
-        {
-          "name": "John Paul Bucao Delaraga",
-          "movedAt": "2026-11-09"
-        },
-        {
-          "name": "CARLA ROSS DARWIN",
-          "movedAt": "2026-11-09"
-        },
-        {
-          "name": "BRAILLE GONZALES",
-          "movedAt": "2026-11-09"
-        },
-        {
-          "name": "NONELYN ALEJANDRO",
-          "movedAt": "2026-11-04"
-        },
-        {
-          "name": "MAYCE BESIN TOMENIO",
-          "movedAt": "2026-11-04"
-        },
-        {
-          "name": "RODNEY A. LUGOD",
-          "movedAt": "2026-10-27"
-        },
-        {
-          "name": "Earl Esparagoza",
-          "movedAt": "2026-10-27"
-        },
-        {
-          "name": "Renaliza B. Pavo",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Joan Espinosa",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "JINO FERNANDEZ",
-          "movedAt": "2026-10-21"
-        }
-      ]
+      "offerAccepted": []
     },
     {
       "client": "BLUESKY",
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "hc": 1,
       "opened": "2026-10-16",
-      "days": 34,
+      "days": 40,
       "type": "Ramp",
-      "initialInterview": [
+      "initialInterview": [],
+      "clientEndorsement": [
         {
-          "name": "Marchelle Kheil Conte",
-          "movedAt": "2026-11-13"
+          "name": "XYRUS CANLAS",
+          "movedAt": "2026-11-20"
         },
         {
-          "name": "Elyas Salanga",
-          "movedAt": "2026-11-09"
-        }
-      ],
-      "clientEndorsement": [
+          "name": "Sherryll Millicent Paguio",
+          "movedAt": "2026-11-20"
+        },
         {
           "name": "Rhollet G.",
           "movedAt": "2026-11-04"
@@ -400,42 +284,11 @@
       "offerAccepted": []
     },
     {
-      "client": "BLUESKY",
-      "role": "CUSTOMER SERVICE SUPPORT (Manatal status PLANNING)",
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST (SoM carryover — Angelina withdrew 11/25)",
       "hc": 1,
-      "opened": "2026-10-19",
-      "days": 31,
-      "type": "Ramp",
-      "initialInterview": [
-        {
-          "name": "Lara Jezreel Lopez",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Kristine Otagan",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Jessa San Pedro",
-          "movedAt": "2026-10-21"
-        },
-        {
-          "name": "Derick Rojas",
-          "movedAt": "2026-10-21"
-        }
-      ],
-      "clientEndorsement": [],
-      "clientInterview": [],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": []
-    },
-    {
-      "client": "ADAUGEO",
-      "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION (3 HC still open — req 4548594)",
-      "hc": 3,
-      "opened": "2026-10-09",
-      "days": 41,
+      "opened": "2026-10-27",
+      "days": 29,
       "type": "Ramp",
       "initialInterview": [],
       "clientEndorsement": [],
@@ -449,62 +302,40 @@
       "role": "INTEGRATION ENGINEER (reopen)",
       "hc": 1,
       "opened": "2026-11-06",
-      "days": 13,
+      "days": 19,
       "type": "Backfill",
       "initialInterview": [],
-      "clientEndorsement": [
+      "clientEndorsement": [],
+      "clientInterview": [],
+      "jobOffer": [
         {
           "name": "Cariño, Joshua B.",
-          "movedAt": "2026-11-13"
+          "movedAt": "2026-11-19"
         }
       ],
-      "clientInterview": [],
-      "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []
     },
     {
       "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (untracked req 4524882 — pending snapshot admission)",
-      "hc": 1,
-      "opened": "2026-10-27",
-      "days": 23,
-      "type": "Ramp",
-      "initialInterview": [],
-      "clientEndorsement": [],
-      "clientInterview": [],
-      "jobOffer": [],
-      "ongoingContract": [],
-      "offerAccepted": [
-        {
-          "name": "Angelina Pastrana",
-          "movedAt": "2026-11-09"
-        }
-      ]
-    },
-    {
-      "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST (untracked req 4571755 — pending snapshot admission)",
+      "role": "BILLING ANALYST (req 5W7984R3 — Clariza OA)",
       "hc": 1,
       "opened": "2026-11-10",
-      "days": 9,
-      "type": "Ramp",
+      "days": 15,
+      "type": "Backfill",
       "initialInterview": [
         {
           "name": "RUCEL JENN BOQUE",
           "movedAt": "2026-11-13"
-        },
-        {
-          "name": "WOWIE ARAGONA",
-          "movedAt": "2026-11-12"
         }
       ],
-      "clientEndorsement": [],
-      "clientInterview": [
+      "clientEndorsement": [
         {
-          "name": "CLARIZA SOGADOR",
-          "movedAt": "2026-11-13"
-        },
+          "name": "WOWIE ARAGONA",
+          "movedAt": "2026-11-24"
+        }
+      ],
+      "clientInterview": [
         {
           "name": "JUDIE CANJA BIBOSO",
           "movedAt": "2026-11-11"
@@ -512,18 +343,108 @@
       ],
       "jobOffer": [],
       "ongoingContract": [],
+      "offerAccepted": [
+        {
+          "name": "CLARIZA SOGADOR",
+          "movedAt": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "client": "JCPS MECHANICAL",
+      "role": "JUNIOR MECHANICAL BUILDING SERVICES ENGINEER",
+      "hc": 2,
+      "opened": "2026-11-18",
+      "days": 7,
+      "type": "New Logo",
+      "initialInterview": [
+        {
+          "name": "Siegfred Monteleyola",
+          "movedAt": "2026-11-23"
+        },
+        {
+          "name": "Melchor Mendoza",
+          "movedAt": "2026-11-23"
+        },
+        {
+          "name": "Jerico Bagadiong",
+          "movedAt": "2026-11-23"
+        },
+        {
+          "name": "John Edward Iglesia",
+          "movedAt": "2026-11-20"
+        },
+        {
+          "name": "Severino L. Gutierrez",
+          "movedAt": "2026-11-20"
+        },
+        {
+          "name": "John Adrian Olid",
+          "movedAt": "2026-11-19"
+        }
+      ],
+      "clientEndorsement": [
+        {
+          "name": "Lester Josef Suarez",
+          "movedAt": "2026-11-24"
+        },
+        {
+          "name": "Jasper Emil Buquis",
+          "movedAt": "2026-11-19"
+        }
+      ],
+      "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
       "offerAccepted": []
     },
     {
-      "client": "JCPS",
-      "role": "JUNIOR MECHANICAL DESIGN ENGINEER (new 2026-11-18)",
+      "client": "JCPS MECHANICAL",
+      "role": "SENIOR MECHANICAL BUILDING SERVICES ENGINEER",
       "hc": 1,
-      "opened": "2026-11-18",
-      "days": 1,
-      "type": "Backfill",
-      "initialInterview": [],
+      "opened": "2026-11-19",
+      "days": 6,
+      "type": "New Logo",
+      "initialInterview": [
+        {
+          "name": "Rommel Marquez Sanchez",
+          "movedAt": "2026-11-23"
+        }
+      ],
       "clientEndorsement": [],
       "clientInterview": [],
+      "jobOffer": [],
+      "ongoingContract": [],
+      "offerAccepted": []
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST (backfill — opened 11/20)",
+      "hc": 1,
+      "opened": "2026-11-20",
+      "days": 5,
+      "type": "Backfill",
+      "initialInterview": [
+        {
+          "name": "Benedict Rion Rivera",
+          "movedAt": "2026-11-24"
+        },
+        {
+          "name": "Maria Concepcion Feliciano",
+          "movedAt": "2026-11-24"
+        },
+        {
+          "name": "FRELYN SORIANO",
+          "movedAt": "2026-11-24"
+        }
+      ],
+      "clientEndorsement": [],
+      "clientInterview": [
+        {
+          "name": "MARK ESCAT",
+          "movedAt": "2026-11-24"
+        }
+      ],
       "jobOffer": [],
       "ongoingContract": [],
       "offerAccepted": []

@@ -1,16 +1,16 @@
 {
-  "totalOpen": 10,
+  "totalOpen": 12,
   "startOfMonth": 30,
   "startOfMonthRoles": 11,
   "additionalInMonth": 6,
   "additionalInMonthRoles": 5,
   "monthlyTarget": 14,
   "pipeline": {
-    "open": 10,
+    "open": 12,
     "forJobOffer": 1,
     "ongoingContract": 0,
-    "offerAccepted": 14,
-    "started": 9,
+    "offerAccepted": 10,
+    "started": 11,
     "paused": 1
   },
   "pausedRoles": [
@@ -61,41 +61,11 @@
       "offerDate": "2026-11-04",
       "startDate": "2026-11-24",
       "timeToHire": 21,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
+      "timeToFill": 41,
+      "stage": "Started",
       "type": "New Logo",
       "candidate": "Marie Hail Querol",
       "jobHash": "7X7YRY6X",
-      "jobHC": 1
-    },
-    {
-      "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST",
-      "headcount": 1,
-      "openedDate": "2026-10-27",
-      "offerDate": "2026-11-09",
-      "startDate": "2026-11-30",
-      "timeToHire": 13,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
-      "type": "Ramp",
-      "candidate": "Angelina Pastrana",
-      "jobHash": "8XR33R4R",
-      "jobHC": 1
-    },
-    {
-      "client": "MIRION (NUCMED)",
-      "role": "BILLING ANALYST",
-      "headcount": 1,
-      "openedDate": "2026-09-02",
-      "offerDate": "2026-10-09",
-      "startDate": "2026-11-30",
-      "timeToHire": 37,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
-      "type": "Ramp",
-      "candidate": "Oscar Miron",
-      "jobHash": "X98R5V8R",
       "jobHC": 1
     },
     {
@@ -226,8 +196,8 @@
       "offerDate": "2026-10-23",
       "startDate": "2026-11-25",
       "timeToHire": 14,
-      "timeToFill": null,
-      "stage": "Offer Accepted",
+      "timeToFill": 47,
+      "stage": "Started",
       "type": "Ramp",
       "candidate": "Kenneth Ramos",
       "jobHash": "Y676VV35",
@@ -428,6 +398,34 @@
       "reason": "Candidate withdrew after accepting offer",
       "jobHash": "Y676VV35",
       "jobHC": 13
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "openedDate": "2026-10-27",
+      "offerDate": "2026-11-09",
+      "withdrawnDate": "2026-11-25",
+      "priorStage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "Angelina Pastrana",
+      "reason": "Candidate withdrew after accepting offer",
+      "jobHash": "8XR33R4R",
+      "jobHC": 1
+    },
+    {
+      "client": "MIRION (NUCMED)",
+      "role": "BILLING ANALYST",
+      "headcount": 1,
+      "openedDate": "2026-09-02",
+      "offerDate": "2026-10-26",
+      "withdrawnDate": "2026-11-24",
+      "priorStage": "Offer Accepted",
+      "type": "Ramp",
+      "candidate": "OSCAR MIRON",
+      "reason": "Candidate withdrew after accepting offer",
+      "jobHash": "X98R5V8R",
+      "jobHC": 1
     }
   ],
   "somCarryOver": [
@@ -436,9 +434,9 @@
       "role": "BILLING ANALYST",
       "headcount": 1,
       "opened": "2026-09-02",
-      "days": 82,
+      "days": 84,
       "type": "Ramp",
-      "status": "won-in-month",
+      "status": "active",
       "hash": "X98R5V8R"
     },
     {
@@ -446,7 +444,7 @@
       "role": "PART-TIME E-COMMERCE SPECIALIST",
       "headcount": 1,
       "opened": "2026-09-22",
-      "days": 62,
+      "days": 64,
       "type": "Backfill",
       "status": "active",
       "hash": "5W8XW6R3"
@@ -456,7 +454,7 @@
       "role": "HUBSPOT CRM COORDINATOR",
       "headcount": 1,
       "opened": "2026-09-23",
-      "days": 61,
+      "days": 63,
       "type": "Ramp",
       "status": "paused-in-month",
       "hash": "V68R7378"
@@ -466,7 +464,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 7,
       "opened": "2026-10-06",
-      "days": 48,
+      "days": 50,
       "type": "Ramp",
       "status": "won-in-month",
       "hash": "5W8593W3"
@@ -476,7 +474,7 @@
       "role": "CREATOR PARTNERSHIPS & PR COORDINATOR",
       "headcount": 2,
       "opened": "2026-10-09",
-      "days": 45,
+      "days": 47,
       "type": "New Logo",
       "status": "active",
       "hash": "V68579W6"
@@ -486,7 +484,7 @@
       "role": "REFERRAL & PRIOR AUTHORIZATION MANAGER",
       "headcount": 1,
       "opened": "2026-10-09",
-      "days": 45,
+      "days": 47,
       "type": "Ramp",
       "status": "won-in-month",
       "hash": "Y68WY875"
@@ -496,7 +494,7 @@
       "role": "PART-TIME NETSUITE BOOKKEEPER",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 40,
+      "days": 42,
       "type": "New Logo",
       "status": "won-in-month",
       "hash": "7X7YRY6X"
@@ -506,7 +504,7 @@
       "role": "CLINIC REFERRAL & PRIOR AUTHORIZATION",
       "headcount": 13,
       "opened": "2026-10-09",
-      "days": 45,
+      "days": 47,
       "type": "Ramp",
       "status": "won-in-month",
       "hash": "Y676VV35"
@@ -516,7 +514,7 @@
       "role": "SOCIAL MEDIA SPECIALIST & COPYWRITER",
       "headcount": 1,
       "opened": "2026-10-16",
-      "days": 38,
+      "days": 40,
       "type": "Ramp",
       "status": "active",
       "hash": "X97956W3"
@@ -526,9 +524,9 @@
       "role": "BILLING ANALYST",
       "headcount": 1,
       "opened": "2026-10-10",
-      "days": 44,
+      "days": 46,
       "type": "Ramp",
-      "status": "won-in-month",
+      "status": "active",
       "hash": "8XR33R4R"
     },
     {
@@ -536,15 +534,15 @@
       "role": "US ARCHITECTURAL FULL CHARGE BOOKKEEPER (QBO)",
       "headcount": 1,
       "opened": "2026-10-14",
-      "days": 40,
+      "days": 42,
       "type": "New Logo",
       "status": "lost-in-month",
       "hash": "7X7YVW4X"
     }
   ],
   "business": {
-    "newLogoCount": 4,
-    "rampCount": 6,
+    "newLogoCount": 6,
+    "rampCount": 24,
     "backfillCount": 4,
     "newLogoJobs": [
       {
@@ -552,7 +550,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 45,
+        "days": 47,
         "headcount": 2,
         "hash": "V68579W6"
       },
@@ -561,7 +559,7 @@
         "client": "PINEAPPLE AUDIO",
         "type": "New Logo",
         "opened": "2026-10-14",
-        "days": 40,
+        "days": 42,
         "headcount": 1,
         "hash": "7X7YRY6X"
       },
@@ -570,7 +568,7 @@
         "client": "JCPS MECHANICAL",
         "type": "New Logo",
         "opened": "2026-11-19",
-        "days": 4,
+        "days": 6,
         "headcount": 1,
         "hash": "RYW93R7R"
       },
@@ -579,7 +577,7 @@
         "client": "JCPS MECHANICAL",
         "type": "New Logo",
         "opened": "2026-11-19",
-        "days": 4,
+        "days": 6,
         "headcount": 2,
         "hash": "5W783R6R"
       }
@@ -590,7 +588,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-09-02",
-        "days": 82,
+        "days": 84,
         "headcount": 1,
         "hash": "X98R5V8R"
       },
@@ -599,7 +597,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 48,
+        "days": 50,
         "headcount": 7,
         "hash": "5W8593W3"
       },
@@ -608,7 +606,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 45,
+        "days": 47,
         "headcount": 1,
         "hash": "Y68WY875"
       },
@@ -617,7 +615,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-09",
-        "days": 45,
+        "days": 47,
         "headcount": 13,
         "hash": "Y676VV35"
       },
@@ -626,7 +624,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 38,
+        "days": 40,
         "headcount": 1,
         "hash": "X97956W3"
       },
@@ -635,7 +633,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Ramp",
         "opened": "2026-10-10",
-        "days": 44,
+        "days": 46,
         "headcount": 1,
         "hash": "8XR33R4R"
       }
@@ -646,7 +644,7 @@
         "client": "GAVBIZ LTD",
         "type": "Backfill",
         "opened": "2026-09-22",
-        "days": 62,
+        "days": 64,
         "headcount": 1,
         "hash": "5W8XW6R3"
       },
@@ -655,7 +653,7 @@
         "client": "DEMAND BRIDGE",
         "type": "Backfill",
         "opened": "2026-11-06",
-        "days": 17,
+        "days": 19,
         "headcount": 1,
         "hash": "W3957Y66"
       },
@@ -664,7 +662,7 @@
         "client": "MIRION (NUCMED)",
         "type": "Backfill",
         "opened": "2026-11-09",
-        "days": 14,
+        "days": 16,
         "headcount": 1,
         "hash": "5W7984R3"
       },
@@ -673,27 +671,27 @@
         "client": "MIRION (NUCMED)",
         "type": "Backfill",
         "opened": "2026-11-20",
-        "days": 3,
+        "days": 5,
         "headcount": 1,
         "hash": "Y677VVX5"
       }
     ]
   },
   "aging": {
-    "avgNewLogo": 18,
-    "avgRamp": 43,
-    "avgBackfill": 33,
+    "avgNewLogo": 20,
+    "avgRamp": 51,
+    "avgBackfill": 34,
     "fresh": 4,
-    "normal": 3,
-    "aging": 2,
-    "critical": 1,
+    "normal": 1,
+    "aging": 1,
+    "critical": 6,
     "jobs": [
       {
         "role": "PART-TIME E-COMMERCE SPECIALIST",
         "client": "GAVBIZ LTD",
         "type": "Backfill",
         "opened": "2026-09-22",
-        "days": 62,
+        "days": 64,
         "headcount": 1,
         "hash": "5W8XW6R3"
       },
@@ -702,7 +700,7 @@
         "client": "ADAUGEO",
         "type": "Ramp",
         "opened": "2026-10-06",
-        "days": 48,
+        "days": 50,
         "headcount": 2,
         "hash": "5W8593W3"
       },
@@ -711,7 +709,7 @@
         "client": "PARISA WANG",
         "type": "New Logo",
         "opened": "2026-10-09",
-        "days": 45,
+        "days": 47,
         "headcount": 2,
         "hash": "V68579W6"
       },
@@ -720,7 +718,7 @@
         "client": "BLUESKY",
         "type": "Ramp",
         "opened": "2026-10-16",
-        "days": 38,
+        "days": 40,
         "headcount": 1,
         "hash": "X97956W3"
       },
@@ -729,7 +727,7 @@
         "client": "JCPS MECHANICAL",
         "type": "New Logo",
         "opened": "2026-11-19",
-        "days": 4,
+        "days": 6,
         "headcount": 1,
         "hash": "RYW93R7R"
       },
@@ -738,7 +736,7 @@
         "client": "JCPS MECHANICAL",
         "type": "New Logo",
         "opened": "2026-11-19",
-        "days": 4,
+        "days": 6,
         "headcount": 2,
         "hash": "5W783R6R"
       },
@@ -747,16 +745,34 @@
         "client": "MIRION (NUCMED)",
         "type": "Backfill",
         "opened": "2026-11-20",
-        "days": 3,
+        "days": 5,
         "headcount": 1,
         "hash": "Y677VVX5"
+      },
+      {
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-10-27",
+        "days": 29,
+        "headcount": 1,
+        "hash": "8XR33R4R"
+      },
+      {
+        "role": "BILLING ANALYST",
+        "client": "MIRION (NUCMED)",
+        "type": "Ramp",
+        "opened": "2026-09-02",
+        "days": 84,
+        "headcount": 1,
+        "hash": "X98R5V8R"
       }
     ]
   },
-  "avgTimeToHire": 23,
-  "avgTimeToFill": 0,
-  "activeRequisitions": 34,
-  "activeRequisitionsRoles": 14,
+  "avgTimeToHire": 14,
+  "avgTimeToFill": 49,
+  "activeRequisitions": 35,
+  "activeRequisitionsRoles": 15,
   "operationalHcStart": 271,
   "targetFormula": "5% of operational HC (start of Nov)"
 }
