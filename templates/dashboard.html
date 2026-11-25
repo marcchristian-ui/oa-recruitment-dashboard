@@ -105,6 +105,7 @@ tbody tr:last-child td{border-bottom:none;}
 <script>
 var DATA = __DATA_JSON__;
 var SEL  = __SEL__;
+var WEEKLY = __WEEKLY_JSON__;
 
 var MN   = ["January","February","March","April","May","June",
             "July","August","September","October","November","December"];
@@ -131,6 +132,7 @@ var CH   = {};
   <div class="tab"     onclick="sw('rv',this)">&#128100; Recruiter View</div>
   <div class="tab"     onclick="sw('cf',this)">&#128101; Candidate Funnel</div>
   <div class="tab"     onclick="sw('nl',this)">&#127793; Nurture List</div>
+  <div class="tab"     onclick="sw('wu',this)">&#128240; Weekly Hiring Update</div>
 </div>
 
 
@@ -319,17 +321,17 @@ var CH   = {};
   </div>
   <div class="tbox">
     <h3 id="cwTblH">Closed Won Roles</h3>
-    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
+    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Candidate</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
     <tbody id="cwRows"></tbody></table>
   </div>
   <div class="tbox">
     <h3 id="ioTblH">For Job Offer Roles</h3>
-    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
+    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Candidate</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
     <tbody id="ioRows"></tbody></table>
   </div>
   <div class="tbox">
     <h3 id="ocTblH">Ongoing Contract Roles</h3>
-    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
+    <table><thead><tr><th>#</th><th>Job Client</th><th>Role</th><th>Candidate</th><th>Headcount</th><th>Start Date</th><th>Stage</th><th>Type</th></tr></thead>
     <tbody id="ocRows"></tbody></table>
   </div>
   <div class="tbox">
@@ -555,6 +557,15 @@ var CH   = {};
 </div>
 
 
+<div id="p-wu" class="page">
+  <div class="mbar">
+    <label>Week of:</label>
+    <select class="msel" id="wusel" onchange="drawWeeklyUpdate(this.value)"></select>
+    <span style="margin-left:auto;font-size:12px;color:#718096;">The internal Hiring Update email sent to leadership each week</span>
+  </div>
+  <iframe id="wuframe" title="Weekly Hiring Update" style="width:100%;border:0;min-height:1200px;background:#EEF2F9;border-radius:10px;"></iframe>
+</div>
+
 <div id="p-sa" class="page">
   <div class="stitle">SoM vs Additional — Requisition Tracking</div>
   <div style="font-size:12px;color:#718096;margin:-8px 0 18px;">
@@ -684,7 +695,25 @@ function sw(id,el){
   if(id==="sa") drawSomAdditional();
   if(id==="nl") drawNurtureList();
   if(id==="rm") drawRecruitmentMetrics();
+  if(id==="wu") drawWeeklyUpdate();
   // 'sc' (Candidate Scoring) tab + handler removed per user request 2026-10-06.
+}
+
+function drawWeeklyUpdate(date){
+  var sel=document.getElementById("wusel"), fr=document.getElementById("wuframe");
+  if(!WEEKLY || !WEEKLY.length){ fr.srcdoc='<p style="font-family:sans-serif;color:#718096;padding:24px">No weekly update published yet.</p>'; return; }
+  if(!sel.options.length){
+    WEEKLY.forEach(function(w){
+      var d=new Date(w.date+"T00:00:00");
+      var o=document.createElement("option"); o.value=w.date;
+      o.textContent=d.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+      sel.appendChild(o);
+    });
+  }
+  var w=WEEKLY.filter(function(x){return x.date===(date||sel.value);})[0]||WEEKLY[0];
+  sel.value=w.date;
+  fr.onload=function(){ try{ fr.style.height=(fr.contentDocument.documentElement.scrollHeight+20)+"px"; }catch(e){} };
+  fr.srcdoc='<!doctype html><html><head><meta charset="utf-8"></head><body style="margin:0;background:#EEF2F9">'+w.html+'</body></html>';
 }
 
 function drawRecruitmentMetrics(){
@@ -2259,12 +2288,13 @@ function drawClosed(){
       "<td style='font-weight:700;color:#718096;'>"+(i+1)+"</td>"+
       "<td style='font-weight:600;'>"+r.client+"</td>"+
       "<td>"+r.role+"</td>"+
+      "<td style='font-weight:600;color:#2d3748;'>"+(r.candidate||"—")+"</td>"+
       "<td style='text-align:center;'><span style='background:#e9d8fd;color:#553c9a;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;'>"+hc+"</span></td>"+
       "<td>"+fd(r.startDate)+"</td>"+
       "<td>"+sBadge(r.stage||"Offer Accepted")+"</td>"+
       "<td>"+tBadge(r.type||"—")+"</td></tr>";
   });
-  document.getElementById("cwRows").innerHTML=rows||empty(7);
+  document.getElementById("cwRows").innerHTML=rows||empty(8);
 
   // For Job Offer table
   var io=DATA.inOfferRoles||[];
@@ -2277,12 +2307,13 @@ function drawClosed(){
       "<td style='font-weight:700;color:#718096;'>"+(i+1)+"</td>"+
       "<td style='font-weight:600;'>"+r.client+"</td>"+
       "<td>"+r.role+"</td>"+
+      "<td style='font-weight:600;color:#2d3748;'>"+(r.candidate||"—")+"</td>"+
       "<td style='text-align:center;'><span style='background:#e9d8fd;color:#553c9a;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;'>"+hc+"</span></td>"+
       "<td>"+fd(r.startDate)+"</td>"+
       "<td><span class='badge bo'>Offer Extended</span></td>"+
       "<td>"+tBadge(r.type||"—")+"</td></tr>";
   });
-  document.getElementById("ioRows").innerHTML=ioRows||empty(7);
+  document.getElementById("ioRows").innerHTML=ioRows||empty(8);
 
   // Ongoing Contract table
   var oc=DATA.ongoingContractRoles||[];
@@ -2295,12 +2326,13 @@ function drawClosed(){
       "<td style='font-weight:700;color:#718096;'>"+(i+1)+"</td>"+
       "<td style='font-weight:600;'>"+r.client+"</td>"+
       "<td>"+r.role+"</td>"+
+      "<td style='font-weight:600;color:#2d3748;'>"+(r.candidate||"—")+"</td>"+
       "<td style='text-align:center;'><span style='background:#e9d8fd;color:#553c9a;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;'>"+hc+"</span></td>"+
       "<td>"+fd(r.startDate)+"</td>"+
       "<td><span class='badge' style='background:#805ad520;color:#805ad5;'>Ongoing Contract</span></td>"+
       "<td>"+tBadge(r.type||"—")+"</td></tr>";
   });
-  document.getElementById("ocRows").innerHTML=ocRows||empty(7);
+  document.getElementById("ocRows").innerHTML=ocRows||empty(8);
 
   // Withdrawals table — candidates who reached Job Offer / Ongoing Contract / Offer Accepted / Started
   // but withdrew before starting. Each entry records the priorStage they pulled out from so it's
